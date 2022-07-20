@@ -109,7 +109,7 @@
 
 #' @title Liu et al. (2022+) Study 1
 #' @description
-#' Liu et al. study social interactions and the impact of surprise on people reaching out if this contact is unexpected. Experiment 1 focuses on questionnaires where the experimental condition is the perceived appreciation of reaching out to someone (vs being reached to). The study used a questionnaire administered to 200 American adults recruited on the Prolific Academic platform. The response index consists of the average of four questions measured on a Likert scale ranging from 1 to 7, with higher values indicating higher appreciation.
+#' Liu et al. study social interactions and the impact of surprise on people reaching out if this contact is unexpected. Experiment 1 focuses on questionnaires where the experimental condition is the perceived appreciation of reaching out to someone (vs being reached to). The study used a questionnaire administered to 200 American adults recruited on the Prolific Academic platform. The response index consists of the average of four questions measured on a Likert scale ranging from 1 (not at all) to 7 (to a great extent): higher values thus indicate higher appreciation.
 #'
 #' @format A data frame with 200 rows and 5 variables:
 #' \describe{
@@ -242,10 +242,186 @@
 #' @references Lee J. Curley, Jennifer Murray, Rory MacLean, James Munro, Martin Lages, Lara A. Frumkin, Phyllis Laybourn & David Brown (2022) \emph{Verdict spotting: investigating the effects of juror bias, evidence anchors and verdict system in jurors}, Psychiatry, Psychology and Law, 29(\bold{3}), 323-344, \url{https://doi.org/10.1080/13218719.2021.1904450}
 "C22"
 
+#' @title Chandler (2016) replication
+#' @description Replication by Chandler (2016) of Study 4a of Janiszewski and Uy (2008). Both studies measured the amount of adjustment when presented with vague or precise range of value for objects, with potential encouragement for adjusting more the value.
+#' @format A data frame with 120 rows and 4 variables:
+#' \describe{
+#'   \item{\code{anchor}}{[factor] anchor, either \code{round} or \code{precise}}
+#'   \item{\code{magnitude}}{[factor] magnitude of anchor, 0 or 1}
+#'   \item{\code{gender}}{[factor] participant gender, either \code{female}, \code{male} or \code{other}}
+#'   \item{\code{madjust}}{[double] mean adjustement}
+#'}
+#' @references Chandler, J. J. (2016). \emph{Replication of Janiszewski & Uy (2008, Psychological Science, study 4b)}. OSF. \url{https://osf.io/aaudl}
+#' @references Janiszewski, C., & Uy, D. (2008). \emph{Precision of the anchor influences the amount of adjustment}. Psychological Science, 19(\bold{2}), 121–127. \url{https://doi.org/10.1111/j.1467-9280.2008.02057.x}
+"C16"
 
-# evidence anchor (strong-first versus
-#                  weak-first); (b) verdict system (two- versus
-#                                                   three-verdict systems). Total pre-trial bias
-# score was used as a covariate in the analysis
-# (this score is based on the PJAQ and is
-#   explained further in the Materials section)
+#' @title van Stekelenburg et al. (2021), Study 2
+#' @description The study aimed to assess changes in opinion of skeptics when faced with evidence of scientific consensus through manipulation of experimental condition explaining how to assess a news claim. The subject in question was Genetically Engineered Food (GEE).
+#' @format A data frame with 442 rows and 3 variables:
+#' \describe{
+#'   \item{\code{prior}}{[integer] negative of prior belief score}
+#'   \item{\code{post}}{[integer] post experiment score for veracity of claim}
+#'   \item{\code{condition}}{[factor] experimental condition, one of \code{Boost}, \code{BoostPlus} and \code{concensus}}
+#'}
+#' @references Stekelenburg, A. van, Schaap, G., Veling, H., & Buijzen, M. (2021). \emph{Boosting understanding and identification of scientific consensus can help to correct false beliefs.} Psychological Science, 32(\bold{10}), 1549–1565. \url{https://doi.org/10.1177/09567976211007788}
+"SSVB21_S2"
+
+#' @title van Stekelenburg et al. (2021), Study 3
+#' @description A replication of the Study 2, but with a control group and a larger sample size. The study aimed to assess changes in opinion of skeptics when faced with evidence of scientific consensus through manipulation of experimental condition explaining how to assess a news claim. The subject in question was Genetically Engineered Food (GEE).
+#' @format A data frame with 854 rows and 4 variables:
+#' \describe{
+#'   \item{\code{prior}}{[integer] negative of prior belief score}
+#'   \item{\code{post}}{[integer] post experiment score for veracity of claim}
+#'   \item{\code{condition}}{[factor] experimental condition, one of \code{BoostPlus}, \code{concensus} and \code{control}}
+#'   \item{\code{mention_consensus}}{[factor] indication of whether the participant mentioned scientific consensus, either \code{yes} or \code{no}}
+#'}
+#' @references Stekelenburg, A. van, Schaap, G., Veling, H., & Buijzen, M. (2021). \emph{Boosting understanding and identification of scientific consensus can help to correct false beliefs.} Psychological Science, 32(\bold{10}), 1549–1565. \url{https://doi.org/10.1177/09567976211007788}
+"SSVB21_S3"
+
+#' @title Roczniewska and Higgins (2019), Study 1
+#'
+#' @description Study of mediator following changes in the Polish education system, whereby middle school was due to disappear and be replaced with a new system with 8 years of elementary school and four years of high school. The authors surveyed teachers in middle and primary schools with two messages, either prevention or promotion.
+#'
+#' @format A data frame with 198 rows and 12 variables:
+#' \describe{
+#'   \item{\code{change}}{[factor] change outcome depending on school type, either middle school (\code{negative}) or primary school (\code{positive})}
+#'   \item{\code{regfocus}}{[factor] situational regulatory focus manipulation: education change message framing, either \code{prevention} or \code{promotion} message framing}
+#'   \item{\code{fluency}}{[double] mean for fluency items}
+#'   \item{\code{engagement}}{[double] mean for engagement items}
+#'   \item{\code{dprocessjustice}}{[double] mean for change process fairness perceptions items}
+#'   \item{\code{dopenness}}{[double] mean for change openness items}
+#'   \item{\code{promem}}{[double] mean for work regulatory focus promotion items}
+#'   \item{\code{prevem}}{[double] mean for work regulatory focus prevention items}
+#'   \item{\code{gender}}{[factor] gender of teacher, either \code{male} or \code{female}}
+#'   \item{\code{age}}{[integer] age of teacher}
+#'   \item{\code{tenure}}{[integer] number of years teaching}
+#'   \item{\code{hours_week}}{[integer] weekly number of hours working}
+#'}
+#' @references M. Roczniewska and Higgins, E.T. (2019). \emph{Messaging organizational change: How regulatory fit relates to openness to change through fairness perceptions}, Journal of Experimental Social Psychology, 85, \url{https://doi.org/10.1016/j.jesp.2019.103882}
+"RH19_S1"
+
+
+#' Anandarajan, Viger and Curatola (2002)
+#'
+#' A study on the impact of communication means on perceived risk of organization on the brink of bankrupcy vehiculated through different disclosure format.
+#' @format A data frame with 132 rows and 4 variables:
+#' \describe{
+#'   \item{\code{format}}{[factor] disclosure format, one of \code{integrated note}, \code{stand-alone note} or \code{modified auditor report}}
+#'   \item{\code{prime}}{[double] rating for the interest rate premium assessed}
+#'   \item{\code{debt}}{[integer] rating for the ability to service debt}
+#'   \item{\code{profitability}}{[integer] rating for the ability to improve profitability}
+#'}
+#' @details This data was simulated based on the summary statistics presented in the paper
+#' @source Leo Belzile
+#' @references Anandarajan, A., Viger, C., & Curatola, A. P. (2002). \emph{An experimental investigation of alternative going-concern reporting formats: A Canadian experience.} Canadian Accounting Perspectives, 1(\bold{2}), 141-162. \url{https://doi.org/10.1506/5947-NQTC-C3Y5-H46N}
+"AVC02"
+
+#' @title Lee and Choi (2019), Study 1
+#' @description A study on online descriptors and the impact on the perception of a product on the discrepancy between the text description and the image(e.g., a set of 6 toothbrushes when the image shows a single one), with two experimental conditions. The authors also measured the prior familiarity with the brand of the item.
+#'
+#' @format A data frame with 96 rows and 5 variables:
+#' \describe{
+#'   \item{\code{prodeval}}{[double] average product evaluation score of three 9 point scales, with very bad to very good, very unfavorable to very favorable and not a useful product to very useful product}
+#'   \item{\code{familiarity}}{[integer] Likert scale from 1 to 7 for brand familiarity}
+#'   \item{\code{consistency}}{[factor] image-text groups, either \code{consistent} or \code{inconsistent}}
+#'   \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
+#'   \item{\code{age}}{[integer] age of participant}
+#'}
+#' @details Distributed under CC-BY 4.0 license
+#' @references K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
+"LC19_S1"
+
+#' @title Lee and Choi (2019), Study 2
+#'
+#' @description A follow-up of Study 1 aiming to measure the mediating effect of the fluency of the advertisement on product evaluation, depending on the (in)consistency between description and display on product evaluation
+#' @format A data frame with 113 rows and 6 variables:
+#' \describe{
+#'   \item{\code{prodeval}}{[double] average product evaluation score of three 9 point scales, with very bad to very good, very unfavorable to very favorable and not a useful product to very useful product}
+#'   \item{\code{fluency}}{[double] average fluency measuring easy of reading and of understanding, ranging from strongly disagree (\code{1}) to strongly agree (\code{2})}
+#'   \item{\code{familiarity}}{[integer] Likert scale from 1 to 7 for brand familiarity}
+#'   \item{\code{consistency}}{[factor] image-text groups, either \code{consistent} or \code{inconsistent}}
+#'   \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
+#'   \item{\code{age}}{[integer] age of participant}
+#' }
+#' @details Distributed under CC-BY 4.0 license
+#' @references K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
+"LC19_S2"
+
+#' @title Lee and Choi (2019), Table 2
+#' @description Contingency table for Study 3, measuring the expected number of products as a function of the text description and image showing either one or six toothbrushes.
+#' @format A data frame with 12 rows and 4 variables:
+#' \describe{
+#'   \item{\code{text}}{[factor] number of toothbrush in text description}
+#'   \item{\code{image}}{[factor] number of toothbrushes displayed in image}
+#'   \item{\code{expected}}{[factor] expected number of toothbrushes}
+#'   \item{\code{count}}{[integer] count of occurence}
+#'}
+#' @details Distributed under CC-BY 4.0 license
+#' @references K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
+"LC19_T2"
+
+
+#' @title Amirabdolahian and Ali-Adeeb (2021)
+#' @description A study on the attitude towards real and computer generated image of people smiling. The response is the
+#' @format A data frame with 1169 rows and 3 variables:
+#' \describe{
+#'   \item{\code{amplitude}}{[double] amplitude of  N170 EEG signal}
+#'   \item{\code{stimulus}}{[factor] image shown, one of real image (\code{R}), a one-pass generative adversarial network generate image with slightly happy face (\code{GAN1}) and a two-pass GAN with an extremely happy person (\code{GAN2})}
+#'   \item{\code{id}}{[factor] participant identifier}
+#'}
+#' @details The data were collected as part of a course project during Winter 2021 (TECH 80747A Information Technologies and Neuroscience), which took place during the Covid19 pandemic. Each student participant had his own apparatus, which explains the large between-participant measurement error.
+#' @source Saeed Amirabdolahian
+#' @references S. Amirabdolahian and R. Ali-Adeeb (2021). \emph{Measuring face images visual fidelity in neurophysiological level: a study on facial expression manipulating technologies}, technical report, HEC Montreal.
+"AA21"
+
+#' @title Liu et al. (2021), Study 3
+#'
+#' @description Paired data from dyads: participants were asked to "name a fellow college student in their social circle with whom they typically have pleasant encounters but have not interacted (either virtually or in-person)". The experimenter measured the appreciation score via a Likert scale with not at all (\code{1}), slightly (\code{2}), moderately (\code{3}), very \code{4} and extremely (\code{5}). The expectation of the authors was that initiators sending the gift/message would underestimate how much this attention would be valued by respondant
+#' @format A data frame with 67 rows and 6 variables:
+#' \describe{
+#'   \item{\code{apprec_resp}}{[integer] appreciation of respondant}
+#'   \item{\code{apprec_init}}{[integer] appreciation of initiator}
+#'   \item{\code{age_resp}}{[double] age of respondant}
+#'   \item{\code{gender_resp}}{[factor] gender of respondant, one of \code{male}, \code{female} or \code{other}}
+#'   \item{\code{age_init}}{[double] age of initiator}
+#'   \item{\code{gender_init}}{[factor] gender of initiator, one of \code{male}, \code{female} or \code{other}}
+#'}
+#' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2022+). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology.  \url{https://doi.org/10.1037/pspi0000402}
+"LRMM22_S3"
+
+#' @title Liu et al. (2019), Study 5b
+#' @description The authors postulated that the
+#' underestimation of the appreciation of initiators relative to recipients
+#' was mediated by the degree of surprise of the recipient.
+#'
+#' @format A data frame with 402 rows and 5 variables:
+#' \describe{
+#'   \item{\code{appreciation}}{[double] average score questions related to appreciation (appreciate, feel thankful, feel grateful, feel pleased)}
+#'   \item{\code{surprise}}{[double] average score for questions related to unexpectedness and surprise of reaching out}
+#'   \item{\code{condition}}{[factor] experimental condition, either \code{self} or \code{other}}
+#'   \item{\code{age}}{[double] age of participant}
+#'   \item{\code{gender}}{[factor] gender of participant, one of \code{male}, \code{female} or \code{other}}
+#'}
+#' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2022+). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology.  \url{https://doi.org/10.1037/pspi0000402}
+"LRMM22_S5b"
+
+#' @title ManyLab2 replication of Risen and Gilovich (2008)
+#' @description The data is a replication with undergraduate students of a study. The authors measured the likelihood of bad outcome when tempting fate by not preparing in advance for a task. The replication data are unbalanced and the study failed to replicate
+#' @format A data frame with 4433 rows and 4 variables:
+#' \describe{
+#'   \item{\code{lab}}{[factor] laboratory identifier}
+#'   \item{\code{likelihood}}{[integer] likelihood of bad outcome, from 1 to 10}
+#'   \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
+#'   \item{\code{condition}}{[factor] experimental condition, either \code{prepared} or \code{unprepared}}
+#'}
+#' @references Klein, R. A., et al. (2018). \emph{Many labs 2: Investigating variation in replicability across samples and settings.} Advances in Methods and Practices in Psychological Science, 1(\bold{4}), 443–490. \url{https://doi.org/10.1177/2515245918810225}
+#' Risen, J. L., and T. Gilovich, (2008). \emph{Why people are reluctant to tempt fate.} Journal of Personality and Social Psychology, 95(\bold{2}), 293–307. \url{https://doi.org/10.1037/0022-3514.95.2.293}
+#' @details Data extracted from \url{https://osf.io/sg3su}
+"MANY18_S18"
+
+
+
+# @references Brucks, M.S. and J. Levav (2022)\emph{Virtual communication curbs creative idea generation}. Nature 605, 108–112. \url{https://doi.org/10.1038/s41586-022-04643-y}
+# "BL22"
+
+

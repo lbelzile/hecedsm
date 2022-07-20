@@ -11,8 +11,8 @@ usethis::use_data(C18, overwrite = TRUE)
 
 # Dataset 2: Bastian, Jetten and Ferris (2014)
 dat_raw_pain <- haven::read_sav(file = "data-raw/source/BJF_2014_S1.sav")
-BJF14_S1 <- dat_raw_pain %>%
-  rowwise() %>%
+BJF14_S1 <- dat_raw_pain |>
+  rowwise() |>
   transmute(condition = as_factor(condition),
             bonding = mean(c_across(group101:group107)),
             pain = task_intense,
@@ -28,7 +28,7 @@ BJF14_S1 <- dat_raw_pain %>%
             )
 usethis::use_data(BJF14_S1, overwrite = TRUE)
 # To see the labels for condition, check the raw data
-dat_raw_pain$condition %>% attr('labels')
+dat_raw_pain$condition |> attr('labels')
 
 
 # Dataset 3: Liu et al. (2022), Experiment 1
@@ -68,18 +68,18 @@ usethis::use_data(JCD14_S2, overwrite = TRUE)
 
 # Dataset 5: Grossman and Kross (2014)
 gk_s3_data_raw <- haven::read_sav("https://osf.io/8j36p/download")
-GK14_S3 <- gk_s3_data_raw %>%
+GK14_S3 <- gk_s3_data_raw |>
   # Keep selected variables
   select(age.group,
          Condition,
-         RES_1:RES_4) %>%
+         RES_1:RES_4) |>
   # change names (lower case)
   rename(age = age.group,
          condition = Condition,
          limits = RES_1,
          compr = RES_2,
          persp = RES_3,
-         change = RES_4) %>%
+         change = RES_4) |>
   # haven::as_factor takes SPSS variables
   # and make them factor extracting labels
   mutate(age = haven::as_factor(age),
@@ -88,12 +88,12 @@ usethis::use_data(GK14_S3, overwrite = TRUE)
 
 # Dataset 6: Baumann, Seifert-Kessell, Jones (1992)
 BSJ92 <-
-  carData::Baumann %>%
+  carData::Baumann |>
   rename(pretest1 = pretest.1,
          pretest2 = pretest.2,
          posttest1 = post.test.1,
          posttest2 = post.test.2,
-         posttest3 = post.test.3) %>%
+         posttest3 = post.test.3) |>
   mutate(group = fct_recode(.f = group,
                             DR = "Basal",
                             TA = "Strat"))
@@ -108,11 +108,11 @@ lages <- read.csv(url, header = TRUE)
 # The data is not documented and the labels
 # of the factors do not match those of the paper!
 # fontsize seemingly in 20ft (but does not match)
-LBJ17_S1A <- lages %>%
+LBJ17_S1A <- lages |>
   pivot_longer(cols = NA10P1:WA25P5, # all columns in this range
                names_sep = c(2,4,6), # where to break labels,
                names_to = c("adaptation", "fontsize", "position"),
-               values_to = "nerror") %>%
+               values_to = "nerror") |>
   transmute(nerror = nerror,
             #normalacuity = NA.,
             adaptation = factor(adaptation,
@@ -213,7 +213,7 @@ labs <- c("Bloor-Yonge", "Sherbourne", "Spadina", "St. George")
 # Spadina > St. George > Bay > Bloor-Yonge > Sherbourne
 olabs <- c("Spadina", "St. George", "Bloor-Yonge", "Sherbourne")
 MP14_S1 <- read_csv("https://edsm.rbind.io/data/MaglioPolman2014S1.csv",
-                 col_types = "fiff") %>%
+                 col_types = "fiff") |>
   # STN_NUMBER redundant with STN_NAME
   transmute(station = fct_relevel(factor(STN_NAME, labels = labs), olabs),
             direction = factor(DIRECTION, labels = tolower(levels(DIRECTION))),
@@ -223,12 +223,12 @@ usethis::use_data(MP14_S1)
 # Dataset 12: Bobak, Mileva and Hancock (2019)
 BMH19_S2 <- read.csv("data-raw/source/Bobak2019S2.csv",
                        header = TRUE,
-                       fileEncoding = "UTF-8-BOM") %>%
-  select(pnum:diffmon) %>%
+                       fileEncoding = "UTF-8-BOM") |>
+  select(pnum:diffmon) |>
   pivot_longer(cols = starts_with("diff"),
                names_to = "color",
                names_prefix = "diff",
-               values_to = "pcorr") %>%
+               values_to = "pcorr") |>
   mutate(color = factor(color),
          sex = factor(sex),
          pnum = as.integer(factor(pnum))) |>
@@ -239,13 +239,139 @@ usethis::use_data(BMH19_S2, overwrite = TRUE)
 # Dataset 13: Curley et al. (2022)
 
 C22 <- read.csv("data-raw/source/Curley2021.csv",
-                   header = TRUE) %>%
+                   header = TRUE) |>
   mutate(id = factor(id), # cast explanatories to factor
          anchor = factor(anchor),
          vignette = factor(vignette),
          verdictsyst = factor(verdictsyst)) |>
   tibble::as_tibble()
 usethis::use_data(C22, overwrite = TRUE)
+
+# Dataset 14: Clayton (2016) replication of Janiewski
+
+C16 <- haven::read_sav(file = "https://osf.io/26mxf/download") |>
+# The response is labelled 'mean2'
+# the explanatories are 'anchor' and 'magnitude'
+# This is a 2x2 factorial design
+#
+# Transform data so that explanatories are factors
+# as_factor will automatically detect SPSS labels
+  mutate(anchor = as_factor(Anchortype),
+         magnitude = as_factor(magnitude),
+         gender = as_factor(Gender)) |>
+  filter(DROP == 0) |> # keep only some observations
+  dplyr::select(anchor, magnitude, gender, mean2) |>
+  rename(madjust = mean2) |>
+  mutate(gender = factor(gender, labels = c("female", "male", "other")))
+usethis::use_data(C16, overwrite = TRUE)
+
+
+# Dataset 15 and 16: van Stekelenburg et al. (2021)
+
+SSVB21_S2 <- read.csv("data-raw/source/vanStekelenburg2021S2.csv",
+                      header = TRUE) |>
+  tibble::as_tibble() |>
+  transmute(prior = prior,
+            post = post,
+            condition = factor(condition))
+usethis::use_data(SSVB21_S2)
+SSVB21_S3 <- read.csv("data-raw/source/vanStekelenburg2021S3.csv",
+               header = TRUE) |>
+  filter(Prior > 0) |>
+  mutate(Condition = factor(Condition,
+         labels = c("BoostPlus",
+                    "consensus",
+                    "control"))) |>
+  tibble::as_tibble() |>
+  transmute(prior = Prior,
+            post = Post,
+            condition = Condition,
+            mention_consensus = factor(Consensus_mention_auto,
+                                       labels = c("no","yes")))
+usethis::use_data(SSVB21_S3, overwrite = TRUE)
+
+# Dataset 17: Roczniewska and Higgins (2019)
+RH19_S1 <- haven::read_sav("data-raw/source/Roczniewska_Higgins_2019.sav") |>
+  transmute(
+    change = factor(change_outcome,
+                    labels = c("negative","positive")),
+    regfocus = factor(reg_focus_manipulation,
+                         labels = c("prevention", "promotion")),
+    fluency = fluency_MEAN,
+    engagement = engagement_MEAN,
+    dprocessjustice = change_process_justice_MEAN,
+    dopenness = changeOPENNESS_MEAN,
+    promem = PROM_EMPLOYEE_MEAN,
+    prevem = PREV_EMPLOYEE_MEAN,
+    gender = as_factor(gender),
+    age = as.integer(age),
+    tenure = as.integer(tenure),
+    hours_week = as.integer(hours_week))
+levels(RH19_S1$gender) <- tolower(levels(RH19_S1$gender) )
+usethis::use_data(RH19_S1, overwrite = TRUE)
+
+# Dataset 18: Anandarajan, Viger and Curatola (2002)
+AVC02 <- read.csv(file = "data-raw/source/Anandarajan2002_fake.csv") |>
+mutate(format = factor(format,
+       labels = c("integrated note",
+                  "stand-alone note",
+                  "modified auditor report"))) |>
+  tibble::as_tibble() |>
+  select(!participant)
+usethis::use_data(AVC02, overwrite = TRUE)
+
+# Dataset 19: Lee and Choi (2019), Study 1
+LC19_S1 <- read.csv("data-raw/source/LeeChoi2019S1.csv") |>
+  select(! c(price, category_con, image)) |>
+  mutate(consistency = factor(cond,
+                       labels = c("consistent",
+                                  "inconsistent")),
+         Gender = factor(Gender, labels = c("man",
+                                            "woman")),
+         prodeval = (att1 + att2 + att3)/3) |>
+  select(!c(att1, att2, att3, cond)) |>
+  dplyr::relocate(c(prodeval, familiarity, consistency, Gender, Age))
+colnames(LC19_S1) <- tolower(colnames(LC19_S1))
+usethis::use_data(LC19_S1, overwrite = TRUE)
+
+
+# Dataset 19: Lee and Choi (2019), Study 2
+LC19_S2 <- read.csv("data-raw/source/LeeChoi2019S2.csv",
+                    sep = "\t") |>
+  select(! cond) |>
+  mutate(consistency = factor(image,
+                              labels = c("inconsistent",
+                                         "consistent")),
+         Gender = factor(Gender, labels = c("man",
+                                            "woman")),
+         prodeval = (att1 + att2 + att3)/3,
+         fluency = ifelse(is.na(info2), info3, ifelse(is.na(info3), info2, (info2 + info3)/2))) |>
+  select(!c(image, att1, att2, att3, info2, info3)) |>
+  dplyr::relocate(c(prodeval, fluency, familiarity, consistency, Gender, Age)) |>
+  tibble::as_tibble()
+colnames(LC19_S2) <- tolower(colnames(LC19_S2))
+usethis::use_data(LC19_S2, overwrite = TRUE)
+
+LC19_T2 <-
+  data.frame(text = factor(rep(c("1",
+                   "6"), each = 6)),
+             image = factor(rep(rep(c("1", "6"), each = 3L), length.out = 12L)),
+             expected = factor(rep(c("one","six", "not sure"), length.out = 12L)),
+             count = as.integer(c(41,5,5,40,7,5,13,30,4,4,38,8)))
+usethis::use_data(LC19_T2, overwrite = TRUE)
+
+
+AA21 <- read.csv(file = "data-raw/source/faces_repeated.csv") |>
+  tibble::as_tibble() |>
+  mutate(stimulus = factor(stimulus, labels = c("GAN2","R","GAN1")),
+         participant = factor(participant)) |>
+  rename(id = participant,
+         amplitude = value) |>
+  select(!epoch)
+usethis::use_data(AA21, overwrite = TRUE)
+
+
+
 
 #sinew::makeOxygen()
 

@@ -11,7 +11,11 @@ A data frame with 113 rows and 6 variables:
   \item{\code{fluency}}{[double] average fluency measuring easy of reading and of understanding, ranging from strongly disagree (\code{1}) to strongly agree (\code{2})}
   \item{\code{familiarity}}{[integer] Likert scale from 1 to 7 for brand familiarity}
   \item{\code{consistency}}{[factor] image-text groups, either \code{consistent} or \code{inconsistent}}
+<<<<<<< HEAD
   \item{\code{gender}}{[factor] gender of participant}
+=======
+  \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
+>>>>>>> cbe5a00 (New datasets (2))
   \item{\code{age}}{[integer] age of participant}
 }
 }

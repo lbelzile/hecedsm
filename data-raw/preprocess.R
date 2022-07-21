@@ -307,7 +307,8 @@ RH19_S1 <- haven::read_sav("data-raw/source/Roczniewska_Higgins_2019.sav") |>
     age = as.integer(age),
     tenure = as.integer(tenure),
     hours_week = as.integer(hours_week))
-levels(RH19_S1$gender) <- tolower(levels(RH19_S1$gender) )
+
+levels(RH19_S1$gender) <- c("male","female")
 usethis::use_data(RH19_S1, overwrite = TRUE)
 
 # Dataset 18: Anandarajan, Viger and Curatola (2002)
@@ -326,8 +327,8 @@ LC19_S1 <- read.csv("data-raw/source/LeeChoi2019S1.csv") |>
   mutate(consistency = factor(cond,
                        labels = c("consistent",
                                   "inconsistent")),
-         Gender = factor(Gender, labels = c("man",
-                                            "woman")),
+         Gender = factor(Gender, labels = c("male",
+                                            "female")),
          prodeval = (att1 + att2 + att3)/3) |>
   select(!c(att1, att2, att3, cond)) |>
   dplyr::relocate(c(prodeval, familiarity, consistency, Gender, Age))
@@ -342,8 +343,8 @@ LC19_S2 <- read.csv("data-raw/source/LeeChoi2019S2.csv",
   mutate(consistency = factor(image,
                               labels = c("inconsistent",
                                          "consistent")),
-         Gender = factor(Gender, labels = c("man",
-                                            "woman")),
+         Gender = factor(Gender, labels = c("male",
+                                            "female")),
          prodeval = (att1 + att2 + att3)/3,
          fluency = ifelse(is.na(info2), info3, ifelse(is.na(info3), info2, (info2 + info3)/2))) |>
   select(!c(image, att1, att2, att3, info2, info3)) |>
@@ -352,6 +353,7 @@ LC19_S2 <- read.csv("data-raw/source/LeeChoi2019S2.csv",
 colnames(LC19_S2) <- tolower(colnames(LC19_S2))
 usethis::use_data(LC19_S2, overwrite = TRUE)
 
+# Dataset 20: Lee and Choi (2019), Study 3 (Table 2)
 LC19_T2 <-
   data.frame(text = factor(rep(c("1",
                    "6"), each = 6)),
@@ -360,6 +362,7 @@ LC19_T2 <-
              count = as.integer(c(41,5,5,40,7,5,13,30,4,4,38,8)))
 usethis::use_data(LC19_T2, overwrite = TRUE)
 
+# Dataset 21: Saeed's NeuroIS experiment
 
 AA21 <- read.csv(file = "data-raw/source/faces_repeated.csv") |>
   tibble::as_tibble() |>
@@ -370,8 +373,57 @@ AA21 <- read.csv(file = "data-raw/source/faces_repeated.csv") |>
   select(!epoch)
 usethis::use_data(AA21, overwrite = TRUE)
 
+# Dataset 22: Liu et al. (2022) Study 3
+LRMM22_S3 <- haven::read_sav(file = "data-raw/source/LRMM22_S3.sav") |>
+  dplyr::select(dv_responder,
+                dv_initiator,
+                age,
+                gender,
+                age_initiator,
+                gender_initiator
+  ) |>
+  dplyr::rename(apprec_resp = dv_responder,
+                apprec_init = dv_initiator,
+                gender_resp = gender,
+                age_resp = age,
+                gender_init = gender_initiator,
+                age_init = age_initiator) |>
+  mutate(apprec_resp = as.integer(apprec_resp),
+         apprec_init = as.integer(apprec_init),
+         gender_resp = as_factor(gender_resp),
+         gender_init = as_factor(gender_init)
+         )
+levels(LRMM22_S3$gender_init) <- tolower(levels(LRMM22_S3$gender_init))
+levels(LRMM22_S3$gender_resp) <- tolower(levels(LRMM22_S3$gender_resp))
+usethis::use_data(LRMM22_S3, overwrite = TRUE)
 
 
+# Dataset 23: Liu et al. (2022), Experiment 5b
+
+LRMM22_S5b <- haven::read_sav("data-raw/source/LRMM22_S5b.sav") |>
+  transmute(appreciation = ifelse(IV_self1other0 == 1,
+                                  (self_1 + self_2 + self_3 + self_4)/4,
+                                  (other_1 + other_2 + other_3 + other_4)/4),
+         surprise = ifelse(IV_self1other0 == 1,
+                           (surprise_self_1 + surprise_self_2)/2,
+                           (surprise_other_1 + surprise_other_2)/2),
+         condition = factor(condition,
+                            labels = c("other","self")),
+         age = as.integer(age),
+         gender = as_factor(gender),
+         )
+levels(LRMM22_S5b$gender) <- tolower(levels(LRMM22_S5b$gender))
+usethis::use_data(LRMM22_S5b, overwrite = TRUE)
+
+# Data 24: ManyLab replication of Risen and Gilovich (2008)
+
+MANY18_S18 <- read.csv("data-raw/source/ManyLabs2_S18.csv") |>
+  tibble::as_tibble() |>
+  mutate(gender = factor(gender),
+         condition = factor(condition),
+         lab = factor(lab),
+         likelihood = as.integer(likelihood))
+usethis::use_data(MANY18_S18)
 
 #sinew::makeOxygen()
 

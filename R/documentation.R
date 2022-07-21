@@ -373,7 +373,6 @@
 #' @source Saeed Amirabdolahian
 #' @references S. Amirabdolahian and R. Ali-Adeeb (2021). \emph{Measuring face images visual fidelity in neurophysiological level: a study on facial expression manipulating technologies}, technical report, HEC Montreal.
 "AA21"
-=======
 
 #' @title van Stekelenburg et al. (2021), Study 2
 #' @description The study aimed to assess changes in opinion of skeptics when faced with evidence of scientific consensus through manipulation of experimental condition explaining how to assess a news claim. The subject in question was Genetically Engineered Food (GEE).

@@ -11,24 +11,38 @@ A data frame with 113 rows and 6 variables:
   \item{\code{fluency}}{[double] average fluency measuring easy of reading and of understanding, ranging from strongly disagree (\code{1}) to strongly agree (\code{2})}
   \item{\code{familiarity}}{[integer] Likert scale from 1 to 7 for brand familiarity}
   \item{\code{consistency}}{[factor] image-text groups, either \code{consistent} or \code{inconsistent}}
-<<<<<<< HEAD
   \item{\code{gender}}{[factor] gender of participant}
-=======
+  \item{\code{age}}{[integer] age of participant}
+}
+
+A data frame with 113 rows and 6 variables:
+\describe{
+  \item{\code{prodeval}}{[double] average product evaluation score of three 9 point scales, with very bad to very good, very unfavorable to very favorable and not a useful product to very useful product}
+  \item{\code{fluency}}{[double] average fluency measuring easy of reading and of understanding, ranging from strongly disagree (\code{1}) to strongly agree (\code{2})}
+  \item{\code{familiarity}}{[integer] Likert scale from 1 to 7 for brand familiarity}
+  \item{\code{consistency}}{[factor] image-text groups, either \code{consistent} or \code{inconsistent}}
   \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
->>>>>>> cbe5a00 (New datasets (2))
   \item{\code{age}}{[integer] age of participant}
 }
 }
 \usage{
 LC19_S2
+
+LC19_S2
 }
 \description{
+A follow-up of Study 1 aiming to measure the mediating effect of the fluency of the advertisement on product evaluation, depending on the (in)consistency between description and display on product evaluation
+
 A follow-up of Study 1 aiming to measure the mediating effect of the fluency of the advertisement on product evaluation, depending on the (in)consistency between description and display on product evaluation
 }
 \details{
 Distributed under CC-BY 4.0 license
+
+Distributed under CC-BY 4.0 license
 }
 \references{
+K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
+
 K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
 }
 \keyword{datasets}

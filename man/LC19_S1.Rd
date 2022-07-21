@@ -10,7 +10,11 @@ A data frame with 96 rows and 5 variables:
   \item{\code{prodeval}}{[double] average product evaluation score of three 9 point scales, with very bad to very good, very unfavorable to very favorable and not a useful product to very useful product}
   \item{\code{familiarity}}{[integer] Likert scale from 1 to 7 for brand familiarity}
   \item{\code{consistency}}{[factor] image-text groups, either \code{consistent} or \code{inconsistent}}
+<<<<<<< HEAD
   \item{\code{gender}}{[factor] gender of participant}
+=======
+  \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
+>>>>>>> cbe5a00 (New datasets (2))
   \item{\code{age}}{[integer] age of participant}
 }
 }

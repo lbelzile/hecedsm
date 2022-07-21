@@ -15,7 +15,11 @@ A data frame with 198 rows and 12 variables:
   \item{\code{dopenness}}{[double] mean for change openness items}
   \item{\code{promem}}{[double] mean for work regulatory focus promotion items}
   \item{\code{prevem}}{[double] mean for work regulatory focus prevention items}
+<<<<<<< HEAD
   \item{\code{gender}}{[factor] gender of teacher, either \code{man} or \code{woman}}
+=======
+  \item{\code{gender}}{[factor] gender of teacher, either \code{male} or \code{female}}
+>>>>>>> cbe5a00 (New datasets (2))
   \item{\code{age}}{[integer] age of teacher}
   \item{\code{tenure}}{[integer] number of years teaching}
   \item{\code{hours_week}}{[integer] weekly number of hours working}

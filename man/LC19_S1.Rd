@@ -10,24 +10,37 @@ A data frame with 96 rows and 5 variables:
   \item{\code{prodeval}}{[double] average product evaluation score of three 9 point scales, with very bad to very good, very unfavorable to very favorable and not a useful product to very useful product}
   \item{\code{familiarity}}{[integer] Likert scale from 1 to 7 for brand familiarity}
   \item{\code{consistency}}{[factor] image-text groups, either \code{consistent} or \code{inconsistent}}
-<<<<<<< HEAD
   \item{\code{gender}}{[factor] gender of participant}
-=======
+  \item{\code{age}}{[integer] age of participant}
+}
+
+A data frame with 96 rows and 5 variables:
+\describe{
+  \item{\code{prodeval}}{[double] average product evaluation score of three 9 point scales, with very bad to very good, very unfavorable to very favorable and not a useful product to very useful product}
+  \item{\code{familiarity}}{[integer] Likert scale from 1 to 7 for brand familiarity}
+  \item{\code{consistency}}{[factor] image-text groups, either \code{consistent} or \code{inconsistent}}
   \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
->>>>>>> cbe5a00 (New datasets (2))
   \item{\code{age}}{[integer] age of participant}
 }
 }
 \usage{
 LC19_S1
+
+LC19_S1
 }
 \description{
+A study on online descriptors and the impact on the perception of a product on the discrepancy between the text description and the image(e.g., a set of 6 toothbrushes when the image shows a single one), with two experimental conditions. The authors also measured the prior familiarity with the brand of the item.
+
 A study on online descriptors and the impact on the perception of a product on the discrepancy between the text description and the image(e.g., a set of 6 toothbrushes when the image shows a single one), with two experimental conditions. The authors also measured the prior familiarity with the brand of the item.
 }
 \details{
 Distributed under CC-BY 4.0 license
+
+Distributed under CC-BY 4.0 license
 }
 \references{
+K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
+
 K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
 }
 \keyword{datasets}

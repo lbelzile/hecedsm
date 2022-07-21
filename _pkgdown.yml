@@ -1,0 +1,14 @@
+url: https://lbelzile.github.io/hecedsm
+template:
+  bootstrap: 5
+  params:
+    bootswatch: flatly
+    noindex: true
+lang: en
+toc: 
+  depth: 0
+home:
+  sidebar: FALSE
+authors:
+  "Léo Belzile (HEC Montréal)":
+    href: https://lbelzile.bitbucket.io

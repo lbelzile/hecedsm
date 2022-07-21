@@ -307,6 +307,10 @@ RH19_S1 <- haven::read_sav("data-raw/source/Roczniewska_Higgins_2019.sav") |>
     age = as.integer(age),
     tenure = as.integer(tenure),
     hours_week = as.integer(hours_week))
+<<<<<<< HEAD
+=======
+
+>>>>>>> update2
 levels(RH19_S1$gender) <- c("male","female")
 usethis::use_data(RH19_S1, overwrite = TRUE)
 
@@ -362,6 +366,10 @@ LC19_T2 <-
 usethis::use_data(LC19_T2, overwrite = TRUE)
 
 # Dataset 21: Saeed's NeuroIS experiment
+<<<<<<< HEAD
+=======
+
+>>>>>>> update2
 AA21 <- read.csv(file = "data-raw/source/faces_repeated.csv") |>
   tibble::as_tibble() |>
   mutate(stimulus = factor(stimulus, labels = c("GAN2","R","GAN1")),

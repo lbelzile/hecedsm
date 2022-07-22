@@ -12,23 +12,6 @@ A data frame with 132 rows and 4 variables:
   \item{\code{debt}}{[integer] rating for the ability to service debt}
   \item{\code{profitability}}{[integer] rating for the ability to improve profitability}
 }
-<<<<<<< HEAD
-}
-\source{
-Leo Belzile
-}
-\usage{
-AVC02
-}
-\description{
-A study on the impact of communication means on perceived risk of organization on the brink of bankrupcy vehiculated through different disclosure format.
-}
-\details{
-This data was simulated based on the summary statistics presented in the paper
-}
-\references{
-Anandarajan, A., Viger, C., & Curatola, A. P. (2002). \emph{An experimental investigation of alternative going-concern reporting formats: A Canadian experience.} Canadian Accounting Perspectives, 1(\bold{2}), 141-162. \url{https://doi.org/10.1506/5947-NQTC-C3Y5-H46N}
-=======
 
 A data frame with 132 rows and 4 variables:
 \describe{
@@ -62,6 +45,5 @@ This data was simulated based on the summary statistics presented in the paper
 Anandarajan, A., Viger, C., & Curatola, A. P. (2002). \emph{An experimental investigation of alternative going-concern reporting formats: A Canadian experience.} Canadian Accounting Perspectives, 1(\bold{2}), 141-162. \url{https://doi.org/10.1506/5947-NQTC-C3Y5-H46N}
 
 Anandarajan, A., Viger, C., & Curatola, A. P. (2002). \emph{An experimental investigation of alternative going-concern reporting formats: A Canadian experience.} Canadian Accounting Perspectives, 1(\bold{2}), 141-162. \url{https://doi.org/10.1506/5947-NQTC-C3Y5-H46N}
->>>>>>> update2
 }
 \keyword{datasets}

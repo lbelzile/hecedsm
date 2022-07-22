@@ -20,6 +20,9 @@ A data frame with 54 rows and 10 variables:
 \item{\code{gender}}{[factor] gender, either male or female}
 }
 }
+\source{
+Open Science Foundation, via \url{https://osf.io/9k3sw/}, unspecified license
+}
 \usage{
 BJF14_S1
 }

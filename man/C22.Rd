@@ -15,6 +15,9 @@ A data frame with 256 rows and 6 variables:
   \item{\code{pjaq}}{[integer] PJAQ score, a 29-item questionnaire, which measures total pre-trial bias}
 }
 }
+\source{
+Open Science Foundation, \url{https://osf.io/zg9hw/}, unspecified license
+}
 \usage{
 C22
 }

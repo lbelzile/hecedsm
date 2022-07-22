@@ -13,6 +13,9 @@ A data frame with 204 rows and 4 variables:
   \item{\code{count}}{[integer]count of the number of children}
 }
 }
+\source{
+Open Science Foundation, \url{https://osf.io/vgxkf}, licensed under CC-By Attribution 4.0 International
+}
 \usage{
 MULTI21_D1
 }

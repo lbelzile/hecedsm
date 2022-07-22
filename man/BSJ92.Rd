@@ -15,11 +15,14 @@ A data frame with 66 rows and 6 variables:
   \item{\code{posttest3}}{[integer] number of correct item, ranging from 0 to 56 on the Degrees of Reading Power test, a cloze test}
 }
 }
+\source{
+[carData::Baumann]
+}
 \usage{
 BSJ92
 }
 \description{
-Experimental dtudy on the effectiveness of different reading strategies on understanding of children.
+Experimental study on the effectiveness of different reading strategies on understanding of children.
 }
 \references{
 Baumann, J. F., Seifert-Kessell, N., & Jones, L. A. (1992). \emph{Effect of Think-Aloud Instruction on Elementary Students’ Comprehension Monitoring Abilities}. Journal of Reading Behavior, 24(\bold{2}), 143–172. \url{https://doi.org/10.1080/10862969209547770}

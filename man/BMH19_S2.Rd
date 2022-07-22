@@ -14,6 +14,9 @@ A data frame with 156 rows and 5 variables:
   \item{\code{pcorr}}{[double] percentage of correctly detected match}
 }
 }
+\source{
+Supplementary material, article licensed under CC BY 4.0
+}
 \usage{
 BMH19_S2
 }

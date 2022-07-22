@@ -12,7 +12,9 @@ A data frame with 854 rows and 4 variables:
   \item{\code{condition}}{[factor] experimental condition, one of \code{BoostPlus}, \code{concensus} and \code{control}}
   \item{\code{mention_consensus}}{[factor] indication of whether the participant mentioned scientific consensus, either \code{yes} or \code{no}}
 }
-<<<<<<< HEAD
+}
+\source{
+Open Science Foundation, \url{https://osf.io/hua8v/}, licensed under CC-By Attribution 4.0 International
 }
 \usage{
 SSVB21_S3
@@ -22,30 +24,5 @@ A replication of the Study 2, but with a control group and a larger sample size.
 }
 \references{
 Stekelenburg, A. van, Schaap, G., Veling, H., & Buijzen, M. (2021). \emph{Boosting understanding and identification of scientific consensus can help to correct false beliefs.} Psychological Science, 32(\bold{10}), 1549–1565. \url{https://doi.org/10.1177/09567976211007788}
-=======
-
-A data frame with 854 rows and 4 variables:
-\describe{
-  \item{\code{prior}}{[integer] negative of prior belief score}
-  \item{\code{post}}{[integer] post experiment score for veracity of claim}
-  \item{\code{condition}}{[factor] experimental condition, one of \code{BoostPlus}, \code{concensus} and \code{control}}
-  \item{\code{mention_consensus}}{[factor] indication of whether the participant mentioned scientific consensus, either \code{yes} or \code{no}}
-}
-}
-\usage{
-SSVB21_S3
-
-SSVB21_S3
-}
-\description{
-A replication of the Study 2, but with a control group and a larger sample size. The study aimed to assess changes in opinion of skeptics when faced with evidence of scientific consensus through manipulation of experimental condition explaining how to assess a news claim. The subject in question was Genetically Engineered Food (GEE).
-
-A replication of the Study 2, but with a control group and a larger sample size. The study aimed to assess changes in opinion of skeptics when faced with evidence of scientific consensus through manipulation of experimental condition explaining how to assess a news claim. The subject in question was Genetically Engineered Food (GEE).
-}
-\references{
-Stekelenburg, A. van, Schaap, G., Veling, H., & Buijzen, M. (2021). \emph{Boosting understanding and identification of scientific consensus can help to correct false beliefs.} Psychological Science, 32(\bold{10}), 1549–1565. \url{https://doi.org/10.1177/09567976211007788}
-
-Stekelenburg, A. van, Schaap, G., Veling, H., & Buijzen, M. (2021). \emph{Boosting understanding and identification of scientific consensus can help to correct false beliefs.} Psychological Science, 32(\bold{10}), 1549–1565. \url{https://doi.org/10.1177/09567976211007788}
->>>>>>> update2
 }
 \keyword{datasets}

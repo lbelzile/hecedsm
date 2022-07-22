@@ -19,6 +19,9 @@ A data frame with 126 rows and 20 variables:
   \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
 }
 }
+\source{
+Open Science Foundation, \url{https://osf.io/zwrxc}, unspecified license
+}
 \usage{
 JCD14_S2
 }

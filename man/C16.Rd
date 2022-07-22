@@ -13,6 +13,9 @@ A data frame with 120 rows and 4 variables:
   \item{\code{madjust}}{[double] mean adjustement}
 }
 }
+\source{
+Open Science Foundation,  \url{https://osf.io/aaudl}, licensed under CC0 1.0 Universal
+}
 \usage{
 C16
 }

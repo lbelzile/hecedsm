@@ -16,6 +16,9 @@ A data frame with 2931 rows and 7 variables:
   \item{\code{frequency}}{[factor] how often students verbalized during task, one of \code{never}, \code{sometimes} or \code{usually}}
 }
 }
+\source{
+Open Science Foundation, \url{https://osf.io/vgxkf}, licensed under CC-By Attribution 4.0 International
+}
 \usage{
 MULTI21_D2
 }

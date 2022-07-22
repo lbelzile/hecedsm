@@ -15,6 +15,9 @@ A data frame with 67 rows and 6 variables:
   \item{\code{gender_init}}{[factor] gender of initiator, one of \code{male}, \code{female} or \code{other}}
 }
 }
+\source{
+Research Box 289, \url{https://researchbox.org/289}, unspecified license
+}
 \usage{
 LRMM22_S3
 }

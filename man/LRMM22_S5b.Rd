@@ -14,6 +14,9 @@ A data frame with 402 rows and 5 variables:
   \item{\code{gender}}{[factor] gender of participant, one of \code{male}, \code{female} or \code{other}}
 }
 }
+\source{
+Research Box 289, \url{https://researchbox.org/289}, unspecified license
+}
 \usage{
 LRMM22_S5b
 }

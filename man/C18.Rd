@@ -16,6 +16,9 @@ A data frame with 101 rows and 7 variables:
   \item{\code{under25}}{[integer] indicator variable, 1 if the person is 25 or under, 0 otherwise}
 }
 }
+\source{
+Harvard Dataverse, \url{https://doi.org/10.7910/DVN/JGGUZE}, licensed under CC0 1.0
+}
 \usage{
 C18
 }

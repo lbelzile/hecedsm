@@ -15,6 +15,9 @@ A data frame with 1760 rows and 6 variables:
   \item{\code{acuity}}{[factor] acuity group, either \code{normal} or \code{high}}
 }
 }
+\source{
+Open Science Foundation, \url{https://osf.io/nav9h/}, unspecified license
+}
 \usage{
 LBJ17_S1A
 }

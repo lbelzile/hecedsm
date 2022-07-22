@@ -14,6 +14,9 @@ A data frame with 200 rows and 5 variables:
   \item{\code{age}}{[double] age of participant}
 }
 }
+\source{
+Research Box 289, \url{https://researchbox.org/289}, unspecified license
+}
 \usage{
 LRMM22_S1
 }

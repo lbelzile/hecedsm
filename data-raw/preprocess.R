@@ -307,10 +307,7 @@ RH19_S1 <- haven::read_sav("data-raw/source/Roczniewska_Higgins_2019.sav") |>
     age = as.integer(age),
     tenure = as.integer(tenure),
     hours_week = as.integer(hours_week))
-<<<<<<< HEAD
-=======
 
->>>>>>> update2
 levels(RH19_S1$gender) <- c("male","female")
 usethis::use_data(RH19_S1, overwrite = TRUE)
 
@@ -366,17 +363,17 @@ LC19_T2 <-
 usethis::use_data(LC19_T2, overwrite = TRUE)
 
 # Dataset 21: Saeed's NeuroIS experiment
-<<<<<<< HEAD
-=======
 
->>>>>>> update2
-AA21 <- read.csv(file = "data-raw/source/faces_repeated.csv") |>
+AA21 <- read.csv(file = "data-raw/source/AA21_N170_per_epoch.csv") |>
   tibble::as_tibble() |>
-  mutate(stimulus = factor(stimulus, labels = c("GAN2","R","GAN1")),
-         participant = factor(participant)) |>
+  filter(electrode == "Fz") |>
+  mutate(stimuli = factor(stimuli,
+                          labels = c("GAN2","R","GAN1")),
+         participant = factor(as.integer(factor(participant))),
+         epoch = factor(epoch + 1L)) |>
   rename(id = participant,
-         amplitude = value) |>
-  select(!epoch)
+         latency = Value) |>
+  select(!electrode)
 usethis::use_data(AA21, overwrite = TRUE)
 
 # Dataset 22: Liu et al. (2022) Study 3

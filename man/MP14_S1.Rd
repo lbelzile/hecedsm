@@ -12,6 +12,9 @@ A data frame with 202 rows and 3 variables:
   \item{\code{distance}}{[integer] subjective distance, a Likert scale ranging from very close (\code{1}) to very far (\code{7})}
 }
 }
+\source{
+Open Science Foundation, \url{https://osf.io/7rajd/}, unspecified license
+}
 \usage{
 MP14_S1
 }

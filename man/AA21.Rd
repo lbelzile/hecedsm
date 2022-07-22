@@ -7,27 +7,11 @@
 \format{
 A data frame with 1169 rows and 3 variables:
 \describe{
-  \item{\code{amplitude}}{[double] amplitude of  N170 EEG signal}
+  \item{\code{latency}}{[double] latency of N170 EEG signal for Fz electrode}
+  \item{\code{epoch}}{[factor] ordering of picture}
   \item{\code{stimulus}}{[factor] image shown, one of real image (\code{R}), a one-pass generative adversarial network generate image with slightly happy face (\code{GAN1}) and a two-pass GAN with an extremely happy person (\code{GAN2})}
   \item{\code{id}}{[factor] participant identifier}
 }
-<<<<<<< HEAD
-}
-\source{
-Saeed Amirabdolahian
-}
-\usage{
-AA21
-}
-\description{
-A study on the attitude towards real and computer generated image of people smiling. The response is the
-}
-\details{
-The data were collected as part of a course project during Winter 2021 (TECH 80747A Information Technologies and Neuroscience), which took place during the Covid19 pandemic. Each student participant had his own apparatus, which explains the large between-participant measurement error.
-}
-\references{
-S. Amirabdolahian and R. Ali-Adeeb (2021). \emph{Measuring face images visual fidelity in neurophysiological level: a study on facial expression manipulating technologies}, technical report, HEC Montreal.
-=======
 
 A data frame with 1169 rows and 3 variables:
 \describe{
@@ -37,7 +21,7 @@ A data frame with 1169 rows and 3 variables:
 }
 }
 \source{
-Saeed Amirabdolahian
+Saeed Amirabdolahian, personal communication, licensed under CC BY-NC-SA 4.0
 
 Saeed Amirabdolahian
 }
@@ -47,7 +31,7 @@ AA21
 AA21
 }
 \description{
-A study on the attitude towards real and computer generated image of people smiling. The response is the
+A study on the attitude towards real and computer generated image of people smiling. The response is the latency for a particular electrode located at the back of the brain.
 
 A study on the attitude towards real and computer generated image of people smiling. The response is the
 }
@@ -60,6 +44,5 @@ The data were collected as part of a course project during Winter 2021 (TECH 807
 S. Amirabdolahian and R. Ali-Adeeb (2021). \emph{Measuring face images visual fidelity in neurophysiological level: a study on facial expression manipulating technologies}, technical report, HEC Montreal.
 
 S. Amirabdolahian and R. Ali-Adeeb (2021). \emph{Measuring face images visual fidelity in neurophysiological level: a study on facial expression manipulating technologies}, technical report, HEC Montreal.
->>>>>>> update2
 }
 \keyword{datasets}

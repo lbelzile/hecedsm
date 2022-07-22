@@ -18,10 +18,11 @@
 #' \item{\code{gender}}{[factor] gender, either male or female}
 #'}
 #' @references  Bastian, B., Jetten, J., & Ferris, L. J. (2014). \emph{Pain as Social Glue: Shared Pain Increases Cooperation}. Psychological Science, 25(\bold{11}), 2079–2085. \url{https://doi.org/10.1177/0956797614545886}
+#' @source Open Science Foundation, via \url{https://osf.io/9k3sw/}, unspecified license
 "BJF14_S1"
 
 #' @title Baumann, Seifert-Kessell and Jones (1992)
-#' @description Experimental dtudy on the effectiveness of different reading strategies on understanding of children.
+#' @description Experimental study on the effectiveness of different reading strategies on understanding of children.
 #' @format A data frame with 66 rows and 6 variables:
 #' \describe{
 #'   \item{\code{group}}{[factor] experimental group, one of directed reading-thinking activity (DRTA), think-aloud (TA) and directed reading group (DR)}
@@ -32,6 +33,7 @@
 #'   \item{\code{posttest3}}{[integer] number of correct item, ranging from 0 to 56 on the Degrees of Reading Power test, a cloze test}
 #'}
 #' @references   Baumann, J. F., Seifert-Kessell, N., & Jones, L. A. (1992). \emph{Effect of Think-Aloud Instruction on Elementary Students’ Comprehension Monitoring Abilities}. Journal of Reading Behavior, 24(\bold{2}), 143–172. \url{https://doi.org/10.1080/10862969209547770}
+#' @source [carData::Baumann]
 "BSJ92"
 
 #' @title Clayton (2018)
@@ -48,6 +50,7 @@
 #'   \item{\code{under25}}{[integer] indicator variable, 1 if the person is 25 or under, 0 otherwise}
 #'}
 #' @references Clayton, A. (2018). \emph{Do Gender Quotas Really Reduce Bias? Evidence from a Policy Experiment in Southern Africa}. Journal of Experimental Political Science, 5(\bold{3}), 182-194. \url{https://doi.org/10.1017/XPS.2018.8}
+#' @source Harvard Dataverse, \url{https://doi.org/10.7910/DVN/JGGUZE}, licensed under CC0 1.0
 "C18"
 
 
@@ -63,6 +66,7 @@
 #'   \item{\code{change}}{[double] score for the "recognition of change"}
 #'}
 #' @references   Grossmann, I., & Kross, E. (2014). \emph{Exploring Solomon’s Paradox: Self-Distancing Eliminates the Self-Other Asymmetry in Wise Reasoning About Close Relationships in Younger and Older Adults.} Psychological Science, 25(\bold{8}), 1571–1580. \url{https://doi.org/10.1177/0956797614535400}
+#' @source Open Science Foundation, \url{https://osf.io/7xs93}, unspecified license
 "GK14_S3"
 
 
@@ -85,6 +89,7 @@
 #'   \item{\code{acuity}}{[factor] acuity group, either \code{normal} or \code{high}}
 #'}
 #' @references Lages, M., Boyle, S. C., & Jenkins, R. (2017). \emph{Illusory Increases in Font Size Improve Letter Recognition}. Psychological Science, 28(\bold{8}), 1180–1188. \url{https://doi.org/10.1177/0956797617705391}
+#' @source Open Science Foundation, \url{https://osf.io/nav9h/}, unspecified license
 #' @examples
 #' \dontrun{
 #' # Code to reproduce Figure 2a
@@ -121,6 +126,7 @@
 #'}
 #'
 #' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2022+). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology.  \url{https://doi.org/10.1037/pspi0000402}
+#' @source Research Box 289, \url{https://researchbox.org/289}, unspecified license
 "LRMM22_S1"
 
 
@@ -136,6 +142,7 @@
 #'   \item{\code{count}}{[integer]count of the number of children}
 #'}
 #' @references   Elliott, E. M., C. C. Morey, A.M. AuBuchon et al. (2021). \emph{Multilab Direct Replication of Flavell, Beach, and Chinsky (1966): Spontaneous Verbal Rehearsal in a Memory Task as a Function of Age}. Advances in Methods and Practices in Psychological Science. \url{https://doi.org/10.1177/25152459211018187}
+#' @source Open Science Foundation, \url{https://osf.io/vgxkf}, licensed under CC-By Attribution 4.0 International
 "MULTI21_D1"
 
 
@@ -153,6 +160,7 @@
 #'   \item{\code{frequency}}{[factor] how often students verbalized during task, one of \code{never}, \code{sometimes} or \code{usually}}
 #'}
 #' @references   Elliott, E. M., C. C. Morey, A.M. AuBuchon et al. (2021). \emph{Multilab Direct Replication of Flavell, Beach, and Chinsky (1966): Spontaneous Verbal Rehearsal in a Memory Task as a Function of Age}. Advances in Methods and Practices in Psychological Science. \url{https://doi.org/10.1177/25152459211018187}
+#' @source Open Science Foundation, \url{https://osf.io/vgxkf}, licensed under CC-By Attribution 4.0 International
 "MULTI21_D2"
 
 
@@ -179,6 +187,7 @@
 #'   \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
 #'}
 #' @references Johnson, D.J., F. Cheung and M.B. Donnellan (2014), \emph{Does Cleanliness Influence Moral Judgments}?, Social Psychology, 45(\bold{3}), 209-215, \url{https://doi.org/10.1027/1864-9335/a000186}
+#' @source Open Science Foundation, \url{https://osf.io/zwrxc}, unspecified license
 "JCD14_S2"
 
 #' @title Rosen and Jerdee (1974)
@@ -207,6 +216,7 @@
 #'}
 #' @details The specific question asked to commuters was "How far away does the [name] station feel to you?"
 #' @references Maglio, S. J., & Polman, E. (2014). \emph{Spatial orientation shrinks and expands psychological distance.} Psychological Science, 25(\bold{7}), 1345–1352. \url{https://doi.org/10.1177/0956797614530571}
+#' @source Open Science Foundation, \url{https://osf.io/7rajd/}, unspecified license
 "MP14_S1"
 
 #' @title Bobak, Mileva and Hancock (2019), Study 2
@@ -222,6 +232,7 @@
 #'   \item{\code{pcorr}}{[double] percentage of correctly detected match}
 #'}
 #' @references Bobak, A. K., Mileva, V. R., & Hancock, P. J. B. (2019). \emph{A grey area: How does image hue affect unfamiliar face matching?} Cognitive Research: Principles and Implications, 4(\bold{1}), 27. \url{https://doi.org/10.1186/s41235-019-0174-3}
+#' @source Supplementary material, article licensed under CC BY 4.0
 "BMH19_S2"
 
 
@@ -240,6 +251,7 @@
 #'   \item{\code{pjaq}}{[integer] PJAQ score, a 29-item questionnaire, which measures total pre-trial bias}
 #'}
 #' @references Lee J. Curley, Jennifer Murray, Rory MacLean, James Munro, Martin Lages, Lara A. Frumkin, Phyllis Laybourn & David Brown (2022) \emph{Verdict spotting: investigating the effects of juror bias, evidence anchors and verdict system in jurors}, Psychiatry, Psychology and Law, 29(\bold{3}), 323-344, \url{https://doi.org/10.1080/13218719.2021.1904450}
+#' @source Open Science Foundation, \url{https://osf.io/zg9hw/}, unspecified license
 "C22"
 
 #' @title Chandler (2016) replication
@@ -253,7 +265,9 @@
 #'}
 #' @references Chandler, J. J. (2016). \emph{Replication of Janiszewski & Uy (2008, Psychological Science, study 4b)}. OSF. \url{https://osf.io/aaudl}
 #' @references Janiszewski, C., & Uy, D. (2008). \emph{Precision of the anchor influences the amount of adjustment}. Psychological Science, 19(\bold{2}), 121–127. \url{https://doi.org/10.1111/j.1467-9280.2008.02057.x}
+#' @source Open Science Foundation,  \url{https://osf.io/aaudl}, licensed under CC0 1.0 Universal
 "C16"
+
 
 #' @title van Stekelenburg et al. (2021), Study 2
 #' @description The study aimed to assess changes in opinion of skeptics when faced with evidence of scientific consensus through manipulation of experimental condition explaining how to assess a news claim. The subject in question was Genetically Engineered Food (GEE).
@@ -264,6 +278,7 @@
 #'   \item{\code{condition}}{[factor] experimental condition, one of \code{Boost}, \code{BoostPlus} and \code{concensus}}
 #'}
 #' @references Stekelenburg, A. van, Schaap, G., Veling, H., & Buijzen, M. (2021). \emph{Boosting understanding and identification of scientific consensus can help to correct false beliefs.} Psychological Science, 32(\bold{10}), 1549–1565. \url{https://doi.org/10.1177/09567976211007788}
+#' @source Open Science Foundation, \url{https://osf.io/hua8v/}, licensed under CC-By Attribution 4.0 International
 "SSVB21_S2"
 
 #' @title van Stekelenburg et al. (2021), Study 3
@@ -276,6 +291,7 @@
 #'   \item{\code{mention_consensus}}{[factor] indication of whether the participant mentioned scientific consensus, either \code{yes} or \code{no}}
 #'}
 #' @references Stekelenburg, A. van, Schaap, G., Veling, H., & Buijzen, M. (2021). \emph{Boosting understanding and identification of scientific consensus can help to correct false beliefs.} Psychological Science, 32(\bold{10}), 1549–1565. \url{https://doi.org/10.1177/09567976211007788}
+#' @source Open Science Foundation, \url{https://osf.io/hua8v/}, licensed under CC-By Attribution 4.0 International
 "SSVB21_S3"
 
 #' @title Roczniewska and Higgins (2019), Study 1
@@ -298,6 +314,7 @@
 #'   \item{\code{hours_week}}{[integer] weekly number of hours working}
 #'}
 #' @references M. Roczniewska and Higgins, E.T. (2019). \emph{Messaging organizational change: How regulatory fit relates to openness to change through fairness perceptions}, Journal of Experimental Social Psychology, 85, \url{https://doi.org/10.1016/j.jesp.2019.103882}
+#' @source Open Science Foundation, \url{https://osf.io/vrazp/}, unspecified license
 "RH19_S1"
 
 
@@ -329,6 +346,7 @@
 #'}
 #' @details Distributed under CC-BY 4.0 license
 #' @references K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
+#' @source Mendeley, \url{https://doi.org/10.17632/r9t7hh7cy3.1}, licensed under CC BY 4.0
 "LC19_S1"
 
 #' @title Lee and Choi (2019), Study 2
@@ -345,6 +363,7 @@
 #' }
 #' @details Distributed under CC-BY 4.0 license
 #' @references K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
+#' @source Mendeley, \url{https://doi.org/10.17632/r9t7hh7cy3.1}, licensed under CC BY 4.0
 "LC19_S2"
 
 #' @title Lee and Choi (2019), Table 2
@@ -358,66 +377,24 @@
 #'}
 #' @details Distributed under CC-BY 4.0 license
 #' @references K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
+#' @source Mendeley, \url{https://doi.org/10.17632/r9t7hh7cy3.1}, licensed under CC BY 4.0
 "LC19_T2"
 
 
 #' @title Amirabdolahian and Ali-Adeeb (2021)
-#' @description A study on the attitude towards real and computer generated image of people smiling. The response is the
+#' @description A study on the attitude towards real and computer generated image of people smiling. The response is the latency for a particular electrode located at the back of the brain.
 #' @format A data frame with 1169 rows and 3 variables:
 #' \describe{
-#'   \item{\code{amplitude}}{[double] amplitude of  N170 EEG signal}
+#'   \item{\code{latency}}{[double] latency of N170 EEG signal for Fz electrode}
+#'   \item{\code{epoch}}{[factor] ordering of picture}
 #'   \item{\code{stimulus}}{[factor] image shown, one of real image (\code{R}), a one-pass generative adversarial network generate image with slightly happy face (\code{GAN1}) and a two-pass GAN with an extremely happy person (\code{GAN2})}
 #'   \item{\code{id}}{[factor] participant identifier}
 #'}
 #' @details The data were collected as part of a course project during Winter 2021 (TECH 80747A Information Technologies and Neuroscience), which took place during the Covid19 pandemic. Each student participant had his own apparatus, which explains the large between-participant measurement error.
-#' @source Saeed Amirabdolahian
+#' @source Saeed Amirabdolahian, personal communication, licensed under CC BY-NC-SA 4.0
 #' @references S. Amirabdolahian and R. Ali-Adeeb (2021). \emph{Measuring face images visual fidelity in neurophysiological level: a study on facial expression manipulating technologies}, technical report, HEC Montreal.
 "AA21"
 
-#' @title van Stekelenburg et al. (2021), Study 2
-#' @description The study aimed to assess changes in opinion of skeptics when faced with evidence of scientific consensus through manipulation of experimental condition explaining how to assess a news claim. The subject in question was Genetically Engineered Food (GEE).
-#' @format A data frame with 442 rows and 3 variables:
-#' \describe{
-#'   \item{\code{prior}}{[integer] negative of prior belief score}
-#'   \item{\code{post}}{[integer] post experiment score for veracity of claim}
-#'   \item{\code{condition}}{[factor] experimental condition, one of \code{Boost}, \code{BoostPlus} and \code{concensus}}
-#'}
-#' @references Stekelenburg, A. van, Schaap, G., Veling, H., & Buijzen, M. (2021). \emph{Boosting understanding and identification of scientific consensus can help to correct false beliefs.} Psychological Science, 32(\bold{10}), 1549–1565. \url{https://doi.org/10.1177/09567976211007788}
-"SSVB21_S2"
-
-#' @title van Stekelenburg et al. (2021), Study 3
-#' @description A replication of the Study 2, but with a control group and a larger sample size. The study aimed to assess changes in opinion of skeptics when faced with evidence of scientific consensus through manipulation of experimental condition explaining how to assess a news claim. The subject in question was Genetically Engineered Food (GEE).
-#' @format A data frame with 854 rows and 4 variables:
-#' \describe{
-#'   \item{\code{prior}}{[integer] negative of prior belief score}
-#'   \item{\code{post}}{[integer] post experiment score for veracity of claim}
-#'   \item{\code{condition}}{[factor] experimental condition, one of \code{BoostPlus}, \code{concensus} and \code{control}}
-#'   \item{\code{mention_consensus}}{[factor] indication of whether the participant mentioned scientific consensus, either \code{yes} or \code{no}}
-#'}
-#' @references Stekelenburg, A. van, Schaap, G., Veling, H., & Buijzen, M. (2021). \emph{Boosting understanding and identification of scientific consensus can help to correct false beliefs.} Psychological Science, 32(\bold{10}), 1549–1565. \url{https://doi.org/10.1177/09567976211007788}
-"SSVB21_S3"
-
-#' @title Roczniewska and Higgins (2019), Study 1
-#'
-#' @description Study of mediator following changes in the Polish education system, whereby middle school was due to disappear and be replaced with a new system with 8 years of elementary school and four years of high school. The authors surveyed teachers in middle and primary schools with two messages, either prevention or promotion.
-#'
-#' @format A data frame with 198 rows and 12 variables:
-#' \describe{
-#'   \item{\code{change}}{[factor] change outcome depending on school type, either middle school (\code{negative}) or primary school (\code{positive})}
-#'   \item{\code{regfocus}}{[factor] situational regulatory focus manipulation: education change message framing, either \code{prevention} or \code{promotion} message framing}
-#'   \item{\code{fluency}}{[double] mean for fluency items}
-#'   \item{\code{engagement}}{[double] mean for engagement items}
-#'   \item{\code{dprocessjustice}}{[double] mean for change process fairness perceptions items}
-#'   \item{\code{dopenness}}{[double] mean for change openness items}
-#'   \item{\code{promem}}{[double] mean for work regulatory focus promotion items}
-#'   \item{\code{prevem}}{[double] mean for work regulatory focus prevention items}
-#'   \item{\code{gender}}{[factor] gender of teacher, either \code{male} or \code{female}}
-#'   \item{\code{age}}{[integer] age of teacher}
-#'   \item{\code{tenure}}{[integer] number of years teaching}
-#'   \item{\code{hours_week}}{[integer] weekly number of hours working}
-#'}
-#' @references M. Roczniewska and Higgins, E.T. (2019). \emph{Messaging organizational change: How regulatory fit relates to openness to change through fairness perceptions}, Journal of Experimental Social Psychology, 85, \url{https://doi.org/10.1016/j.jesp.2019.103882}
-"RH19_S1"
 
 
 #' Anandarajan, Viger and Curatola (2002)
@@ -506,6 +483,7 @@
 #'   \item{\code{gender_init}}{[factor] gender of initiator, one of \code{male}, \code{female} or \code{other}}
 #'}
 #' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2022+). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology.  \url{https://doi.org/10.1037/pspi0000402}
+#' @source Research Box 289, \url{https://researchbox.org/289}, unspecified license
 "LRMM22_S3"
 
 #' @title Liu et al. (2019), Study 5b
@@ -522,6 +500,7 @@
 #'   \item{\code{gender}}{[factor] gender of participant, one of \code{male}, \code{female} or \code{other}}
 #'}
 #' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2022+). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology.  \url{https://doi.org/10.1037/pspi0000402}
+#' @source Research Box 289, \url{https://researchbox.org/289}, unspecified license
 "LRMM22_S5b"
 
 #' @title ManyLab2 replication of Risen and Gilovich (2008)
@@ -535,7 +514,7 @@
 #'}
 #' @references Klein, R. A., et al. (2018). \emph{Many labs 2: Investigating variation in replicability across samples and settings.} Advances in Methods and Practices in Psychological Science, 1(\bold{4}), 443–490. \url{https://doi.org/10.1177/2515245918810225}
 #' Risen, J. L., and T. Gilovich, (2008). \emph{Why people are reluctant to tempt fate.} Journal of Personality and Social Psychology, 95(\bold{2}), 293–307. \url{https://doi.org/10.1037/0022-3514.95.2.293}
-#' @details Data extracted from \url{https://osf.io/sg3su}
+#' @source Open Science Foundation, \url{https://osf.io/sg3su}, licensed under CC0 1.0 Universal
 "MANY18_S18"
 
 

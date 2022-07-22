@@ -13,14 +13,14 @@ A data frame with 4433 rows and 4 variables:
   \item{\code{condition}}{[factor] experimental condition, either \code{prepared} or \code{unprepared}}
 }
 }
+\source{
+Open Science Foundation, \url{https://osf.io/sg3su}, licensed under CC0 1.0 Universal
+}
 \usage{
 MANY18_S18
 }
 \description{
 The data is a replication with undergraduate students of a study. The authors measured the likelihood of bad outcome when tempting fate by not preparing in advance for a task. The replication data are unbalanced and the study failed to replicate
-}
-\details{
-Data extracted from \url{https://osf.io/sg3su}
 }
 \references{
 Klein, R. A., et al. (2018). \emph{Many labs 2: Investigating variation in replicability across samples and settings.} Advances in Methods and Practices in Psychological Science, 1(\bold{4}), 443–490. \url{https://doi.org/10.1177/2515245918810225}

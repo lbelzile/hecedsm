@@ -15,6 +15,9 @@ A data frame with 469 rows and 6 variables:
   \item{\code{change}}{[double] score for the "recognition of change"}
 }
 }
+\source{
+Open Science Foundation, \url{https://osf.io/7xs93}, unspecified license
+}
 \usage{
 GK14_S3
 }

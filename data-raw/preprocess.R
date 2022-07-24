@@ -428,6 +428,54 @@ MANY18_S18 <- read.csv("data-raw/source/ManyLabs2_S18.csv") |>
          likelihood = as.integer(likelihood))
 usethis::use_data(MANY18_S18)
 
+# Dataset 25: Brucks and Levav (2022)
+
+# Lab experiment
+d1 <- read.csv("data-raw/source/Brucks_Levav_2022/study1_data.csv") |>
+  dplyr::select(cond,
+                idea_number,
+                creative_count,
+                diff,
+                p_select_creative,
+                top_creative,
+                avg_creative) |>
+  mutate(study = "1")
+d2 <- read.csv("data-raw/source/Brucks_Levav_2022/study2_data.csv") |>
+  dplyr::select(cond,
+                idea_number,
+                creative_count,
+                diff,
+                p_select_creative,
+                top_creative,
+                avg_creative
+                ) %>%
+  mutate(study = "2")
+
+BL22_L <- rbind(d1, d2) |>
+  tibble::as_tibble() |>
+  mutate(cond = factor(cond),
+         study = factor(study)
+  ) |>
+  rename(nidea = idea_number,
+         ncreative = creative_count,
+         select_creative = p_select_creative) |>
+  select(!diff)
+usethis::use_data(BL22_L, overwrite = TRUE)
+
+# Eyetracker data
+BL22_E <- read.csv("data-raw/source/Brucks_Levav_2022/eyegaze_data_by_participant.csv") |>
+  tibble::as_tibble() |>
+  rename(id = Group.Number,
+  ) |>
+  mutate(id = factor(as.integer(factor(id))),
+         writer = writer == "w",
+         cond = factor(cond)) |>
+  select(!total_time)
+usethis::use_data(BL22_E, overwrite = TRUE)
+
+
+
+
 #sinew::makeOxygen()
 
 # Generate skeleton for documentation

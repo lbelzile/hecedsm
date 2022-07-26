@@ -46,6 +46,7 @@ LRMM22_S1 <- haven::read_sav(file = "data-raw/source/LRMM22_S1.sav") |>
                 gender = haven::as_factor(gender, levels = "labels"),
                 age = as.integer(age))
 levels(LRMM22_S1$form) <- c("email","text","phone","other")
+levels(LRMM22_S1$gender) <- tolower(levels(LRMM22_S1$gender))
 usethis::use_data(LRMM22_S1, overwrite = TRUE)
 
 

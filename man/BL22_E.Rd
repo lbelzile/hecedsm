@@ -5,7 +5,15 @@
 \alias{BL22_E}
 \title{Brucks and Levav (2022), eyetracker data}
 \format{
-
+A data frame with 270 rows and 6 variables:
+\describe{
+ \item{\code{id}}{[factor] identifier of dyad}
+ \item{\code{writer}}{[logical] whether the person was randomly assigned to be the writer}
+  \item{\code{cond}}{[factor] experimental condition, either \code{video} for videoconferencing or \code{f2f} for face-to-face}
+  \item{\code{partner_time}}{[double] time spent looking at partner (in seconds)}
+  \item{\code{task_time}}{[integer] time spent looking at the task computer (in seconds)}
+  \item{\code{room_time}}{[double] time spent looking at room (in seconds)}
+}
 }
 \source{
 Research Box 282, \url{https://researchbox.org/282}, unspecified license

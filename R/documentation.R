@@ -469,7 +469,7 @@
 #' @details The authors measured via an eyetracker the time spent gazing at the room, at the other partner and at the task during their lab experiment
 #'
 #' @format A data frame with 270 rows and 6 variables:
-#' \describe
+#' \describe{
 #'  \item{\code{id}}{[factor] identifier of dyad}
 #'  \item{\code{writer}}{[logical] whether the person was randomly assigned to be the writer}
 #'   \item{\code{cond}}{[factor] experimental condition, either \code{video} for videoconferencing or \code{f2f} for face-to-face}

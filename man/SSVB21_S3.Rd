@@ -10,7 +10,8 @@ A data frame with 854 rows and 4 variables:
   \item{\code{prior}}{[integer] negative of prior belief score}
   \item{\code{post}}{[integer] post experiment score for veracity of claim}
   \item{\code{condition}}{[factor] experimental condition, one of \code{BoostPlus}, \code{concensus} and \code{control}}
-  \item{\code{mention_consensus}}{[factor] indication of whether the participant mentioned scientific consensus, either \code{yes} or \code{no}}
+  \item{\code{nconsensus}}{[integer] number of mentions of scientific consensus by the participant (zero indicates no mention)}
+  \item{\code{trust}}{[integer] score for the trust in scientists}
 }
 }
 \source{

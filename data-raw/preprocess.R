@@ -103,7 +103,6 @@ usethis::use_data(BSJ92, overwrite = TRUE)
 
 
 # Dataset 7: Lages, Boyle and Jenkins (2017)
-library(tidyverse)
 url <- "https://osf.io/tnjsu/download"
 lages <- read.csv(url, header = TRUE)
 # The data is not documented and the labels
@@ -276,6 +275,8 @@ SSVB21_S2 <- read.csv("data-raw/source/vanStekelenburg2021S2.csv",
             post = post,
             condition = factor(condition))
 usethis::use_data(SSVB21_S2)
+
+
 SSVB21_S3 <- read.csv("data-raw/source/vanStekelenburg2021S3.csv",
                header = TRUE) |>
   filter(Prior > 0) |>
@@ -287,8 +288,8 @@ SSVB21_S3 <- read.csv("data-raw/source/vanStekelenburg2021S3.csv",
   transmute(prior = Prior,
             post = Post,
             condition = Condition,
-            mention_consensus = factor(Consensus_mention_auto,
-                                       labels = c("no","yes")))
+            nconsensus = as.integer(countMC_auto),
+trust = TrustScientists)
 usethis::use_data(SSVB21_S3, overwrite = TRUE)
 
 # Dataset 17: Roczniewska and Higgins (2019)

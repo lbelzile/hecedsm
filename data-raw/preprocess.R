@@ -25,7 +25,8 @@ BJF14_S1 <- dat_raw_pain |>
             groupsize = groupsize,
             age = subage,
             gender = as_factor(subgender)
-            )
+            ) |>
+  tibble::as_tibble()
 usethis::use_data(BJF14_S1, overwrite = TRUE)
 # To see the labels for condition, check the raw data
 dat_raw_pain$condition |> attr('labels')
@@ -97,7 +98,8 @@ BSJ92 <-
          posttest3 = post.test.3) |>
   mutate(group = fct_recode(.f = group,
                             DR = "Basal",
-                            TA = "Strat"))
+                            TA = "Strat")) |>
+  tibble::as_tibble()
 usethis::use_data(BSJ92, overwrite = TRUE)
 
 
@@ -218,7 +220,7 @@ MP14_S1 <- read_csv("https://edsm.rbind.io/data/MaglioPolman2014S1.csv",
   transmute(station = fct_relevel(factor(STN_NAME, labels = labs), olabs),
             direction = factor(DIRECTION, labels = tolower(levels(DIRECTION))),
             distance = DISTANCE)
-usethis::use_data(MP14_S1)
+usethis::use_data(MP14_S1, overwrite = TRUE)
 
 # Dataset 12: Bobak, Mileva and Hancock (2019)
 BMH19_S2 <- read.csv("data-raw/source/Bobak2019S2.csv",
@@ -274,7 +276,7 @@ SSVB21_S2 <- read.csv("data-raw/source/vanStekelenburg2021S2.csv",
   transmute(prior = prior,
             post = post,
             condition = factor(condition))
-usethis::use_data(SSVB21_S2)
+usethis::use_data(SSVB21_S2, overwrite = TRUE)
 
 
 SSVB21_S3 <- read.csv("data-raw/source/vanStekelenburg2021S3.csv",
@@ -333,7 +335,8 @@ LC19_S1 <- read.csv("data-raw/source/LeeChoi2019S1.csv") |>
                                             "female")),
          prodeval = (att1 + att2 + att3)/3) |>
   select(!c(att1, att2, att3, cond)) |>
-  dplyr::relocate(c(prodeval, familiarity, consistency, Gender, Age))
+  dplyr::relocate(c(prodeval, familiarity, consistency, Gender, Age)) |>
+  tibble::as_tibble()
 colnames(LC19_S1) <- tolower(colnames(LC19_S1))
 usethis::use_data(LC19_S1, overwrite = TRUE)
 
@@ -361,7 +364,8 @@ LC19_T2 <-
                    "6"), each = 6)),
              image = factor(rep(rep(c("1", "6"), each = 3L), length.out = 12L)),
              expected = factor(rep(c("one","six", "not sure"), length.out = 12L)),
-             count = as.integer(c(41,5,5,40,7,5,13,30,4,4,38,8)))
+             count = as.integer(c(41,5,5,40,7,5,13,30,4,4,38,8))) |>
+  tibble::as_tibble()
 usethis::use_data(LC19_T2, overwrite = TRUE)
 
 # Dataset 21: Saeed's NeuroIS experiment
@@ -428,9 +432,9 @@ MANY18_S18 <- read.csv("data-raw/source/ManyLabs2_S18.csv") |>
          condition = factor(condition),
          lab = factor(lab),
          likelihood = as.integer(likelihood))
-usethis::use_data(MANY18_S18)
+usethis::use_data(MANY18_S18, overwrite = TRUE)
 
-# Dataset 25: Brucks and Levav (2022)
+# Datasets 25 and 26: Brucks and Levav (2022)
 
 # Lab experiment
 d1 <- read.csv("data-raw/source/Brucks_Levav_2022/study1_data.csv") |>
@@ -475,6 +479,19 @@ BL22_E <- read.csv("data-raw/source/Brucks_Levav_2022/eyegaze_data_by_participan
   select(!total_time)
 usethis::use_data(BL22_E, overwrite = TRUE)
 
+# Dataset 27: Duke and Amir (2022+)
+DA22_E2 <- read.csv("data-raw/source/DukeAmir2022E2.csv") |>
+  subset(nonsense_total==0) |>
+  dplyr::mutate(explanation_length = nchar(why)) |>
+  dplyr::select(gender, age, format, purchased, amount, mean_val, explanation_length) |>
+  dplyr::mutate(gender = factor(gender, labels = c("male","female","other")),
+                format = factor(format)) |>
+  dplyr::rename(meanval = mean_val,
+                elength = explanation_length) |>
+  tibble::as_tibble()
+levels(DA22_E2$format) <- c("quantity-integrated",
+                            "quantity-sequential")
+usethis::use_data(DA22_E2, overwrite = TRUE)
 
 
 

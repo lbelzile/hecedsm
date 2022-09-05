@@ -208,7 +208,6 @@ count = c(21L,14L,3L,10L,11L,5L,9L,20L)
 usethis::use_data(RJ74, overwrite = TRUE)
 
 # Dataset 11: Maglio and Polman (2014)
-library(tidyverse)
 # Name of subway stations
 labs <- c("Bloor-Yonge", "Sherbourne", "Spadina", "St. George")
 # Order of stations from West to East is
@@ -493,7 +492,11 @@ levels(DA22_E2$format) <- c("quantity-integrated",
                             "quantity-sequential")
 usethis::use_data(DA22_E2, overwrite = TRUE)
 
-
+data(arithmetic, package = "SMPracticals")
+arithmetic <- arithmetic |>
+   dplyr::mutate(group = factor(group, labels = c("control 1", "control 2", "praise", "reprove", "ignore"))) |>
+  dplyr::rename(score = y)
+usethis::use_data(arithmetic, overwrite = TRUE)
 
 #sinew::makeOxygen()
 

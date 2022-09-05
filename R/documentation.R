@@ -504,3 +504,29 @@
 #' @source Research Box 602, \url{https://researchbox.org/602}, unspecified license.
 #' @references Duke, K.E. and O. Amir (2022+). \emph{The Importance of Selling Formats: When Integrating Purchase and Quantity Decisions Increases Sales}, Marketing Science, \url{https://doi.org/10.1177/0956797614545886}
 "DA22_E2"
+
+#' @title Teaching Arithmetic Data
+#'
+#' @description 45 school pupils were divided at random into five groups of size 9.
+#' Groups A (\code{control 1}) and B (\code{control 2}) were taught arithmetic in
+#' separate classes by the usual method. Groups C (\code{praise}), D (\code{reprove}),
+#' and E (\code{ignore}) were taught together for several days.  On each day group
+#' C were publically praised, group D were publically reproved, and group E
+#' were ignored.  The responses are from a standard test taken by all pupils at
+#' the end of the period.
+#'
+#' A data frame with 45 rows and 2 variables:
+#' \describe{
+#' \item{group}{[factor] experimental group, one of \code{control 1}, \code{control 2}, \code{praise}, \code{reprove} or \code{ignore}}
+#' \item{score}{[numeric] score on arithmetic test}
+#' }
+#' @references Davison, A. C. (2003) \emph{Statistical Models}.  Cambridge
+#' University Press. Page 427.
+#' @source Unpublished lecture notes, Imperial College, London. Extracted from the SMPractical package and distributed under GPL-3 license
+#'
+#' @keywords datasets
+#' @examples
+#'
+#' data(arithmetic)
+#' anova(aov(score ~ group, data = arithmetic))
+"arithmetic"

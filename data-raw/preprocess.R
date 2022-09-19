@@ -478,7 +478,18 @@ BL22_E <- read.csv("data-raw/source/Brucks_Levav_2022/eyegaze_data_by_participan
   select(!total_time)
 usethis::use_data(BL22_E, overwrite = TRUE)
 
-# Dataset 27: Duke and Amir (2022+)
+# Dataset 27 and 28: Duke and Amir (2022+)
+DA22_E1 <- read.csv("data-raw/source/DukeAmir2022E1.csv") |>
+  tibble::as_tibble() |>
+  dplyr::rename(format = cond) |>
+  mutate(format = factor(format),
+         gender = factor(gender, labels = c("male",
+                                            "female",
+                                            "other")))
+levels(DA22_E1$format) <- c("quantity-integrated",
+                            "quantity-sequential")
+usethis::use_data(DA22_E1, overwrite = TRUE)
+
 DA22_E2 <- read.csv("data-raw/source/DukeAmir2022E2.csv") |>
   subset(nonsense_total==0) |>
   dplyr::mutate(explanation_length = nchar(why)) |>
@@ -491,6 +502,8 @@ DA22_E2 <- read.csv("data-raw/source/DukeAmir2022E2.csv") |>
 levels(DA22_E2$format) <- c("quantity-integrated",
                             "quantity-sequential")
 usethis::use_data(DA22_E2, overwrite = TRUE)
+
+
 
 data(arithmetic, package = "SMPracticals")
 arithmetic <- arithmetic |>

@@ -511,6 +511,28 @@ arithmetic <- arithmetic |>
   dplyr::rename(score = y)
 usethis::use_data(arithmetic, overwrite = TRUE)
 
+popcorn <- read.table("source/popcorn.txt",
+                      header = TRUE) |>
+  tibble::as_tibble() |>
+  dplyr::mutate(brand = factor(brand, labels = c("national1", "national2", "local")),
+                power = factor(power, labels = c("500W", "600W")),
+                time = factor(time, labels = c("4m", "4m30s","5m")))
+usethis::use_data(popcorn, overwrite = TRUE)
+
+
+# Dataset 29: Sharma, Tully and Cryder (2021),
+# Supplemental study 5
+# Source: https://researchbox.org/111
+data <- readxl::read_xlsx('data-raw/source/Sharma_Tully_Cryder-2021-Sup_study5.xlsx')
+
+
+STC21_SS5 <- data |>
+  dplyr::filter(IMC_correct == 1) |>
+  dplyr::transmute(purchase = factor(tolower(Cond_Purchase)),
+            debttype = factor(Condition),
+            likelihood = meanDVs)
+usethis::use_data(STC21_SS5, overwrite = TRUE)
+
 #sinew::makeOxygen()
 
 # Generate skeleton for documentation

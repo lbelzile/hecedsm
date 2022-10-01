@@ -19,7 +19,7 @@ Open Science Foundation, \url{https://osf.io/7rajd/}, unspecified license
 MP14_S1
 }
 \description{
-Authors measured the subjective distance on travel from one subway station (Bay) and asked the subjective distance to another station, at most two stations away from the location of the experiment. The other factor manipulated was the direction of travel.The data are suitable for a two-way analysis of variance.
+Authors measured the subjective distance on travel from one subway station (Bay) and asked the subjective distance to another station, at most two stations away from the location of the experiment. The other factor manipulated was the direction of travel. The data are suitable for a two-way analysis of variance.
 }
 \details{
 The specific question asked to commuters was "How far away does the [name] station feel to you?"

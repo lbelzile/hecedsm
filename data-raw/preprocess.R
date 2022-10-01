@@ -511,7 +511,7 @@ arithmetic <- arithmetic |>
   dplyr::rename(score = y)
 usethis::use_data(arithmetic, overwrite = TRUE)
 
-popcorn <- read.table("source/popcorn.txt",
+popcorn <- read.table("data-raw/source/popcorn.txt",
                       header = TRUE) |>
   tibble::as_tibble() |>
   dplyr::mutate(brand = factor(brand, labels = c("national1", "national2", "local")),
@@ -519,6 +519,13 @@ popcorn <- read.table("source/popcorn.txt",
                 time = factor(time, labels = c("4m", "4m30s","5m")))
 usethis::use_data(popcorn, overwrite = TRUE)
 
+teller <- read.table("data-raw/source/teller.txt",
+                      header = TRUE) |>
+  tibble::as_tibble() |>
+  dplyr::select(!id) |>
+  dplyr::mutate(course = factor(tolower(course)),
+         nweeks = factor(nweeks))
+usethis::use_data(teller, overwrite = TRUE)
 
 # Dataset 29: Sharma, Tully and Cryder (2021),
 # Supplemental study 5

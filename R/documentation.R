@@ -207,7 +207,7 @@
 
 #' @title Maglio and Polman (2014), Study 2
 #'
-#' @description Authors measured the subjective distance on travel from one subway station (Bay) and asked the subjective distance to another station, at most two stations away from the location of the experiment. The other factor manipulated was the direction of travel.The data are suitable for a two-way analysis of variance.
+#' @description Authors measured the subjective distance on travel from one subway station (Bay) and asked the subjective distance to another station, at most two stations away from the location of the experiment. The other factor manipulated was the direction of travel. The data are suitable for a two-way analysis of variance.
 #'
 #' @format A data frame with 202 rows and 3 variables:
 #' \describe{
@@ -561,3 +561,17 @@
 #' @source Research Box 111, \url{https://researchbox.org/111}, unspecified license.
 #' @references Sharma, E., Tully, S. and C. Cryder (2021). \emph{Psychological Ownership of (Borrowed) Money}, Journal of Marketing Research, \bold{58}(3), \url{https://doi.org/10.1177/0022243721993816}
 "STC21_SS5"
+
+#' Teller data
+#'
+#' Fictional data from Berger et al. (2018) discussed
+#'  in Example 6.4 (First United Federal Bank of Boston). One hunder bank tellers were offered one-on-one training with an experienced clerk for a certain number of weeks on the job, possibly in addition to formal training period. The goal of the study is to determine which combination is most efficient at reducing the monthly error in balance (in dollars).
+
+#' @format A data frame with 100 rows and 3 variables:
+#' \describe{
+#'   \item{\code{course}}{[factor] whether a formal training was offered (either \code{no} or \code{yes})}
+#'   \item{\code{nweeks}}{[factor] number of weeks of training one-to-one with an experienced clerk}
+#'   \item{\code{error}}{[double] monthly error in balance account}
+#'}
+#'
+#' @source Berger, P.D, Maurerer, R.E. and G.B. Celli (2018). Experimental Design: With Application in Management, Engineering, and the Sciences, 2nd edition, Springer.

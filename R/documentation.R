@@ -562,10 +562,58 @@
 #' @references Sharma, E., Tully, S. and C. Cryder (2021). \emph{Psychological Ownership of (Borrowed) Money}, Journal of Marketing Research, \bold{58}(3), \url{https://doi.org/10.1177/0022243721993816}
 "STC21_SS5"
 
+#' Effects of verbal feedback
+#'
+#' Fictional balanced 3 by 3 by 2 design with five replicatoins from Keppel and Wickens (Chapter 21).
+#' The scenario considered 'effects of verbal feedback given during the acquisition of different types of learning material on memory tested one week later. The response is the number of words remembers from a list of vocabulary words in the lab.
+#' @source Keppel and Wickens (2004), Table 21.1, p.466
+#' @references Keppel, G., & Wickens, T. D. (2004). \emph{Design and analysis: A researcher’s handbook.}, 4th edition, Pearson Prentice Hall. 
+#' @format A data frame with 90 rows and 4 variables:
+#' \describe{
+#'   \item{\code{feedback}}{[factor] feedback manipulation during the learning portion of the experiment, one of \code{none}, \code{positive} or \code{negative}}
+#'   \item{\code{material}}{#' @format A data frame with 90 rows and 4 variables:
+#' \describe{
+#'   \item{\code{feedback}}{[factor]}
+#'   \item{\code{material}}{[factor] type of words on the list, either \code{"low freq/low emotion"}, \code{high freq/low emotion} or \code{high freq/high emotion"}}
+#'   \item{\code{age}}{[factor] age group, either fifth grader (\code{fifth grader}) or high-school seniors (\code{seniors})}
+#'   \item{\code{words}}{[integer] number of words recalled one week after experiment} 
+#'}
+"words"
+
+#' Popcorn experiment
+#' 
+#' Experiment conducted by Jianjian Gong, Chongqing Yan, and Lihua Yang circa 1992. The experiment tried to determine, among three brands of popcorn, which lead to the highest proportion of popped kernels. Power study showed that four replications was needed, but ressources allowed only two replications. This is a completely randomized 3 by 2 by 3 balanced design with 2 replications.
+#' @format A data frame with 36 rows and 4 variables:
+#' \describe{
+#'   \item{\code{brand}}{[factor] brand of the popcorn 3.5 ounce package, one of two national brands and one local brand}
+#'   \item{\code{power}}{[factor] power rating of the microwave, either \code{500W} or \code{600W} watts}
+#'   \item{\code{time}}{[factor] cooking time, either 4, 4.5 or 5 minutes}
+#'   \item{\code{percentage}}{[double] percentage of popped kernels out of the bag} 
+#'}
+#' @source Section 7.4 of Dean, Voss and Draguljić (2017). 
+#' @references Dean, A., Voss, D., & Draguljić, D. (2017). Design and analysis of experiments. Springer.
+"popcorn" 
+
+#'
+#' Fictional balanced 3 by 3 by 2 design with five replicatoins from Keppel and Wickens (Chapter 21).
+#' The scenario considered 'effects of verbal feedback given during the acquisition of different types of learning material on memory tested one week later. The response is the number of words remembers from a list of vocabulary words in the lab.
+#' @source Keppel and Wickens (2004), Table 21.1, p.466
+#' @references Keppel, G., & Wickens, T. D. (2004). \emph{Design and analysis: A researcher’s handbook.}, 4th edition, Pearson Prentice Hall. 
+#' @format A data frame with 90 rows and 4 variables:
+#' \describe{
+#'   \item{\code{feedback}}{[factor] feedback manipulation during the learning portion of the experiment, one of \code{none}, \code{positive} or \code{negative}}
+#'   \item{\code{material}}{#' @format A data frame with 90 rows and 4 variables:
+#' \describe{
+#'   \item{\code{feedback}}{[factor]}
+#'   \item{\code{material}}{[factor] type of words on the list, either \code{"low freq/low emotion"}, \code{high freq/low emotion} or \code{high freq/high emotion"}}
+#'   \item{\code{age}}{[factor] age group, either fifth grader (\code{fifth grader}) or high-school seniors (\code{seniors})}
+#'   \item{\code{words}}{[integer] number of words recalled one week after experiment} 
+#'}
+"words"
+
 #' Teller data
 #'
-#' Fictional data from Berger et al. (2018) discussed
-#'  in Example 6.4 (First United Federal Bank of Boston). One hunder bank tellers were offered one-on-one training with an experienced clerk for a certain number of weeks on the job, possibly in addition to formal training period. The goal of the study is to determine which combination is most efficient at reducing the monthly error in balance (in dollars).
+#' Fictional data from Berger et al. (2018) discussed  in Example 6.4 (First United Federal Bank of Boston). One hunder bank tellers were offered one-on-one training with an experienced clerk for a certain number of weeks on the job, possibly in addition to formal training period. The goal of the study is to determine which combination is most efficient at reducing the monthly error in balance (in dollars).
 
 #' @format A data frame with 100 rows and 3 variables:
 #' \describe{

@@ -527,6 +527,18 @@ teller <- read.table("data-raw/source/teller.txt",
          nweeks = factor(nweeks))
 usethis::use_data(teller, overwrite = TRUE)
 
+words <- read.table("data-raw/source/words.txt", header = TRUE) |>
+  tibble::as_tibble() |>
+   mutate(feedback = factor(feedback, labels = c("none",
+                                                 "positive",
+                                                 "negative")),
+          material = factor(material, labels = c("low freq/low emotion",
+                                                 "high freq/low emotion",
+                                                 "high freq/high emotion")),
+          age = factor(age, labels = c("fifth grade",
+                                       "senior")))
+usethis::use_data(words, overwrite = TRUE)
+
 # Dataset 29: Sharma, Tully and Cryder (2021),
 # Supplemental study 5
 # Source: https://researchbox.org/111

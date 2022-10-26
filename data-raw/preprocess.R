@@ -554,6 +554,8 @@ usethis::use_data(STC21_SS5, overwrite = TRUE)
 
 #sinew::makeOxygen()
 
+# Data 30: Walters and al. (2022+)
+# Study 1 (logistic regression)
 data <- readr::read_csv(file = "data-raw/source/WUTEF22_S1.csv")
 colnames(data) <- tolower(colnames(data))
 WUTEF22_S1 <- data |>
@@ -582,6 +584,97 @@ WUTEF22_S1 <- data |>
          ) |>
   tibble::as_tibble() |>
   usethis::use_data(WUTEF22_S1, overwrite = TRUE)
+
+# Data 31: Halevy and Berson (2022)
+HB22_S5 <- haven::read_sav("data-raw/source/JCR 2022 Study 5.sav") |>
+  select(!c(Q10, citizenship, citizenship_2_TEXT)) |>
+  rename(curstate = condition_state_now,
+         predout = condition_dv_peace_war) |>
+  mutate(likelihood_1yr = case_when(
+    curstate == 0 & predout == 0 ~ Peace___peace_1,
+    curstate == 0 & predout == 1 ~ Peace_war_1,
+    curstate == 1 & predout == 0 ~ War_Peace_1,
+    curstate == 1 & predout == 1 ~ War_War_1),
+         likelihood_20yr = case_when(
+           curstate == 0 & predout == 0 ~ Peace___peace_2,
+           curstate == 0 & predout == 1 ~ Peace_war_2,
+           curstate == 1 & predout == 0 ~ War_Peace_2,
+           curstate == 1 & predout == 1 ~ War_War_2)
+         ) |>
+    select(c(age, gender, curstate, predout,
+             likelihood_1yr, likelihood_20yr)) |>
+  mutate(id = 1:n(),
+         age = as.integer(age) + 17L,
+         gender = factor(gender,
+                            labels = tolower(levels(as_factor(gender)))),
+         curstate = factor(curstate, labels = c("peace","war")),
+         predout = factor(predout, labels = c("peace","war")),
+         likelihood_1yr = as.integer(likelihood_1yr),
+         likelihood_20yr = as.integer(likelihood_20yr)
+         ) |>
+  pivot_longer(cols = starts_with("lik"),
+               names_to = "tempdist",
+               values_to = "likelihood",
+               names_transform = list(tempdist = as_factor),
+               names_prefix = "likelihood_") |>
+  relocate(id, likelihood, curstate, predout, tempdist, age, gender)
+usethis::use_data(HB22_S5, overwrite = TRUE)
+
+# Data 32: Labonte-Lemoyne et al. (Tech3Lab)
+sexe <- readxl::read_xlsx(path = "data-raw/source/data_Tech3Lab.xlsx",
+                       sheet = 3)$Sexe
+LJLSFBM20 <- readxl::read_xlsx(path = "data-raw/source/data_Tech3Lab.xlsx",
+                               sheet = 4) |>
+  rename_all(tolower) |>
+  mutate(subject_id = factor(as.integer(relevel(factor(subject_id), ref = "35"))),
+         sex = factor(sexe, labels = c("man","woman"))) |>
+  select(!(att_1:satis_3)) |>
+  rename(id = subject_id,
+         order = random,
+         task_diff = diff_tache,
+         phys_demand = demand_phys,
+         attention = att,
+         satisfaction = satis) |>
+  dplyr::arrange(id, order) |>
+  relocate(bmi, .after = parietal_beta) |>
+  relocate(sex, .after = bmi) |>
+  mutate(order = as.integer(order),
+         position = factor(position, labels = c("standing","sitting")),
+         phys_demand = factor(phys_demand, labels = c("mouse","touchpad")),
+         task_diff = factor(task_diff, labels = c("easy", "difficult"))
+         ) |>
+  rename(ies = ies_stimulus_global)
+usethis::use_data(LJLSFBM20, overwrite = TRUE)
+
+BRLS21_T3 <- readxl::read_xlsx(path = "data-raw/source/data_Tech3Lab.xlsx",
+                            sheet = 2) |>
+  rename_all(tolower) |>
+  mutate(task = factor(task, labels = c("phone","watch", "speaker","texting")),
+         id = rep(factor(sample.int(n()/4, size = n()/4)), each  = 4L),
+         total_violation = as.integer(total_violation)
+         ) |>
+           select(!participant) |>
+  rename(nviolation = total_violation)
+
+usethis::use_data(BRLS21_T3, overwrite = TRUE)
+
+
+BRLS21_EDA <- read.csv(
+  file = "data-raw/source/Brodeur20_EDA.csv",
+  header = TRUE) |>
+  tibble::as_tibble() |>
+  mutate(relative_time = as.integer(relative_time/1000L),
+         id = factor(as.integer(factor(participant))),
+         task = factor(tache, labels = c("baseline", "cell", "voicecall", "watch", paste0("task",1:6)))) |>
+           filter(!task  %in% paste0("task",1:6)) |>
+  select(!c(absolute_time,
+         tache,
+         participant)) |>
+  mutate(task = factor(task)) |>
+  rename(reltime = relative_time) |>
+  relocate(id, reltime, task) |>
+  arrange(id, reltime)
+usethis::use_data(BRLS21_EDA, overwrite = TRUE)
 
 # Generate skeleton for documentation
 for(file in list.files("../data",full.names = TRUE)){

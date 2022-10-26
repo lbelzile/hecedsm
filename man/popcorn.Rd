@@ -10,7 +10,7 @@ A data frame with 36 rows and 4 variables:
   \item{\code{brand}}{[factor] brand of the popcorn 3.5 ounce package, one of two national brands and one local brand}
   \item{\code{power}}{[factor] power rating of the microwave, either \code{500W} or \code{600W} watts}
   \item{\code{time}}{[factor] cooking time, either 4, 4.5 or 5 minutes}
-  \item{\code{percentage}}{[double] percentage of popped kernels out of the bag} 
+  \item{\code{percentage}}{[double] percentage of popped kernels out of the bag}
 }
 }
 \source{

@@ -567,47 +567,41 @@
 #' Fictional balanced 3 by 3 by 2 design with five replicatoins from Keppel and Wickens (Chapter 21).
 #' The scenario considered 'effects of verbal feedback given during the acquisition of different types of learning material on memory tested one week later. The response is the number of words remembers from a list of vocabulary words in the lab.
 #' @source Keppel and Wickens (2004), Table 21.1, p.466
-#' @references Keppel, G., & Wickens, T. D. (2004). \emph{Design and analysis: A researcher’s handbook.}, 4th edition, Pearson Prentice Hall. 
+#' @references Keppel, G., & Wickens, T. D. (2004). \emph{Design and analysis: A researcher’s handbook.}, 4th edition, Pearson Prentice Hall.
 #' @format A data frame with 90 rows and 4 variables:
 #' \describe{
 #'   \item{\code{feedback}}{[factor] feedback manipulation during the learning portion of the experiment, one of \code{none}, \code{positive} or \code{negative}}
-#'   \item{\code{material}}{#' @format A data frame with 90 rows and 4 variables:
-#' \describe{
-#'   \item{\code{feedback}}{[factor]}
 #'   \item{\code{material}}{[factor] type of words on the list, either \code{"low freq/low emotion"}, \code{high freq/low emotion} or \code{high freq/high emotion"}}
 #'   \item{\code{age}}{[factor] age group, either fifth grader (\code{fifth grader}) or high-school seniors (\code{seniors})}
-#'   \item{\code{words}}{[integer] number of words recalled one week after experiment} 
+#'   \item{\code{words}}{[integer] number of words recalled one week after experiment}
 #'}
 "words"
 
 #' Popcorn experiment
-#' 
+#'
 #' Experiment conducted by Jianjian Gong, Chongqing Yan, and Lihua Yang circa 1992. The experiment tried to determine, among three brands of popcorn, which lead to the highest proportion of popped kernels. Power study showed that four replications was needed, but ressources allowed only two replications. This is a completely randomized 3 by 2 by 3 balanced design with 2 replications.
 #' @format A data frame with 36 rows and 4 variables:
 #' \describe{
 #'   \item{\code{brand}}{[factor] brand of the popcorn 3.5 ounce package, one of two national brands and one local brand}
 #'   \item{\code{power}}{[factor] power rating of the microwave, either \code{500W} or \code{600W} watts}
 #'   \item{\code{time}}{[factor] cooking time, either 4, 4.5 or 5 minutes}
-#'   \item{\code{percentage}}{[double] percentage of popped kernels out of the bag} 
+#'   \item{\code{percentage}}{[double] percentage of popped kernels out of the bag}
 #'}
-#' @source Section 7.4 of Dean, Voss and Draguljić (2017). 
+#' @source Section 7.4 of Dean, Voss and Draguljić (2017).
 #' @references Dean, A., Voss, D., & Draguljić, D. (2017). Design and analysis of experiments. Springer.
-"popcorn" 
+"popcorn"
 
 #'
 #' Fictional balanced 3 by 3 by 2 design with five replicatoins from Keppel and Wickens (Chapter 21).
 #' The scenario considered 'effects of verbal feedback given during the acquisition of different types of learning material on memory tested one week later. The response is the number of words remembers from a list of vocabulary words in the lab.
 #' @source Keppel and Wickens (2004), Table 21.1, p.466
-#' @references Keppel, G., & Wickens, T. D. (2004). \emph{Design and analysis: A researcher’s handbook.}, 4th edition, Pearson Prentice Hall. 
+#' @references Keppel, G., & Wickens, T. D. (2004). \emph{Design and analysis: A researcher’s handbook.}, 4th edition, Pearson Prentice Hall.
 #' @format A data frame with 90 rows and 4 variables:
 #' \describe{
 #'   \item{\code{feedback}}{[factor] feedback manipulation during the learning portion of the experiment, one of \code{none}, \code{positive} or \code{negative}}
-#'   \item{\code{material}}{#' @format A data frame with 90 rows and 4 variables:
-#' \describe{
-#'   \item{\code{feedback}}{[factor]}
 #'   \item{\code{material}}{[factor] type of words on the list, either \code{"low freq/low emotion"}, \code{high freq/low emotion} or \code{high freq/high emotion"}}
 #'   \item{\code{age}}{[factor] age group, either fifth grader (\code{fifth grader}) or high-school seniors (\code{seniors})}
-#'   \item{\code{words}}{[integer] number of words recalled one week after experiment} 
+#'   \item{\code{words}}{[integer] number of words recalled one week after experiment}
 #'}
 "words"
 
@@ -623,3 +617,82 @@
 #'}
 #'
 #' @source Berger, P.D, Maurerer, R.E. and G.B. Celli (2018). Experimental Design: With Application in Management, Engineering, and the Sciences, 2nd edition, Springer.
+
+#' Temporal distance on expectations of war and peace
+#'
+#' Study 5 of Halevy and Berson (2022), who aimed to demonstrate that events in the distant future rather
+#' than the near future influenced the prospect of peace, along with the degree of abstractness.
+#' The experimental design is a "2 (current state: war vs. peace) by 2 (predicted outcome: war vs. peace) by 2 (temporal distance: next year vs. twenty years into the future) mixed design", with current state and predicted outcome as between-subject factors and temporal distance as within-subject factor. The response is the estimated likelihood of each outcome on a 7-point Likert scale ranging from extremely unlikely (1) to extremely likely (7). Data are presented in long-format.
+#' The question asked was of the form «There is currently [war/peace] between the two tribes in Velvetia. - Thinking about [next year/in 20 years], how likely is it that there will be [war/peace] in Velvetia?»
+#'
+#' @format A data frame with 554 rows and 7 variables:
+#' \describe{
+#'   \item{\code{id}}{[integer] identifier of participant}
+#'   \item{\code{likelihood}}{[integer] likelihood of an outcome on a 7 point Likert scale given the current state}
+#'   \item{\code{curstate}}{[factor] factor describing the current state of Velvetia, one of \code{peace} or \code{war}}
+#'   \item{\code{predout}}{[factor] predicted outcome, one of \code{peace} or \code{war}}
+#'   \item{\code{tempdist}}{[factor] within-subject factor for the temporal distance, either next year (\code{1yr}) or far future (\code{20yr})}
+#'   \item{\code{age}}{[integer] age of participant}
+#'   \item{\code{gender}}{[factor] gender of participant}
+#'}
+#' @source ResearchBox 567, \url{https://researchbox.org/567}, unspecified license
+#' @references Halevy, N., & Berson, Y. (2022). Thinking about the distant future promotes the prospects of peace: A construal-level perspective on intergroup conflict resolution. Journal of Conflict Resolution, 66(6), 1119–1143. \url{https://doi.org/10.1177/00220027221079402}
+"HB22_S5"
+
+
+#' Standing desks and cognitive performance
+#'
+#' Perceived performance for standing desk (relative to sitting desk) measured from questionnaires and obtained from electroencephalograph (EEG) data.
+#' #' @format A data frame with 296 rows and 14 variables:
+#' \describe{
+#'   \item{\code{id}}{[factor] participant identifier}
+#'   \item{\code{order}}{[integer] order in which tasks were performed, termed "fatigue" in the paper}
+#'   \item{\code{position}}{[factor] work position, either \code{standing} or \code{sitting}}
+#'   \item{\code{phys_demand}}{[factor] manipulation using either \code{mouse} or \code{touchpad}}
+#'   \item{\code{task_diff}}{[factor] task difficulty, either \code{easy} or \code{difficult}}
+#'   \item{\code{ies}}{[double] inverse efficiency score global stimulus}
+#'   \item{\code{central_alpha}}{[double] alpha for central region}
+#'   \item{\code{parietal_alpha}}{[double] alpha for parietal region}
+#'   \item{\code{central_beta}}{[double] beta for central region}
+#'   \item{\code{parietal_beta}}{[double] alpha for parietal region}
+#'   \item{\code{bmi}}{[double] body mass index}
+#'   \item{\code{sex}}{[factor] sex, either \code{man} or \code{woman}}
+#'   \item{\code{attention}}{[double] attention scale, average of 6 items}
+#'   \item{\code{satisfaction}}{[double] satisfaction score, a scale composed of 3 items}
+#'}
+#' @source Shang Lin Chen, personal communication
+#' @references Labonté-LeMoyne, E., Jutras, M.-A., Léger, P.-M., Sénécal, S., Fredette, M., Begon, M., and Mathieu, M.-E. (2020). \emph{Does Reducing Sedentarity With Standing Desks Hinder Cognitive Performance? Human Factors}, 62(\bold{4}), 603–612. \url{https://doi.org/10.1177/0018720819879310}
+"LJLSFBM20"
+
+#' Distractions from smartwatches while driving
+#'
+#' Experiment from Tech3Lab using a driving simulator to study
+#' the impact of various distraction on attention and performance.
+#' The experimental conditions were compared in Table 3 of Brodeur et al. (2021)
+#' using Wilcoxon's signed rank test.
+#' @format A data frame with 124 rows and 3 variables:
+#' \describe{
+#'   \item{\code{id}}{[factor] participant identifier}
+#'   \item{\code{task}}{[factor] type of distraction}
+#'   \item{\code{nviolation}}{[integer] total number of violations}
+#'}
+#' @source Shang Lin Chen, personal communication
+#' @references Brodeur, M., Ruer, P. Léger, P. and S. Sénécal (2021).Smartwatches are more distracting than mobile phones while driving: Results from an experimental study, \emph{Accident Analysis & Prevention}, 149, 1-9.
+"BRLS21_T3"
+
+#' @title Smartwatch measures for distractions while driving
+#' @description Electrodermal activity measured by a smartwatch as part of an experiment on
+#' impact of smartwatches on distraction while driving. The experiment was conducted at Tech3Lab, but the data are not utilized in the paper.
+#' @format A data frame with 10942 rows and 6 variables:
+#' \describe{
+#'   \item{\code{id}}{[factor] participant identifier}
+#'   \item{\code{reltime}}{[integer] relative time of the task}
+#'   \item{\code{task}}{[factor] task, one of \code{baseline} or distraction, either a notification from the \code{cell}, from a phone call \code{voicecall} or via the smartwatch (\code{watch})}
+#'   \item{\code{occurence}}{[integer] number of occurences}
+#'   \item{\code{eda}}{[double] electrodermal activity measure}
+#'   \item{\code{hr}}{[double] heart rate}
+#'}
+#' @source Shang Lin Chen, personal communication
+#' @references Brodeur, M., Ruer, P. Léger, P. and S. Sénécal (2021).Smartwatches are more distracting than mobile phones while driving: Results from an experimental study, \emph{Accident Analysis & Prevention}, 149, 1-9.
+"BRLS21_EDA"
+

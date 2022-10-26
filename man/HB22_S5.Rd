@@ -32,7 +32,7 @@ than the near future influenced the prospect of peace, along with the degree of 
 The experimental design is a "2 (current state: war vs. peace) by 2 (predicted outcome: war vs. peace) by 2 (temporal distance: next year vs. twenty years into the future) mixed design", with current state and predicted outcome as between-subject factors and temporal distance as within-subject factor. The response is the estimated likelihood of each outcome on a 7-point Likert scale ranging from extremely unlikely (1) to extremely likely (7). Data are presented in long-format.
 The question asked was of the form «There is currently [war/peace] between the two tribes in Velvetia. - Thinking about [next year/in 20 years], how likely is it that there will be [war/peace] in Velvetia?»
 
-ResearchBox 567, \url{https://researchbox.org/567}, unspecified license
+ResearchBox 567, \url{https://researchbox.org/567}, licensed under CC BY 4.0
 }
 \usage{
 HB22_S5

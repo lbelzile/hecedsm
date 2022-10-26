@@ -17,7 +17,7 @@ A data frame with 325 rows and 7 variables:
 }
 }
 \source{
-Research Box 602, \url{https://researchbox.org/602}, unspecified license.
+Research Box 602, \url{https://researchbox.org/602}, licensed under CC BY 4.0
 }
 \usage{
 DA22_E2

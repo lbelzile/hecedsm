@@ -17,7 +17,7 @@ A data frame with 301 rows and 8 variables:
 }
 }
 \source{
-Research Box 282, \url{https://researchbox.org/282}, unspecified license
+Research Box 282, \url{https://researchbox.org/282}, licensed under CC BY 4.0
 }
 \usage{
 BL22_L

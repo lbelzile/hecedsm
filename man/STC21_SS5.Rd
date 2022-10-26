@@ -13,7 +13,7 @@ A data frame with 1501 rows and 3 variables:
 }
 }
 \source{
-Research Box 111, \url{https://researchbox.org/111}, unspecified license.
+Research Box 111, \url{https://researchbox.org/111}, licensed under CC BY 4.0
 }
 \usage{
 STC21_SS5

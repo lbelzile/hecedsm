@@ -16,7 +16,7 @@ A data frame with 67 rows and 6 variables:
 }
 }
 \source{
-Research Box 289, \url{https://researchbox.org/289}, unspecified license
+Research Box 289, \url{https://researchbox.org/289}, licensed under CC BY 4.0
 }
 \usage{
 LRMM22_S3

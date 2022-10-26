@@ -127,7 +127,7 @@
 #'}
 #'
 #' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2022+). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology.  \url{https://doi.org/10.1037/pspi0000402}
-#' @source Research Box 289, \url{https://researchbox.org/289}, unspecified license
+#' @source Research Box 289, \url{https://researchbox.org/289}, distributed under a CC BY 4.0 license
 "LRMM22_S1"
 
 
@@ -411,7 +411,7 @@
 #'   \item{\code{gender_init}}{[factor] gender of initiator, one of \code{male}, \code{female} or \code{other}}
 #'}
 #' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2022+). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology.  \url{https://doi.org/10.1037/pspi0000402}
-#' @source Research Box 289, \url{https://researchbox.org/289}, unspecified license
+#' @source Research Box 289, \url{https://researchbox.org/289}, licensed under CC BY 4.0
 "LRMM22_S3"
 
 #' @title Liu et al. (2019), Study 5b
@@ -428,7 +428,7 @@
 #'   \item{\code{gender}}{[factor] gender of participant, one of \code{male}, \code{female} or \code{other}}
 #'}
 #' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2022+). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology.  \url{https://doi.org/10.1037/pspi0000402}
-#' @source Research Box 289, \url{https://researchbox.org/289}, unspecified license
+#' @source Research Box 289, \url{https://researchbox.org/289}, licensed under CC BY 4.0
 "LRMM22_S5b"
 
 #' @title ManyLab2 replication of Risen and Gilovich (2008)
@@ -461,7 +461,7 @@
 #'   \item{\code{study}}{[factor] study number}
 #'}
 #' @references Brucks, M.S. and J. Levav (2022). \emph{Virtual communication curbs creative idea generation}. Nature 605, 108–112. \url{https://doi.org/10.1038/s41586-022-04643-y}
-#' @source Research Box 282, \url{https://researchbox.org/282}, unspecified license
+#' @source Research Box 282, \url{https://researchbox.org/282}, licensed under CC BY 4.0
 "BL22_L"
 
 #' Brucks and Levav (2022), eyetracker data
@@ -478,7 +478,7 @@
 #'   \item{\code{room_time}}{[double] time spent looking at room (in seconds)}
 #'}
 #' @references Brucks, M.S. and J. Levav (2022). \emph{Virtual communication curbs creative idea generation}. Nature 605, 108–112. \url{https://doi.org/10.1038/s41586-022-04643-y}
-#' @source Research Box 282, \url{https://researchbox.org/282}, unspecified license
+#' @source Research Box 282, \url{https://researchbox.org/282}, licensed under CC BY 4.0
 #' @examples
 #' \dontrun{
 #' library(lme4)
@@ -500,7 +500,7 @@
 #'   \item{\code{gender}}{[factor] gender of respondant, one of \code{female}, \code{male} or \code{other}}
 #'   \item{\code{age}}{[integer] age of respondant}
 #'}
-#' @source Research Box 602, \url{https://researchbox.org/602}, unspecified license.
+#' @source Research Box 602, \url{https://researchbox.org/602}, licensed under CC BY 4.0
 #' @references Duke, K.E. and O. Amir (2022+). \emph{The Importance of Selling Formats: When Integrating Purchase and Quantity Decisions Increases Sales}, Marketing Science, \url{https://doi.org/10.1177/0956797614545886}
 "DA22_E1"
 
@@ -518,7 +518,7 @@
 #'   \item{\code{meanval}}{[double] mean scored value}
 #'   \item{\code{elength}}{[integer] length of self-reported explanation for their choice (number of characters)}
 #'}
-#' @source Research Box 602, \url{https://researchbox.org/602}, unspecified license.
+#' @source Research Box 602, \url{https://researchbox.org/602}, licensed under CC BY 4.0
 #' @references Duke, K.E. and O. Amir (2022+). \emph{The Importance of Selling Formats: When Integrating Purchase and Quantity Decisions Increases Sales}, Marketing Science, \url{https://doi.org/10.1177/0956797614545886}
 "DA22_E2"
 
@@ -558,7 +558,7 @@
 #'   \item{\code{debttype}}{[factor] experimental condition for label of debt type, either \code{loan} or \code{credit}}
 #'   \item{\code{likelihood}}{[double] average score of likelihood in/ interest of using offer to make the purchase (1-9 scale)}
 #'}
-#' @source Research Box 111, \url{https://researchbox.org/111}, unspecified license.
+#' @source Research Box 111, \url{https://researchbox.org/111}, licensed under CC BY 4.0
 #' @references Sharma, E., Tully, S. and C. Cryder (2021). \emph{Psychological Ownership of (Borrowed) Money}, Journal of Marketing Research, \bold{58}(3), \url{https://doi.org/10.1177/0022243721993816}
 "STC21_SS5"
 
@@ -635,7 +635,7 @@
 #'   \item{\code{age}}{[integer] age of participant}
 #'   \item{\code{gender}}{[factor] gender of participant}
 #'}
-#' @source ResearchBox 567, \url{https://researchbox.org/567}, unspecified license
+#' @source ResearchBox 567, \url{https://researchbox.org/567}, licensed under CC BY 4.0
 #' @references Halevy, N., & Berson, Y. (2022). Thinking about the distant future promotes the prospects of peace: A construal-level perspective on intergroup conflict resolution. Journal of Conflict Resolution, 66(6), 1119–1143. \url{https://doi.org/10.1177/00220027221079402}
 "HB22_S5"
 

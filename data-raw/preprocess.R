@@ -554,6 +554,35 @@ usethis::use_data(STC21_SS5, overwrite = TRUE)
 
 #sinew::makeOxygen()
 
+data <- readr::read_csv(file = "data-raw/source/WUTEF22_S1.csv")
+colnames(data) <- tolower(colnames(data))
+WUTEF22_S1 <- data |>
+  select(-(v1:custom1)) |>
+  filter(gc == 1) |>
+  transmute(
+    financial_advisor = factor(ifelse(q95 == 2, 0, 1), labels = c("no","yes")),
+    epistemicness = (q88_7...30 + q88_8 + q88_9)/3,
+     # epistemic1 = q88_7,
+     # epistemic2 = q88_8,
+     # epistemic3 = q88_9,
+     aleatoriness = (q88_10...33 + q88_11 + q88_12)/3,
+     # aleatory1 = q88_10,
+     # aleatory2 = q88_11,
+     # aleatory3 = q88_12,
+     risk_perception1 = q87_1,
+     risk_perception2 = q87_2,
+     risk_perception3 = q87_3,
+     # individual_stock = q88_1,
+     # index_bonds = q88_2,
+     # other_investments = q88_6,
+    fin_literacy = factor(as.integer(I(q125 == 1) +   I(q127 == 5) + I(q128 == 4))),
+         number_stocks = pmax(q91_1, 100),
+         net_investments = q76,
+         assets_other_value = q90
+         ) |>
+  tibble::as_tibble() |>
+  usethis::use_data(WUTEF22_S1, overwrite = TRUE)
+
 # Generate skeleton for documentation
 for(file in list.files("../data",full.names = TRUE)){
   load(file)

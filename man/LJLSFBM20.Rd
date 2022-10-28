@@ -5,17 +5,7 @@
 \alias{LJLSFBM20}
 \title{Standing desks and cognitive performance}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 296 rows and 14 columns.
-}
-\source{
-Shang Lin Chen, personal communication
-}
-\usage{
-LJLSFBM20
-}
-\description{
-Perceived performance for standing desk (relative to sitting desk) measured from questionnaires and obtained from electroencephalograph (EEG) data.
-#' @format A data frame with 296 rows and 14 variables:
+A data frame with 296 rows and 14 variables:
 \describe{
   \item{\code{id}}{[factor] participant identifier}
   \item{\code{order}}{[integer] order in which tasks were performed, termed "fatigue" in the paper}
@@ -32,6 +22,15 @@ Perceived performance for standing desk (relative to sitting desk) measured from
   \item{\code{attention}}{[double] attention scale, average of 6 items}
   \item{\code{satisfaction}}{[double] satisfaction score, a scale composed of 3 items}
 }
+}
+\source{
+Shang Lin Chen, personal communication
+}
+\usage{
+LJLSFBM20
+}
+\description{
+Perceived performance for standing desk (relative to sitting desk) measured from questionnaires and obtained from electroencephalograph (EEG) data.
 }
 \references{
 Labonté-LeMoyne, E., Jutras, M.-A., Léger, P.-M., Sénécal, S., Fredette, M., Begon, M., and Mathieu, M.-E. (2020). \emph{Does Reducing Sedentarity With Standing Desks Hinder Cognitive Performance? Human Factors}, 62(\bold{4}), 603–612. \url{https://doi.org/10.1177/0018720819879310}

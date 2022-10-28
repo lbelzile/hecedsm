@@ -643,7 +643,8 @@
 #' Standing desks and cognitive performance
 #'
 #' Perceived performance for standing desk (relative to sitting desk) measured from questionnaires and obtained from electroencephalograph (EEG) data.
-#' #' @format A data frame with 296 rows and 14 variables:
+#'
+#' @format A data frame with 296 rows and 14 variables:
 #' \describe{
 #'   \item{\code{id}}{[factor] participant identifier}
 #'   \item{\code{order}}{[integer] order in which tasks were performed, termed "fatigue" in the paper}

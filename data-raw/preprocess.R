@@ -373,10 +373,12 @@ AA21 <- read.csv(file = "data-raw/source/AA21_N170_per_epoch.csv") |>
   tibble::as_tibble() |>
   filter(electrode == "Fz") |>
   mutate(stimuli = factor(stimuli,
-                          labels = c("GAN2","R","GAN1")),
+                          labels = c("GAN2","real","GAN1")),
          participant = factor(as.integer(factor(participant))),
          epoch = factor(epoch + 1L)) |>
+  mutate(stimuli = relevel(stimuli, ref = "real")) |>
   rename(id = participant,
+         stimulus = stimuli,
          latency = Value) |>
   select(!electrode)
 usethis::use_data(AA21, overwrite = TRUE)

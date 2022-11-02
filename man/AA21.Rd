@@ -7,10 +7,10 @@
 \format{
 A data frame with 1169 rows and 3 variables:
 \describe{
-  \item{\code{latency}}{[double] latency of N170 EEG signal for Fz electrode}
-  \item{\code{epoch}}{[factor] ordering of picture}
-  \item{\code{stimulus}}{[factor] image shown, one of real image (\code{R}), a one-pass generative adversarial network generate image with slightly happy face (\code{GAN1}) and a two-pass GAN with an extremely happy person (\code{GAN2})}
   \item{\code{id}}{[factor] participant identifier}
+  \item{\code{stimulus}}{[factor] image shown, one of real image (\code{real}), a one-pass generative adversarial network generate image with slightly happy face (\code{GAN1}) and a two-pass GAN with an extremely happy person (\code{GAN2})}
+  \item{\code{epoch}}{[factor] ordering of picture}
+  \item{\code{latency}}{[double] latency of N170 EEG signal for Fz electrode}
 }
 }
 \source{

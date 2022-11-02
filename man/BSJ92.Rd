@@ -16,7 +16,7 @@ A data frame with 66 rows and 6 variables:
 }
 }
 \source{
-[carData::Baumann]
+Obtained from `carData` package (`Baumann`)
 }
 \usage{
 BSJ92

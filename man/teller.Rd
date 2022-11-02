@@ -13,7 +13,7 @@ A data frame with 100 rows and 3 variables:
 }
 }
 \source{
-Berger, P.D, Maurerer, R.E. and G.B. Celli (2018). Experimental Design: With Application in Management, Engineering, and the Sciences, 2nd edition, Springer.
+Berger, P.D, Maurer, R.E. and G.B. Celli (2018). Experimental Design: With Application in Management, Engineering, and the Sciences, 2nd edition, Springer.
 }
 \usage{
 teller

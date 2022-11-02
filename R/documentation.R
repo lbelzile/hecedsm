@@ -34,7 +34,7 @@
 #'   \item{\code{posttest3}}{[integer] number of correct item, ranging from 0 to 56 on the Degrees of Reading Power test, a cloze test}
 #'}
 #' @references   Baumann, J. F., Seifert-Kessell, N., & Jones, L. A. (1992). \emph{Effect of Think-Aloud Instruction on Elementary Students’ Comprehension Monitoring Abilities}. Journal of Reading Behavior, 24(\bold{2}), 143–172. \url{https://doi.org/10.1080/10862969209547770}
-#' @source [carData::Baumann]
+#' @source Obtained from `carData` package (`Baumann`)
 "BSJ92"
 
 #' @title Clayton (2018)
@@ -66,7 +66,7 @@
 #'   \item{\code{persp}}{[double] score for the "consideration of others' perspectives"}
 #'   \item{\code{change}}{[double] score for the "recognition of change"}
 #'}
-#' @references   Grossmann, I., & Kross, E. (2014). \emph{Exploring Solomon’s Paradox: Self-Distancing Eliminates the Self-Other Asymmetry in Wise Reasoning About Close Relationships in Younger and Older Adults.} Psychological Science, 25(\bold{8}), 1571–1580. \url{https://doi.org/10.1177/0956797614535400}
+#' @references Grossmann, I., & Kross, E. (2014). \emph{Exploring Solomon’s Paradox: Self-Distancing Eliminates the Self-Other Asymmetry in Wise Reasoning About Close Relationships in Younger and Older Adults.} Psychological Science, 25(\bold{8}), 1571–1580. \url{https://doi.org/10.1177/0956797614535400}
 #' @source Open Science Foundation, \url{https://osf.io/7xs93}, unspecified license
 "GK14_S3"
 
@@ -387,10 +387,10 @@
 #' @description A study on the attitude towards real and computer generated image of people smiling. The response is the latency for a particular electrode located at the back of the brain.
 #' @format A data frame with 1169 rows and 3 variables:
 #' \describe{
-#'   \item{\code{latency}}{[double] latency of N170 EEG signal for Fz electrode}
-#'   \item{\code{epoch}}{[factor] ordering of picture}
-#'   \item{\code{stimulus}}{[factor] image shown, one of real image (\code{R}), a one-pass generative adversarial network generate image with slightly happy face (\code{GAN1}) and a two-pass GAN with an extremely happy person (\code{GAN2})}
 #'   \item{\code{id}}{[factor] participant identifier}
+#'   \item{\code{stimulus}}{[factor] image shown, one of real image (\code{real}), a one-pass generative adversarial network generate image with slightly happy face (\code{GAN1}) and a two-pass GAN with an extremely happy person (\code{GAN2})}
+#'   \item{\code{epoch}}{[factor] ordering of picture}
+#'   \item{\code{latency}}{[double] latency of N170 EEG signal for Fz electrode}
 #'}
 #' @details The data were collected as part of a course project during Winter 2021 (TECH 80747A Information Technologies and Neuroscience), which took place during the Covid19 pandemic. Each student participant had his own apparatus, which explains the large between-participant measurement error.
 #' @source Saeed Amirabdolahian, personal communication, licensed under CC BY-NC-SA 4.0
@@ -608,7 +608,6 @@
 #' Teller data
 #'
 #' Fictional data from Berger et al. (2018) discussed  in Example 6.4 (First United Federal Bank of Boston). One hunder bank tellers were offered one-on-one training with an experienced clerk for a certain number of weeks on the job, possibly in addition to formal training period. The goal of the study is to determine which combination is most efficient at reducing the monthly error in balance (in dollars).
-
 #' @format A data frame with 100 rows and 3 variables:
 #' \describe{
 #'   \item{\code{course}}{[factor] whether a formal training was offered (either \code{no} or \code{yes})}

@@ -10,7 +10,7 @@ A data frame with 2931 rows and 7 variables:
   \item{\code{id}}{[factor] unique participant ID}
   \item{\code{lab}}{[factor] location of laboratory}
   \item{\code{taskorder}}{[factor] order of task for \code{delayed} vs \code{immediate} recall (see \code{timing}).}
-  \item{\code{timing}}{[factor] timing of the task for recall, either \code{delayed} or \code{immediate}}
+  \item{\code{timing}}{[factor] timing of the task for recall, either \code{delayed} or \code{immediate} or \code{point-and-name}}
   \item{\code{age}}{[factor] age group, one of \code{5yo}, \code{6yo}, \code{7yo} or \code{10yo}}
   \item{\code{mcorrect}}{[integer] number of words correctly recalled, from 1 to 5}
   \item{\code{frequency}}{[factor] how often students verbalized during task, one of \code{never}, \code{sometimes} or \code{usually}}

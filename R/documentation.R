@@ -564,14 +564,14 @@
 
 #' Effects of verbal feedback
 #'
-#' Fictional balanced 3 by 3 by 2 design with five replicatoins from Keppel and Wickens (Chapter 21).
-#' The scenario considered 'effects of verbal feedback given during the acquisition of different types of learning material on memory tested one week later. The response is the number of words remembers from a list of vocabulary words in the lab.
+#' Fictional balanced 3 by 3 by 2 design with five replications from Keppel and Wickens (Chapter 21).
+#' The scenario considered 'effects of verbal feedback given during the acquisition of different types of learning material on memory tested one week later. The response is the number of words remembered from a list of vocabulary words in the lab.
 #' @source Keppel and Wickens (2004), Table 21.1, p.466
 #' @references Keppel, G., & Wickens, T. D. (2004). \emph{Design and analysis: A researcher’s handbook.}, 4th edition, Pearson Prentice Hall.
 #' @format A data frame with 90 rows and 4 variables:
 #' \describe{
 #'   \item{\code{feedback}}{[factor] feedback manipulation during the learning portion of the experiment, one of \code{none}, \code{positive} or \code{negative}}
-#'   \item{\code{material}}{[factor] type of words on the list, either \code{"low freq/low emotion"}, \code{high freq/low emotion} or \code{high freq/high emotion"}}
+#'   \item{\code{material}}{[factor] type of words on the list, either \code{low freq/low emotion}, \code{high freq/low emotion} or \code{high freq/high emotion}}
 #'   \item{\code{age}}{[factor] age group, either fifth grader (\code{fifth grader}) or high-school seniors (\code{seniors})}
 #'   \item{\code{words}}{[integer] number of words recalled one week after experiment}
 #'}
@@ -591,19 +591,6 @@
 #' @references Dean, A., Voss, D., & Draguljić, D. (2017). Design and analysis of experiments. Springer.
 "popcorn"
 
-#'
-#' Fictional balanced 3 by 3 by 2 design with five replicatoins from Keppel and Wickens (Chapter 21).
-#' The scenario considered 'effects of verbal feedback given during the acquisition of different types of learning material on memory tested one week later. The response is the number of words remembers from a list of vocabulary words in the lab.
-#' @source Keppel and Wickens (2004), Table 21.1, p.466
-#' @references Keppel, G., & Wickens, T. D. (2004). \emph{Design and analysis: A researcher’s handbook.}, 4th edition, Pearson Prentice Hall.
-#' @format A data frame with 90 rows and 4 variables:
-#' \describe{
-#'   \item{\code{feedback}}{[factor] feedback manipulation during the learning portion of the experiment, one of \code{none}, \code{positive} or \code{negative}}
-#'   \item{\code{material}}{[factor] type of words on the list, either \code{"low freq/low emotion"}, \code{high freq/low emotion} or \code{high freq/high emotion"}}
-#'   \item{\code{age}}{[factor] age group, either fifth grader (\code{fifth grader}) or high-school seniors (\code{seniors})}
-#'   \item{\code{words}}{[integer] number of words recalled one week after experiment}
-#'}
-"words"
 
 #' Teller data
 #'
@@ -697,3 +684,13 @@
 #' @references Brodeur, M., Ruer, P. Léger, P. and S. Sénécal (2021).Smartwatches are more distracting than mobile phones while driving: Results from an experimental study, \emph{Accident Analysis & Prevention}, 149, 1-9.
 "BRLS21_EDA"
 
+#' @title Work hours
+#' @description Simulated data for a one-way random effect model on employee attendance.
+#' @format A data frame with 320 rows and 3 variables:
+#' \describe{
+#'   \item{\code{id}}{[factor] employee identifier}
+#'   \item{\code{week}}{[factor] week of timing}
+#'   \item{\code{time}}{[double] time spent on HEC premises}
+#'}
+#' @author Leo Belzile
+"workhours"

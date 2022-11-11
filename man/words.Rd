@@ -8,36 +8,22 @@
 A data frame with 90 rows and 4 variables:
 \describe{
   \item{\code{feedback}}{[factor] feedback manipulation during the learning portion of the experiment, one of \code{none}, \code{positive} or \code{negative}}
-  \item{\code{material}}{[factor] type of words on the list, either \code{"low freq/low emotion"}, \code{high freq/low emotion} or \code{high freq/high emotion"}}
-  \item{\code{age}}{[factor] age group, either fifth grader (\code{fifth grader}) or high-school seniors (\code{seniors})}
-  \item{\code{words}}{[integer] number of words recalled one week after experiment}
-}
-
-A data frame with 90 rows and 4 variables:
-\describe{
-  \item{\code{feedback}}{[factor] feedback manipulation during the learning portion of the experiment, one of \code{none}, \code{positive} or \code{negative}}
-  \item{\code{material}}{[factor] type of words on the list, either \code{"low freq/low emotion"}, \code{high freq/low emotion} or \code{high freq/high emotion"}}
+  \item{\code{material}}{[factor] type of words on the list, either \code{low freq/low emotion}, \code{high freq/low emotion} or \code{high freq/high emotion}}
   \item{\code{age}}{[factor] age group, either fifth grader (\code{fifth grader}) or high-school seniors (\code{seniors})}
   \item{\code{words}}{[integer] number of words recalled one week after experiment}
 }
 }
 \source{
 Keppel and Wickens (2004), Table 21.1, p.466
-
-Keppel and Wickens (2004), Table 21.1, p.466
 }
 \usage{
 words
-
-words
 }
 \description{
-Fictional balanced 3 by 3 by 2 design with five replicatoins from Keppel and Wickens (Chapter 21).
-The scenario considered 'effects of verbal feedback given during the acquisition of different types of learning material on memory tested one week later. The response is the number of words remembers from a list of vocabulary words in the lab.
+Fictional balanced 3 by 3 by 2 design with five replications from Keppel and Wickens (Chapter 21).
+The scenario considered 'effects of verbal feedback given during the acquisition of different types of learning material on memory tested one week later. The response is the number of words remembered from a list of vocabulary words in the lab.
 }
 \references{
-Keppel, G., & Wickens, T. D. (2004). \emph{Design and analysis: A researcher’s handbook.}, 4th edition, Pearson Prentice Hall.
-
 Keppel, G., & Wickens, T. D. (2004). \emph{Design and analysis: A researcher’s handbook.}, 4th edition, Pearson Prentice Hall.
 }
 \keyword{datasets}

@@ -648,6 +648,8 @@ LJLSFBM20 <- readxl::read_xlsx(path = "data-raw/source/data_Tech3Lab.xlsx",
   rename(ies = ies_stimulus_global)
 usethis::use_data(LJLSFBM20, overwrite = TRUE)
 
+
+# Data 33 and 34: Brodeur et al. (2021) (Tech3Lab)
 BRLS21_T3 <- readxl::read_xlsx(path = "data-raw/source/data_Tech3Lab.xlsx",
                             sheet = 2) |>
   rename_all(tolower) |>
@@ -677,6 +679,74 @@ BRLS21_EDA <- read.csv(
   relocate(id, reltime, task) |>
   arrange(id, reltime)
 usethis::use_data(BRLS21_EDA, overwrite = TRUE)
+
+# Datasets 34 and 35
+library(reshape2)
+# Following mess is extracted from the authors' code...
+
+data_exp3 <- read.csv("data-raw/source/Wait_Study_Experiment3_final.csv")
+data_exp3$Predicted_Intrinsic_Motivation_Index_LONG <- as.numeric(as.character(data_exp3$Predicted_Intrinsic_Motivation_Index_LONG))
+data_exp3$Predicted_Intrinsic_Motivation_Index_SHORT <- as.numeric(as.character(data_exp3$Predicted_Intrinsic_Motivation_Index_SHORT))
+data_exp3$Experienced_Intrinsic_Motivation_Index <- as.numeric(as.character(data_exp3$Experienced_Intrinsic_Motivation_Index))
+
+data_exp3_melt<-melt(data_exp3, id.vars = "Waiting_Condition", measure.vars = c("Predicted_Intrinsic_Motivation_Index_LONG", "Predicted_Intrinsic_Motivation_Index_SHORT", "Experienced_Intrinsic_Motivation_Index"))
+data_exp3_melt<-cbind(data_exp3_melt, rep(data_exp3$Participant_ID,3))
+HOSM22_E3 <- subset(data_exp3_melt, (!(data_exp3_melt$Waiting_Condition=="L" &
+                                                data_exp3_melt$variable=="Predicted_Intrinsic_Motivation_Index_SHORT") &
+                                              !(data_exp3_melt$Waiting_Condition=="S" &
+                                                  data_exp3_melt$variable=="Predicted_Intrinsic_Motivation_Index_LONG")))
+HOSM22_E3$variable <- ifelse(HOSM22_E3$variable=="Predicted_Intrinsic_Motivation_Index_LONG" | HOSM22_E3$variable=="Predicted_Intrinsic_Motivation_Index_SHORT","prediction", "experience")
+colnames(HOSM22_E3) <- c("Waiting_Condition", "Rating_type", "Intrinsic_Motivation_Score", "Participant_ID")
+
+HOSM22_E3$Waiting_Condition <- ifelse(HOSM22_E3$Waiting_Condition=="L", "long", "short")
+HOSM22_E3$Waiting_Condition <- as.factor(HOSM22_E3$Waiting_Condition)
+
+# HOSM22_E3$Rating_type <- ifelse(HOSM22_E3$Rating_type=="prediction", -1, 1)
+HOSM22_E3$Rating_type <- as.factor(HOSM22_E3$Rating_type)
+HOSM22_E3$Participant_ID <- as.integer(factor(HOSM22_E3$Participant_ID))
+
+colnames(HOSM22_E3) <- c("waiting","ratingtype","imscore","id")
+HOSM22_E3 <- tibble::as_tibble(HOSM22_E3) |>
+  mutate(id = factor(id)) |>
+  arrange(id) |>
+  relocate(id)
+usethis::use_data(HOSM22_E3, overwrite = TRUE)
+
+data_exp4 <- read.csv("data-raw/source/Wait_Study_Experiment4_final.csv")
+
+#### Linear mixed effects model with interim rating time (continuous variable 2-18, centered on the mean) x rating type (predicted vs experienced) x interaction between interim rating time and rating type.
+data_exp4_subset<-
+  melt(data_exp4,
+       id.vars = c("Participant_ID",
+                   "Assigned_Number"),
+       measure.vars = c("Predicted_Intrinsic_Motivation_Index_INTERIM",
+                        "Experienced_Intrinsic_Motivation_Index_INTERIM"))
+
+colnames(data_exp4_subset) <-
+  c("Participant_ID",
+    "interim_rating_time",
+    "rating_type",
+    "intrinsic_motivation_score")
+data_exp4_subset$intrinsic_motivation_score <- as.numeric(as.character(data_exp4_subset$intrinsic_motivation_score))
+
+data_exp4_subset$rating_type <- ifelse(data_exp4_subset$rating_type=="Experienced_Intrinsic_Motivation_Index_INTERIM", 1, -1)
+data_exp4_subset$rating_type <- as.factor(data_exp4_subset$rating_type)
+
+data_exp4_subset$centered_interim_rating_time <- as.numeric(as.character(data_exp4_subset$interim_rating_time)) - 10
+
+HOSM22_E4 <- data_exp4_subset |>
+  tibble::as_tibble() |>
+  transmute(id = factor(as.numeric(factor(Participant_ID))),
+            imscore = intrinsic_motivation_score,
+            ratingtype = factor(
+              rating_type,
+              labels = c("prediction", #-1
+                         "experience")), #+1
+            irtime = as.integer(interim_rating_time) - 10) |>
+  arrange(id)
+usethis::use_data(HOSM22_E4, overwrite = TRUE)
+
+
 
 # Generate skeleton for documentation
 for(file in list.files("../data",full.names = TRUE)){

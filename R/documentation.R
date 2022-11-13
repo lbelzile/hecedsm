@@ -694,3 +694,29 @@
 #'}
 #' @author Leo Belzile
 "workhours"
+
+
+#' @title Hatano et al. (2022), Experiment 3
+#' @description The data consist in a two by two mixed analysis of variance. The authors studied engagement and enjoyment from waiting tasks, and "potential effects of time interval on the underestimation of task motivation by manipulating the time for the waiting task". The waiting time was randomly assigned to either short (3 minutes) or long (20 minutes).
+#' @format A data frame with 126 rows and 4 variables:
+#' \describe{
+#'   \item{\code{id}}{[factor] subject identifier}
+#'   \item{\code{waiting}}{[factor] experimental condition for waiting time, either \code{short} or \code{long}}
+#'   \item{\code{ratingtype}}{[factor] experimental within-subject factor, either \code{prediction} or \code{experience}}
+#'   \item{\code{imscore}}{[double] response, intrinsic motivation score}
+#'}
+#' @references Hatano, A., Ogulmus, C., Shigemasu, H., & Murayama, K. (2022+). \emph{Thinking About Thinking: People Underestimate How Enjoyable and Engaging Just Waiting Is}. Journal of Experimental Psychology: General. \url{http://dx.doi.org/10.1037/xge0001255}
+"HOSM22_E3"
+
+
+#' @title Hatano et al. (2022), Experiment 4
+#' @description The authors examined the enjoyment and engagement from waiting tasks, doing nothing. The participants were asked to predict their levels of enjoyment and engagement during and after the task. The authors fixed a linear mixed model with an interaction between rating type and interim rating time; the latter is centered by subtracting ten minutes (the mode is 9).
+#' @format A data frame with 80 rows and 4 variables:
+#' \describe{
+#'   \item{\code{id}}{[factor] subject identifier}
+#'   \item{\code{ratingtype}}{[factor] experimental within-subject factor, either \code{prediction} or \code{experience}}
+#'   \item{\code{imscore}}{[double] response, intrinsic motivation score}
+#'   \item{\code{irtime}}{[integer] interim rating time minus 10 minutes}
+#'}
+#' @references Hatano, A., Ogulmus, C., Shigemasu, H., & Murayama, K. (2022+). \emph{Thinking About Thinking: People Underestimate How Enjoyable and Engaging Just Waiting Is}. Journal of Experimental Psychology: General. \url{http://dx.doi.org/10.1037/xge0001255}
+"HOSM22_E4"

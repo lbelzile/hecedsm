@@ -746,6 +746,14 @@ HOSM22_E4 <- data_exp4_subset |>
   arrange(id)
 usethis::use_data(HOSM22_E4, overwrite = TRUE)
 
+# Dataset 36: protest
+GSBE10 <- haven::read_sav(file = "data-raw/source/protest.sav") |>
+  dplyr::transmute(protest = as_factor(protest),
+                   likeability = round(liking*6)/6,
+                   angry = angry,
+                   respeval = respappr,
+                   sexism = sexism)
+usethis::use_data(GSBE10, overwrite = TRUE)
 
 
 # Generate skeleton for documentation

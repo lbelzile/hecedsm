@@ -705,7 +705,7 @@
 #'   \item{\code{ratingtype}}{[factor] experimental within-subject factor, either \code{prediction} or \code{experience}}
 #'   \item{\code{imscore}}{[double] response, intrinsic motivation score}
 #'}
-#' @references Hatano, A., Ogulmus, C., Shigemasu, H., & Murayama, K. (2022+). \emph{Thinking About Thinking: People Underestimate How Enjoyable and Engaging Just Waiting Is}. Journal of Experimental Psychology: General. \url{http://dx.doi.org/10.1037/xge0001255}
+#' @references Hatano, A., Ogulmus, C., Shigemasu, H., & Murayama, K. (2022). \emph{Thinking About Thinking: People Underestimate How Enjoyable and Engaging Just Waiting Is}. Journal of Experimental Psychology: General, 151(\bold{12}), 3213–3229 \url{http://dx.doi.org/10.1037/xge0001255}
 "HOSM22_E3"
 
 
@@ -718,5 +718,22 @@
 #'   \item{\code{imscore}}{[double] response, intrinsic motivation score}
 #'   \item{\code{irtime}}{[integer] interim rating time minus 10 minutes}
 #'}
-#' @references Hatano, A., Ogulmus, C., Shigemasu, H., & Murayama, K. (2022+). \emph{Thinking About Thinking: People Underestimate How Enjoyable and Engaging Just Waiting Is}. Journal of Experimental Psychology: General. \url{http://dx.doi.org/10.1037/xge0001255}
+#' @references Hatano, A., Ogulmus, C., Shigemasu, H., & Murayama, K. (2022). \emph{Thinking About Thinking: People Underestimate How Enjoyable and Engaging Just Waiting Is}. Journal of Experimental Psychology: General, 151(\bold{12}), 3213–3229 \url{http://dx.doi.org/10.1037/xge0001255}
 "HOSM22_E4"
+
+#' @title Garcia et al. (2010
+#' @description These data are from a study on gender discrimination. Participants were put with a file where a women was turned down promotion in favor of male colleague despite her being clearly more experimented and qualified. The authors manipulated the decision of the participant to this decision, either choosing not to challenge the decision (\code{no protest}), a request to reconsider based on individual qualities of the applicants (\code{individual}) and a request to reconsider based on abilities of women (\code{collective}).
+#'
+#' All items were measured using scales constructed using items measured using Likert scales ranging from strongly disagree (\code{1}) to strongly agree (\code{7}).
+#' @source Hayes, A. F. (2021), Introduction to Mediation, Moderation, and Conditional Process Analysis: A Regression-Based Approach, 3rd edition, Guilford Press.
+#' @references Garcia, D.M., Schmitt, M.T., Branscombe, N.R. and Ellemers, N. (2010), Women's reactions to ingroup members who protest discriminatory treatment: The importance of beliefs about inequality and response appropriateness. \emph{European Journal of Social Psycholog.}, \bold{40}, 733-745. \url{https://doi.org/10.1002/ejsp.644}
+#' @format A data frame with 129 rows and 5 variables:
+#' \describe{
+#'   \item{\code{protest}}{[factor] experimental condition}
+#'   \item{\code{likeability}}{[double] likeability score for Catherine, average of 6 items}
+#'   \item{\code{angry}}{[double] Likert scale for "I feel angry at Catherine"}
+#'   \item{\code{respeval}}{[double] evaluation of the appropriateness of the response of Catherine}
+#'   \item{\code{sexism}}{[double] average of 6 Likert scales for the Modern Sexism Scale assessing pervasiveness of gender discrimination}
+#'}
+"GSBE10"
+

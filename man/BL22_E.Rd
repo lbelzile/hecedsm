@@ -30,8 +30,8 @@ The authors measured via an eyetracker the time spent gazing at the room, at the
 \examples{
 \dontrun{
 library(lme4)
-mod <- lmer(task_time ~ cond + (1|id),
-            data= BL22_E)
+mod <- lmer(task_time ~ cond + writer + (1|id),
+            data = BL22_E)
 summary(mod)
 }
 }

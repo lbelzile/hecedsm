@@ -11,7 +11,7 @@ A data frame with 198 rows and 12 variables:
   \item{\code{regfocus}}{[factor] situational regulatory focus manipulation: education change message framing, either \code{prevention} or \code{promotion} message framing}
   \item{\code{fluency}}{[double] mean for fluency items}
   \item{\code{engagement}}{[double] mean for engagement items}
-  \item{\code{dprocessjustice}}{[double] mean for change process fairness perceptions items}
+  \item{\code{fairness}}{[double] mean for change process fairness perceptions items}
   \item{\code{dopenness}}{[double] mean for change openness items}
   \item{\code{promem}}{[double] mean for work regulatory focus promotion items}
   \item{\code{prevem}}{[double] mean for work regulatory focus prevention items}

@@ -302,7 +302,7 @@ RH19_S1 <- haven::read_sav("data-raw/source/Roczniewska_Higgins_2019.sav") |>
                          labels = c("prevention", "promotion")),
     fluency = fluency_MEAN,
     engagement = engagement_MEAN,
-    dprocessjustice = change_process_justice_MEAN,
+    fairness = change_process_justice_MEAN,
     dopenness = changeOPENNESS_MEAN,
     promem = PROM_EMPLOYEE_MEAN,
     prevem = PREV_EMPLOYEE_MEAN,

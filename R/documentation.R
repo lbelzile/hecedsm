@@ -357,7 +357,7 @@
 #' @format A data frame with 113 rows and 6 variables:
 #' \describe{
 #'   \item{\code{prodeval}}{[double] average product evaluation score of three 9 point scales, with very bad to very good, very unfavorable to very favorable and not a useful product to very useful product}
-#'   \item{\code{fluency}}{[double] average fluency measuring easy of reading and of understanding, ranging from strongly disagree (\code{1}) to strongly agree (\code{2})}
+#'   \item{\code{fluency}}{[double] average fluency measuring easy of reading and of understanding, ranging from strongly disagree (\code{1}) to strongly agree (\code{7})}
 #'   \item{\code{familiarity}}{[integer] Likert scale from 1 to 7 for brand familiarity}
 #'   \item{\code{consistency}}{[factor] image-text groups, either \code{consistent} or \code{inconsistent}}
 #'   \item{\code{gender}}{[factor] gender of participant}

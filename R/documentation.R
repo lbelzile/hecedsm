@@ -727,7 +727,7 @@
 
 
 #' @title Hatano et al. (2022), Experiment 4
-#' @description The authors examined the enjoyment and engagement from waiting tasks, doing nothing. The participants were asked to predict their levels of enjoyment and engagement during and after the task. The authors fixed a linear mixed model with an interaction between rating type and interim rating time; the latter is centered by subtracting ten minutes (the mode is 9).
+#' @description The authors examined the enjoyment and engagement from waiting tasks, doing nothing. The participants were asked to predict their levels of enjoyment and engagement during and after the task. The authors fitted a linear mixed model with an interaction between rating type and interim rating time; the latter is centered by subtracting ten minutes (the mode is 9).
 #' @format A data frame with 80 rows and 4 variables:
 #' \describe{
 #'   \item{\code{id}}{[factor] subject identifier}

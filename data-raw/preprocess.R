@@ -756,6 +756,16 @@ GSBE10 <- haven::read_sav(file = "data-raw/source/protest.sav") |>
 usethis::use_data(GSBE10, overwrite = TRUE)
 
 
+FBC66_T1_mat <- rbind(c(18, 1, 1), c(8, 7, 5), c(3, 4, 13))
+colnames(FBC66_T1_mat) <- c("0","1-2","3+")
+rownames(FBC66_T1_mat) <- c("K","2","5")
+FBC66_T1 <- tibble::tibble(count = as.numeric(FBC66_T1_mat),
+                           grade = factor(rep(c("K","2","5"), length.out = 9)),
+                           frequency = factor(rep(c("0","1-2","3+"), each = 3))) |>
+  dplyr::mutate(grade = relevel(grade, ref = "K"))
+
+usethis::use_data(FBC66_T1, overwrite = TRUE)
+
 # Generate skeleton for documentation
 for(file in list.files("../data",full.names = TRUE)){
   load(file)

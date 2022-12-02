@@ -10,7 +10,7 @@ A data frame with 204 rows and 4 variables:
   \item{\code{lab}}{[factor] location of laboratory}
   \item{\code{age}}{[factor] age group, one of \code{5yo}, \code{6yo}, \code{7yo} or \code{10yo}}
   \item{\code{frequency}}{[factor] how often students verbalized during task, one of \code{never}, \code{sometimes} or \code{usually}}
-  \item{\code{count}}{[integer]count of the number of children}
+  \item{\code{count}}{[integer] count of the number of children}
 }
 }
 \source{

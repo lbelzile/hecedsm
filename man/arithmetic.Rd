@@ -29,7 +29,6 @@ A data frame with 45 rows and 2 variables:
 }
 }
 \examples{
-
 data(arithmetic)
 anova(aov(score ~ group, data = arithmetic))
 }

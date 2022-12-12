@@ -755,7 +755,164 @@ GSBE10 <- haven::read_sav(file = "data-raw/source/protest.sav") |>
                    sexism = sexism)
 usethis::use_data(GSBE10, overwrite = TRUE)
 
+# Dataset 37: ResearchBox54, Study 1 (chi-square test)
 
+s1 <- read.csv("data-raw/source/ResearchBox54/Data/Study 1 - Choose Charity.csv")
+
+s1$donate01<-ifelse(s1$Condition=="Open-ended"&
+                      s1$openended==0|
+                      s1$Condition=="Quantity"&
+                      s1$quantity==0, 0, 1)
+
+s1$amount<-ifelse(s1$Condition=="Open-ended",
+                  s1$openended_1_TEXT,
+                  ifelse(s1$Condition=="Quantity"&
+                           s1$quantity==888,
+                         s1$quantity_TEXT,
+                         ifelse(s1$Condition=="Quantity"&
+                                  s1$quantity>0,
+                                s1$quantity, NA)))
+
+s1$amount0<-ifelse(s1$donate01==0, 0, s1$amount)
+
+
+# Dataset excluding those who said they'd donate >$25 (misunderstood)
+# This is one used in analyses but other spec. show same pattern/sig. level
+s1u<-s1[!s1$amount0>25|
+          is.na(s1$amount0),]
+
+## Dataset ALSO excluding NA for amount when they indicated donating
+s1d<-s1u[!is.na(s1u$amount0),]
+MV22_S1 <- s1d |>
+  dplyr::select(donatebefore, donate01,
+                Condition, amount) |>
+  dplyr::rename(before = donatebefore,
+                donate = donate01,
+                condition = Condition) |>
+  dplyr::mutate(condition = factor(tolower(condition)),
+                donate = as.integer(donate)) |>
+  tibble::as_tibble()
+usethis::use_data(MV22_S1, overwrite = TRUE)
+
+
+# Dataset 38: ResearchBox54, one-way ANOVA (Study 4)
+
+s4 <- read.csv("data-raw/source/ResearchBox54/Data/Study 4 - Lowest Option.csv")
+
+s4$donate01<-ifelse(s4$Condition=="Open-ended"&s4$openended==0|
+                      s4$Condition=="Quantity1"&s4$quantity1==0|
+                      s4$Condition=="Quantity5"&s4$quantity5==0|
+                      s4$Condition=="Quantity10"&s4$quantity10==0, 0, 1)
+
+s4$amount0<-ifelse(s4$donate01==0, 0,
+                   ifelse(s4$Condition=="Open-ended", s4$openended_1_TEXT,
+                          ifelse(s4$Condition=="Quantity1"&s4$quantity1==888,
+                                 s4$quantity1_TEXT,
+                                 ifelse(s4$Condition=="Quantity1"&s4$quantity1>0,
+                                        s4$quantity1,
+                                        ifelse(s4$Condition=="Quantity5"&s4$quantity5==888,
+                                               s4$quantity5_TEXT,
+                                               ifelse(s4$Condition=="Quantity5"&s4$quantity5>0,
+                                                      s4$quantity5,
+                                                      ifelse(s4$Condition=="Quantity10"&s4$quantity10==888,
+                                                             s4$quantity10_TEXT,
+                                                             ifelse(s4$Condition=="Quantity10"&s4$quantity10>0,
+                                                                    s4$quantity10, NA))))))))
+
+s4$amount<-ifelse(s4$donate01==0, NA, s4$amount0)
+
+# Participants in each condition
+table(s4$Condition)
+
+# Dataset excluding those who said more than $25 as amount (misunderstood)
+# This is the one used
+s4u<-s4[s4$amount0<=25|
+          is.na(s4$amount0),]
+MV22_S4 <- s4u |>
+  dplyr::select(donate01,
+                Condition, amount) |>
+  dplyr::rename(donate = donate01,
+                condition = Condition) |>
+  dplyr::mutate(condition = factor(tolower(condition)),
+                donate = as.integer(donate)) |>
+  tibble::as_tibble()
+usethis::use_data(MV22_S4, overwrite = TRUE)
+sinew::makeOxygen(MV22_S4)
+
+
+supph <- read.csv('data-raw/source/ResearchBox54/Data/Supp H - Prosocial Actions.csv')
+
+supph$donate01<-ifelse(supph$Condition=="Open-ended"&
+                         supph$openended==0|
+                         supph$Condition=="Quantity"&
+                         supph$quantity==0, 0, 1)
+
+supph$amount<-ifelse(supph$Condition=="Open-ended", supph$openended_1_TEXT,
+                     ifelse(supph$Condition=="Quantity"&
+                              supph$quantity>0, supph$quantity, NA))
+
+supph$amount0<-ifelse(supph$donate01==0, 0, supph$amount)
+
+# Dataset 39 ResearchBox54, pro-social action (Wilcoxon test)
+
+supph <- read.csv('data-raw/source/ResearchBox54/Data/Supp H - Prosocial Actions.csv')
+
+supph$donate01<-ifelse(supph$Condition=="Open-ended"&
+                         supph$openended==0|
+                         supph$Condition=="Quantity"&
+                         supph$quantity==0, 0, 1)
+
+supph$amount<-ifelse(supph$Condition=="Open-ended", supph$openended_1_TEXT,
+                     ifelse(supph$Condition=="Quantity"&
+                              supph$quantity>0, supph$quantity, NA))
+
+supph$amount0<-ifelse(supph$donate01==0, 0, supph$amount)
+
+MV22_SH <- supph |>
+  dplyr::select(donate01,
+                Condition, amount) |>
+  dplyr::rename(donate = donate01,
+                condition = Condition) |>
+  dplyr::mutate(condition = factor(tolower(condition)),
+                donate = as.integer(donate)) |>
+  tibble::as_tibble()
+usethis::use_data(MV22_SH, overwrite = TRUE)
+sinew::makeOxygen(MV22_SH)
+
+# Dataset 40:
+#
+e2.rawData <- read.csv("data-raw/source/ResearchBox511/Data/e2_data copy.csv")
+
+#set up clean data, get counts of exclusions, and stats about manipulation check
+e2.cleanData = filter(e2.rawData, Finished==1) #first narrowing down to people who finished the survey
+e2.numFinished = nrow(e2.cleanData) #nrow gives number of rows eg subjects in that group
+
+#exclude people who failed the attention check
+e2.attentionCheckExclusions = nrow(filter(e2.cleanData, situationCorrect != 4)) #
+e2.cleanData = filter(e2.cleanData, situationCorrect == 4, pilot == 0, flownPlane == 0, landedPlane== 0, nonsensical== 0)
+e2.numRemainingAfterAttentionCheck = nrow(e2.cleanData)
+e2.cleanDataGender = filter(e2.cleanData, gender!= 3)
+
+#set condition and dvorder appropriately as factors
+e2.cleanData$condition = factor(e2.cleanData$condition, levels = c("video", "no video"))
+
+e2.cleanData$dvOrder = factor(e2.cleanData$dvOrder, levels = c("dying first", "pilot first"))
+
+JZBJG_E2 <- e2.cleanData |>
+  dplyr::rename(order = dvOrder,
+                conf_dying = confidenceDying,
+                conf_pilot = confidencePilot,
+                land_plane = landedPlane,
+                ease_imagining = easeImagining) |>
+  dplyr::select(condition, order,
+                conf_dying,
+                conf_pilot,
+                expertise,
+                ease_imagining,
+                gender)|>
+  dplyr::mutate(gender = factor(gender, labels = c("man", "woman", "gender diverse")))
+  tibble::as_tibble()
+usethis::use_data(JZBJG_E2, overwrite = TRUE)
 # Generate skeleton for documentation
 for(file in list.files("../data",full.names = TRUE)){
   load(file)

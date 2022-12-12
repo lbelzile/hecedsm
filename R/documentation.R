@@ -543,7 +543,6 @@
 #'
 #' @keywords datasets
 #' @examples
-#'
 #' data(arithmetic)
 #' anova(aov(score ~ group, data = arithmetic))
 "arithmetic"
@@ -737,3 +736,88 @@
 #'}
 "GSBE10"
 
+
+#' @title Moon and vanEpps (2022+), Study 1
+#' @description Study 1 considers proportion of donators to a charity. Participants in the online panel were provided with an opportunity to win 25$ and donate part of this amount to a charity of their choosing. The data provided include only people who did not exceed this amount and indicated donating a non-zero amount.
+#' @format A data frame with 869 rows and 4 variables:
+#' \describe{
+#'   \item{\code{before}}{[integer] did people donate before to this charity? 0 for no, 1 for yes.}
+#'   \item{\code{donate}}{[integer] did people choose to donate (donate before to this charity? 0 for no, 1 for yes.}
+#'   \item{\code{condition}}{[factor] experimental condition, either an \code{open-ended} amount or a suggested \code{quantity}}
+#'   \item{\code{amount}}{[double] amount of proposed donation, \code{NA} if the person declined to donate}
+#'}
+#'
+#' @references Moon, A. and EM VanEpps (2022+). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, \url{https://doi.org/10.1093/jcr/ucac047}
+#' @source Research Box 54, \url{https://researchbox.org/54}, licensed under CC BY 4.0
+#' @examples
+#' ctab <- with(MV22_S1, table(donate, condition))
+#' # Chi-square test of independence
+#' chisq_test <- chisq.test(ctab, correct = FALSE)
+#' chisq_test
+#' # Effect size
+#' sqrt(chisq_test$statistic/nrow(MV22_S1))
+#' # Welch t-test
+#' t.test(amount ~ condition, MV22_S1)
+"MV22_S1"
+
+#' @title  Moon and vanEpps (2022+), Study 4
+#' @description The authors studied the impact on donation amount of manipulating the minimal suggested amount. The benchmark was an open-ended box, with quantity featuring a minimum value, 15$, 25$ or an alternative amount. The authors also recorded whether the person had donated before.
+#' @format A data frame with 996 rows and 3 variables:
+#' \describe{
+#'   \item{\code{donate}}{[integer] did people choose to donate (donate before to this charity? 0 for no, 1 for yes.}
+#'   \item{\code{condition}}{[factor] experimental condition, either an \code{open-ended} amount or a suggested amount of \code{quantity1}, \code{quantity5} or \code{quantity10} for one, five and 10 dollars.}
+#'   \item{\code{amount}}{[double] amount of proposed donation, \code{NA} if the person declined to donate}
+#'}
+#'
+#' @references Moon, A. and EM VanEpps (2022+). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, \url{https://doi.org/10.1093/jcr/ucac047}
+#' @source Research Box 54, \url{https://researchbox.org/54}, licensed under CC BY 4.0
+"MV22_S4"
+
+
+
+#' @title  Moon and vanEpps (2022+), Supplementary study H
+#' @description After completing an unrelated study, the authors proposed to participants on MTurk to donate of their time for a social cause (net neutrality) by completing an optional survey for a prosocial cause. Participants were assigned to the open-ended choice or offered to complete up to 3 additional sections with demographics (1), plus internet use (2) and political attitudes (3). The study aims to study generosity, but without involving windfall.
+#' @format A data frame with 1206 rows and 3 variables:
+#' \describe{
+#'   \item{\code{donate}}{[integer] did people choose to donate time? Either no (\code{0}) or yes (\code{1})}
+#'   \item{\code{condition}}{[factor] experimental condition, either an \code{open-ended} amount or a \code{quantity}.}
+#'   \item{\code{amount}}{[integer] number of additional questionnaire (up to 3).}
+#'}
+#'
+#' @references Moon, A. and EM VanEpps (2022+). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, \url{https://doi.org/10.1093/jcr/ucac047}
+#' @examples
+#' \dontrun{
+#' chisq.test(with(MV22_SH,
+#'                 table(donate, condition)),
+#'            correct = FALSE)
+#' # Average non-zero contributions
+#' # by default, missing values are ignored
+#' wilcox_anz <- coin::wilcox_test(
+#'   amount ~ condition,
+#'   data = MV22_SH)
+#' # Transform no donation to zero
+#' MV22_SH$amount0 <- with(MV22_SH,
+#' ifelse(donate == 0L, 0, amount))
+#' wilcox_az <- coin::wilcox_test(
+#'   amount0 ~ condition,
+#'   data = MV22_SH)
+#' }
+#' @source Research Box 54, \url{https://researchbox.org/54}, licensed under CC BY 4.0
+"MV22_SH"
+
+#' Jordan et al. (2022), Experiment 2
+#'
+#' The authors studied how confidence in people skill to land a plane (with no experience) and it was affected by watching a trivially related video showing a landing.
+#' @format A data frame with 582 rows and 7 variables:
+#' \describe{
+#'   \item{\code{condition}}{[factor] experimental condition, one of \code{video} or \code{no video}}
+#'   \item{\code{order}}{[factor] order of the questions, \code{dying first} or \code{pilot first}}
+#'   \item{\code{conf_dying}}{[integer] Likert scale from 0 (not at all confident to 100 (very confident) for the question: "How confident are you that you would be able to land the plane without dying"}
+#'   \item{\code{conf_pilot}}{[integer] Likert scale from 0 (not at all confident to 100 (very confident) for the question: "How confident are you that you would be able to successfully land the plane as well as a pilot could"}
+#'   \item{\code{expertise}}{[integer] Likert scale ranging from no expertise (\code{1}) to a great deal of expertise (\code{5}) answering the question "How much expertise do you think is involved in landing a plane"}
+#'   \item{\code{ease_imagining}}{[integer] Likert scale ranging from not at all difficult (\code{1}) to very difficult (\code{5}) for the answer to the question "How difficult was it for you to imagine attempting to land the plane."}
+#'   \item{\code{gender}}{[factor] gender of participant, one of \code{man}, \code{woman} or other (\code{gender diverse}}
+#'}
+#' @references Jordan, K., R. Zajac, D. Bernstein, C. Joshi and M. Garry (2022). \emph{Trivially informative semantic context inflates people's confidence they can perform a highly complex skill}, Royal Society Open Science,\bold{9}, 211977, \url{http://doi.org/10.1098/rsos.211977}
+#' @source Research Box 511, \url{https://researchbox.org/511}, licensed under CC BY 4.0
+"JZBJG_E2"

@@ -17,7 +17,7 @@ A data frame with 80 rows and 4 variables:
 HOSM22_E4
 }
 \description{
-The authors examined the enjoyment and engagement from waiting tasks, doing nothing. The participants were asked to predict their levels of enjoyment and engagement during and after the task. The authors fixed a linear mixed model with an interaction between rating type and interim rating time; the latter is centered by subtracting ten minutes (the mode is 9).
+The authors examined the enjoyment and engagement from waiting tasks, doing nothing. The participants were asked to predict their levels of enjoyment and engagement during and after the task. The authors fitted a linear mixed model with an interaction between rating type and interim rating time; the latter is centered by subtracting ten minutes (the mode is 9).
 }
 \references{
 Hatano, A., Ogulmus, C., Shigemasu, H., & Murayama, K. (2022). \emph{Thinking About Thinking: People Underestimate How Enjoyable and Engaging Just Waiting Is}. Journal of Experimental Psychology: General, 151(\bold{12}), 3213–3229 \url{http://dx.doi.org/10.1037/xge0001255}

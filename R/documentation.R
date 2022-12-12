@@ -140,7 +140,7 @@
 #'   \item{\code{lab}}{[factor] location of laboratory}
 #'   \item{\code{age}}{[factor] age group, one of \code{5yo}, \code{6yo}, \code{7yo} or \code{10yo}}
 #'   \item{\code{frequency}}{[factor] how often students verbalized during task, one of \code{never}, \code{sometimes} or \code{usually}}
-#'   \item{\code{count}}{[integer]count of the number of children}
+#'   \item{\code{count}}{[integer] count of the number of children}
 #'}
 #' @references   Elliott, E. M., C. C. Morey, A.M. AuBuchon et al. (2021). \emph{Multilab Direct Replication of Flavell, Beach, and Chinsky (1966): Spontaneous Verbal Rehearsal in a Memory Task as a Function of Age}. Advances in Methods and Practices in Psychological Science. \url{https://doi.org/10.1177/25152459211018187}
 #' @source Open Science Foundation, \url{https://osf.io/vgxkf}, licensed under CC-By Attribution 4.0 International
@@ -164,6 +164,23 @@
 #' @source Open Science Foundation, \url{https://osf.io/vgxkf}, licensed under CC-By Attribution 4.0 International
 "MULTI21_D2"
 
+
+
+#' Flavell, Beach and Chinsky (1966), Table 1
+#'
+#' @description Three by three contingency table for the data presented in Table 1 of Flavell, Beach and Chinsky (2021), in long format. The authors recruited 20 students per grade.
+#'
+#' @format A data frame with 9 rows and 3 variables:
+#' \describe{
+#'   \item{\code{grade}}{[factor] grade of student, one of kindergarden (\code{K}), second (\code{2}) or fifth (\code{5}) grade}
+#'   \item{\code{frequency}}{[factor] category indicating how often students verbalized during task, one of \code{0}, \code{1-2} or \code{3+}}
+#'   \item{\code{count}}{[integer] count of the number of student}
+#'}
+#' @references Flavell, J. H., Beach, D. R., & Chinsky, J. M. (1966). Spontaneous verbal rehearsal in a memory task as a function of age. \emph{Child Development}, 37, 283-299. \url{https://doi.org/10.2307/1126804}
+#' @examples 
+#' chisq.test(xtabs(count ~ grade + frequency, data = FBC66_T1))
+#' 
+"FBC66_T1"
 
 #' @title Johnson, Cheung and Donnellan (2014), Study 2
 #'

@@ -757,6 +757,7 @@ usethis::use_data(GSBE10, overwrite = TRUE)
 
 # Dataset 37: ResearchBox54, Study 1 (chi-square test)
 
+
 s1 <- read.csv("data-raw/source/ResearchBox54/Data/Study 1 - Choose Charity.csv")
 
 s1$donate01<-ifelse(s1$Condition=="Open-ended"&
@@ -913,6 +914,18 @@ JZBJG_E2 <- e2.cleanData |>
   dplyr::mutate(gender = factor(gender, labels = c("man", "woman", "gender diverse")))
   tibble::as_tibble()
 usethis::use_data(JZBJG_E2, overwrite = TRUE)
+
+FBC66_T1_mat <- rbind(c(18, 1, 1), c(8, 7, 5), c(3, 4, 13))
+colnames(FBC66_T1_mat) <- c("0","1-2","3+")
+rownames(FBC66_T1_mat) <- c("K","2","5")
+FBC66_T1 <- tibble::tibble(count = as.numeric(FBC66_T1_mat),
+                           grade = factor(rep(c("K","2","5"), length.out = 9)),
+                           frequency = factor(rep(c("0","1-2","3+"), each = 3))) |>
+  dplyr::mutate(grade = relevel(grade, ref = "K"))
+
+usethis::use_data(FBC66_T1, overwrite = TRUE)
+
+
 # Generate skeleton for documentation
 for(file in list.files("../data",full.names = TRUE)){
   load(file)

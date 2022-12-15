@@ -17,7 +17,7 @@ A data frame with 2931 rows and 7 variables:
 }
 }
 \source{
-Open Science Foundation, \url{https://osf.io/vgxkf}, licensed under CC-By Attribution 4.0 International
+Open Science Foundation, \url{https://osf.io/vgxkf}, licensed under CC-BY Attribution 4.0 International
 }
 \usage{
 MULTI21_D2

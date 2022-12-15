@@ -16,7 +16,7 @@ A data frame with 10942 rows and 6 variables:
 }
 }
 \source{
-Shang Lin Chen, personal communication
+Shang Lin Chen, personal communication, distributed under CC BY-NC-SA 4.0
 }
 \usage{
 BRLS21_EDA

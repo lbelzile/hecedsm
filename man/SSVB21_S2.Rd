@@ -13,7 +13,7 @@ A data frame with 442 rows and 3 variables:
 }
 }
 \source{
-Open Science Foundation, \url{https://osf.io/hua8v/}, licensed under CC-By Attribution 4.0 International
+Open Science Foundation, \url{https://osf.io/hua8v/}, licensed under CC-BY Attribution 4.0 International
 }
 \usage{
 SSVB21_S2

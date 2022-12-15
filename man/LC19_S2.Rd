@@ -24,9 +24,6 @@ LC19_S2
 \description{
 A follow-up of Study 1 aiming to measure the mediating effect of the fluency of the advertisement on product evaluation, depending on the (in)consistency between description and display on product evaluation
 }
-\details{
-Distributed under CC-BY 4.0 license
-}
 \references{
 K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
 }

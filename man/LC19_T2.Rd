@@ -22,9 +22,6 @@ LC19_T2
 \description{
 Contingency table for Study 3, measuring the expected number of products as a function of the text description and image showing either one or six toothbrushes.
 }
-\details{
-Distributed under CC-BY 4.0 license
-}
 \references{
 K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
 }

@@ -13,7 +13,7 @@ A data frame with 124 rows and 3 variables:
 }
 }
 \source{
-Shang Lin Chen, personal communication
+Shang Lin Chen, personal communication, distributed under CC BY-NC-SA 4.0
 }
 \usage{
 BRLS21_T3

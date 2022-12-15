@@ -23,9 +23,6 @@ LC19_S1
 \description{
 A study on online descriptors and the impact on the perception of a product on the discrepancy between the text description and the image (e.g., a set of 6 toothbrushes when the image shows a single one), with two experimental conditions. The authors also measured the prior familiarity with the brand of the item.
 }
-\details{
-Distributed under CC-BY 4.0 license
-}
 \references{
 K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
 }

@@ -143,7 +143,7 @@
 #'   \item{\code{count}}{[integer] count of the number of children}
 #'}
 #' @references   Elliott, E. M., C. C. Morey, A.M. AuBuchon et al. (2021). \emph{Multilab Direct Replication of Flavell, Beach, and Chinsky (1966): Spontaneous Verbal Rehearsal in a Memory Task as a Function of Age}. Advances in Methods and Practices in Psychological Science. \url{https://doi.org/10.1177/25152459211018187}
-#' @source Open Science Foundation, \url{https://osf.io/vgxkf}, licensed under CC-By Attribution 4.0 International
+#' @source Open Science Foundation, \url{https://osf.io/vgxkf}, licensed under CC-BY Attribution 4.0 International
 "MULTI21_D1"
 
 
@@ -161,7 +161,7 @@
 #'   \item{\code{frequency}}{[factor] how often students verbalized during task, one of \code{never}, \code{sometimes} or \code{usually}}
 #'}
 #' @references   Elliott, E. M., C. C. Morey, A.M. AuBuchon et al. (2021). \emph{Multilab Direct Replication of Flavell, Beach, and Chinsky (1966): Spontaneous Verbal Rehearsal in a Memory Task as a Function of Age}. Advances in Methods and Practices in Psychological Science. \url{https://doi.org/10.1177/25152459211018187}
-#' @source Open Science Foundation, \url{https://osf.io/vgxkf}, licensed under CC-By Attribution 4.0 International
+#' @source Open Science Foundation, \url{https://osf.io/vgxkf}, licensed under CC-BY Attribution 4.0 International
 "MULTI21_D2"
 
 
@@ -296,7 +296,7 @@
 #'   \item{\code{condition}}{[factor] experimental condition, one of \code{Boost}, \code{BoostPlus} and \code{consensus}}
 #'}
 #' @references Stekelenburg, A. van, Schaap, G., Veling, H., & Buijzen, M. (2021). \emph{Boosting understanding and identification of scientific consensus can help to correct false beliefs.} Psychological Science, 32(\bold{10}), 1549–1565. \url{https://doi.org/10.1177/09567976211007788}
-#' @source Open Science Foundation, \url{https://osf.io/hua8v/}, licensed under CC-By Attribution 4.0 International
+#' @source Open Science Foundation, \url{https://osf.io/hua8v/}, licensed under CC-BY Attribution 4.0 International
 "SSVB21_S2"
 
 #' @title van Stekelenburg et al. (2021), Study 3
@@ -310,7 +310,7 @@
 #'   \item{\code{trust}}{[integer] score for the trust in scientists}
 #'}
 #' @references Stekelenburg, A. van, Schaap, G., Veling, H., & Buijzen, M. (2021). \emph{Boosting understanding and identification of scientific consensus can help to correct false beliefs.} Psychological Science, 32(\bold{10}), 1549–1565. \url{https://doi.org/10.1177/09567976211007788}
-#' @source Open Science Foundation, \url{https://osf.io/hua8v/}, licensed under CC-By Attribution 4.0 International
+#' @source Open Science Foundation, \url{https://osf.io/hua8v/}, licensed under CC-BY Attribution 4.0 International
 "SSVB21_S3"
 
 #' @title Roczniewska and Higgins (2019), Study 1
@@ -363,7 +363,6 @@
 #'   \item{\code{gender}}{[factor] gender of participant}
 #'   \item{\code{age}}{[integer] age of participant}
 #'}
-#' @details Distributed under CC-BY 4.0 license
 #' @references K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
 #' @source Mendeley, \url{https://doi.org/10.17632/r9t7hh7cy3.1}, licensed under CC BY 4.0
 "LC19_S1"
@@ -380,7 +379,6 @@
 #'   \item{\code{gender}}{[factor] gender of participant}
 #'   \item{\code{age}}{[integer] age of participant}
 #' }
-#' @details Distributed under CC-BY 4.0 license
 #' @references K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
 #' @source Mendeley, \url{https://doi.org/10.17632/r9t7hh7cy3.1}, licensed under CC BY 4.0
 "LC19_S2"
@@ -394,7 +392,6 @@
 #'   \item{\code{expected}}{[factor] expected number of toothbrushes}
 #'   \item{\code{count}}{[integer] count of occurence}
 #'}
-#' @details Distributed under CC-BY 4.0 license
 #' @references K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
 #' @source Mendeley, \url{https://doi.org/10.17632/r9t7hh7cy3.1}, licensed under CC BY 4.0
 "LC19_T2"
@@ -664,7 +661,7 @@
 #'   \item{\code{attention}}{[double] attention scale, average of 6 items}
 #'   \item{\code{satisfaction}}{[double] satisfaction score, a scale composed of 3 items}
 #'}
-#' @source Shang Lin Chen, personal communication
+#' @source Shang Lin Chen, personal communication, distributed under CC BY-NC-SA 4.0
 #' @references Labonté-LeMoyne, E., Jutras, M.-A., Léger, P.-M., Sénécal, S., Fredette, M., Begon, M., and Mathieu, M.-E. (2020). \emph{Does Reducing Sedentarity With Standing Desks Hinder Cognitive Performance? Human Factors}, 62(\bold{4}), 603–612. \url{https://doi.org/10.1177/0018720819879310}
 "LJLSFBM20"
 
@@ -680,7 +677,7 @@
 #'   \item{\code{task}}{[factor] type of distraction}
 #'   \item{\code{nviolation}}{[integer] total number of violations}
 #'}
-#' @source Shang Lin Chen, personal communication
+#' @source Shang Lin Chen, personal communication, distributed under CC BY-NC-SA 4.0
 #' @references Brodeur, M., Ruer, P. Léger, P. and S. Sénécal (2021).Smartwatches are more distracting than mobile phones while driving: Results from an experimental study, \emph{Accident Analysis & Prevention}, 149, 1-9.
 "BRLS21_T3"
 
@@ -696,7 +693,7 @@
 #'   \item{\code{eda}}{[double] electrodermal activity measure}
 #'   \item{\code{hr}}{[double] heart rate}
 #'}
-#' @source Shang Lin Chen, personal communication
+#' @source Shang Lin Chen, personal communication, distributed under CC BY-NC-SA 4.0
 #' @references Brodeur, M., Ruer, P. Léger, P. and S. Sénécal (2021).Smartwatches are more distracting than mobile phones while driving: Results from an experimental study, \emph{Accident Analysis & Prevention}, 149, 1-9.
 "BRLS21_EDA"
 

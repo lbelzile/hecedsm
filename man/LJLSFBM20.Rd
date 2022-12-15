@@ -24,7 +24,7 @@ A data frame with 296 rows and 14 variables:
 }
 }
 \source{
-Shang Lin Chen, personal communication
+Shang Lin Chen, personal communication, distributed under CC BY-NC-SA 4.0
 }
 \usage{
 LJLSFBM20

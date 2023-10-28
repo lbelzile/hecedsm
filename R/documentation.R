@@ -177,9 +177,9 @@
 #'   \item{\code{count}}{[integer] count of the number of student}
 #'}
 #' @references Flavell, J. H., Beach, D. R., & Chinsky, J. M. (1966). Spontaneous verbal rehearsal in a memory task as a function of age. \emph{Child Development}, 37, 283-299. \url{https://doi.org/10.2307/1126804}
-#' @examples 
+#' @examples
 #' chisq.test(xtabs(count ~ grade + frequency, data = FBC66_T1))
-#' 
+#'
 "FBC66_T1"
 
 #' @title Johnson, Cheung and Donnellan (2014), Study 2
@@ -619,9 +619,9 @@
 "teller"
 
 
-#' @title Temporal distance on expectations of war and peace
+#' @title Halevy and Berson (2022), Study 5
 #'
-#' @description Study 5 of Halevy and Berson (2022), who aimed to demonstrate that events in the distant future rather than the near future influenced the prospect of peace, along with the degree of abstractness.
+#' @description Study 5 of Halevy and Berson (2022) on "Temporal distance on expectations of war and peace", who aimed to demonstrate that events in the distant future rather than the near future influenced the prospect of peace, along with the degree of abstractness.
 #' The experimental design is a "2 (current state: war vs. peace) by 2 (predicted outcome: war vs. peace) by 2 (temporal distance: next year vs. twenty years into the future) mixed design", with current state and predicted outcome as between-subject factors and temporal distance as within-subject factor. The response is the estimated likelihood of each outcome on a 7-point Likert scale ranging from extremely unlikely (1) to extremely likely (7). Data are presented in long-format.
 #' The question asked was of the form «There is currently [war/peace] between the two tribes in Velvetia.  Thinking about [next year/in 20 years], how likely is it that there will be [war/peace] in Velvetia?»
 #'
@@ -734,7 +734,7 @@
 #' @references Hatano, A., Ogulmus, C., Shigemasu, H., & Murayama, K. (2022). \emph{Thinking About Thinking: People Underestimate How Enjoyable and Engaging Just Waiting Is}. Journal of Experimental Psychology: General, 151(\bold{12}), 3213–3229 \url{http://dx.doi.org/10.1037/xge0001255}
 "HOSM22_E4"
 
-#' @title Garcia et al. (2010
+#' @title Garcia et al. (2010)
 #' @description These data are from a study on gender discrimination. Participants were put with a file where a women was turned down promotion in favor of male colleague despite her being clearly more experimented and qualified. The authors manipulated the decision of the participant to this decision, either choosing not to challenge the decision (\code{no protest}), a request to reconsider based on individual qualities of the applicants (\code{individual}) and a request to reconsider based on abilities of women (\code{collective}).
 #'
 #' All items were measured using scales constructed using items measured using Likert scales ranging from strongly disagree (\code{1}) to strongly agree (\code{7}).

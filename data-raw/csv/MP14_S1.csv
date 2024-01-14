@@ -1,0 +1,203 @@
+"station","direction","distance"
+"Bloor-Yonge","east",1
+"Bloor-Yonge","east",2
+"Bloor-Yonge","east",2
+"Bloor-Yonge","east",3
+"Bloor-Yonge","east",1
+"Bloor-Yonge","east",1
+"Bloor-Yonge","east",2
+"Bloor-Yonge","east",1
+"Bloor-Yonge","east",3
+"Bloor-Yonge","east",2
+"Bloor-Yonge","east",1
+"Bloor-Yonge","east",1
+"Bloor-Yonge","east",2
+"Bloor-Yonge","east",1
+"Bloor-Yonge","east",3
+"Bloor-Yonge","east",1
+"Bloor-Yonge","east",2
+"Bloor-Yonge","east",1
+"Bloor-Yonge","east",1
+"Bloor-Yonge","east",1
+"Bloor-Yonge","east",2
+"Bloor-Yonge","east",2
+"Bloor-Yonge","east",1
+"Bloor-Yonge","west",1
+"Bloor-Yonge","west",1
+"Bloor-Yonge","west",5
+"Bloor-Yonge","west",1
+"Bloor-Yonge","west",5
+"Bloor-Yonge","west",2
+"Bloor-Yonge","west",3
+"Bloor-Yonge","west",1
+"Bloor-Yonge","west",1
+"Bloor-Yonge","west",2
+"Bloor-Yonge","west",4
+"Bloor-Yonge","west",2
+"Bloor-Yonge","west",3
+"Bloor-Yonge","west",3
+"Bloor-Yonge","west",2
+"Bloor-Yonge","west",1
+"Bloor-Yonge","west",2
+"Bloor-Yonge","west",2
+"Bloor-Yonge","west",1
+"Bloor-Yonge","west",4
+"Bloor-Yonge","west",1
+"Bloor-Yonge","west",1
+"Bloor-Yonge","west",2
+"Bloor-Yonge","west",3
+"Bloor-Yonge","west",2
+"Bloor-Yonge","west",2
+"Sherbourne","east",4
+"Sherbourne","east",1
+"Sherbourne","east",1
+"Sherbourne","east",4
+"Sherbourne","east",3
+"Sherbourne","east",3
+"Sherbourne","east",4
+"Sherbourne","east",5
+"Sherbourne","east",2
+"Sherbourne","east",3
+"Sherbourne","east",4
+"Sherbourne","east",2
+"Sherbourne","east",1
+"Sherbourne","east",3
+"Sherbourne","east",3
+"Sherbourne","east",2
+"Sherbourne","east",4
+"Sherbourne","east",3
+"Sherbourne","east",4
+"Sherbourne","east",2
+"Sherbourne","east",1
+"Sherbourne","east",2
+"Sherbourne","east",2
+"Sherbourne","east",3
+"Sherbourne","east",2
+"Sherbourne","east",4
+"Sherbourne","west",2
+"Sherbourne","west",5
+"Sherbourne","west",4
+"Sherbourne","west",5
+"Sherbourne","west",3
+"Sherbourne","west",4
+"Sherbourne","west",4
+"Sherbourne","west",3
+"Sherbourne","west",5
+"Sherbourne","west",6
+"Sherbourne","west",2
+"Sherbourne","west",5
+"Sherbourne","west",5
+"Sherbourne","west",4
+"Sherbourne","west",3
+"Sherbourne","west",4
+"Sherbourne","west",5
+"Sherbourne","west",4
+"Sherbourne","west",2
+"Sherbourne","west",5
+"Sherbourne","west",3
+"Sherbourne","west",4
+"Sherbourne","west",5
+"Sherbourne","west",5
+"Sherbourne","west",3
+"Spadina","east",5
+"Spadina","east",4
+"Spadina","east",3
+"Spadina","east",3
+"Spadina","east",4
+"Spadina","east",1
+"Spadina","east",4
+"Spadina","east",4
+"Spadina","east",5
+"Spadina","east",3
+"Spadina","east",2
+"Spadina","east",4
+"Spadina","east",5
+"Spadina","east",3
+"Spadina","east",3
+"Spadina","east",4
+"Spadina","east",2
+"Spadina","east",4
+"Spadina","east",4
+"Spadina","east",5
+"Spadina","east",2
+"Spadina","east",3
+"Spadina","east",4
+"Spadina","east",5
+"Spadina","east",5
+"Spadina","east",4
+"Spadina","west",2
+"Spadina","west",4
+"Spadina","west",3
+"Spadina","west",3
+"Spadina","west",2
+"Spadina","west",4
+"Spadina","west",3
+"Spadina","west",3
+"Spadina","west",2
+"Spadina","west",1
+"Spadina","west",2
+"Spadina","west",4
+"Spadina","west",3
+"Spadina","west",2
+"Spadina","west",2
+"Spadina","west",5
+"Spadina","west",2
+"Spadina","west",2
+"Spadina","west",4
+"Spadina","west",3
+"Spadina","west",2
+"Spadina","west",1
+"Spadina","west",2
+"Spadina","west",2
+"Spadina","west",3
+"St. George","east",3
+"St. George","east",1
+"St. George","east",4
+"St. George","east",1
+"St. George","east",3
+"St. George","east",3
+"St. George","east",2
+"St. George","east",4
+"St. George","east",3
+"St. George","east",3
+"St. George","east",3
+"St. George","east",2
+"St. George","east",4
+"St. George","east",1
+"St. George","east",2
+"St. George","east",3
+"St. George","east",3
+"St. George","east",3
+"St. George","east",2
+"St. George","east",4
+"St. George","east",5
+"St. George","east",3
+"St. George","east",3
+"St. George","east",1
+"St. George","east",3
+"St. George","east",3
+"St. George","west",2
+"St. George","west",3
+"St. George","west",1
+"St. George","west",1
+"St. George","west",2
+"St. George","west",1
+"St. George","west",3
+"St. George","west",1
+"St. George","west",2
+"St. George","west",1
+"St. George","west",3
+"St. George","west",1
+"St. George","west",1
+"St. George","west",1
+"St. George","west",2
+"St. George","west",2
+"St. George","west",1
+"St. George","west",1
+"St. George","west",1
+"St. George","west",3
+"St. George","west",1
+"St. George","west",1
+"St. George","west",2
+"St. George","west",1
+"St. George","west",3

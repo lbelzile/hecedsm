@@ -1,0 +1,91 @@
+"feedback","material","age","words"
+"none","low freq/low emotion","fifth grade",7
+"none","low freq/low emotion","fifth grade",7
+"none","low freq/low emotion","fifth grade",9
+"none","low freq/low emotion","fifth grade",10
+"none","low freq/low emotion","fifth grade",9
+"none","high freq/low emotion","fifth grade",7
+"none","high freq/low emotion","fifth grade",8
+"none","high freq/low emotion","fifth grade",9
+"none","high freq/low emotion","fifth grade",10
+"none","high freq/low emotion","fifth grade",10
+"none","high freq/high emotion","fifth grade",7
+"none","high freq/high emotion","fifth grade",7
+"none","high freq/high emotion","fifth grade",10
+"none","high freq/high emotion","fifth grade",7
+"none","high freq/high emotion","fifth grade",9
+"none","low freq/low emotion","senior",10
+"none","low freq/low emotion","senior",8
+"none","low freq/low emotion","senior",9
+"none","low freq/low emotion","senior",7
+"none","low freq/low emotion","senior",8
+"none","high freq/low emotion","senior",7
+"none","high freq/low emotion","senior",8
+"none","high freq/low emotion","senior",9
+"none","high freq/low emotion","senior",9
+"none","high freq/low emotion","senior",11
+"none","high freq/high emotion","senior",6
+"none","high freq/high emotion","senior",7
+"none","high freq/high emotion","senior",8
+"none","high freq/high emotion","senior",9
+"none","high freq/high emotion","senior",9
+"positive","low freq/low emotion","fifth grade",6
+"positive","low freq/low emotion","fifth grade",8
+"positive","low freq/low emotion","fifth grade",7
+"positive","low freq/low emotion","fifth grade",9
+"positive","low freq/low emotion","fifth grade",9
+"positive","high freq/low emotion","fifth grade",6
+"positive","high freq/low emotion","fifth grade",8
+"positive","high freq/low emotion","fifth grade",8
+"positive","high freq/low emotion","fifth grade",9
+"positive","high freq/low emotion","fifth grade",9
+"positive","high freq/high emotion","fifth grade",3
+"positive","high freq/high emotion","fifth grade",5
+"positive","high freq/high emotion","fifth grade",3
+"positive","high freq/high emotion","fifth grade",6
+"positive","high freq/high emotion","fifth grade",5
+"positive","low freq/low emotion","senior",6
+"positive","low freq/low emotion","senior",9
+"positive","low freq/low emotion","senior",8
+"positive","low freq/low emotion","senior",7
+"positive","low freq/low emotion","senior",10
+"positive","high freq/low emotion","senior",6
+"positive","high freq/low emotion","senior",7
+"positive","high freq/low emotion","senior",9
+"positive","high freq/low emotion","senior",9
+"positive","high freq/low emotion","senior",10
+"positive","high freq/high emotion","senior",6
+"positive","high freq/high emotion","senior",8
+"positive","high freq/high emotion","senior",6
+"positive","high freq/high emotion","senior",9
+"positive","high freq/high emotion","senior",8
+"negative","low freq/low emotion","fifth grade",10
+"negative","low freq/low emotion","fifth grade",8
+"negative","low freq/low emotion","fifth grade",8
+"negative","low freq/low emotion","fifth grade",6
+"negative","low freq/low emotion","fifth grade",8
+"negative","high freq/low emotion","fifth grade",7
+"negative","high freq/low emotion","fifth grade",7
+"negative","high freq/low emotion","fifth grade",6
+"negative","high freq/low emotion","fifth grade",9
+"negative","high freq/low emotion","fifth grade",9
+"negative","high freq/high emotion","fifth grade",2
+"negative","high freq/high emotion","fifth grade",3
+"negative","high freq/high emotion","fifth grade",4
+"negative","high freq/high emotion","fifth grade",5
+"negative","high freq/high emotion","fifth grade",5
+"negative","low freq/low emotion","senior",9
+"negative","low freq/low emotion","senior",10
+"negative","low freq/low emotion","senior",7
+"negative","low freq/low emotion","senior",7
+"negative","low freq/low emotion","senior",9
+"negative","high freq/low emotion","senior",8
+"negative","high freq/low emotion","senior",8
+"negative","high freq/low emotion","senior",6
+"negative","high freq/low emotion","senior",9
+"negative","high freq/low emotion","senior",9
+"negative","high freq/high emotion","senior",6
+"negative","high freq/high emotion","senior",5
+"negative","high freq/high emotion","senior",7
+"negative","high freq/high emotion","senior",8
+"negative","high freq/high emotion","senior",9

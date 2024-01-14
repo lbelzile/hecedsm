@@ -1,0 +1,205 @@
+"lab","age","frequency","count"
+"Austria","10yo","never",0
+"Austria","10yo","sometimes",3
+"Austria","10yo","usually",5
+"Austria","5yo","never",1
+"Austria","5yo","sometimes",0
+"Austria","5yo","usually",7
+"Austria","6yo","never",2
+"Austria","6yo","sometimes",1
+"Austria","6yo","usually",5
+"Austria","7yo","never",0
+"Austria","7yo","sometimes",0
+"Austria","7yo","usually",9
+"Bristol","10yo","never",1
+"Bristol","10yo","sometimes",2
+"Bristol","10yo","usually",7
+"Bristol","5yo","never",2
+"Bristol","5yo","sometimes",1
+"Bristol","5yo","usually",0
+"Bristol","6yo","never",1
+"Bristol","6yo","sometimes",3
+"Bristol","6yo","usually",4
+"Bristol","7yo","never",0
+"Bristol","7yo","sometimes",1
+"Bristol","7yo","usually",8
+"Cardiff","10yo","never",0
+"Cardiff","10yo","sometimes",1
+"Cardiff","10yo","usually",19
+"Cardiff","5yo","never",5
+"Cardiff","5yo","sometimes",4
+"Cardiff","5yo","usually",10
+"Cardiff","6yo","never",1
+"Cardiff","6yo","sometimes",1
+"Cardiff","6yo","usually",11
+"Cardiff","7yo","never",0
+"Cardiff","7yo","sometimes",1
+"Cardiff","7yo","usually",16
+"Costa Rica","10yo","never",4
+"Costa Rica","10yo","sometimes",4
+"Costa Rica","10yo","usually",12
+"Costa Rica","5yo","never",1
+"Costa Rica","5yo","sometimes",9
+"Costa Rica","5yo","usually",8
+"Costa Rica","6yo","never",3
+"Costa Rica","6yo","sometimes",9
+"Costa Rica","6yo","usually",8
+"Costa Rica","7yo","never",3
+"Costa Rica","7yo","sometimes",6
+"Costa Rica","7yo","usually",11
+"Frankfurt","10yo","never",0
+"Frankfurt","10yo","sometimes",3
+"Frankfurt","10yo","usually",24
+"Frankfurt","5yo","never",10
+"Frankfurt","5yo","sometimes",13
+"Frankfurt","5yo","usually",14
+"Frankfurt","6yo","never",3
+"Frankfurt","6yo","sometimes",18
+"Frankfurt","6yo","usually",28
+"Frankfurt","7yo","never",3
+"Frankfurt","7yo","sometimes",11
+"Frankfurt","7yo","usually",31
+"Italy","10yo","never",0
+"Italy","10yo","sometimes",3
+"Italy","10yo","usually",9
+"Italy","5yo","never",3
+"Italy","5yo","sometimes",1
+"Italy","5yo","usually",4
+"Italy","6yo","never",1
+"Italy","6yo","sometimes",3
+"Italy","6yo","usually",9
+"Italy","7yo","never",2
+"Italy","7yo","sometimes",10
+"Italy","7yo","usually",10
+"Louisiana","10yo","never",0
+"Louisiana","10yo","sometimes",2
+"Louisiana","10yo","usually",6
+"Louisiana","5yo","never",3
+"Louisiana","5yo","sometimes",4
+"Louisiana","5yo","usually",2
+"Louisiana","6yo","never",1
+"Louisiana","6yo","sometimes",3
+"Louisiana","6yo","usually",6
+"Louisiana","7yo","never",1
+"Louisiana","7yo","sometimes",4
+"Louisiana","7yo","usually",7
+"Missouri","10yo","never",4
+"Missouri","10yo","sometimes",1
+"Missouri","10yo","usually",14
+"Missouri","5yo","never",1
+"Missouri","5yo","sometimes",6
+"Missouri","5yo","usually",7
+"Missouri","6yo","never",4
+"Missouri","6yo","sometimes",5
+"Missouri","6yo","usually",14
+"Missouri","7yo","never",0
+"Missouri","7yo","sometimes",2
+"Missouri","7yo","usually",15
+"Nebraska","10yo","never",5
+"Nebraska","10yo","sometimes",7
+"Nebraska","10yo","usually",8
+"Nebraska","5yo","never",5
+"Nebraska","5yo","sometimes",6
+"Nebraska","5yo","usually",9
+"Nebraska","6yo","never",2
+"Nebraska","6yo","sometimes",11
+"Nebraska","6yo","usually",7
+"Nebraska","7yo","never",3
+"Nebraska","7yo","sometimes",11
+"Nebraska","7yo","usually",6
+"New Zealand","10yo","never",0
+"New Zealand","10yo","sometimes",4
+"New Zealand","10yo","usually",16
+"New Zealand","5yo","never",5
+"New Zealand","5yo","sometimes",9
+"New Zealand","5yo","usually",4
+"New Zealand","6yo","never",2
+"New Zealand","6yo","sometimes",10
+"New Zealand","6yo","usually",6
+"New Zealand","7yo","never",2
+"New Zealand","7yo","sometimes",6
+"New Zealand","7yo","usually",12
+"Norway","10yo","never",0
+"Norway","10yo","sometimes",2
+"Norway","10yo","usually",10
+"Norway","5yo","never",5
+"Norway","5yo","sometimes",5
+"Norway","5yo","usually",4
+"Norway","6yo","never",4
+"Norway","6yo","sometimes",2
+"Norway","6yo","usually",4
+"Norway","7yo","never",2
+"Norway","7yo","sometimes",3
+"Norway","7yo","usually",10
+"Oregon","10yo","never",0
+"Oregon","10yo","sometimes",0
+"Oregon","10yo","usually",8
+"Oregon","5yo","never",2
+"Oregon","5yo","sometimes",2
+"Oregon","5yo","usually",7
+"Oregon","6yo","never",1
+"Oregon","6yo","sometimes",1
+"Oregon","6yo","usually",5
+"Oregon","7yo","never",0
+"Oregon","7yo","sometimes",0
+"Oregon","7yo","usually",6
+"Switzerland","10yo","never",0
+"Switzerland","10yo","sometimes",3
+"Switzerland","10yo","usually",9
+"Switzerland","5yo","never",1
+"Switzerland","5yo","sometimes",8
+"Switzerland","5yo","usually",1
+"Switzerland","6yo","never",2
+"Switzerland","6yo","sometimes",6
+"Switzerland","6yo","usually",11
+"Switzerland","7yo","never",1
+"Switzerland","7yo","sometimes",2
+"Switzerland","7yo","usually",10
+"Turkey","10yo","never",0
+"Turkey","10yo","sometimes",1
+"Turkey","10yo","usually",7
+"Turkey","5yo","never",1
+"Turkey","5yo","sometimes",4
+"Turkey","5yo","usually",1
+"Turkey","6yo","never",1
+"Turkey","6yo","sometimes",2
+"Turkey","6yo","usually",3
+"Turkey","7yo","never",0
+"Turkey","7yo","sometimes",2
+"Turkey","7yo","usually",5
+"Virginia","10yo","never",0
+"Virginia","10yo","sometimes",1
+"Virginia","10yo","usually",9
+"Virginia","5yo","never",2
+"Virginia","5yo","sometimes",3
+"Virginia","5yo","usually",4
+"Virginia","6yo","never",0
+"Virginia","6yo","sometimes",3
+"Virginia","6yo","usually",6
+"Virginia","7yo","never",0
+"Virginia","7yo","sometimes",3
+"Virginia","7yo","usually",7
+"Wisconsin","10yo","never",0
+"Wisconsin","10yo","sometimes",3
+"Wisconsin","10yo","usually",10
+"Wisconsin","5yo","never",3
+"Wisconsin","5yo","sometimes",1
+"Wisconsin","5yo","usually",4
+"Wisconsin","6yo","never",0
+"Wisconsin","6yo","sometimes",4
+"Wisconsin","6yo","usually",8
+"Wisconsin","7yo","never",1
+"Wisconsin","7yo","sometimes",7
+"Wisconsin","7yo","usually",11
+"Witten","10yo","never",0
+"Witten","10yo","sometimes",0
+"Witten","10yo","usually",8
+"Witten","5yo","never",3
+"Witten","5yo","sometimes",4
+"Witten","5yo","usually",1
+"Witten","6yo","never",0
+"Witten","6yo","sometimes",2
+"Witten","6yo","usually",6
+"Witten","7yo","never",1
+"Witten","7yo","sometimes",4
+"Witten","7yo","usually",3

@@ -1,0 +1,9 @@
+"gender","decision","admin","count"
+"male","promote","simple",21
+"female","promote","simple",14
+"male","hold file","simple",3
+"female","hold file","simple",10
+"male","promote","complex",11
+"female","promote","complex",5
+"male","hold file","complex",9
+"female","hold file","complex",20

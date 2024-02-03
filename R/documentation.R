@@ -640,7 +640,7 @@
 "HB22_S5"
 
 
-#' Standing desks and cognitive performance
+#' Labonte-LeMoyne et al. (2020)
 #'
 #' Perceived performance for standing desk (relative to sitting desk) measured from questionnaires and obtained from electroencephalograph (EEG) data.
 #'

@@ -45,7 +45,7 @@ remotes::install_github("lbelzile/hecedsm")
 | LC19_S1    | [Lee and Choi (2019), Study 1](https://doi.org/10.1016/j.jretconser.2019.03.015)                    | ANCOVA                                                 |
 | LC19_S2    | [Lee and Choi (2019), Study 2](https://doi.org/10.1016/j.jretconser.2019.03.015)                    | ANCOVA, mediation                                      |
 | LC19_T2    | [Lee and Choi (2019), Table 2](https://doi.org/10.1016/j.jretconser.2019.03.015)                    | chi-square test                                        |
-| LJLSFBM20  | [Standing desks and cognitive performance](https://doi.org/10.1177/0018720819879310)                | repeated measures, three-way ANOVA, linear mixed model |
+| LJLSFBM20  | [Labonté-LeMoyne et al. (2020)](https://doi.org/10.1177/0018720819879310)                           | repeated measures, three-way ANOVA, linear mixed model |
 | LRMM22_S1  | [Liu et al. (2022+) Study 1](https://doi.org/10.1037/pspi0000402)                                   | two-way ANOVA                                          |
 | LRMM22_S3  | [Liu et al. (2021), Study 3](https://doi.org/10.1037/pspi0000402)                                   | paired t-test                                          |
 | LRMM22_S5b | [Liu et al. (2019), Study 5b](https://doi.org/10.1037/pspi0000402)                                  | t-test, mediation                                      |

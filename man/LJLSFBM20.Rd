@@ -3,7 +3,7 @@
 \docType{data}
 \name{LJLSFBM20}
 \alias{LJLSFBM20}
-\title{Standing desks and cognitive performance}
+\title{Labonte-LeMoyne et al. (2020)}
 \format{
 A data frame with 296 rows and 14 variables:
 \describe{

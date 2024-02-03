@@ -3,7 +3,7 @@
 \docType{data}
 \name{BRLS21_EDA}
 \alias{BRLS21_EDA}
-\title{Smartwatch measures for distractions while driving}
+\title{Brodeur et al. (2021), Table 3}
 \format{
 A data frame with 10942 rows and 6 variables:
 \describe{

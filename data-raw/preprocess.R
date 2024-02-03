@@ -932,18 +932,9 @@ SKD23_S2A <- rb712rawDate |>
                 MCHECK_PROPORTION,
                 proportion) |>
   dplyr::rename_with(tolower) |>
-  dplyr::rename(mcheck = mcheck_proportion) |>
+  dplyr::rename(mcheck = mcheck_proportion)
   usethis::use_data(SKD23_S2A, overwrite = TRUE)
 
-linmod <- lm(pef ~ propfac, data = SKD23_S2A)
-anova(linmod)
-
-margmean <- linmod |>  emmeans::emmeans(specs = "propfac")
-margmean |> emmeans::contrast(
-  method = list(refvshalf = c(1, -1, 0, 0),
-                refvsone =  c(1, 0, -1, 0),
-                refvstwo =  c(1, 0, 0, -1)))
-summary(lm(pef ~ proportion, data = SKD23_S2A))
 
 # Generate skeleton for documentation
 for(file in list.files("../data",full.names = TRUE)){

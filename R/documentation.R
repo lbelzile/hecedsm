@@ -619,7 +619,7 @@
 "teller"
 
 
-#' @title Temporal distance on expectations of war and peace
+#' @title Halevy and Berson (2022), Study 5
 #'
 #' @description Study 5 of Halevy and Berson (2022), who aimed to demonstrate that events in the distant future rather than the near future influenced the prospect of peace, along with the degree of abstractness.
 #' The experimental design is a "2 (current state: war vs. peace) by 2 (predicted outcome: war vs. peace) by 2 (temporal distance: next year vs. twenty years into the future) mixed design", with current state and predicted outcome as between-subject factors and temporal distance as within-subject factor. The response is the estimated likelihood of each outcome on a 7-point Likert scale ranging from extremely unlikely (1) to extremely likely (7). Data are presented in long-format.
@@ -665,7 +665,7 @@
 #' @references Labonté-LeMoyne, E., Jutras, M.-A., Léger, P.-M., Sénécal, S., Fredette, M., Begon, M., and Mathieu, M.-E. (2020). \emph{Does Reducing Sedentarity With Standing Desks Hinder Cognitive Performance? Human Factors}, 62(\bold{4}), 603–612. \url{https://doi.org/10.1177/0018720819879310}
 "LJLSFBM20"
 
-#' Distractions from smartwatches while driving
+#' Brodeur et al. (2021), exploratory data analysis
 #'
 #' Experiment from Tech3Lab using a driving simulator to study
 #' the impact of various distraction on attention and performance.
@@ -678,10 +678,10 @@
 #'   \item{\code{nviolation}}{[integer] total number of violations}
 #'}
 #' @source Shang Lin Chen, personal communication, distributed under CC BY-NC-SA 4.0
-#' @references Brodeur, M., Ruer, P. Léger, P. and S. Sénécal (2021).Smartwatches are more distracting than mobile phones while driving: Results from an experimental study, \emph{Accident Analysis & Prevention}, 149, 1-9.
+#' @references Brodeur, M., Ruer, P. Léger, P. and S. Sénécal (2021). Smartwatches are more distracting than mobile phones while driving: Results from an experimental study, \emph{Accident Analysis & Prevention}, 149, 1-9. \url{https://doi.org/10.1016/j.aap.2020.105846}
 "BRLS21_T3"
 
-#' @title Smartwatch measures for distractions while driving
+#' Brodeur et al. (2021), Table 3
 #' @description Electrodermal activity measured by a smartwatch as part of an experiment on
 #' impact of smartwatches on distraction while driving. The experiment was conducted at Tech3Lab, but the data are not utilized in the paper.
 #' @format A data frame with 10942 rows and 6 variables:
@@ -838,13 +838,13 @@
 
 
 
-#' @title Sokolova el al. (2023) Study 2A
+#' @title Sokolova el al. (2023), Study 2A
 #'
 #' @description The study considers the environmental perception of packaging when
 #' objects contain paper/cardboard wrapping, in addition to plastic container. The
 #' authors postulated that the more the quantity of paper, the more ecofriendly the
 #' package was perceived to be and that this relations increases with the proportion
-#' of paper wrapping relativ to plastic. The study used a between-subject design with
+#' of paper wrapping relative to plastic. The study used a between-subject design with
 #' four categories, and recruited 802 participants on MTurk.
 #'
 #' @format A data frame with 802 rows and 3 variables:
@@ -856,7 +856,7 @@
 #' @references Sokolova T, Krishna A, Döring T. (2023) \emph{Paper Meets Plastic: The Perceived Environmental Friendliness of Product Packaging}. Journal of Consumer Research. \url{https://doi.org/10.1093/jcr/ucad008}
 #' @source  Research Box 712, \url{https://researchbox.org/712}, licensed under CC BY 4.0
 #' @examples
-#' SKD23_S2A
+#' data(SKD23_S2A, package = "hecedsm")
 #' # Treat data as continuous
 #' linmod <- lm(pef ~ proportion, data = SKD23_S2A)
 #' anova(linmod)
@@ -864,6 +864,35 @@
 #' margmean <- anovamod |>  emmeans::emmeans(specs = "proportion")
 #' margmean |> emmeans::contrast(
 #'  method = list(refvshalf = c(1, -1, 0, 0),
-#'                 refvsone =  c(1, 0, -1, 0),
+#'                refvsone =  c(1, 0, -1, 0),
 #'                refvstwo =  c(1, 0, 0, -1)))
 "SKD23_S2A"
+
+#' @title Gaesser, Shimura and Cikara (2020), Experiment 2
+#' @description
+#' Data obtained by running an online survey on Qualtrics. Self-report questions on thoughts, feeling and self-attributes, in the context of a competition between parties. Participants reported their political preferences, but were randomly allocated to either Democrat or Republican team. The description implied a problem-solving challenge (which did not occur).
+#' @format A data frame with 5810 rows and 8 variables:
+#' \describe{
+#'   \item{\code{id}}{[factor] participant identifier}
+#'   \item{\code{help}}{[integer] experimental manipulation either episodic helping, or no help (\code{control})}
+#'   \item{\code{group}}{[factor] group, either \code{in} or \code{out} group}
+#'   \item{\code{story}}{[factor] story narrative, one from \code{A} to \code{J}}
+#'   \item{\code{scene_imagery}}{[double] standardized score for scene imagery, "Did you imagine a scene of helping the person in your mind?",(1=not at all, 4=moderate, 7=coherently and clearly)}
+#'   \item{\code{person_imagery}}{[double] standardized score for person imagery, "Did you visualize the person in your mind?" (1=vividly, as if you were currently there, 4=moderate, 7=not at all)}
+#'   \item{\code{persp_taking}}{[double] standardized score on the perspective, "Did you consider the person's thoughts and feelings?" (1=not at all, 4=moderate, 7=strongly considered)}
+#'   \item{\code{willing_help}}{[double] standardized score for willingess to help, "How likely would you be to help in this situation?" (1=not at all, 4=moderately willing, 7=very willing)}
+#'}
+#' @note The participant demographic information is given in the attributes as metadata.
+#'
+#' @references Gaesser, B., Shimura, Y., & Cikara, M. (2020). Episodic simulation reduces intergroup bias in prosocial intentions and behavior. \emph{Journal of Personality and Social Psychology}, 118(\bold{4}), 683–705. \url{https://doi.org/10.1037/pspi0000194}
+#' @examples
+#' # Authors coded -1/1 for group and help
+#' # Unweighted regression (different weights depending on sample size)
+#' GSC20_E2$group_w <- ifelse(GSC20_E2$group=="in", 1, -1)
+#' help_num <- -with(GSC20_E2, sum(help == "episodic") / sum(help == "control"))
+#' GSC20_E2$help_w <- ifelse(GSC20_E2$help == "episodic", 1, -help_num)
+#' GSC20_E2$group_bin <- ifelse(GSC20_E2$group == "control", -1, 1)
+#' GSC20_E2$help_bin <- ifelse(GSC20_E2$help == "in", 1, -1)
+#' lme4::lmer(willing_help ~ group*help + (1 + group | id) + (1 | story), data = GSC20_E2)
+#' lme4::lmer(willing_help ~ group_w*help_w + (1 + group_w | id) + (1 | story), data = GSC20_E2)
+"GSC20_E2"

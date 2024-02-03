@@ -1,0 +1,30 @@
+---
+output: github_document
+---
+
+# hecedsm
+
+This **R** package contains data sets for the HEC Montreal PhD course MATH 80667A (Experimental Design and Statistical Methods).
+
+Most of the databases are extracted from journal articles who shared their data on Open Science Foundation, on Research Box or otherwise.
+
+
+You can install the package from Github using the following commands after installing `remotes`:
+
+```{r}
+#| eval: false
+#| echo: true
+# Uncomment this line if the package 'remotes' isn't installed
+#install.packages("remotes") 
+remotes::install_github("lbelzile/hecedsm")
+```
+
+```{r}
+#| eval: true
+#| echo: false
+datasets <- read.csv("data-raw/datasets.csv", header = TRUE)[1:44,]
+datasets$Title2 <- with(datasets, ifelse(DOI != "", paste0("[",Title,"]","(https://doi.org/", DOI, ")"), Title))
+datasets |> dplyr::select(Dataset, Title2, Type) |>
+  knitr::kable(col.names = c("name", "source", "usage"))
+
+```

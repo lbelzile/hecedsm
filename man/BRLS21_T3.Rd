@@ -3,7 +3,7 @@
 \docType{data}
 \name{BRLS21_T3}
 \alias{BRLS21_T3}
-\title{Distractions from smartwatches while driving}
+\title{Brodeur et al. (2021), exploratory data analysis}
 \format{
 A data frame with 124 rows and 3 variables:
 \describe{
@@ -25,6 +25,6 @@ The experimental conditions were compared in Table 3 of Brodeur et al. (2021)
 using Wilcoxon's signed rank test.
 }
 \references{
-Brodeur, M., Ruer, P. Léger, P. and S. Sénécal (2021).Smartwatches are more distracting than mobile phones while driving: Results from an experimental study, \emph{Accident Analysis & Prevention}, 149, 1-9.
+Brodeur, M., Ruer, P. Léger, P. and S. Sénécal (2021). Smartwatches are more distracting than mobile phones while driving: Results from an experimental study, \emph{Accident Analysis & Prevention}, 149, 1-9. \url{https://doi.org/10.1016/j.aap.2020.105846}
 }
 \keyword{datasets}

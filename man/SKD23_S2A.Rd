@@ -3,7 +3,7 @@
 \docType{data}
 \name{SKD23_S2A}
 \alias{SKD23_S2A}
-\title{Sokolova el al. (2023) Study 2A}
+\title{Sokolova el al. (2023), Study 2A}
 \format{
 A data frame with 802 rows and 3 variables:
 \describe{
@@ -23,11 +23,11 @@ The study considers the environmental perception of packaging when
 objects contain paper/cardboard wrapping, in addition to plastic container. The
 authors postulated that the more the quantity of paper, the more ecofriendly the
 package was perceived to be and that this relations increases with the proportion
-of paper wrapping relativ to plastic. The study used a between-subject design with
+of paper wrapping relative to plastic. The study used a between-subject design with
 four categories, and recruited 802 participants on MTurk.
 }
 \examples{
-SKD23_S2A
+data(SKD23_S2A, package = "hecedsm")
 # Treat data as continuous
 linmod <- lm(pef ~ proportion, data = SKD23_S2A)
 anova(linmod)
@@ -35,7 +35,7 @@ anovamod <- lm(pef ~ factor(proportion), data = SKD23_S2A)
 margmean <- anovamod |>  emmeans::emmeans(specs = "proportion")
 margmean |> emmeans::contrast(
  method = list(refvshalf = c(1, -1, 0, 0),
-                refvsone =  c(1, 0, -1, 0),
+               refvsone =  c(1, 0, -1, 0),
                refvstwo =  c(1, 0, 0, -1)))
 }
 \references{

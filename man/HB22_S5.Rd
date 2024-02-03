@@ -3,7 +3,7 @@
 \docType{data}
 \name{HB22_S5}
 \alias{HB22_S5}
-\title{Temporal distance on expectations of war and peace}
+\title{Halevy and Berson (2022), Study 5}
 \format{
 A data frame with 554 rows and 7 variables:
 \describe{

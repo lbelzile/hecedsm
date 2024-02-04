@@ -33,7 +33,7 @@ dat_raw_pain$condition |> attr('labels')
 
 
 # Dataset 3: Liu et al. (2022), Experiment 1
-LRMM22_S1 <- haven::read_sav(file = "data-raw/source/LRMM22_S1.sav") |>
+LRMM23_S1 <- haven::read_sav(file = "data-raw/source/LRMM22_S1.sav") |>
   dplyr::select(DV,
                 self0,
                 form,
@@ -46,9 +46,9 @@ LRMM22_S1 <- haven::read_sav(file = "data-raw/source/LRMM22_S1.sav") |>
                 form = haven::as_factor(form, levels = "labels"),
                 gender = haven::as_factor(gender, levels = "labels"),
                 age = as.integer(age))
-levels(LRMM22_S1$form) <- c("email","text","phone","other")
-levels(LRMM22_S1$gender) <- tolower(levels(LRMM22_S1$gender))
-usethis::use_data(LRMM22_S1, overwrite = TRUE)
+levels(LRMM23_S1$form) <- c("email","text","phone","other")
+levels(LRMM23_S1$gender) <- tolower(levels(LRMM22_S1$gender))
+usethis::use_data(LRMM23_S1, overwrite = TRUE)
 
 
 # Dataset 4: Johnson, Cheung and Donnellan (2014)
@@ -384,7 +384,7 @@ AA21 <- read.csv(file = "data-raw/source/AA21_N170_per_epoch.csv") |>
 usethis::use_data(AA21, overwrite = TRUE)
 
 # Dataset 22: Liu et al. (2022) Study 3
-LRMM22_S3 <- haven::read_sav(file = "data-raw/source/LRMM22_S3.sav") |>
+LRMM23_S3 <- haven::read_sav(file = "data-raw/source/LRMM22_S3.sav") |>
   dplyr::select(dv_responder,
                 dv_initiator,
                 age,
@@ -403,14 +403,14 @@ LRMM22_S3 <- haven::read_sav(file = "data-raw/source/LRMM22_S3.sav") |>
          gender_resp = as_factor(gender_resp),
          gender_init = as_factor(gender_init)
          )
-levels(LRMM22_S3$gender_init) <- tolower(levels(LRMM22_S3$gender_init))
-levels(LRMM22_S3$gender_resp) <- tolower(levels(LRMM22_S3$gender_resp))
-usethis::use_data(LRMM22_S3, overwrite = TRUE)
+levels(LRMM23_S3$gender_init) <- tolower(levels(LRMM23_S3$gender_init))
+levels(LRMM23_S3$gender_resp) <- tolower(levels(LRMM23_S3$gender_resp))
+usethis::use_data(LRMM23_S3, overwrite = TRUE)
 
 
 # Dataset 23: Liu et al. (2022), Experiment 5b
 
-LRMM22_S5b <- haven::read_sav("data-raw/source/LRMM22_S5b.sav") |>
+LRMM23_S5b <- haven::read_sav("data-raw/source/LRMM22_S5b.sav") |>
   transmute(appreciation = ifelse(IV_self1other0 == 1,
                                   (self_1 + self_2 + self_3 + self_4)/4,
                                   (other_1 + other_2 + other_3 + other_4)/4),
@@ -422,8 +422,8 @@ LRMM22_S5b <- haven::read_sav("data-raw/source/LRMM22_S5b.sav") |>
          age = as.integer(age),
          gender = as_factor(gender),
          )
-levels(LRMM22_S5b$gender) <- tolower(levels(LRMM22_S5b$gender))
-usethis::use_data(LRMM22_S5b, overwrite = TRUE)
+levels(LRMM23_S5b$gender) <- tolower(levels(LRMM23_S5b$gender))
+usethis::use_data(LRMM23_S5b, overwrite = TRUE)
 
 # Data 24: ManyLab replication of Risen and Gilovich (2008)
 
@@ -481,19 +481,19 @@ BL22_E <- read.csv("data-raw/source/Brucks_Levav_2022/eyegaze_data_by_participan
 usethis::use_data(BL22_E, overwrite = TRUE)
 
 # Dataset 27 and 28: Duke and Amir (2022+)
-DA22_E1 <- read.csv("data-raw/source/DukeAmir2022E1.csv") |>
+DA23_E1 <- read.csv("data-raw/source/DukeAmir2022E1.csv") |>
   tibble::as_tibble() |>
   dplyr::rename(format = cond) |>
-  mutate(format = factor(format),
+  dplyr::mutate(format = factor(format),
          gender = factor(gender, labels = c("male",
                                             "female",
                                             "other")))
-levels(DA22_E1$format) <- c("quantity-integrated",
+levels(DA23_E1$format) <- c("quantity-integrated",
                             "quantity-sequential")
-usethis::use_data(DA22_E1, overwrite = TRUE)
+usethis::use_data(DA23_E1, overwrite = TRUE)
 
-DA22_E2 <- read.csv("data-raw/source/DukeAmir2022E2.csv") |>
-  subset(nonsense_total==0) |>
+DA23_E2 <- read.csv("data-raw/source/DukeAmir2022E2.csv") |>
+  dplyr::filter(nonsense_total==0) |>
   dplyr::mutate(explanation_length = nchar(why)) |>
   dplyr::select(gender, age, format, purchased, amount, mean_val, explanation_length) |>
   dplyr::mutate(gender = factor(gender, labels = c("male","female","other")),
@@ -501,9 +501,9 @@ DA22_E2 <- read.csv("data-raw/source/DukeAmir2022E2.csv") |>
   dplyr::rename(meanval = mean_val,
                 elength = explanation_length) |>
   tibble::as_tibble()
-levels(DA22_E2$format) <- c("quantity-integrated",
+levels(DA23_E2$format) <- c("quantity-integrated",
                             "quantity-sequential")
-usethis::use_data(DA22_E2, overwrite = TRUE)
+usethis::use_data(DA23_E2, overwrite = TRUE)
 
 
 
@@ -784,7 +784,7 @@ s1u<-s1[!s1$amount0>25|
 
 ## Dataset ALSO excluding NA for amount when they indicated donating
 s1d<-s1u[!is.na(s1u$amount0),]
-MV22_S1 <- s1d |>
+MV23_S1 <- s1d |>
   dplyr::select(donatebefore, donate01,
                 Condition, amount) |>
   dplyr::rename(before = donatebefore,
@@ -793,7 +793,7 @@ MV22_S1 <- s1d |>
   dplyr::mutate(condition = factor(tolower(condition)),
                 donate = as.integer(donate)) |>
   tibble::as_tibble()
-usethis::use_data(MV22_S1, overwrite = TRUE)
+usethis::use_data(MV23_S1, overwrite = TRUE)
 
 
 # Dataset 38: ResearchBox54, one-way ANOVA (Study 4)
@@ -829,7 +829,7 @@ table(s4$Condition)
 # This is the one used
 s4u<-s4[s4$amount0<=25|
           is.na(s4$amount0),]
-MV22_S4 <- s4u |>
+MV23_S4 <- s4u |>
   dplyr::select(donate01,
                 Condition, amount) |>
   dplyr::rename(donate = donate01,
@@ -837,8 +837,8 @@ MV22_S4 <- s4u |>
   dplyr::mutate(condition = factor(tolower(condition)),
                 donate = as.integer(donate)) |>
   tibble::as_tibble()
-usethis::use_data(MV22_S4, overwrite = TRUE)
-sinew::makeOxygen(MV22_S4)
+usethis::use_data(MV23_S4, overwrite = TRUE)
+sinew::makeOxygen(MV23_S4)
 
 
 supph <- read.csv('data-raw/source/ResearchBox54/Data/Supp H - Prosocial Actions.csv')
@@ -869,7 +869,7 @@ supph$amount<-ifelse(supph$Condition=="Open-ended", supph$openended_1_TEXT,
 
 supph$amount0<-ifelse(supph$donate01==0, 0, supph$amount)
 
-MV22_SH <- supph |>
+MV23_SH <- supph |>
   dplyr::select(donate01,
                 Condition, amount) |>
   dplyr::rename(donate = donate01,
@@ -877,8 +877,8 @@ MV22_SH <- supph |>
   dplyr::mutate(condition = factor(tolower(condition)),
                 donate = as.integer(donate)) |>
   tibble::as_tibble()
-usethis::use_data(MV22_SH, overwrite = TRUE)
-sinew::makeOxygen(MV22_SH)
+usethis::use_data(MV23_SH, overwrite = TRUE)
+sinew::makeOxygen(MV23_SH)
 
 # Dataset 40:
 #
@@ -899,7 +899,7 @@ e2.cleanData$condition = factor(e2.cleanData$condition, levels = c("video", "no 
 
 e2.cleanData$dvOrder = factor(e2.cleanData$dvOrder, levels = c("dying first", "pilot first"))
 
-JZBJG_E2 <- e2.cleanData |>
+JZBJG22_E2 <- e2.cleanData |>
   dplyr::rename(order = dvOrder,
                 conf_dying = confidenceDying,
                 conf_pilot = confidencePilot,
@@ -913,7 +913,7 @@ JZBJG_E2 <- e2.cleanData |>
                 gender)|>
   dplyr::mutate(gender = factor(gender, labels = c("man", "woman", "gender diverse")))
   tibble::as_tibble()
-usethis::use_data(JZBJG_E2, overwrite = TRUE)
+usethis::use_data(JZBJG22_E2, overwrite = TRUE)
 
 FBC66_T1_mat <- rbind(c(18, 1, 1), c(8, 7, 5), c(3, 4, 13))
 colnames(FBC66_T1_mat) <- c("0","1-2","3+")

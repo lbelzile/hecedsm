@@ -1,7 +1,8 @@
+setwd(this.path::here())
 library(tibble)
 library(haven)
 rm(list = ls())
-datasets <- list.files(path = "./data/",
+datasets <- list.files(path = "../data/",
                        pattern = ".rda",
                        full.names = TRUE)
 for (file in datasets) {
@@ -10,7 +11,7 @@ for (file in datasets) {
 rm(datasets, file)
 for (dataset in ls()) {
   haven::write_sav(get(dataset),
-                   path = paste0("data-raw/SPSS/",
+                   path = paste0("SPSS/",
                                  dataset,
                                  ".sav"))
 }

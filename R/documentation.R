@@ -113,7 +113,7 @@
 "LBJ17_S1A"
 
 
-#' @title Liu et al. (2022+) Study 1
+#' @title Liu et al. (2023) Study 1
 #' @description
 #' Liu et al. study social interactions and the impact of surprise on people reaching out if this contact is unexpected. Experiment 1 focuses on questionnaires where the experimental condition is the perceived appreciation of reaching out to someone (vs being reached to). The study used a questionnaire administered to 200 American adults recruited on the Prolific Academic platform. The response index consists of the average of four questions measured on a Likert scale ranging from 1 (not at all) to 7 (to a great extent): higher values thus indicate higher appreciation.
 #'
@@ -126,9 +126,9 @@
 #'   \item{\code{age}}{[double] age of participant}
 #'}
 #'
-#' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2022+). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology.  \url{https://doi.org/10.1037/pspi0000402}
+#' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2023). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology, 124(4), 754–771.  \url{https://doi.org/10.1037/pspi0000402}
 #' @source Research Box 289, \url{https://researchbox.org/289}, distributed under a CC BY 4.0 license
-"LRMM22_S1"
+"LRMM23_S1"
 
 
 #' Elliot et al. (2021), dataset 1
@@ -412,7 +412,7 @@
 "AA21"
 
 
-#' @title Liu et al. (2021), Study 3
+#' @title Liu et al. (2023), Study 3
 #'
 #' @description Paired data from dyads: participants were asked to "name a fellow college student in their social circle with whom they typically have pleasant encounters but have not interacted (either virtually or in-person)". The experimenter measured the appreciation score via a Likert scale with not at all (\code{1}), slightly (\code{2}), moderately (\code{3}), very \code{4} and extremely (\code{5}). The expectation of the authors was that initiators sending the gift/message would underestimate how much this attention would be valued by respondant
 #' @format A data frame with 67 rows and 6 variables:
@@ -424,11 +424,11 @@
 #'   \item{\code{age_init}}{[double] age of initiator}
 #'   \item{\code{gender_init}}{[factor] gender of initiator, one of \code{male}, \code{female} or \code{other}}
 #'}
-#' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2022+). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology.  \url{https://doi.org/10.1037/pspi0000402}
+#' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2023). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology, 124(4), 754–771.  \url{https://doi.org/10.1037/pspi0000402}
 #' @source Research Box 289, \url{https://researchbox.org/289}, licensed under CC BY 4.0
-"LRMM22_S3"
+"LRMM23_S3"
 
-#' @title Liu et al. (2019), Study 5b
+#' @title Liu et al. (2023), Study 5b
 #' @description The authors postulated that the
 #' underestimation of the appreciation of initiators relative to recipients
 #' was mediated by the degree of surprise of the recipient.
@@ -441,9 +441,9 @@
 #'   \item{\code{age}}{[double] age of participant}
 #'   \item{\code{gender}}{[factor] gender of participant, one of \code{male}, \code{female} or \code{other}}
 #'}
-#' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2022+). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology.  \url{https://doi.org/10.1037/pspi0000402}
+#' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2023). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology, 124(4), 754–771.  \url{https://doi.org/10.1037/pspi0000402}
 #' @source Research Box 289, \url{https://researchbox.org/289}, licensed under CC BY 4.0
-"LRMM22_S5b"
+"LRMM23_S5b"
 
 #' @title ManyLab2 replication of Risen and Gilovich (2008)
 #' @description The data is a replication with undergraduate students of a study. The authors measured the likelihood of bad outcome when tempting fate by not preparing in advance for a task. The replication data are unbalanced and the study failed to replicate
@@ -503,7 +503,7 @@
 "BL22_E"
 
 
-#' @title Duke and Amir (2022), Experiment 1
+#' @title Duke and Amir (2023), Experiment 1
 #' @description This is a subset of the data from Experiment 1 of Duke and Amir (2022). The study investigated the impact of presenting customers with a sequential choice (first decide whether or not to buy, then pick quantity) as opposed to an integrated decision (choose not to buy, or one of different quantities) on sales and the number of items bought.
 #'
 #' @format A data frame with 397 rows and 5 variables:
@@ -515,11 +515,11 @@
 #'   \item{\code{age}}{[integer] age of respondant}
 #'}
 #' @source Research Box 602, \url{https://researchbox.org/602}, licensed under CC BY 4.0
-#' @references Duke, K.E. and O. Amir (2022+). \emph{The Importance of Selling Formats: When Integrating Purchase and Quantity Decisions Increases Sales}, Marketing Science, \url{https://doi.org/10.1177/0956797614545886}
-"DA22_E1"
+#' @references Duke, K.E. and O. Amir (2023). \emph{The Importance of Selling Formats: When Integrating Purchase and Quantity Decisions Increases Sales}, Marketing Science,42(1), 87-109. \url{https://doi.org/10.1287/mksc.2022.1364}
+"DA23_E1"
 
 
-#' @title Duke and Amir (2022), Experiment 2
+#' @title Duke and Amir (2023), Experiment 2
 #' @description This is a subset of the data from Experiment 2 of Duke and Amir (2022), excluding all answers deemed nonsensical by at least one of the lab assistants. The study investigated the impact of presenting customers with a sequential choice (first decide whether or not to buy, then pick quantity) as opposed to an integrated decision (choose not to buy, or one of different quantities) on sales and the number of items bought.
 #'
 #' @format A data frame with 325 rows and 7 variables:
@@ -533,8 +533,8 @@
 #'   \item{\code{elength}}{[integer] length of self-reported explanation for their choice (number of characters)}
 #'}
 #' @source Research Box 602, \url{https://researchbox.org/602}, licensed under CC BY 4.0
-#' @references Duke, K.E. and O. Amir (2022+). \emph{The Importance of Selling Formats: When Integrating Purchase and Quantity Decisions Increases Sales}, Marketing Science, \url{https://doi.org/10.1177/0956797614545886}
-"DA22_E2"
+#' @references Duke, K.E. and O. Amir (2023). \emph{The Importance of Selling Formats: When Integrating Purchase and Quantity Decisions Increases Sales}, Marketing Science,42(1), 87-109. \url{https://doi.org/10.1287/mksc.2022.1364}
+"DA23_E2"
 
 #' @title Teaching Arithmetic Data
 #'
@@ -734,7 +734,7 @@
 #' @references Hatano, A., Ogulmus, C., Shigemasu, H., & Murayama, K. (2022). \emph{Thinking About Thinking: People Underestimate How Enjoyable and Engaging Just Waiting Is}. Journal of Experimental Psychology: General, 151(\bold{12}), 3213–3229 \url{http://dx.doi.org/10.1037/xge0001255}
 "HOSM22_E4"
 
-#' @title Garcia et al. (2010
+#' @title Garcia et al. (2010)
 #' @description These data are from a study on gender discrimination. Participants were put with a file where a women was turned down promotion in favor of male colleague despite her being clearly more experimented and qualified. The authors manipulated the decision of the participant to this decision, either choosing not to challenge the decision (\code{no protest}), a request to reconsider based on individual qualities of the applicants (\code{individual}) and a request to reconsider based on abilities of women (\code{collective}).
 #'
 #' All items were measured using scales constructed using items measured using Likert scales ranging from strongly disagree (\code{1}) to strongly agree (\code{7}).
@@ -761,20 +761,20 @@
 #'   \item{\code{amount}}{[double] amount of proposed donation, \code{NA} if the person declined to donate}
 #'}
 #'
-#' @references Moon, A. and EM VanEpps (2022+). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, \url{https://doi.org/10.1093/jcr/ucac047}
+#' @references Moon, A. and EM VanEpps (2023). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, 50(1), 190–210. \url{https://doi.org/10.1093/jcr/ucac047}
 #' @source Research Box 54, \url{https://researchbox.org/54}, licensed under CC BY 4.0
 #' @examples
-#' ctab <- with(MV22_S1, table(donate, condition))
+#' ctab <- with(MV23_S1, table(donate, condition))
 #' # Chi-square test of independence
 #' chisq_test <- chisq.test(ctab, correct = FALSE)
 #' chisq_test
 #' # Effect size
-#' sqrt(chisq_test$statistic/nrow(MV22_S1))
+#' sqrt(chisq_test$statistic/nrow(MV23_S1))
 #' # Welch t-test
-#' t.test(amount ~ condition, MV22_S1)
-"MV22_S1"
+#' t.test(amount ~ condition, MV23_S1)
+"MV23_S1"
 
-#' @title  Moon and vanEpps (2022+), Study 4
+#' @title  Moon and vanEpps (2023), Study 4
 #' @description The authors studied the impact on donation amount of manipulating the minimal suggested amount. The benchmark was an open-ended box, with quantity featuring a minimum value, 15$, 25$ or an alternative amount. The authors also recorded whether the person had donated before.
 #' @format A data frame with 996 rows and 3 variables:
 #' \describe{
@@ -783,13 +783,13 @@
 #'   \item{\code{amount}}{[double] amount of proposed donation, \code{NA} if the person declined to donate}
 #'}
 #'
-#' @references Moon, A. and EM VanEpps (2022+). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, \url{https://doi.org/10.1093/jcr/ucac047}
+#' @references Moon, A. and EM VanEpps (2023). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, 50(1), 190–210.\url{https://doi.org/10.1093/jcr/ucac047}
 #' @source Research Box 54, \url{https://researchbox.org/54}, licensed under CC BY 4.0
-"MV22_S4"
+"MV23_S4"
 
 
 
-#' @title  Moon and vanEpps (2022+), Supplementary study H
+#' @title  Moon and vanEpps (2023), Supplementary study H
 #' @description After completing an unrelated study, the authors proposed to participants on MTurk to donate of their time for a social cause (net neutrality) by completing an optional survey for a prosocial cause. Participants were assigned to the open-ended choice or offered to complete up to 3 additional sections with demographics (1), plus internet use (2) and political attitudes (3). The study aims to study generosity, but without involving windfall.
 #' @format A data frame with 1206 rows and 3 variables:
 #' \describe{
@@ -798,26 +798,26 @@
 #'   \item{\code{amount}}{[integer] number of additional questionnaire (up to 3).}
 #'}
 #'
-#' @references Moon, A. and EM VanEpps (2022+). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, \url{https://doi.org/10.1093/jcr/ucac047}
+#' @references Moon, A. and EM VanEpps (2023). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, 50(1), 190–210. \url{https://doi.org/10.1093/jcr/ucac047}
 #' @examples
 #' \dontrun{
-#' chisq.test(with(MV22_SH,
+#' chisq.test(with(MV23_SH,
 #'                 table(donate, condition)),
 #'            correct = FALSE)
 #' # Average non-zero contributions
 #' # by default, missing values are ignored
 #' wilcox_anz <- coin::wilcox_test(
 #'   amount ~ condition,
-#'   data = MV22_SH)
+#'   data = MV23_SH)
 #' # Transform no donation to zero
-#' MV22_SH$amount0 <- with(MV22_SH,
+#' MV23_SH$amount0 <- with(MV23_SH,
 #' ifelse(donate == 0L, 0, amount))
 #' wilcox_az <- coin::wilcox_test(
 #'   amount0 ~ condition,
-#'   data = MV22_SH)
+#'   data = MV23_SH)
 #' }
 #' @source Research Box 54, \url{https://researchbox.org/54}, licensed under CC BY 4.0
-"MV22_SH"
+"MV23_SH"
 
 #' Jordan et al. (2022), Experiment 2
 #'
@@ -830,11 +830,11 @@
 #'   \item{\code{conf_pilot}}{[integer] Likert scale from 0 (not at all confident to 100 (very confident) for the question: "How confident are you that you would be able to successfully land the plane as well as a pilot could"}
 #'   \item{\code{expertise}}{[integer] Likert scale ranging from no expertise (\code{1}) to a great deal of expertise (\code{5}) answering the question "How much expertise do you think is involved in landing a plane"}
 #'   \item{\code{ease_imagining}}{[integer] Likert scale ranging from not at all difficult (\code{1}) to very difficult (\code{5}) for the answer to the question "How difficult was it for you to imagine attempting to land the plane."}
-#'   \item{\code{gender}}{[factor] gender of participant, one of \code{man}, \code{woman} or other (\code{gender diverse}}
+#'   \item{\code{gender}}{[factor] gender of participant, one of \code{man}, \code{woman} or other (\code{gender diverse})}
 #'}
 #' @references Jordan, K., R. Zajac, D. Bernstein, C. Joshi and M. Garry (2022). \emph{Trivially informative semantic context inflates people's confidence they can perform a highly complex skill}, Royal Society Open Science,\bold{9}, 211977, \url{http://doi.org/10.1098/rsos.211977}
 #' @source Research Box 511, \url{https://researchbox.org/511}, licensed under CC BY 4.0
-"JZBJG_E2"
+"JZBJG22_E2"
 
 
 
@@ -853,7 +853,7 @@
 #'   \item{\code{mcheck}}{[double] manipulation check for proportion}
 #'   \item{\code{proportion}}{[double] proportion of plastic to paper}
 #'}
-#' @references Sokolova T, Krishna A, Döring T. (2023) \emph{Paper Meets Plastic: The Perceived Environmental Friendliness of Product Packaging}. Journal of Consumer Research. \url{https://doi.org/10.1093/jcr/ucad008}
+#' @references Sokolova T, Krishna A, Döring T. (2023) \emph{Paper Meets Plastic: The Perceived Environmental Friendliness of Product Packaging}. Journal of Consumer Research, 50(3), 468–491. \url{https://doi.org/10.1093/jcr/ucad008}
 #' @source  Research Box 712, \url{https://researchbox.org/712}, licensed under CC BY 4.0
 #' @examples
 #' data(SKD23_S2A, package = "hecedsm")

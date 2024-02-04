@@ -3,7 +3,7 @@
 \docType{data}
 \name{GSBE10}
 \alias{GSBE10}
-\title{Garcia et al. (2010}
+\title{Garcia et al. (2010)}
 \format{
 A data frame with 129 rows and 5 variables:
 \describe{

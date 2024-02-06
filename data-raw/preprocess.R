@@ -882,36 +882,29 @@ sinew::makeOxygen(MV23_SH)
 
 # Dataset 40:
 #
-e2.rawData <- read.csv("data-raw/source/ResearchBox511/Data/e2_data copy.csv")
-
-#set up clean data, get counts of exclusions, and stats about manipulation check
-e2.cleanData = filter(e2.rawData, Finished==1) #first narrowing down to people who finished the survey
-e2.numFinished = nrow(e2.cleanData) #nrow gives number of rows eg subjects in that group
-
-#exclude people who failed the attention check
-e2.attentionCheckExclusions = nrow(filter(e2.cleanData, situationCorrect != 4)) #
-e2.cleanData = filter(e2.cleanData, situationCorrect == 4, pilot == 0, flownPlane == 0, landedPlane== 0, nonsensical== 0)
-e2.numRemainingAfterAttentionCheck = nrow(e2.cleanData)
-e2.cleanDataGender = filter(e2.cleanData, gender!= 3)
-
-#set condition and dvorder appropriately as factors
-e2.cleanData$condition = factor(e2.cleanData$condition, levels = c("video", "no video"))
-
-e2.cleanData$dvOrder = factor(e2.cleanData$dvOrder, levels = c("dying first", "pilot first"))
-
-JZBJG22_E2 <- e2.cleanData |>
+JZBJG22_E2 <- read.csv("data-raw/source/ResearchBox511/Data/e2_data copy.csv") |>
+  dplyr::filter(Finished==1, #first narrowing down to people who finished the survey
+                situationCorrect == 4,
+                pilot == 0,
+                flownPlane == 0,
+                landedPlane== 0,
+                nonsensical== 0,
+                gender != 3) |>
+  dplyr::mutate(condition = factor(condition, levels = c("video", "no video")),
+                dvOrder = factor(dvOrder, levels = c("dying first", "pilot first"))) |>
   dplyr::rename(order = dvOrder,
                 conf_dying = confidenceDying,
                 conf_pilot = confidencePilot,
                 land_plane = landedPlane,
                 ease_imagining = easeImagining) |>
-  dplyr::select(condition, order,
+  dplyr::select(condition,
+                order,
                 conf_dying,
                 conf_pilot,
                 expertise,
                 ease_imagining,
                 gender)|>
-  dplyr::mutate(gender = factor(gender, labels = c("man", "woman", "gender diverse")))
+  dplyr::mutate(gender = factor(gender, labels = c("man", "woman"))) |>
   tibble::as_tibble()
 usethis::use_data(JZBJG22_E2, overwrite = TRUE)
 

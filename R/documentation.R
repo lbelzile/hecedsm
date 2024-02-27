@@ -896,3 +896,57 @@
 #' lme4::lmer(willing_help ~ group*help + (1 + group | id) + (1 | story), data = GSC20_E2)
 #' lme4::lmer(willing_help ~ group_w*help_w + (1 + group_w | id) + (1 | story), data = GSC20_E2)
 "GSC20_E2"
+
+
+#' @title Lin et al. (2024), Study 3
+#' @description Study 3 focused on mediation by moderation, looking at the impact of historical power imbalance
+#' in perceptions of cultural appropriation. Participants were exposed about the story of an American department store which hosts annual parties for customers.
+#' Based on a pilot study, product categories (apparel and beauty)
+#' were mentioned more frequently (71%) than was food and cuisine (15%). The purpose of the study is to compare,
+#'  across liberal and conservative (balanced) the impact of emphasizing the historical power imbalance.
+#'  The study results in a 2 by 2 by 2 three-way between-subject ANOVA.
+#'
+#' @source  Research Box 1401, \url{https://researchbox.org/1401}, licensed under CC BY 4.0
+#' @references J.D. Lin, N.Y.J. Kim, E. Uduehi and A. Keinan (2024+). \emph{Culture for Sale: Unpacking Consumer Perceptions of Cultural Appropriation}, Journal of Consumer Research,
+#'  \url{https://doi.org/10.1093/jcr/ucad076}
+#' @format A data frame with 804 rows and 8 variables:
+#' \describe{
+#'   \item{\code{appropriation}}{[double] appropriation scale built from five items: higher values indicate increased perception of cultural appropriation}
+#'   \item{\code{purchase}}{[double] intention to purchase; lower scores indicate lower values}
+#'   \item{\code{attitude}}{[double] attitude towards brand: lower values indicate less confidence}
+#'   \item{\code{politideo}}{[factor] political ideology, either \code{conservative} or \code{liberal}}
+#'   \item{\code{prodcat}}{[factor] product category, either \code{food} or \code{apparel}}
+#'   \item{\code{histpowimbal}}{[factor] historical power imbalance, either \code{control} if no mention is made or \code{primed} if historical context is provided to participants.}
+#'   \item{\code{age}}{[integer] age of the participant}
+#'   \item{\code{gender}}{[factor] gender of the participant, male, female, other/neither or non-response}
+#'}
+#' @details The response variables are based on a factor analysis of different items on the questionnaire based on Likert scales ranging from 1 to 7.
+"LKUK24_S3"
+
+
+#' @title Lin et al. (2024), Study 4
+#'
+#' @description Study 4 focused on cultural appropriation for soul food recipe cookbook from Chef Dax, who was
+#' either black (or not), manipulating the description of the way he obtained the recipes (by peeking without permission in kitchens, by asking permission or no mention for control).
+#' Authors postulated that the perception of appropriation would vary by political ideology (liberal or conservative).
+#' The study results in a 3 by 2 by 2 three-way between-subject ANOVA, followed by moderated mediation.
+#'
+#' @source  Research Box 1401, \url{https://researchbox.org/1401}, licensed under CC BY 4.0
+#' @references J.D. Lin, N.Y.J. Kim, E. Uduehi and A. Keinan (2024+). \emph{Culture for Sale: Unpacking Consumer Perceptions of Cultural Appropriation}, Journal of Consumer Research,
+#'  \url{https://doi.org/10.1093/jcr/ucad076}
+#' @format A data frame with 711 rows and 11 variables:
+#' \describe{
+#'   \item{\code{appropriation}}{[double] perception of cultural appropriation}
+#'   \item{\code{appreciation}}{[double] }
+#'   \item{\code{intent}}{[double] brand intentions, whether brands actions are considered cultural appropriation?}
+#'   \item{\code{purchase}}{[double] purchase interest for the cookbook}
+#'   \item{\code{attitude}}{[double] brand attitude}
+#'   \item{\code{politideo}}{[factor] political ideology, either \code{conservative} or \code{liberal}}
+#'   \item{\code{chefdax}}{[factor] whether Chef Dax was \code{black} or \code{not black}}
+#'   \item{\code{brandaction}}{[factor] description of the way recipes were obtained by Chef Dax, either \code{peeking}, with \code{permission} or no mention (\code{control}).}
+#'   \item{\code{age}}{[integer] age of the participant}
+#'   \item{\code{gender}}{[factor] gender of the participant, male, female, other/neither or non-response}
+#'   \item{\code{minority}}{[factor] does participant identify as a member of a racial minority? Either \code{yes} or \code{no}}
+#'}
+#' @details The Qualtric file contains the questions. Some variables seem to be aggregates of various Likert scales, but there are no associated questions.
+"LKUK24_S4"

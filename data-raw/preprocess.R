@@ -928,6 +928,33 @@ SKD23_S2A <- rb712rawDate |>
   dplyr::rename(mcheck = mcheck_proportion)
   usethis::use_data(SKD23_S2A, overwrite = TRUE)
 
+# Dataset 42: three-way ANOVA from ResearchBox 1401
+LKUK24_S3 <- haven::read_sav("data-raw/source/ResearchBox1401/Study3.sav") |>
+  dplyr::mutate(appropriation = as.numeric(appropriation),
+                purchase = as.numeric(purchase),
+                attitude = as.numeric(attitude),
+                politideo = factor(conservativeliberal, labels = c("conservative","liberal")),
+                prodcat = factor(apparel1food0, levels = c(0,1), labels = c("food","apparel")),
+                histpowimbal = factor(context1control0, labels = c("control","primed")),
+                age = as.integer(Age),
+                gender = factor(Gender, levels = 1:4, labels = c("male","female","other/neither/both", "prefer not to answer")),
+                .keep = "none")
+usethis::use_data(LKUK24_S3, overwrite = TRUE)
+
+LKUK24_S4 <- haven::read_sav("data-raw/source/ResearchBox1401/Study4.sav") |>
+  dplyr::mutate(appropriation = as.numeric(Appropri),
+                appreciation = as.numeric(Appreci),
+                intent = as.numeric(Intent),
+                purchase = as.numeric(Purchase),
+                attitude = as.numeric(Attitude),
+                politideo = factor(polit, levels = 1:2, labels = c("conservative","liberal")),
+                chefdax = factor(chefdax, levels = 0:1, labels = c("not black","black")),
+                brandaction = factor(condit, levels = 1:3, labels = c("peeking","permission","control")),
+                age = as.integer(Age),
+                gender = factor(Gender, levels = 1:4, labels = c("male","female","other/neither/both", "prefer not to answer")),
+                minority = factor(RacialMinority, levels = 1:2, labels = c("yes","no")),
+                .keep = "none")
+usethis::use_data(LKUK24_S4, overwrite = TRUE)
 
 # Generate skeleton for documentation
 for(file in list.files("../data",full.names = TRUE)){

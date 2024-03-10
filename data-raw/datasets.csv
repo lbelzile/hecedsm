@@ -11,8 +11,8 @@ BSJ92,"Baumann, Seifert-Kessell and Jones (1992)",10.1080/10862969209547770,"one
 C16,Chandler (2016) replication,10.17605/OSF.IO/EZCUJ,two-way ANOVA,1
 C18,Clayton (2018),10.1017/XPS.2018.8,"linear mixed model, clustered standard errors",1
 C22,Curley et al. (2022),10.1080/13218719.2021.1904450,"linear mixed model, incomplete design",1
-DA22_E1,"Duke and Amir (2022), Experiment 1",10.1287/mksc.2022.1364,t-test,1
-DA22_E2,"Duke and Amir (2022), Experiment 2",10.1287/mksc.2022.1364,"one-way ANOVA, logistic regression",1
+DA23_E1,"Duke and Amir (2023), Experiment 1",10.1287/mksc.2022.1364,t-test,1
+DA23_E2,"Duke and Amir (2023), Experiment 2",10.1287/mksc.2022.1364,"one-way ANOVA, logistic regression",1
 FBC66_T1,"Flavell, Beach and Chinsky (1966), Table 1",10.2307/1126804,chi-square test,3
 GK14_S3,"Grossman and Kross (2014), Study 3",10.1177/0956797614535400,"one-way ANOVA, multiple testing, contrasts",1
 GSBE10,Garcia et al. (2010),10.1002/ejsp.644,mediation,6

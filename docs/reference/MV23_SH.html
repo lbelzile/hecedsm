@@ -75,13 +75,13 @@
 <span class="r-in"><span>           correct <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="co"># Average non-zero contributions</span></span></span>
 <span class="r-in"><span><span class="co"># by default, missing values are ignored</span></span></span>
-<span class="r-in"><span><span class="va">wilcox_anz</span> <span class="op">&lt;-</span> <span class="fu">coin</span><span class="fu">::</span><span class="fu">wilcox_test</span><span class="op">(</span></span></span>
+<span class="r-in"><span><span class="va">wilcox_anz</span> <span class="op">&lt;-</span> <span class="fu">coin</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/coin/man/LocationTests.html" class="external-link">wilcox_test</a></span><span class="op">(</span></span></span>
 <span class="r-in"><span>  <span class="va">amount</span> <span class="op">~</span> <span class="va">condition</span>,</span></span>
 <span class="r-in"><span>  data <span class="op">=</span> <span class="va">MV23_SH</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="co"># Transform no donation to zero</span></span></span>
 <span class="r-in"><span><span class="va">MV23_SH</span><span class="op">$</span><span class="va">amount0</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/with.html" class="external-link">with</a></span><span class="op">(</span><span class="va">MV23_SH</span>,</span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">donate</span> <span class="op">==</span> <span class="fl">0L</span>, <span class="fl">0</span>, <span class="va">amount</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="va">wilcox_az</span> <span class="op">&lt;-</span> <span class="fu">coin</span><span class="fu">::</span><span class="fu">wilcox_test</span><span class="op">(</span></span></span>
+<span class="r-in"><span><span class="va">wilcox_az</span> <span class="op">&lt;-</span> <span class="fu">coin</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/coin/man/LocationTests.html" class="external-link">wilcox_test</a></span><span class="op">(</span></span></span>
 <span class="r-in"><span>  <span class="va">amount0</span> <span class="op">~</span> <span class="va">condition</span>,</span></span>
 <span class="r-in"><span>  data <span class="op">=</span> <span class="va">MV23_SH</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="op">}</span></span></span>

@@ -239,12 +239,16 @@ usethis::use_data(BMH19_S2, overwrite = TRUE)
 
 # Dataset 13: Curley et al. (2022)
 
-C22 <- read.csv("data-raw/source/Curley2021.csv",
-                   header = TRUE) |>
-  mutate(id = factor(id), # cast explanatories to factor
-         anchor = factor(anchor),
+C22 <- readxl::read_xlsx("data-raw/source/Verdictspottingdata.xlsx") |>
+  dplyr::rename_all(.funs = tolower) |>
+  mutate(id = factor(participant), # cast explanatories to factor
+         vorder = factor(vignette_order),
+         anchor = factor(anchor, levels = 1:2, labels = c("weak-first","strong-first")),
          vignette = factor(vignette),
-         verdictsyst = factor(verdictsyst)) |>
+         verdictsyst = factor(verdict_system, labels = c("two","three")),
+         guilt = guilt_total,
+         prior = pjaq,
+         .keep = "none",  ) |>
   tibble::as_tibble()
 usethis::use_data(C22, overwrite = TRUE)
 

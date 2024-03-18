@@ -6,8 +6,8 @@
 #'
 #' @format A data frame with 54 rows and 10 variables:
 #' \describe{
-#'   \item{\code{bonding}}{[double] score for the perceived bonding with strangers, average of Likert scales}
-#'   \item{\code{condition}}{[factor] experimental condition, either \code{Control} or \code{Pain}}
+#' \item{\code{bonding}}{[double] score for the perceived bonding with strangers, average of Likert scales}
+#' \item{\code{condition}}{[factor] experimental condition, either \code{Control} or \code{Pain}}
 #' \item{\code{pain}}{Likert scale rating for the amount of pain, 'How intense was the pain you experienced?', ranging from not at all painful (1) to intensely painful (10)}
 #' \item{\code{unpleasant}}{Likert scale rating for unpleasanteness, 'How unpleasant was the pain you experienced?' ranging from not at all (1) to the most intense bad feeling imaginable (10)}
 #' \item{\code{positive}}{PANAS score for positive affect}
@@ -259,11 +259,12 @@
 #' @description This study aimed at finding the impact of having multiple options for jurors as is the case in Scotland (guilty, not guilty, not proven), relative to the usual setting of guilty or not guilty verdict.
 #'
 #' The response was measured using the sum of the scores for 11 ratings (rounds) on a Likert scale ranging from 0 (no evidence of guilt) to 14 (guilty).
-#' @format A data frame with 256 rows and 6 variables:
+#' @format A data frame with 256 rows and 7 variables:
 #' \describe{
 #'   \item{\code{id}}{[factor] participant identifier}
 #'   \item{\code{anchor}}{[factor] order of evidence, (\code{strong-first} versus \code{weak-first})}
-#'   \item{\code{vignette}}{[factor] homocide vignette}
+#'   \item{\code{vignette}}{[factor] homocide vignette, either 1 or 2}
+#'   \item{\code{vorder}}{[factor] which vignette was presented first?}
 #'   \item{\code{verdictsyst}}{[factor] verdict system, either \code{two} or \code{three} possible outcomes.}
 #'   \item{\code{guilt}}{[double] final belief of guilt score, with lower values representing no belief of guilt}
 #'   \item{\code{pjaq}}{[integer] PJAQ score, a 29-item questionnaire, which measures total pre-trial bias}
@@ -462,7 +463,7 @@
 
 #' Brucks and Levav (2022), Lab experiment
 #'
-#' @details The authors recruted 301 pairs of people and assigned them to either face-to-face interactions or videocall. They measured the number of ideas generated during the discussion as well as the fraction of those which were deemed creative using a `creativity_score`. The latter was measured by two undergraduates who evaluated all ideas based on novelty using a Likert scale with 7 points. Participants were asked to pick their most novel idea: the `diff` column measures the  and a `decision_error` score (with smaller values of the latter meaning better decisions).
+#' @details The authors recruted 301 pairs of people and assigned them to either face-to-face interactions or videocall. They measured the number of ideas generated during the discussion as well as the fraction of those which were deemed creative using a `creativity_score`. The latter was measured by two undergraduates who evaluated all ideas based on novelty using a Likert scale with 7 points.
 #'
 #' @format A data frame with 301 rows and 8 variables:
 #' \describe{

@@ -5,3 +5,5 @@
 *.Rproj
 data-raw/source/
 data-raw/source/*
+.Rbuildignore
+.gitignore

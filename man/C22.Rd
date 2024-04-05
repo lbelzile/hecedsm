@@ -5,11 +5,12 @@
 \alias{C22}
 \title{Curley et al. (2022)}
 \format{
-A data frame with 256 rows and 6 variables:
+A data frame with 256 rows and 7 variables:
 \describe{
   \item{\code{id}}{[factor] participant identifier}
   \item{\code{anchor}}{[factor] order of evidence, (\code{strong-first} versus \code{weak-first})}
-  \item{\code{vignette}}{[factor] homocide vignette}
+  \item{\code{vignette}}{[factor] homocide vignette, either 1 or 2}
+  \item{\code{vorder}}{[factor] which vignette was presented first?}
   \item{\code{verdictsyst}}{[factor] verdict system, either \code{two} or \code{three} possible outcomes.}
   \item{\code{guilt}}{[double] final belief of guilt score, with lower values representing no belief of guilt}
   \item{\code{pjaq}}{[integer] PJAQ score, a 29-item questionnaire, which measures total pre-trial bias}

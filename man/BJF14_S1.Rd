@@ -7,8 +7,8 @@
 \format{
 A data frame with 54 rows and 10 variables:
 \describe{
-  \item{\code{bonding}}{[double] score for the perceived bonding with strangers, average of Likert scales}
-  \item{\code{condition}}{[factor] experimental condition, either \code{Control} or \code{Pain}}
+\item{\code{bonding}}{[double] score for the perceived bonding with strangers, average of Likert scales}
+\item{\code{condition}}{[factor] experimental condition, either \code{Control} or \code{Pain}}
 \item{\code{pain}}{Likert scale rating for the amount of pain, 'How intense was the pain you experienced?', ranging from not at all painful (1) to intensely painful (10)}
 \item{\code{unpleasant}}{Likert scale rating for unpleasanteness, 'How unpleasant was the pain you experienced?' ranging from not at all (1) to the most intense bad feeling imaginable (10)}
 \item{\code{positive}}{PANAS score for positive affect}

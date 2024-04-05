@@ -941,6 +941,8 @@ LKUK24_S3 <- haven::read_sav("data-raw/source/ResearchBox1401/Study3.sav") |>
                 .keep = "none")
 usethis::use_data(LKUK24_S3, overwrite = TRUE)
 
+
+# Dataset 42
 LKUK24_S4 <- haven::read_sav("data-raw/source/ResearchBox1401/Study4.sav") |>
   dplyr::mutate(appropriation = as.numeric(Appropri),
                 appreciation = as.numeric(Appreci),
@@ -955,6 +957,23 @@ LKUK24_S4 <- haven::read_sav("data-raw/source/ResearchBox1401/Study4.sav") |>
                 minority = factor(RacialMinority, levels = 1:2, labels = c("yes","no")),
                 .keep = "none")
 usethis::use_data(LKUK24_S4, overwrite = TRUE)
+
+# Dataset 43: Liu (2022), experiment 4 (ResearchBox 84)
+
+L22_E4 <- haven::read_spss("source/ResearchBox84/Experiment 4.sav") |>
+  dplyr::rename(social = IV_social1socialint2alone3,
+                enjoyother = enjoyment_other,
+                cutfreq = dv_cutfreq,
+                cutintensity = dv_cutintense) |>
+  dplyr::mutate(social = relevel(as_factor(social), ref = "alone"),
+                gender = as_factor(gender),
+                age = as.integer(age),
+                cutfreq = as.integer(cutfreq),
+                cutintensity = as.integer(cutintensity),
+                ) |>
+  dplyr::select(cutfreq, cutintensity, social, enjoyother, enjoyamount, age, gender)
+levels(L22_E4$gender) <- tolower(levels(L22_E4$gender))
+usethis::use_data(L22_E4, overwrite = TRUE)
 
 # Generate skeleton for documentation
 for(file in list.files("../data",full.names = TRUE)){

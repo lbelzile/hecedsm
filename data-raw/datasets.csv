@@ -1,7 +1,7 @@
 Dataset,Title,DOI,Type,Source
 AA21,Amirabdolahian and Ali-Adeeb (2021),,"repeated measures, linear mixed model",2
 AVC02,"Anandarajan, Viger and Curatola (2002)",10.1506/5947-NQTC-C3Y5-H46N,MANOVA,4
-BJF14_S1,"Bastian, Jetten and Ferris (2014)",10.1177/0956797614545886,one-way ANOVA,1
+BJF14_S1,"Bastian, Jetten and Ferris (2014)",10.1177/0956797614545886,"one-way ANOVA, mediation",1
 BL22_E,"Brucks and Levav (2022), eyetracker data",10.1038/s41586-022-04643-y,Kruskall-Wallis test,1
 BL22_L,"Brucks and Levav (2022), Lab experiment",10.1038/s41586-022-04643-y,"negative binomial regression, linear mixed model",1
 BMH19_S2,"Bobak, Mileva and Hancock (2019), Study 2",10.1186/s41235-019-0174-3,"one-way ANOVA, repeated measures",1
@@ -22,6 +22,7 @@ HOSM22_E3,"Hatano et al. (2022), Experiment 3",10.1037/xge0001255,two-way mixed 
 HOSM22_E4,"Hatano et al. (2022), Experiment 4",10.1037/xge0001255,"linear mixed model, ",1
 JCD14_S2,"Johnson, Cheung and Donnellan (2014), Study 2",10.1027/1864-9335/a000186,t-test,1
 JZBJG22_E2,"Jordan et al. (2022), Experiment 2",10.1098/rsos.211977,two-way ANOVA,1
+L22_E4,"Liu (2022), Experiment 4",10.1177/00222437211055741,"two-way mixed ANOVA, mediation",1
 LBJ17_S1A,"Lages, Boyle and Jenkins (2017) Study 1A",10.1177/0956797617705391,three-way mixed design,1
 LC19_S1,"Lee and Choi (2019), Study 1",10.1016/j.jretconser.2019.03.015,ANCOVA,1
 LC19_S2,"Lee and Choi (2019), Study 2",10.1016/j.jretconser.2019.03.015,"ANCOVA, mediation",1

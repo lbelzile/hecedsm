@@ -950,3 +950,20 @@
 #'}
 #' @details The Qualtric file contains the questions. Some variables seem to be aggregates of various Likert scales, but there are no associated questions.
 "LKUK24_S4"
+
+
+#' @title Liu (2022), Experiment 4
+#' @description The 3 (social interaction) by 2 (cutting frequenty or intensity) mixed design experiment considered consumer indulging in decisions based on social interactions, through a fictional context where they buy a gourmet coffee for 4$ at a nearby shop. Participants were randomly assigned to one of three experimental conditions for social interactions: solitary, whereby they would consume the drink alone, with friends. The third, with social interaction, implied the gathering with friends would still take place if you cut the frequency. The data are in wide format, with cut (frequency, intensity) on separate columns.
+#' @source Research Box 84, \url{researchbox.org/84}, licensed under CC BY 4.0
+#' @references Liu PJ. (2022). \emph{Frequency Versus Intensity: How Thinking of a Frequent Consumption Indulgence as Social Versus Solitary Affects Preferences for How to Cut Back.} Journal of Marketing Research. 59(\bold{3}):497-516, \url{https://doi.org/10.1177/00222437211055741}.
+#' @format A data frame with 452 rows and 7 variables:
+#' \describe{
+#'   \item{\code{cutfreq}}{[integer] answer to the question 'How interested would you be in the ﬁnancial management app that prompts you to decrease your frequency of spending money by going less often to the coffee shop?', rated on a Likert scale ranging from 1 (not at all) to 5 (very much)}
+#'   \item{\code{cutintensity}}{[integer] answer to the question 'How interested would you be in the ﬁnancial management app that prompts you to decrease the intensity of spending money by buying a cheaper drink at the coffee shop (going there just as often)?', rated on a Likert scale ranging from 1 (not at all) to 5 (very much)}
+#'   \item{\code{social}}{[factor] social intensity, one of \code{alone}, \code{social} or social intervention (\code{socialint})}
+#'   \item{\code{enjoyother}}{[integer] answer on a five point Likert scale to the question 'How much enjoyment would you get from other aspects besides the drink for this weekly experience?', with values 1 (no enjoyment at all), 2 (a little bit), 3 (a moderate amount), 4 (a lot) and 5 (a great deal)}
+#'   \item{\code{enjoyamount}}{[integer] five point Likert scale for # the question 'How much enjoyment would you get from the drink itself for this weekly experience?', with the same scale as \code{enjoyother}}
+#'   \item{\code{age}}{[integer] age of participant}
+#'   \item{\code{gender}}{[factor] gender, either \code{female}, \code{male} or \code{other}}
+#'}
+"L22_E4"

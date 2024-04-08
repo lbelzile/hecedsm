@@ -46,6 +46,7 @@ SSVB21_S3,"van Stekelenburg et al. (2021), Study 3",10.1177/09567976211007788,AN
 STC21_SS5,"Sharma, Tully, and Cryder (2021), supplementary study 5",10.1177/0022243721993816,two-way ANOVA,1
 LKUK24_S3,"Lin et al. (2024), Study 3",10.1093/jcr/ucad076,"three-way ANOVA, two-way ANOVA",1
 LKUK24_S4,"Lin et al. (2024), Study 4",10.1093/jcr/ucad076,"three-way ANOVA, moderated mediation",1
+LWSH23_S3,"Leckfor et al (2023), Study 3",10.1177/02654075221149955,"moderation, ANCOVA",1
 arithmetic,Teaching Arithmetic Data,,one-way ANOVA,5
 popcorn,Popcorn experiment,,"three-way ANOVA, repeated measures",6
 teller,Teller data,,two-way ANOVA,6

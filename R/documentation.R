@@ -988,4 +988,4 @@
 #' anova(mod)
 #' # process(data = LWSH23_S3, y = "needsatis", x = "needclosure",
 #' #  w = "cond", mcw = 1, model = 1, plot = 1, intprobe = 1, moments = 1)
-"LWSH23_S2"
+"LWSH23_S3"

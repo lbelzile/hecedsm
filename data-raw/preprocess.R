@@ -1,4 +1,5 @@
 library(tidyverse)
+# setwd(this.path::here())
 
 # Dataset 1: Clayton (2018)
 C18 <- read_csv("data-raw/source/Clayton_2018.csv") |>
@@ -979,7 +980,27 @@ L22_E4 <- haven::read_spss("source/ResearchBox84/Experiment 4.sav") |>
                 ) |>
   dplyr::select(cutfreq, cutintensity, social, enjoyother, enjoyamount, age, gender)
 levels(L22_E4$gender) <- tolower(levels(L22_E4$gender))
+class(L22_E4$enjoyother) <- "integer" # needed for the process macro
+class(L22_E4$enjoyamount) <- "integer"
+attributes(L22_E4$enjoyother) <- NULL
+attributes(L22_E4$enjoyamount) <- NULL
 usethis::use_data(L22_E4, overwrite = TRUE)
+
+# Dataset 44: Leckford et al. (2023), Study 3
+# https://doi.org/10.1177/02654075221149955
+LWSH23_S3 <- read.csv("source/ResearchBox777/LWSH23_S3.csv") |>
+  dplyr::mutate(age = as.integer(age),
+                gender = factor(tolower(gender)),
+                cond = factor(tolower(cond)),
+                relation_type = factor(tolower(relation_type))) |>
+  dplyr::rename(needclosure = nfc,
+                needsatis = needs,
+                reltype = relation_type,
+                rel = rel_val) |>
+  tibble::as_tibble()
+levels(LWSH23_S3$cond) <- c("directly rejected", "ghosted", "included")
+LWSH23_S3$cond <- relevel(LWSH23_S3$cond, "included")
+usethis::use_data(LWSH23_S3, overwrite = TRUE)
 
 # Generate skeleton for documentation
 for(file in list.files("../data",full.names = TRUE)){

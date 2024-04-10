@@ -1002,6 +1002,12 @@ levels(LWSH23_S3$cond) <- c("directly rejected", "ghosted", "included")
 LWSH23_S3$cond <- relevel(LWSH23_S3$cond, "included")
 usethis::use_data(LWSH23_S3, overwrite = TRUE)
 
+# Dataset 45
+BM04_T2 <- data.frame(black = factor(rep(c("0", "1", "2"), length.out = 9)),
+                      white = factor(rep(c("0", "1", "2"), each = 3)),
+                      count = c(1103, 33, 6, 74, 46, 7, 19, 18, 17))
+usethis::use_data(BM04_T2, overwrite = TRUE)
+
 # Generate skeleton for documentation
 for(file in list.files("../data",full.names = TRUE)){
   load(file)

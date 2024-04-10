@@ -1009,3 +1009,16 @@
 #' \item{\code{limit}}{logical: was a speed limit enforced?}
 #' }
 "sweden"
+
+
+#' Bertrand and Mullainathan (2004), Table 2
+#'
+#' @docType data
+#' @format a data frame in long format of 9 observations on the following variables
+#' \describe{
+#' \item{\code{black}}{number of black partipants called back, out of two}
+#' \item{\code{white}}{number of white partipants called back, out of two}
+#' \item{\code{count}}{[integer] count of occurence of each combination}
+#' }
+#' @references Bertrand, M., and S. Mullainathan. 2004. \emph{Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination.} American Economic Review 94 (\bold{4}): 991-1013. \url{https://doi.org/10.1257/0002828042002561}.
+"BM04_T2"

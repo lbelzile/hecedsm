@@ -1022,3 +1022,20 @@
 #' }
 #' @references Bertrand, M., and S. Mullainathan. 2004. \emph{Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination.} American Economic Review 94 (\bold{4}): 991-1013. \url{https://doi.org/10.1257/0002828042002561}.
 "BM04_T2"
+
+#' @title Morgan and Halfaker (2018), Table 1
+#'
+#' @description Data on the impact of Wikipedia Teahouse on the number
+#' of edits. The authors looked at barriers to participation
+#'
+#' @format A data frame with 12 rows and 4 variables:
+#' \describe{
+#'   \item{\code{neweditors}}{[integer] number of new editors}
+#'   \item{\code{period}}{[factor] number of weeks since joining Wikipedia}
+#'   \item{\code{group}}{[factor] experimental condition, either \code{invited} to teahouse or \code{control}}
+#'   \item{\code{edits}}{[factor] level of activity, either \code{1-4 edits} or \code{5+ edits}}
+#'}
+#'
+#' @references  Jonathan T. Morgan and Aaron Halfaker. 2018. Evaluating the impact of the Wikipedia Teahouse on newcomer socialization and retention. In \emph{Proceedings of the 14th International Symposium on Open Collaboration (OpenSym '18)}. Association for Computing Machinery, New York, NY, USA, 20, 1–7. \url{https://doi.org/10.1145/3233391.3233544}
+#'
+"MH18_T1"

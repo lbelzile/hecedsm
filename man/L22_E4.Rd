@@ -26,6 +26,6 @@ L22_E4
 The 3 (social interaction) by 2 (cutting frequenty or intensity) mixed design experiment considered consumer indulging in decisions based on social interactions, through a fictional context where they buy a gourmet coffee for 4$ at a nearby shop. Participants were randomly assigned to one of three experimental conditions for social interactions: solitary, whereby they would consume the drink alone, with friends. The third, with social interaction, implied the gathering with friends would still take place if you cut the frequency. The data are in wide format, with cut (frequency, intensity) on separate columns.
 }
 \references{
-Liu PJ. (2022). \emph{Frequency Versus Intensity: How Thinking of a Frequent Consumption Indulgence as Social Versus Solitary Affects Preferences for How to Cut Back.} Journal of Marketing Research. 59(\bold{3}):497-516, \url{https://doi.org/10.1177/00222437211055741}.
+Liu PJ. (2022). \emph{Frequency Versus Intensity: How Thinking of a Frequent Consumption Indulgence as Social Versus Solitary Affects Preferences for How to Cut Back.} Journal of Marketing Research. 59(\bold{3}):497-516, \doi{10.1177/00222437211055741}.
 }
 \keyword{datasets}

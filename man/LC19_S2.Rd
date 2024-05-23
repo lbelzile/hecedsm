@@ -16,7 +16,7 @@ A data frame with 113 rows and 6 variables:
 }
 }
 \source{
-Mendeley, \url{https://doi.org/10.17632/r9t7hh7cy3.1}, licensed under CC BY 4.0
+Mendeley, \doi{10.17632/r9t7hh7cy3.1}, licensed under CC BY 4.0
 }
 \usage{
 LC19_S2
@@ -25,6 +25,6 @@ LC19_S2
 A follow-up of Study 1 aiming to measure the mediating effect of the fluency of the advertisement on product evaluation, depending on the (in)consistency between description and display on product evaluation
 }
 \references{
-K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
+K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \doi{10.1016/j.jretconser.2019.03.015}
 }
 \keyword{datasets}

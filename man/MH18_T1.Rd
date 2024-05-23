@@ -21,6 +21,6 @@ Data on the impact of Wikipedia Teahouse on the number
 of edits. The authors looked at barriers to participation
 }
 \references{
-Jonathan T. Morgan and Aaron Halfaker. 2018. Evaluating the impact of the Wikipedia Teahouse on newcomer socialization and retention. In \emph{Proceedings of the 14th International Symposium on Open Collaboration (OpenSym '18)}. Association for Computing Machinery, New York, NY, USA, 20, 1–7. \url{https://doi.org/10.1145/3233391.3233544}
+Jonathan T. Morgan and Aaron Halfaker. 2018. Evaluating the impact of the Wikipedia Teahouse on newcomer socialization and retention. In \emph{Proceedings of the 14th International Symposium on Open Collaboration (OpenSym '18)}. Association for Computing Machinery, New York, NY, USA, 20, 1–7. \doi{10.1145/3233391.3233544}
 }
 \keyword{datasets}

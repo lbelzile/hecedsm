@@ -18,7 +18,7 @@
 #' \item{\code{age}}{age of participant}
 #' \item{\code{gender}}{[factor] gender, either male or female}
 #'}
-#' @references  Bastian, B., Jetten, J., & Ferris, L. J. (2014). \emph{Pain as Social Glue: Shared Pain Increases Cooperation}. Psychological Science, 25(\bold{11}), 2079–2085. \url{https://doi.org/10.1177/0956797614545886}
+#' @references  Bastian, B., Jetten, J., & Ferris, L. J. (2014). \emph{Pain as Social Glue: Shared Pain Increases Cooperation}. Psychological Science, 25(\bold{11}), 2079–2085. \doi{10.1177/0956797614545886}
 #' @source Open Science Foundation, via \url{https://osf.io/9k3sw/}, unspecified license
 "BJF14_S1"
 
@@ -33,7 +33,7 @@
 #'   \item{\code{posttest2}}{[integer] score (out of 18) on an expanded comprehension monitoring questionnaire}
 #'   \item{\code{posttest3}}{[integer] number of correct item, ranging from 0 to 56 on the Degrees of Reading Power test, a cloze test}
 #'}
-#' @references   Baumann, J. F., Seifert-Kessell, N., & Jones, L. A. (1992). \emph{Effect of Think-Aloud Instruction on Elementary Students’ Comprehension Monitoring Abilities}. Journal of Reading Behavior, 24(\bold{2}), 143–172. \url{https://doi.org/10.1080/10862969209547770}
+#' @references   Baumann, J. F., Seifert-Kessell, N., & Jones, L. A. (1992). \emph{Effect of Think-Aloud Instruction on Elementary Students’ Comprehension Monitoring Abilities}. Journal of Reading Behavior, 24(\bold{2}), 143–172. \doi{10.1080/10862969209547770}
 #' @source Obtained from `carData` package (`Baumann`)
 "BSJ92"
 
@@ -50,8 +50,8 @@
 #'   \item{\code{dscore}}{[double] d-score for Implicit Association Tests (IAT)}
 #'   \item{\code{under25}}{[integer] indicator variable, 1 if the person is 25 or under, 0 otherwise}
 #'}
-#' @references Clayton, A. (2018). \emph{Do Gender Quotas Really Reduce Bias? Evidence from a Policy Experiment in Southern Africa}. Journal of Experimental Political Science, 5(\bold{3}), 182-194. \url{https://doi.org/10.1017/XPS.2018.8}
-#' @source Harvard Dataverse, \url{https://doi.org/10.7910/DVN/JGGUZE}, licensed under CC0 1.0
+#' @references Clayton, A. (2018). \emph{Do Gender Quotas Really Reduce Bias? Evidence from a Policy Experiment in Southern Africa}. Journal of Experimental Political Science, 5(\bold{3}), 182-194. \doi{10.1017/XPS.2018.8}
+#' @source Harvard Dataverse, \doi{10.7910/DVN/JGGUZE}, licensed under CC0 1.0
 "C18"
 
 
@@ -66,7 +66,7 @@
 #'   \item{\code{persp}}{[double] score for the "consideration of others' perspectives"}
 #'   \item{\code{change}}{[double] score for the "recognition of change"}
 #'}
-#' @references Grossmann, I., & Kross, E. (2014). \emph{Exploring Solomon’s Paradox: Self-Distancing Eliminates the Self-Other Asymmetry in Wise Reasoning About Close Relationships in Younger and Older Adults.} Psychological Science, 25(\bold{8}), 1571–1580. \url{https://doi.org/10.1177/0956797614535400}
+#' @references Grossmann, I., & Kross, E. (2014). \emph{Exploring Solomon’s Paradox: Self-Distancing Eliminates the Self-Other Asymmetry in Wise Reasoning About Close Relationships in Younger and Older Adults.} Psychological Science, 25(\bold{8}), 1571–1580. \doi{10.1177/0956797614535400}
 #' @source Open Science Foundation, \url{https://osf.io/7xs93}, unspecified license
 "GK14_S3"
 
@@ -89,7 +89,7 @@
 #'   \item{\code{id}}{[factor] participant identifier}
 #'   \item{\code{acuity}}{[factor] acuity group, either \code{normal} or \code{high}}
 #'}
-#' @references Lages, M., Boyle, S. C., & Jenkins, R. (2017). \emph{Illusory Increases in Font Size Improve Letter Recognition}. Psychological Science, 28(\bold{8}), 1180–1188. \url{https://doi.org/10.1177/0956797617705391}
+#' @references Lages, M., Boyle, S. C., & Jenkins, R. (2017). \emph{Illusory Increases in Font Size Improve Letter Recognition}. Psychological Science, 28(\bold{8}), 1180–1188. \doi{10.1177/0956797617705391}
 #' @source Open Science Foundation, \url{https://osf.io/nav9h/}, unspecified license
 #' @examples
 #' \dontrun{
@@ -126,7 +126,7 @@
 #'   \item{\code{age}}{[double] age of participant}
 #'}
 #'
-#' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2023). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology, 124(4), 754–771.  \url{https://doi.org/10.1037/pspi0000402}
+#' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2023). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology, 124(4), 754–771.  \doi{10.1037/pspi0000402}
 #' @source Research Box 289, \url{https://researchbox.org/289}, distributed under a CC BY 4.0 license
 "LRMM23_S1"
 
@@ -142,7 +142,7 @@
 #'   \item{\code{frequency}}{[factor] how often students verbalized during task, one of \code{never}, \code{sometimes} or \code{usually}}
 #'   \item{\code{count}}{[integer] count of the number of children}
 #'}
-#' @references   Elliott, E. M., C. C. Morey, A.M. AuBuchon et al. (2021). \emph{Multilab Direct Replication of Flavell, Beach, and Chinsky (1966): Spontaneous Verbal Rehearsal in a Memory Task as a Function of Age}. Advances in Methods and Practices in Psychological Science. \url{https://doi.org/10.1177/25152459211018187}
+#' @references   Elliott, E. M., C. C. Morey, A.M. AuBuchon et al. (2021). \emph{Multilab Direct Replication of Flavell, Beach, and Chinsky (1966): Spontaneous Verbal Rehearsal in a Memory Task as a Function of Age}. Advances in Methods and Practices in Psychological Science. \doi{10.1177/25152459211018187}
 #' @source Open Science Foundation, \url{https://osf.io/vgxkf}, licensed under CC-BY Attribution 4.0 International
 "MULTI21_D1"
 
@@ -160,7 +160,7 @@
 #'   \item{\code{mcorrect}}{[integer] number of words correctly recalled, from 1 to 5}
 #'   \item{\code{frequency}}{[factor] how often students verbalized during task, one of \code{never}, \code{sometimes} or \code{usually}}
 #'}
-#' @references   Elliott, E. M., C. C. Morey, A.M. AuBuchon et al. (2021). \emph{Multilab Direct Replication of Flavell, Beach, and Chinsky (1966): Spontaneous Verbal Rehearsal in a Memory Task as a Function of Age}. Advances in Methods and Practices in Psychological Science. \url{https://doi.org/10.1177/25152459211018187}
+#' @references   Elliott, E. M., C. C. Morey, A.M. AuBuchon et al. (2021). \emph{Multilab Direct Replication of Flavell, Beach, and Chinsky (1966): Spontaneous Verbal Rehearsal in a Memory Task as a Function of Age}. Advances in Methods and Practices in Psychological Science. \doi{10.1177/25152459211018187}
 #' @source Open Science Foundation, \url{https://osf.io/vgxkf}, licensed under CC-BY Attribution 4.0 International
 "MULTI21_D2"
 
@@ -176,7 +176,7 @@
 #'   \item{\code{frequency}}{[factor] category indicating how often students verbalized during task, one of \code{0}, \code{1-2} or \code{3+}}
 #'   \item{\code{count}}{[integer] count of the number of student}
 #'}
-#' @references Flavell, J. H., Beach, D. R., & Chinsky, J. M. (1966). Spontaneous verbal rehearsal in a memory task as a function of age. \emph{Child Development}, 37, 283-299. \url{https://doi.org/10.2307/1126804}
+#' @references Flavell, J. H., Beach, D. R., & Chinsky, J. M. (1966). Spontaneous verbal rehearsal in a memory task as a function of age. \emph{Child Development}, 37, 283-299. \doi{10.2307/1126804}
 #' @examples
 #' chisq.test(xtabs(count ~ grade + frequency, data = FBC66_T1))
 #'
@@ -204,7 +204,7 @@
 #'   \item{\code{age}}{[integer] age of participant}
 #'   \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
 #'}
-#' @references Johnson, D.J., F. Cheung and M.B. Donnellan (2014), \emph{Does Cleanliness Influence Moral Judgments}?, Social Psychology, 45(\bold{3}), 209-215, \url{https://doi.org/10.1027/1864-9335/a000186}
+#' @references Johnson, D.J., F. Cheung and M.B. Donnellan (2014), \emph{Does Cleanliness Influence Moral Judgments}?, Social Psychology, 45(\bold{3}), 209-215, \doi{10.1027/1864-9335/a000186}
 #' @source Open Science Foundation, \url{https://osf.io/zwrxc}, unspecified license
 "JCD14_S2"
 
@@ -218,7 +218,7 @@
 #'   \item{\code{admin}}{[factor] complexity of job, either \code{simple} or \code{complex}}
 #'   \item{\code{count}}{[integer] number of occurences of combination}
 #'}
-#' @references Rosen, B., and Jerdee, T. H. (1974). \emph{Influence of sex role stereotypes on personnel decisions.} Journal of Applied Psychology, 59(\bold{1}), 9–14. \url{https://doi.org/10.1037/h0035834}
+#' @references Rosen, B., and Jerdee, T. H. (1974). \emph{Influence of sex role stereotypes on personnel decisions.} Journal of Applied Psychology, 59(\bold{1}), 9–14. \doi{10.1037/h0035834}
 "RJ74"
 
 
@@ -233,7 +233,7 @@
 #'   \item{\code{distance}}{[integer] subjective distance, a Likert scale ranging from very close (\code{1}) to very far (\code{7})}
 #'}
 #' @details The specific question asked to commuters was "How far away does the [name] station feel to you?"
-#' @references Maglio, S. J., & Polman, E. (2014). \emph{Spatial orientation shrinks and expands psychological distance.} Psychological Science, 25(\bold{7}), 1345–1352. \url{https://doi.org/10.1177/0956797614530571}
+#' @references Maglio, S. J., & Polman, E. (2014). \emph{Spatial orientation shrinks and expands psychological distance.} Psychological Science, 25(\bold{7}), 1345–1352. \doi{10.1177/0956797614530571}
 #' @source Open Science Foundation, \url{https://osf.io/7rajd/}, unspecified license
 "MP14_S1"
 
@@ -249,7 +249,7 @@
 #'   \item{\code{color}}{[factor] color of photographs, either grayscale (\code{mon}), colored (\code{col}) or mixed (\code{mix})}
 #'   \item{\code{pcorr}}{[double] percentage of correctly detected match}
 #'}
-#' @references Bobak, A. K., Mileva, V. R., & Hancock, P. J. B. (2019). \emph{A grey area: How does image hue affect unfamiliar face matching?} Cognitive Research: Principles and Implications, 4(\bold{1}), 27. \url{https://doi.org/10.1186/s41235-019-0174-3}
+#' @references Bobak, A. K., Mileva, V. R., & Hancock, P. J. B. (2019). \emph{A grey area: How does image hue affect unfamiliar face matching?} Cognitive Research: Principles and Implications, 4(\bold{1}), 27. \doi{10.1186/s41235-019-0174-3}
 #' @source Supplementary material, article licensed under CC BY 4.0
 "BMH19_S2"
 
@@ -269,7 +269,7 @@
 #'   \item{\code{guilt}}{[double] final belief of guilt score, with lower values representing no belief of guilt}
 #'   \item{\code{pjaq}}{[integer] PJAQ score, a 29-item questionnaire, which measures total pre-trial bias}
 #'}
-#' @references Lee J. Curley, Jennifer Murray, Rory MacLean, James Munro, Martin Lages, Lara A. Frumkin, Phyllis Laybourn & David Brown (2022) \emph{Verdict spotting: investigating the effects of juror bias, evidence anchors and verdict system in jurors}, Psychiatry, Psychology and Law, 29(\bold{3}), 323-344, \url{https://doi.org/10.1080/13218719.2021.1904450}
+#' @references Lee J. Curley, Jennifer Murray, Rory MacLean, James Munro, Martin Lages, Lara A. Frumkin, Phyllis Laybourn & David Brown (2022) \emph{Verdict spotting: investigating the effects of juror bias, evidence anchors and verdict system in jurors}, Psychiatry, Psychology and Law, 29(\bold{3}), 323-344, \doi{10.1080/13218719.2021.1904450}
 #' @source Open Science Foundation, \url{https://osf.io/zg9hw/}, unspecified license
 "C22"
 
@@ -283,7 +283,7 @@
 #'   \item{\code{madjust}}{[double] mean adjustement}
 #'}
 #' @references Chandler, J. J. (2016). \emph{Replication of Janiszewski & Uy (2008, Psychological Science, study 4b)}. OSF. \url{https://osf.io/aaudl}
-#' @references Janiszewski, C., & Uy, D. (2008). \emph{Precision of the anchor influences the amount of adjustment}. Psychological Science, 19(\bold{2}), 121–127. \url{https://doi.org/10.1111/j.1467-9280.2008.02057.x}
+#' @references Janiszewski, C., & Uy, D. (2008). \emph{Precision of the anchor influences the amount of adjustment}. Psychological Science, 19(\bold{2}), 121–127. \doi{10.1111/j.1467-9280.2008.02057.x}
 #' @source Open Science Foundation,  \url{https://osf.io/aaudl}, licensed under CC0 1.0 Universal
 "C16"
 
@@ -296,7 +296,7 @@
 #'   \item{\code{post}}{[integer] post experiment score for veracity of claim}
 #'   \item{\code{condition}}{[factor] experimental condition, one of \code{Boost}, \code{BoostPlus} and \code{consensus}}
 #'}
-#' @references Stekelenburg, A. van, Schaap, G., Veling, H., & Buijzen, M. (2021). \emph{Boosting understanding and identification of scientific consensus can help to correct false beliefs.} Psychological Science, 32(\bold{10}), 1549–1565. \url{https://doi.org/10.1177/09567976211007788}
+#' @references Stekelenburg, A. van, Schaap, G., Veling, H., & Buijzen, M. (2021). \emph{Boosting understanding and identification of scientific consensus can help to correct false beliefs.} Psychological Science, 32(\bold{10}), 1549–1565. \doi{10.1177/09567976211007788}
 #' @source Open Science Foundation, \url{https://osf.io/hua8v/}, licensed under CC-BY Attribution 4.0 International
 "SSVB21_S2"
 
@@ -310,7 +310,7 @@
 #'   \item{\code{nconsensus}}{[integer] number of mentions of scientific consensus by the participant (zero indicates no mention)}
 #'   \item{\code{trust}}{[integer] score for the trust in scientists}
 #'}
-#' @references Stekelenburg, A. van, Schaap, G., Veling, H., & Buijzen, M. (2021). \emph{Boosting understanding and identification of scientific consensus can help to correct false beliefs.} Psychological Science, 32(\bold{10}), 1549–1565. \url{https://doi.org/10.1177/09567976211007788}
+#' @references Stekelenburg, A. van, Schaap, G., Veling, H., & Buijzen, M. (2021). \emph{Boosting understanding and identification of scientific consensus can help to correct false beliefs.} Psychological Science, 32(\bold{10}), 1549–1565. \doi{10.1177/09567976211007788}
 #' @source Open Science Foundation, \url{https://osf.io/hua8v/}, licensed under CC-BY Attribution 4.0 International
 "SSVB21_S3"
 
@@ -333,7 +333,7 @@
 #'   \item{\code{tenure}}{[integer] number of years teaching}
 #'   \item{\code{hours_week}}{[integer] weekly number of hours working}
 #'}
-#' @references M. Roczniewska and Higgins, E.T. (2019). \emph{Messaging organizational change: How regulatory fit relates to openness to change through fairness perceptions}, Journal of Experimental Social Psychology, 85, \url{https://doi.org/10.1016/j.jesp.2019.103882}
+#' @references M. Roczniewska and Higgins, E.T. (2019). \emph{Messaging organizational change: How regulatory fit relates to openness to change through fairness perceptions}, Journal of Experimental Social Psychology, 85, \doi{10.1016/j.jesp.2019.103882}
 #' @source Open Science Foundation, \url{https://osf.io/vrazp/}, unspecified license
 "RH19_S1"
 
@@ -350,7 +350,7 @@
 #'}
 #' @details This data was simulated based on the summary statistics presented in the paper
 #' @source Leo Belzile
-#' @references Anandarajan, A., Viger, C., & Curatola, A. P. (2002). \emph{An experimental investigation of alternative going-concern reporting formats: A Canadian experience.} Canadian Accounting Perspectives, 1(\bold{2}), 141-162. \url{https://doi.org/10.1506/5947-NQTC-C3Y5-H46N}
+#' @references Anandarajan, A., Viger, C., & Curatola, A. P. (2002). \emph{An experimental investigation of alternative going-concern reporting formats: A Canadian experience.} Canadian Accounting Perspectives, 1(\bold{2}), 141-162. \doi{10.1506/5947-NQTC-C3Y5-H46N}
 "AVC02"
 
 #' @title Lee and Choi (2019), Study 1
@@ -364,8 +364,8 @@
 #'   \item{\code{gender}}{[factor] gender of participant}
 #'   \item{\code{age}}{[integer] age of participant}
 #'}
-#' @references K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
-#' @source Mendeley, \url{https://doi.org/10.17632/r9t7hh7cy3.1}, licensed under CC BY 4.0
+#' @references K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \doi{10.1016/j.jretconser.2019.03.015}
+#' @source Mendeley, \doi{10.17632/r9t7hh7cy3.1}, licensed under CC BY 4.0
 "LC19_S1"
 
 #' @title Lee and Choi (2019), Study 2
@@ -380,8 +380,8 @@
 #'   \item{\code{gender}}{[factor] gender of participant}
 #'   \item{\code{age}}{[integer] age of participant}
 #' }
-#' @references K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
-#' @source Mendeley, \url{https://doi.org/10.17632/r9t7hh7cy3.1}, licensed under CC BY 4.0
+#' @references K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \doi{10.1016/j.jretconser.2019.03.015}
+#' @source Mendeley, \doi{10.17632/r9t7hh7cy3.1}, licensed under CC BY 4.0
 "LC19_S2"
 
 #' @title Lee and Choi (2019), Table 2
@@ -393,8 +393,8 @@
 #'   \item{\code{expected}}{[factor] expected number of toothbrushes}
 #'   \item{\code{count}}{[integer] count of occurence}
 #'}
-#' @references K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
-#' @source Mendeley, \url{https://doi.org/10.17632/r9t7hh7cy3.1}, licensed under CC BY 4.0
+#' @references K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \doi{10.1016/j.jretconser.2019.03.015}
+#' @source Mendeley, \doi{10.17632/r9t7hh7cy3.1}, licensed under CC BY 4.0
 "LC19_T2"
 
 
@@ -425,7 +425,7 @@
 #'   \item{\code{age_init}}{[double] age of initiator}
 #'   \item{\code{gender_init}}{[factor] gender of initiator, one of \code{male}, \code{female} or \code{other}}
 #'}
-#' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2023). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology, 124(4), 754–771.  \url{https://doi.org/10.1037/pspi0000402}
+#' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2023). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology, 124(4), 754–771.  \doi{10.1037/pspi0000402}
 #' @source Research Box 289, \url{https://researchbox.org/289}, licensed under CC BY 4.0
 "LRMM23_S3"
 
@@ -442,7 +442,7 @@
 #'   \item{\code{age}}{[double] age of participant}
 #'   \item{\code{gender}}{[factor] gender of participant, one of \code{male}, \code{female} or \code{other}}
 #'}
-#' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2023). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology, 124(4), 754–771.  \url{https://doi.org/10.1037/pspi0000402}
+#' @references Liu, P. J., Rim, S., Min, L., & Min, K. E. (2023). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology, 124(4), 754–771.  \doi{10.1037/pspi0000402}
 #' @source Research Box 289, \url{https://researchbox.org/289}, licensed under CC BY 4.0
 "LRMM23_S5b"
 
@@ -455,8 +455,8 @@
 #'   \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
 #'   \item{\code{condition}}{[factor] experimental condition, either \code{prepared} or \code{unprepared}}
 #'}
-#' @references Klein, R. A., et al. (2018). \emph{Many labs 2: Investigating variation in replicability across samples and settings.} Advances in Methods and Practices in Psychological Science, 1(\bold{4}), 443–490. \url{https://doi.org/10.1177/2515245918810225}
-#' Risen, J. L., and T. Gilovich, (2008). \emph{Why people are reluctant to tempt fate.} Journal of Personality and Social Psychology, 95(\bold{2}), 293–307. \url{https://doi.org/10.1037/0022-3514.95.2.293}
+#' @references Klein, R. A., et al. (2018). \emph{Many labs 2: Investigating variation in replicability across samples and settings.} Advances in Methods and Practices in Psychological Science, 1(\bold{4}), 443–490. \doi{10.1177/2515245918810225}
+#' Risen, J. L., and T. Gilovich, (2008). \emph{Why people are reluctant to tempt fate.} Journal of Personality and Social Psychology, 95(\bold{2}), 293–307. \doi{10.1037/0022-3514.95.2.293}
 #' @source Open Science Foundation, \url{https://osf.io/sg3su}, licensed under CC0 1.0 Universal
 "MANY18_S18"
 
@@ -475,7 +475,7 @@
 #'   \item{\code{avg_creative}}{[double] average creativity of all ideas generated by each group}
 #'   \item{\code{study}}{[factor] study number}
 #'}
-#' @references Brucks, M.S. and J. Levav (2022). \emph{Virtual communication curbs creative idea generation}. Nature 605, 108–112. \url{https://doi.org/10.1038/s41586-022-04643-y}
+#' @references Brucks, M.S. and J. Levav (2022). \emph{Virtual communication curbs creative idea generation}. Nature 605, 108–112. \doi{10.1038/s41586-022-04643-y}
 #' @source Research Box 282, \url{https://researchbox.org/282}, licensed under CC BY 4.0
 "BL22_L"
 
@@ -492,7 +492,7 @@
 #'   \item{\code{task_time}}{[integer] time spent looking at the task computer (in seconds)}
 #'   \item{\code{room_time}}{[double] time spent looking at room (in seconds)}
 #'}
-#' @references Brucks, M.S. and J. Levav (2022). \emph{Virtual communication curbs creative idea generation}. Nature 605, 108–112. \url{https://doi.org/10.1038/s41586-022-04643-y}
+#' @references Brucks, M.S. and J. Levav (2022). \emph{Virtual communication curbs creative idea generation}. Nature 605, 108–112. \doi{10.1038/s41586-022-04643-y}
 #' @source Research Box 282, \url{https://researchbox.org/282}, licensed under CC BY 4.0
 #' @examples
 #' \dontrun{
@@ -516,7 +516,7 @@
 #'   \item{\code{age}}{[integer] age of respondant}
 #'}
 #' @source Research Box 602, \url{https://researchbox.org/602}, licensed under CC BY 4.0
-#' @references Duke, K.E. and O. Amir (2023). \emph{The Importance of Selling Formats: When Integrating Purchase and Quantity Decisions Increases Sales}, Marketing Science,42(1), 87-109. \url{https://doi.org/10.1287/mksc.2022.1364}
+#' @references Duke, K.E. and O. Amir (2023). \emph{The Importance of Selling Formats: When Integrating Purchase and Quantity Decisions Increases Sales}, Marketing Science,42(1), 87-109. \doi{10.1287/mksc.2022.1364}
 "DA23_E1"
 
 
@@ -534,7 +534,7 @@
 #'   \item{\code{elength}}{[integer] length of self-reported explanation for their choice (number of characters)}
 #'}
 #' @source Research Box 602, \url{https://researchbox.org/602}, licensed under CC BY 4.0
-#' @references Duke, K.E. and O. Amir (2023). \emph{The Importance of Selling Formats: When Integrating Purchase and Quantity Decisions Increases Sales}, Marketing Science,42(1), 87-109. \url{https://doi.org/10.1287/mksc.2022.1364}
+#' @references Duke, K.E. and O. Amir (2023). \emph{The Importance of Selling Formats: When Integrating Purchase and Quantity Decisions Increases Sales}, Marketing Science,42(1), 87-109. \doi{10.1287/mksc.2022.1364}
 "DA23_E2"
 
 #' @title Teaching Arithmetic Data
@@ -573,7 +573,7 @@
 #'   \item{\code{likelihood}}{[double] average score of likelihood in/ interest of using offer to make the purchase (1-9 scale)}
 #'}
 #' @source Research Box 111, \url{https://researchbox.org/111}, licensed under CC BY 4.0
-#' @references Sharma, E., Tully, S. and C. Cryder (2021). \emph{Psychological Ownership of (Borrowed) Money}, Journal of Marketing Research, \bold{58}(3), \url{https://doi.org/10.1177/0022243721993816}
+#' @references Sharma, E., Tully, S. and C. Cryder (2021). \emph{Psychological Ownership of (Borrowed) Money}, Journal of Marketing Research, \bold{58}(3), \doi{10.1177/0022243721993816}
 "STC21_SS5"
 
 #' Effects of verbal feedback
@@ -637,7 +637,7 @@
 #'   \item{\code{gender}}{[factor] gender of participant}
 #' }
 #' @source ResearchBox 567, \url{https://researchbox.org/567}, licensed under CC BY 4.0
-#' @references Halevy, N., & Berson, Y. (2022). Thinking about the distant future promotes the prospects of peace: A construal-level perspective on intergroup conflict resolution. Journal of Conflict Resolution, 66(6), 1119–1143. \url{https://doi.org/10.1177/00220027221079402}
+#' @references Halevy, N., & Berson, Y. (2022). Thinking about the distant future promotes the prospects of peace: A construal-level perspective on intergroup conflict resolution. Journal of Conflict Resolution, 66(6), 1119–1143. \doi{10.1177/00220027221079402}
 "HB22_S5"
 
 
@@ -663,7 +663,7 @@
 #'   \item{\code{satisfaction}}{[double] satisfaction score, a scale composed of 3 items}
 #'}
 #' @source Shang Lin Chen, personal communication, distributed under CC BY-NC-SA 4.0
-#' @references Labonté-LeMoyne, E., Jutras, M.-A., Léger, P.-M., Sénécal, S., Fredette, M., Begon, M., and Mathieu, M.-E. (2020). \emph{Does Reducing Sedentarity With Standing Desks Hinder Cognitive Performance? Human Factors}, 62(\bold{4}), 603–612. \url{https://doi.org/10.1177/0018720819879310}
+#' @references Labonté-LeMoyne, E., Jutras, M.-A., Léger, P.-M., Sénécal, S., Fredette, M., Begon, M., and Mathieu, M.-E. (2020). \emph{Does Reducing Sedentarity With Standing Desks Hinder Cognitive Performance? Human Factors}, 62(\bold{4}), 603–612. \doi{10.1177/0018720819879310}
 "LJLSFBM20"
 
 #' Brodeur et al. (2021), exploratory data analysis
@@ -679,7 +679,7 @@
 #'   \item{\code{nviolation}}{[integer] total number of violations}
 #'}
 #' @source Shang Lin Chen, personal communication, distributed under CC BY-NC-SA 4.0
-#' @references Brodeur, M., Ruer, P. Léger, P. and S. Sénécal (2021). Smartwatches are more distracting than mobile phones while driving: Results from an experimental study, \emph{Accident Analysis & Prevention}, 149, 1-9. \url{https://doi.org/10.1016/j.aap.2020.105846}
+#' @references Brodeur, M., Ruer, P. Léger, P. and S. Sénécal (2021). Smartwatches are more distracting than mobile phones while driving: Results from an experimental study, \emph{Accident Analysis & Prevention}, 149, 1-9. \doi{10.1016/j.aap.2020.105846}
 "BRLS21_T3"
 
 #' Brodeur et al. (2021), Table 3
@@ -740,7 +740,7 @@
 #'
 #' All items were measured using scales constructed using items measured using Likert scales ranging from strongly disagree (\code{1}) to strongly agree (\code{7}).
 #' @source Hayes, A. F. (2021), Introduction to Mediation, Moderation, and Conditional Process Analysis: A Regression-Based Approach, 3rd edition, Guilford Press.
-#' @references Garcia, D.M., Schmitt, M.T., Branscombe, N.R. and Ellemers, N. (2010), Women's reactions to ingroup members who protest discriminatory treatment: The importance of beliefs about inequality and response appropriateness. \emph{European Journal of Social Psycholog.}, \bold{40}, 733-745. \url{https://doi.org/10.1002/ejsp.644}
+#' @references Garcia, D.M., Schmitt, M.T., Branscombe, N.R. and Ellemers, N. (2010), Women's reactions to ingroup members who protest discriminatory treatment: The importance of beliefs about inequality and response appropriateness. \emph{European Journal of Social Psycholog.}, \bold{40}, 733-745. \doi{10.1002/ejsp.644}
 #' @format A data frame with 129 rows and 5 variables:
 #' \describe{
 #'   \item{\code{protest}}{[factor] experimental condition}
@@ -762,7 +762,7 @@
 #'   \item{\code{amount}}{[double] amount of proposed donation, \code{NA} if the person declined to donate}
 #'}
 #'
-#' @references Moon, A. and EM VanEpps (2023). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, 50(1), 190–210. \url{https://doi.org/10.1093/jcr/ucac047}
+#' @references Moon, A. and EM VanEpps (2023). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, 50(1), 190–210. \doi{10.1093/jcr/ucac047}
 #' @source Research Box 54, \url{https://researchbox.org/54}, licensed under CC BY 4.0
 #' @examples
 #' ctab <- with(MV23_S1, table(donate, condition))
@@ -784,7 +784,7 @@
 #'   \item{\code{amount}}{[double] amount of proposed donation, \code{NA} if the person declined to donate}
 #'}
 #'
-#' @references Moon, A. and EM VanEpps (2023). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, 50(1), 190–210.\url{https://doi.org/10.1093/jcr/ucac047}
+#' @references Moon, A. and EM VanEpps (2023). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, 50(1), 190–210.\doi{10.1093/jcr/ucac047}
 #' @source Research Box 54, \url{https://researchbox.org/54}, licensed under CC BY 4.0
 "MV23_S4"
 
@@ -799,7 +799,7 @@
 #'   \item{\code{amount}}{[integer] number of additional questionnaire (up to 3).}
 #'}
 #'
-#' @references Moon, A. and EM VanEpps (2023). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, 50(1), 190–210. \url{https://doi.org/10.1093/jcr/ucac047}
+#' @references Moon, A. and EM VanEpps (2023). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, 50(1), 190–210. \doi{10.1093/jcr/ucac047}
 #' @examples
 #' \dontrun{
 #' chisq.test(with(MV23_SH,
@@ -854,7 +854,7 @@
 #'   \item{\code{mcheck}}{[double] manipulation check for proportion}
 #'   \item{\code{proportion}}{[double] proportion of plastic to paper}
 #'}
-#' @references Sokolova T, Krishna A, Döring T. (2023) \emph{Paper Meets Plastic: The Perceived Environmental Friendliness of Product Packaging}. Journal of Consumer Research, 50(3), 468–491. \url{https://doi.org/10.1093/jcr/ucad008}
+#' @references Sokolova T, Krishna A, Döring T. (2023) \emph{Paper Meets Plastic: The Perceived Environmental Friendliness of Product Packaging}. Journal of Consumer Research, 50(3), 468–491. \doi{10.1093/jcr/ucad008}
 #' @source  Research Box 712, \url{https://researchbox.org/712}, licensed under CC BY 4.0
 #' @examples
 #' data(SKD23_S2A, package = "hecedsm")
@@ -885,7 +885,7 @@
 #'}
 #' @note The participant demographic information is given in the attributes as metadata.
 #'
-#' @references Gaesser, B., Shimura, Y., & Cikara, M. (2020). Episodic simulation reduces intergroup bias in prosocial intentions and behavior. \emph{Journal of Personality and Social Psychology}, 118(\bold{4}), 683–705. \url{https://doi.org/10.1037/pspi0000194}
+#' @references Gaesser, B., Shimura, Y., & Cikara, M. (2020). Episodic simulation reduces intergroup bias in prosocial intentions and behavior. \emph{Journal of Personality and Social Psychology}, 118(\bold{4}), 683–705. \doi{10.1037/pspi0000194}
 #' @examples
 #' # Authors coded -1/1 for group and help
 #' # Unweighted regression (different weights depending on sample size)
@@ -909,7 +909,7 @@
 #'
 #' @source  Research Box 1401, \url{https://researchbox.org/1401}, licensed under CC BY 4.0
 #' @references J.D. Lin, N.Y.J. Kim, E. Uduehi and A. Keinan (2024+). \emph{Culture for Sale: Unpacking Consumer Perceptions of Cultural Appropriation}, Journal of Consumer Research,
-#'  \url{https://doi.org/10.1093/jcr/ucad076}
+#'  \doi{10.1093/jcr/ucad076}
 #' @format A data frame with 804 rows and 8 variables:
 #' \describe{
 #'   \item{\code{appropriation}}{[double] appropriation scale built from five items: higher values indicate increased perception of cultural appropriation}
@@ -934,7 +934,7 @@
 #'
 #' @source  Research Box 1401, \url{https://researchbox.org/1401}, licensed under CC BY 4.0
 #' @references J.D. Lin, N.Y.J. Kim, E. Uduehi and A. Keinan (2024+). \emph{Culture for Sale: Unpacking Consumer Perceptions of Cultural Appropriation}, Journal of Consumer Research,
-#'  \url{https://doi.org/10.1093/jcr/ucad076}
+#'  \doi{10.1093/jcr/ucad076}
 #' @format A data frame with 711 rows and 11 variables:
 #' \describe{
 #'   \item{\code{appropriation}}{[double] perception of cultural appropriation}
@@ -956,7 +956,7 @@
 #' @title Liu (2022), Experiment 4
 #' @description The 3 (social interaction) by 2 (cutting frequenty or intensity) mixed design experiment considered consumer indulging in decisions based on social interactions, through a fictional context where they buy a gourmet coffee for 4$ at a nearby shop. Participants were randomly assigned to one of three experimental conditions for social interactions: solitary, whereby they would consume the drink alone, with friends. The third, with social interaction, implied the gathering with friends would still take place if you cut the frequency. The data are in wide format, with cut (frequency, intensity) on separate columns.
 #' @source Research Box 84, \url{researchbox.org/84}, licensed under CC BY 4.0
-#' @references Liu PJ. (2022). \emph{Frequency Versus Intensity: How Thinking of a Frequent Consumption Indulgence as Social Versus Solitary Affects Preferences for How to Cut Back.} Journal of Marketing Research. 59(\bold{3}):497-516, \url{https://doi.org/10.1177/00222437211055741}.
+#' @references Liu PJ. (2022). \emph{Frequency Versus Intensity: How Thinking of a Frequent Consumption Indulgence as Social Versus Solitary Affects Preferences for How to Cut Back.} Journal of Marketing Research. 59(\bold{3}):497-516, \doi{10.1177/00222437211055741}.
 #' @format A data frame with 452 rows and 7 variables:
 #' \describe{
 #'   \item{\code{cutfreq}}{[integer] answer to the question 'How interested would you be in the ﬁnancial management app that prompts you to decrease your frequency of spending money by going less often to the coffee shop?', rated on a Likert scale ranging from 1 (not at all) to 5 (very much)}
@@ -982,7 +982,7 @@
 #'   \item{\code{reltype}}{[factor] type of romantic relationship, either \code{casually dating}, \code{friendship}, \code{romantic relationship}}
 #'   \item{\code{rel}}{[double] answer to the questions "how you felt toward the other person before the situation you just described ...", with high values demanding more involvment and commitment to the relationship}
 #'}
-#' @references Leckfor CM, Wood NR, Slatcher RB, Hales AH (2023) From close to ghost: Examining the relationship between the need for closure, intentions to ghost, and reactions to being ghosted. \emph{Journal of Social and Personal Relationships}, 40(\bold{8}), 2422-2444. \url{https://doi.org/10.1177/02654075221149955}
+#' @references Leckfor CM, Wood NR, Slatcher RB, Hales AH (2023) From close to ghost: Examining the relationship between the need for closure, intentions to ghost, and reactions to being ghosted. \emph{Journal of Social and Personal Relationships}, 40(\bold{8}), 2422-2444. \doi{10.1177/02654075221149955}
 #' @examples
 #' mod <- lm(data = LWSH23_S3, needsatis ~ needclosure * cond)
 #' anova(mod)
@@ -1020,7 +1020,7 @@
 #' \item{\code{white}}{number of white partipants called back, out of two}
 #' \item{\code{count}}{[integer] count of occurence of each combination}
 #' }
-#' @references Bertrand, M., and S. Mullainathan. 2004. \emph{Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination.} American Economic Review 94 (\bold{4}): 991-1013. \url{https://doi.org/10.1257/0002828042002561}.
+#' @references Bertrand, M., and S. Mullainathan. 2004. \emph{Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination.} American Economic Review 94 (\bold{4}): 991-1013. \doi{10.1257/0002828042002561}.
 "BM04_T2"
 
 #' @title Morgan and Halfaker (2018), Table 1
@@ -1036,6 +1036,55 @@
 #'   \item{\code{edits}}{[factor] level of activity, either \code{1-4 edits} or \code{5+ edits}}
 #'}
 #'
-#' @references  Jonathan T. Morgan and Aaron Halfaker. 2018. Evaluating the impact of the Wikipedia Teahouse on newcomer socialization and retention. In \emph{Proceedings of the 14th International Symposium on Open Collaboration (OpenSym '18)}. Association for Computing Machinery, New York, NY, USA, 20, 1–7. \url{https://doi.org/10.1145/3233391.3233544}
+#' @references  Jonathan T. Morgan and Aaron Halfaker. 2018. Evaluating the impact of the Wikipedia Teahouse on newcomer socialization and retention. In \emph{Proceedings of the 14th International Symposium on Open Collaboration (OpenSym '18)}. Association for Computing Machinery, New York, NY, USA, 20, 1–7. \doi{10.1145/3233391.3233544}
 #'
 "MH18_T1"
+
+#' @title Hart and Schweitzer (2022) pilot study
+#' @description The authors measured the economic relevance of relational outcomes (ERRO),
+#' by substracting the participants rating for good versus bad relationships,
+#' which rated from -10 (much worse) to 10 (much better). The data are presented in long format for each
+#' of the three items/services split by category.
+#' @format A data frame with 5808 rows and 7 variables:
+#' \describe{
+#'   \item{\code{id}}{[factor] participant identifier}
+#'   \item{\code{score}}{[double] ERRO score}
+#'   \item{\code{item}}{[factor] item }
+#'   \item{\code{category}}{[factor] category of the item, either \code{product} or \code{service}}
+#'   \item{\code{negotcl}}{[factor] took negotiation class}
+#'   \item{\code{gender}}{[factor] gender of participant, either \code{female} or \code{male}}
+#'   \item{\code{age}}{[integer] age of the participant}
+#'}
+#' @source Research Box 366, \url{researchbox.org/366}, licensed under CC BY 4.0
+#' @references Hart E, Schweitzer ME. (2022) \emph{When we should care more about relationships than favorable deal terms in negotiation: The economic relevance of relational outcomes (ERRO)'. Organizational Behavior and Human Decision Processes}. 168:104108.
+#' \doi{10.1016/j.obhdp.2021.104108}
+#' @examples
+#' # Repeated measure ANOVA
+#' rmod <- afex::aov_ez(
+#'     id = "id",
+#'     dv = "score",
+#'     within = "item",
+#'     data = ERRO_pilot_long)
+#'  emmeans::emmeans(object = rmod, specs = "item") |>
+#'    emmeans::contrast(list(service_vs_product = c(1, -1, 1, -1, 1, -1)/3))
+"HS22_P"
+
+
+#' @title Hart and Schweitzer (2022), Study 2
+#' @description Between-subject mediation study. The authors investigated the trade-offs between relational and deal terms concerns.
+#' Comparisons are made between high ERRO (for service purchase from someone providing his services as a house cleaner, versus from a seller of a vacuum cleaner).
+#' Participants were asked to allocate 4 points (for choice 1) to either deal or relationship and seven points for choice 2. The \code{slope} variable is obtained
+#' `((7-dealpts2) - (4-dealpts1))/(dealpts2 - dealpts1)`
+#' @format A data frame with 295 rows and 6 variables:
+#' \describe{
+#'   \item{\code{erro}}{[factor] whether the offer is for a \code{service} (cleaning), or for a \code{product} (selling a vacuum cleaner)}
+#'   \item{\code{relation}}{[double] average relationship importance}
+#'   \item{\code{deal}}{[double] average deal importance}
+#'   \item{\code{slope}}{[double] linear slope between choices 1 and 2}
+#'   \item{\code{dealpts1}}{[double] number of points out of four allocated to deal terms for choice 1. The balance is allocated to relation.}
+#'   \item{\code{dealpts2}}{[double] number of points out of seven allocated to deal terms for choice 2. The balance is allocated to relation.}
+#'}
+#' @source Research Box 366, \url{researchbox.org/366}, licensed under CC BY 4.0
+#' @references Hart E, Schweitzer ME. (2022) \emph{When we should care more about relationships than favorable deal terms in negotiation: The economic relevance of relational outcomes (ERRO)'. Organizational Behavior and Human Decision Processes}. 168:104108.
+#' \doi{10.1016/j.obhdp.2021.104108}
+"HS22_S2"

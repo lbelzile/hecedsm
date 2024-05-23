@@ -23,6 +23,6 @@ chisq.test(xtabs(count ~ grade + frequency, data = FBC66_T1))
 
 }
 \references{
-Flavell, J. H., Beach, D. R., & Chinsky, J. M. (1966). Spontaneous verbal rehearsal in a memory task as a function of age. \emph{Child Development}, 37, 283-299. \url{https://doi.org/10.2307/1126804}
+Flavell, J. H., Beach, D. R., & Chinsky, J. M. (1966). Spontaneous verbal rehearsal in a memory task as a function of age. \emph{Child Development}, 37, 283-299. \doi{10.2307/1126804}
 }
 \keyword{datasets}

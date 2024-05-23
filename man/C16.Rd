@@ -25,6 +25,6 @@ Replication by Chandler (2016) of Study 4a of Janiszewski and Uy (2008). Both st
 \references{
 Chandler, J. J. (2016). \emph{Replication of Janiszewski & Uy (2008, Psychological Science, study 4b)}. OSF. \url{https://osf.io/aaudl}
 
-Janiszewski, C., & Uy, D. (2008). \emph{Precision of the anchor influences the amount of adjustment}. Psychological Science, 19(\bold{2}), 121–127. \url{https://doi.org/10.1111/j.1467-9280.2008.02057.x}
+Janiszewski, C., & Uy, D. (2008). \emph{Precision of the anchor influences the amount of adjustment}. Psychological Science, 19(\bold{2}), 121–127. \doi{10.1111/j.1467-9280.2008.02057.x}
 }
 \keyword{datasets}

@@ -17,7 +17,7 @@ A data frame with 101 rows and 7 variables:
 }
 }
 \source{
-Harvard Dataverse, \url{https://doi.org/10.7910/DVN/JGGUZE}, licensed under CC0 1.0
+Harvard Dataverse, \doi{10.7910/DVN/JGGUZE}, licensed under CC0 1.0
 }
 \usage{
 C18
@@ -26,6 +26,6 @@ C18
 Study by A. Clayton in Lesotho "to test whether citizens express less gender bias after 6-years of exposure to quota-elected women village representatives". The data are clustered by village and electoral district.
 }
 \references{
-Clayton, A. (2018). \emph{Do Gender Quotas Really Reduce Bias? Evidence from a Policy Experiment in Southern Africa}. Journal of Experimental Political Science, 5(\bold{3}), 182-194. \url{https://doi.org/10.1017/XPS.2018.8}
+Clayton, A. (2018). \emph{Do Gender Quotas Really Reduce Bias? Evidence from a Policy Experiment in Southern Africa}. Journal of Experimental Political Science, 5(\bold{3}), 182-194. \doi{10.1017/XPS.2018.8}
 }
 \keyword{datasets}

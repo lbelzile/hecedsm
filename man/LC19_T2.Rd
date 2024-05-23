@@ -14,7 +14,7 @@ A data frame with 12 rows and 4 variables:
 }
 }
 \source{
-Mendeley, \url{https://doi.org/10.17632/r9t7hh7cy3.1}, licensed under CC BY 4.0
+Mendeley, \doi{10.17632/r9t7hh7cy3.1}, licensed under CC BY 4.0
 }
 \usage{
 LC19_T2
@@ -23,6 +23,6 @@ LC19_T2
 Contingency table for Study 3, measuring the expected number of products as a function of the text description and image showing either one or six toothbrushes.
 }
 \references{
-K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \url{https://doi.org/10.1016/j.jretconser.2019.03.015}
+K. Lee and J. Choi (2019). \emph{Image-text inconsistency effect on product evaluation in online retailing}, Journal of Retailing and Consumer Services, 49, 279-288, \doi{10.1016/j.jretconser.2019.03.015}
 }
 \keyword{datasets}

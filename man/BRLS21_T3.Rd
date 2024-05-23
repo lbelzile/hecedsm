@@ -25,6 +25,6 @@ The experimental conditions were compared in Table 3 of Brodeur et al. (2021)
 using Wilcoxon's signed rank test.
 }
 \references{
-Brodeur, M., Ruer, P. Léger, P. and S. Sénécal (2021). Smartwatches are more distracting than mobile phones while driving: Results from an experimental study, \emph{Accident Analysis & Prevention}, 149, 1-9. \url{https://doi.org/10.1016/j.aap.2020.105846}
+Brodeur, M., Ruer, P. Léger, P. and S. Sénécal (2021). Smartwatches are more distracting than mobile phones while driving: Results from an experimental study, \emph{Accident Analysis & Prevention}, 149, 1-9. \doi{10.1016/j.aap.2020.105846}
 }
 \keyword{datasets}

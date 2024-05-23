@@ -36,6 +36,6 @@ summary(mod)
 }
 }
 \references{
-Brucks, M.S. and J. Levav (2022). \emph{Virtual communication curbs creative idea generation}. Nature 605, 108–112. \url{https://doi.org/10.1038/s41586-022-04643-y}
+Brucks, M.S. and J. Levav (2022). \emph{Virtual communication curbs creative idea generation}. Nature 605, 108–112. \doi{10.1038/s41586-022-04643-y}
 }
 \keyword{datasets}

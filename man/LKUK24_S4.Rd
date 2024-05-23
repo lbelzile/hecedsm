@@ -37,6 +37,6 @@ The Qualtric file contains the questions. Some variables seem to be aggregates o
 }
 \references{
 J.D. Lin, N.Y.J. Kim, E. Uduehi and A. Keinan (2024+). \emph{Culture for Sale: Unpacking Consumer Perceptions of Cultural Appropriation}, Journal of Consumer Research,
- \url{https://doi.org/10.1093/jcr/ucad076}
+ \doi{10.1093/jcr/ucad076}
 }
 \keyword{datasets}

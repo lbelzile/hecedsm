@@ -26,6 +26,6 @@ underestimation of the appreciation of initiators relative to recipients
 was mediated by the degree of surprise of the recipient.
 }
 \references{
-Liu, P. J., Rim, S., Min, L., & Min, K. E. (2023). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology, 124(4), 754–771.  \url{https://doi.org/10.1037/pspi0000402}
+Liu, P. J., Rim, S., Min, L., & Min, K. E. (2023). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology, 124(4), 754–771.  \doi{10.1037/pspi0000402}
 }
 \keyword{datasets}

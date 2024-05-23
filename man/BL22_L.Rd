@@ -29,6 +29,6 @@ Brucks and Levav (2022), Lab experiment
 The authors recruted 301 pairs of people and assigned them to either face-to-face interactions or videocall. They measured the number of ideas generated during the discussion as well as the fraction of those which were deemed creative using a `creativity_score`. The latter was measured by two undergraduates who evaluated all ideas based on novelty using a Likert scale with 7 points.
 }
 \references{
-Brucks, M.S. and J. Levav (2022). \emph{Virtual communication curbs creative idea generation}. Nature 605, 108–112. \url{https://doi.org/10.1038/s41586-022-04643-y}
+Brucks, M.S. and J. Levav (2022). \emph{Virtual communication curbs creative idea generation}. Nature 605, 108–112. \doi{10.1038/s41586-022-04643-y}
 }
 \keyword{datasets}

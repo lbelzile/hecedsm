@@ -29,6 +29,6 @@ anova(mod)
 #  w = "cond", mcw = 1, model = 1, plot = 1, intprobe = 1, moments = 1)
 }
 \references{
-Leckfor CM, Wood NR, Slatcher RB, Hales AH (2023) From close to ghost: Examining the relationship between the need for closure, intentions to ghost, and reactions to being ghosted. \emph{Journal of Social and Personal Relationships}, 40(\bold{8}), 2422-2444. \url{https://doi.org/10.1177/02654075221149955}
+Leckfor CM, Wood NR, Slatcher RB, Hales AH (2023) From close to ghost: Examining the relationship between the need for closure, intentions to ghost, and reactions to being ghosted. \emph{Journal of Social and Personal Relationships}, 40(\bold{8}), 2422-2444. \doi{10.1177/02654075221149955}
 }
 \keyword{datasets}

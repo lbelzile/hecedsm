@@ -19,6 +19,6 @@ BM04_T2
 Bertrand and Mullainathan (2004), Table 2
 }
 \references{
-Bertrand, M., and S. Mullainathan. 2004. \emph{Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination.} American Economic Review 94 (\bold{4}): 991-1013. \url{https://doi.org/10.1257/0002828042002561}.
+Bertrand, M., and S. Mullainathan. 2004. \emph{Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination.} American Economic Review 94 (\bold{4}): 991-1013. \doi{10.1257/0002828042002561}.
 }
 \keyword{datasets}

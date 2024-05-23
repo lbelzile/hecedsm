@@ -20,6 +20,6 @@ RJ74
 Data are extracted from Table 1. They consist of assessment of bank supervisors on the promotion of hypothetical employees to the task of branch manager. The purpose of the study was to check  discrimination for promotion.
 }
 \references{
-Rosen, B., and Jerdee, T. H. (1974). \emph{Influence of sex role stereotypes on personnel decisions.} Journal of Applied Psychology, 59(\bold{1}), 9–14. \url{https://doi.org/10.1037/h0035834}
+Rosen, B., and Jerdee, T. H. (1974). \emph{Influence of sex role stereotypes on personnel decisions.} Journal of Applied Psychology, 59(\bold{1}), 9–14. \doi{10.1037/h0035834}
 }
 \keyword{datasets}

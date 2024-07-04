@@ -1010,11 +1010,15 @@ usethis::use_data(BM04_T2, overwrite = TRUE)
 
 # Dataset 46
 # https://www.opensym.org/wp-content/uploads/2018/07/OpenSym2018_paper_15-1.pdf
-MH18_T1 <- tibble::tibble(neweditors = as.integer(c(247, 360, 397, 1068, 1512, 1651, 117, 191, 229, 496, 841, 1008)),
-           period = factor(rep(c("3-4 weeks", "1-2 months", "2-6 months"), length.out = 12)),
-           group = factor(rep(rep(c("control", "invited"), each = 3L), length.out = 12)),
+MH18_T1 <- tibble::tibble(
+  neweditors = as.integer(c(247, 360, 397, 1068, 1512, 1651,
+                            117, 191, 229, 496, 841, 1008)),
+           period = factor(rep(c("3-4 weeks", "1-2 months", "2-6 months"),
+                               length.out = 12)),
+           group = factor(rep(rep(c("control", "invited"),
+                                  each = 3L), length.out = 12)),
            edits = factor(rep(c("1-4 edits", "5+ edits"), each = 6)))
-
+usethis::use_data(MH18_T1, overwrite = TRUE)
 # Generate skeleton for documentation
 for(file in list.files("../data",full.names = TRUE)){
   load(file)

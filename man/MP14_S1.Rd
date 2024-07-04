@@ -25,6 +25,6 @@ Authors measured the subjective distance on travel from one subway station (Bay)
 The specific question asked to commuters was "How far away does the [name] station feel to you?"
 }
 \references{
-Maglio, S. J., & Polman, E. (2014). \emph{Spatial orientation shrinks and expands psychological distance.} Psychological Science, 25(\bold{7}), 1345–1352. \url{https://doi.org/10.1177/0956797614530571}
+Maglio, S. J., & Polman, E. (2014). \emph{Spatial orientation shrinks and expands psychological distance.} Psychological Science, 25(\bold{7}), 1345–1352. \doi{10.1177/0956797614530571}
 }
 \keyword{datasets}

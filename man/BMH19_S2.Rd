@@ -25,6 +25,6 @@ Data on matching of pairs of pictures from official ID depending on the color.
 Each of the 52 participants was assigned pictures of celebrities and needed to decide whether pairs of picture (potentially mixed or both monochrome or color) were of the same person.
 }
 \references{
-Bobak, A. K., Mileva, V. R., & Hancock, P. J. B. (2019). \emph{A grey area: How does image hue affect unfamiliar face matching?} Cognitive Research: Principles and Implications, 4(\bold{1}), 27. \url{https://doi.org/10.1186/s41235-019-0174-3}
+Bobak, A. K., Mileva, V. R., & Hancock, P. J. B. (2019). \emph{A grey area: How does image hue affect unfamiliar face matching?} Cognitive Research: Principles and Implications, 4(\bold{1}), 27. \doi{10.1186/s41235-019-0174-3}
 }
 \keyword{datasets}

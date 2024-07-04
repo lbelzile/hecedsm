@@ -26,6 +26,6 @@ These data are from a study on gender discrimination. Participants were put with
 All items were measured using scales constructed using items measured using Likert scales ranging from strongly disagree (\code{1}) to strongly agree (\code{7}).
 }
 \references{
-Garcia, D.M., Schmitt, M.T., Branscombe, N.R. and Ellemers, N. (2010), Women's reactions to ingroup members who protest discriminatory treatment: The importance of beliefs about inequality and response appropriateness. \emph{European Journal of Social Psycholog.}, \bold{40}, 733-745. \url{https://doi.org/10.1002/ejsp.644}
+Garcia, D.M., Schmitt, M.T., Branscombe, N.R. and Ellemers, N. (2010), Women's reactions to ingroup members who protest discriminatory treatment: The importance of beliefs about inequality and response appropriateness. \emph{European Journal of Social Psycholog.}, \bold{40}, 733-745. \doi{10.1002/ejsp.644}
 }
 \keyword{datasets}

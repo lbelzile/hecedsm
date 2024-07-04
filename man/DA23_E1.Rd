@@ -24,6 +24,6 @@ DA23_E1
 This is a subset of the data from Experiment 1 of Duke and Amir (2022). The study investigated the impact of presenting customers with a sequential choice (first decide whether or not to buy, then pick quantity) as opposed to an integrated decision (choose not to buy, or one of different quantities) on sales and the number of items bought.
 }
 \references{
-Duke, K.E. and O. Amir (2023). \emph{The Importance of Selling Formats: When Integrating Purchase and Quantity Decisions Increases Sales}, Marketing Science,42(1), 87-109. \url{https://doi.org/10.1287/mksc.2022.1364}
+Duke, K.E. and O. Amir (2023). \emph{The Importance of Selling Formats: When Integrating Purchase and Quantity Decisions Increases Sales}, Marketing Science,42(1), 87-109. \doi{10.1287/mksc.2022.1364}
 }
 \keyword{datasets}

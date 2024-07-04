@@ -1,7 +1,7 @@
 Package: hecedsm
 Type: Package
 Title: Data Sets for Experimental Design and Statistical Methods
-Version: 2024.04.07
+Version: 2024.05.23
 Author: Leo Belzile
 Maintainer: Leo Belzile <leo.belzile@hec.ca>
 Description: A collection of curated data sets and utility functions for the course MATH 80667A at

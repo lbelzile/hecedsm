@@ -25,6 +25,6 @@ GK14_S3
 This study focuses on the wise reasoning of people when dealing with problems of other (vs their own) depending on their perspective.
 }
 \references{
-Grossmann, I., & Kross, E. (2014). \emph{Exploring Solomon’s Paradox: Self-Distancing Eliminates the Self-Other Asymmetry in Wise Reasoning About Close Relationships in Younger and Older Adults.} Psychological Science, 25(\bold{8}), 1571–1580. \url{https://doi.org/10.1177/0956797614535400}
+Grossmann, I., & Kross, E. (2014). \emph{Exploring Solomon’s Paradox: Self-Distancing Eliminates the Self-Other Asymmetry in Wise Reasoning About Close Relationships in Younger and Older Adults.} Psychological Science, 25(\bold{8}), 1571–1580. \doi{10.1177/0956797614535400}
 }
 \keyword{datasets}

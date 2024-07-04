@@ -23,6 +23,6 @@ MULTI21_D1
 Data for Table 2 of Elliot et al. (2021), split by replicating lab. The data are counts of verbalization, suitable for a generalized linear mixed model and chi-square test for contingency data.
 }
 \references{
-Elliott, E. M., C. C. Morey, A.M. AuBuchon et al. (2021). \emph{Multilab Direct Replication of Flavell, Beach, and Chinsky (1966): Spontaneous Verbal Rehearsal in a Memory Task as a Function of Age}. Advances in Methods and Practices in Psychological Science. \url{https://doi.org/10.1177/25152459211018187}
+Elliott, E. M., C. C. Morey, A.M. AuBuchon et al. (2021). \emph{Multilab Direct Replication of Flavell, Beach, and Chinsky (1966): Spontaneous Verbal Rehearsal in a Memory Task as a Function of Age}. Advances in Methods and Practices in Psychological Science. \doi{10.1177/25152459211018187}
 }
 \keyword{datasets}

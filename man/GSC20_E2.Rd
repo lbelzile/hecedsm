@@ -38,6 +38,6 @@ lme4::lmer(willing_help ~ group*help + (1 + group | id) + (1 | story), data = GS
 lme4::lmer(willing_help ~ group_w*help_w + (1 + group_w | id) + (1 | story), data = GSC20_E2)
 }
 \references{
-Gaesser, B., Shimura, Y., & Cikara, M. (2020). Episodic simulation reduces intergroup bias in prosocial intentions and behavior. \emph{Journal of Personality and Social Psychology}, 118(\bold{4}), 683–705. \url{https://doi.org/10.1037/pspi0000194}
+Gaesser, B., Shimura, Y., & Cikara, M. (2020). Episodic simulation reduces intergroup bias in prosocial intentions and behavior. \emph{Journal of Personality and Social Psychology}, 118(\bold{4}), 683–705. \doi{10.1037/pspi0000194}
 }
 \keyword{datasets}

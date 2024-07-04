@@ -32,6 +32,6 @@ Data for Study 1 of Bastian, Jetten and Ferris (2014) social effects of pain. St
 The response, \code{bonding}, is the average of 7 questions measured on a seven point scale, ranging from strongly disagree (1) to strongly agree (7).
 }
 \references{
-Bastian, B., Jetten, J., & Ferris, L. J. (2014). \emph{Pain as Social Glue: Shared Pain Increases Cooperation}. Psychological Science, 25(\bold{11}), 2079–2085. \url{https://doi.org/10.1177/0956797614545886}
+Bastian, B., Jetten, J., & Ferris, L. J. (2014). \emph{Pain as Social Glue: Shared Pain Increases Cooperation}. Psychological Science, 25(\bold{11}), 2079–2085. \doi{10.1177/0956797614545886}
 }
 \keyword{datasets}

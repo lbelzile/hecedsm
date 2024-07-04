@@ -39,6 +39,6 @@ margmean |> emmeans::contrast(
                refvstwo =  c(1, 0, 0, -1)))
 }
 \references{
-Sokolova T, Krishna A, Döring T. (2023) \emph{Paper Meets Plastic: The Perceived Environmental Friendliness of Product Packaging}. Journal of Consumer Research, 50(3), 468–491. \url{https://doi.org/10.1093/jcr/ucad008}
+Sokolova T, Krishna A, Döring T. (2023) \emph{Paper Meets Plastic: The Perceived Environmental Friendliness of Product Packaging}. Journal of Consumer Research, 50(3), 468–491. \doi{10.1093/jcr/ucad008}
 }
 \keyword{datasets}

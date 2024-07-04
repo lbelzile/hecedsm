@@ -25,6 +25,6 @@ LRMM23_S3
 Paired data from dyads: participants were asked to "name a fellow college student in their social circle with whom they typically have pleasant encounters but have not interacted (either virtually or in-person)". The experimenter measured the appreciation score via a Likert scale with not at all (\code{1}), slightly (\code{2}), moderately (\code{3}), very \code{4} and extremely (\code{5}). The expectation of the authors was that initiators sending the gift/message would underestimate how much this attention would be valued by respondant
 }
 \references{
-Liu, P. J., Rim, S., Min, L., & Min, K. E. (2023). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology, 124(4), 754–771.  \url{https://doi.org/10.1037/pspi0000402}
+Liu, P. J., Rim, S., Min, L., & Min, K. E. (2023). \emph{The surprise of reaching out: Appreciated more than we think.} Journal of Personality and Social Psychology, 124(4), 754–771.  \doi{10.1037/pspi0000402}
 }
 \keyword{datasets}

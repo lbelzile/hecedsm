@@ -24,6 +24,6 @@ SSVB21_S3
 A replication of the Study 2, but with a control group and a larger sample size. The study aimed to assess changes in opinion of skeptics when faced with evidence of scientific consensus through manipulation of experimental condition explaining how to assess a news claim. The subject in question was Genetically Engineered Food (GEE).
 }
 \references{
-Stekelenburg, A. van, Schaap, G., Veling, H., & Buijzen, M. (2021). \emph{Boosting understanding and identification of scientific consensus can help to correct false beliefs.} Psychological Science, 32(\bold{10}), 1549–1565. \url{https://doi.org/10.1177/09567976211007788}
+Stekelenburg, A. van, Schaap, G., Veling, H., & Buijzen, M. (2021). \emph{Boosting understanding and identification of scientific consensus can help to correct false beliefs.} Psychological Science, 32(\bold{10}), 1549–1565. \doi{10.1177/09567976211007788}
 }
 \keyword{datasets}

@@ -35,6 +35,6 @@ reduces the severity of moral judgments. The study failed to replicate.
 The vignettes (\code{dog}, \code{trolley}, \code{wallet}, \code{plane}, \code{resume}, \code{kitten}) are measured using a Likert scale ranging from nothing wrong at all (\code{1}) to extremely wrong (\code{7}).
 }
 \references{
-Johnson, D.J., F. Cheung and M.B. Donnellan (2014), \emph{Does Cleanliness Influence Moral Judgments}?, Social Psychology, 45(\bold{3}), 209-215, \url{https://doi.org/10.1027/1864-9335/a000186}
+Johnson, D.J., F. Cheung and M.B. Donnellan (2014), \emph{Does Cleanliness Influence Moral Judgments}?, Social Psychology, 45(\bold{3}), 209-215, \doi{10.1027/1864-9335/a000186}
 }
 \keyword{datasets}

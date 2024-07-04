@@ -24,6 +24,6 @@ The data consist of all observations which correctly identified an attention che
 The author tested "whether participants are more interested in borrowed funds when those funds are labeled as credit rather than a loan". The preregistration is available at \url{https://aspredicted.org/blind.php?x=uv2f5p}
 }
 \references{
-Sharma, E., Tully, S. and C. Cryder (2021). \emph{Psychological Ownership of (Borrowed) Money}, Journal of Marketing Research, \bold{58}(3), \url{https://doi.org/10.1177/0022243721993816}
+Sharma, E., Tully, S. and C. Cryder (2021). \emph{Psychological Ownership of (Borrowed) Money}, Journal of Marketing Research, \bold{58}(3), \doi{10.1177/0022243721993816}
 }
 \keyword{datasets}

@@ -25,6 +25,6 @@ BSJ92
 Experimental study on the effectiveness of different reading strategies on understanding of children.
 }
 \references{
-Baumann, J. F., Seifert-Kessell, N., & Jones, L. A. (1992). \emph{Effect of Think-Aloud Instruction on Elementary Students’ Comprehension Monitoring Abilities}. Journal of Reading Behavior, 24(\bold{2}), 143–172. \url{https://doi.org/10.1080/10862969209547770}
+Baumann, J. F., Seifert-Kessell, N., & Jones, L. A. (1992). \emph{Effect of Think-Aloud Instruction on Elementary Students’ Comprehension Monitoring Abilities}. Journal of Reading Behavior, 24(\bold{2}), 143–172. \doi{10.1080/10862969209547770}
 }
 \keyword{datasets}

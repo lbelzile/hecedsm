@@ -23,7 +23,7 @@ MANY18_S18
 The data is a replication with undergraduate students of a study. The authors measured the likelihood of bad outcome when tempting fate by not preparing in advance for a task. The replication data are unbalanced and the study failed to replicate
 }
 \references{
-Klein, R. A., et al. (2018). \emph{Many labs 2: Investigating variation in replicability across samples and settings.} Advances in Methods and Practices in Psychological Science, 1(\bold{4}), 443–490. \url{https://doi.org/10.1177/2515245918810225}
-Risen, J. L., and T. Gilovich, (2008). \emph{Why people are reluctant to tempt fate.} Journal of Personality and Social Psychology, 95(\bold{2}), 293–307. \url{https://doi.org/10.1037/0022-3514.95.2.293}
+Klein, R. A., et al. (2018). \emph{Many labs 2: Investigating variation in replicability across samples and settings.} Advances in Methods and Practices in Psychological Science, 1(\bold{4}), 443–490. \doi{10.1177/2515245918810225}
+Risen, J. L., and T. Gilovich, (2008). \emph{Why people are reluctant to tempt fate.} Journal of Personality and Social Psychology, 95(\bold{2}), 293–307. \doi{10.1037/0022-3514.95.2.293}
 }
 \keyword{datasets}

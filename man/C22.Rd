@@ -28,6 +28,6 @@ This study aimed at finding the impact of having multiple options for jurors as 
 The response was measured using the sum of the scores for 11 ratings (rounds) on a Likert scale ranging from 0 (no evidence of guilt) to 14 (guilty).
 }
 \references{
-Lee J. Curley, Jennifer Murray, Rory MacLean, James Munro, Martin Lages, Lara A. Frumkin, Phyllis Laybourn & David Brown (2022) \emph{Verdict spotting: investigating the effects of juror bias, evidence anchors and verdict system in jurors}, Psychiatry, Psychology and Law, 29(\bold{3}), 323-344, \url{https://doi.org/10.1080/13218719.2021.1904450}
+Lee J. Curley, Jennifer Murray, Rory MacLean, James Munro, Martin Lages, Lara A. Frumkin, Phyllis Laybourn & David Brown (2022) \emph{Verdict spotting: investigating the effects of juror bias, evidence anchors and verdict system in jurors}, Psychiatry, Psychology and Law, 29(\bold{3}), 323-344, \doi{10.1080/13218719.2021.1904450}
 }
 \keyword{datasets}

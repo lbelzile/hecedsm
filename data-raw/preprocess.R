@@ -168,7 +168,9 @@ MULTI21_D1 <- FBC |>
   dplyr::mutate(
     lab = forcats::as_factor(lab),
     age = forcats::as_factor(age),
-    frequency = forcats::as_factor(frequency))
+    frequency = forcats::as_factor(frequency)) |>
+  dplyr::mutate(age = factor(age, levels = levels(age)[order(c(10,5,6,7))]))
+
 usethis::use_data(MULTI21_D1, overwrite = TRUE)
 
 
@@ -193,7 +195,8 @@ MULTI21_D2 <- read.csv("data-raw/source/Multilab2021_spanData_allLabs.csv",
                             labels = tolower(sort(unique(frequency))))
   ) |>
   dplyr::arrange(lab, id) |>
-  tibble::as_tibble()
+  tibble::as_tibble() |>
+  dplyr::mutate(age = factor(age, levels = levels(age)[order(c(10,5,6,7))]))
 usethis::use_data(MULTI21_D2, overwrite = TRUE)
 
 # Dataset 10: Rosen and Jerdee (1974)
@@ -665,7 +668,9 @@ BRLS21_T3 <- readxl::read_xlsx(path = "data-raw/source/data_Tech3Lab.xlsx",
          total_violation = as.integer(total_violation)
          ) |>
            select(!participant) |>
-  rename(nviolation = total_violation)
+  rename(nviolation = total_violation)|>
+  dplyr::arrange(id, task)
+
 
 usethis::use_data(BRLS21_T3, overwrite = TRUE)
 

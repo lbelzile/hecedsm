@@ -22,6 +22,6 @@ MV23_S4
 The authors studied the impact on donation amount of manipulating the minimal suggested amount. The benchmark was an open-ended box, with quantity featuring a minimum value, 15$, 25$ or an alternative amount. The authors also recorded whether the person had donated before.
 }
 \references{
-Moon, A. and EM VanEpps (2023). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, 50(1), 190–210.\url{https://doi.org/10.1093/jcr/ucac047}
+Moon, A. and EM VanEpps (2023). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, 50(1), 190–210.\doi{10.1093/jcr/ucac047}
 }
 \keyword{datasets}

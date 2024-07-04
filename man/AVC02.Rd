@@ -26,6 +26,6 @@ A study on the impact of communication means on perceived risk of organization o
 This data was simulated based on the summary statistics presented in the paper
 }
 \references{
-Anandarajan, A., Viger, C., & Curatola, A. P. (2002). \emph{An experimental investigation of alternative going-concern reporting formats: A Canadian experience.} Canadian Accounting Perspectives, 1(\bold{2}), 141-162. \url{https://doi.org/10.1506/5947-NQTC-C3Y5-H46N}
+Anandarajan, A., Viger, C., & Curatola, A. P. (2002). \emph{An experimental investigation of alternative going-concern reporting formats: A Canadian experience.} Canadian Accounting Perspectives, 1(\bold{2}), 141-162. \doi{10.1506/5947-NQTC-C3Y5-H46N}
 }
 \keyword{datasets}

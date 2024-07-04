@@ -50,6 +50,6 @@ group_by(acuity, fontsize, adaptation, id) |>
 }
 }
 \references{
-Lages, M., Boyle, S. C., & Jenkins, R. (2017). \emph{Illusory Increases in Font Size Improve Letter Recognition}. Psychological Science, 28(\bold{8}), 1180–1188. \url{https://doi.org/10.1177/0956797617705391}
+Lages, M., Boyle, S. C., & Jenkins, R. (2017). \emph{Illusory Increases in Font Size Improve Letter Recognition}. Psychological Science, 28(\bold{8}), 1180–1188. \doi{10.1177/0956797617705391}
 }
 \keyword{datasets}

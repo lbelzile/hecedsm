@@ -28,6 +28,6 @@ The experimental design is a "2 (current state: war vs. peace) by 2 (predicted o
 The question asked was of the form «There is currently [war/peace] between the two tribes in Velvetia.  Thinking about [next year/in 20 years], how likely is it that there will be [war/peace] in Velvetia?»
 }
 \references{
-Halevy, N., & Berson, Y. (2022). Thinking about the distant future promotes the prospects of peace: A construal-level perspective on intergroup conflict resolution. Journal of Conflict Resolution, 66(6), 1119–1143. \url{https://doi.org/10.1177/00220027221079402}
+Halevy, N., & Berson, Y. (2022). Thinking about the distant future promotes the prospects of peace: A construal-level perspective on intergroup conflict resolution. Journal of Conflict Resolution, 66(6), 1119–1143. \doi{10.1177/00220027221079402}
 }
 \keyword{datasets}

@@ -33,6 +33,6 @@ sqrt(chisq_test$statistic/nrow(MV23_S1))
 t.test(amount ~ condition, MV23_S1)
 }
 \references{
-Moon, A. and EM VanEpps (2023). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, 50(1), 190–210. \url{https://doi.org/10.1093/jcr/ucac047}
+Moon, A. and EM VanEpps (2023). \emph{Giving Suggestions: Using Quantity Requests to Increase Donations}, Journal of Consumer Research, 50(1), 190–210. \doi{10.1093/jcr/ucac047}
 }
 \keyword{datasets}

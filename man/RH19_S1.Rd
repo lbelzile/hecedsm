@@ -31,6 +31,6 @@ RH19_S1
 Study of mediator following changes in the Polish education system, whereby middle school was due to disappear and be replaced with a new system with 8 years of elementary school and four years of high school. The authors surveyed teachers in middle and primary schools with two messages, either prevention or promotion.
 }
 \references{
-M. Roczniewska and Higgins, E.T. (2019). \emph{Messaging organizational change: How regulatory fit relates to openness to change through fairness perceptions}, Journal of Experimental Social Psychology, 85, \url{https://doi.org/10.1016/j.jesp.2019.103882}
+M. Roczniewska and Higgins, E.T. (2019). \emph{Messaging organizational change: How regulatory fit relates to openness to change through fairness perceptions}, Journal of Experimental Social Psychology, 85, \doi{10.1016/j.jesp.2019.103882}
 }
 \keyword{datasets}

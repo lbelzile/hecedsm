@@ -1020,6 +1020,14 @@ MH18_T1 <- tibble::tibble(neweditors = as.integer(c(247, 360, 397, 1068, 1512, 1
            group = factor(rep(rep(c("control", "invited"), each = 3L), length.out = 12)),
            edits = factor(rep(c("1-4 edits", "5+ edits"), each = 6)))
 
+# Dataset 47
+# https://researchbox.org/2945, Study 4
+HBSC24_S4 <- read.csv("source/ResearchBox2945/study4_data.csv") |>
+  dplyr::select(auth_mean, info_wordcount, cond) |>
+  dplyr::mutate(cond = factor(cond)) |>
+  dplyr::rename(authenticity = auth_mean,
+                words = info_wordcount)
+usethis::use_data(HBSC24_S4, overwrite = TRUE)
 # Generate skeleton for documentation
 for(file in list.files("../data",full.names = TRUE)){
   load(file)

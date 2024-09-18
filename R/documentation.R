@@ -1088,3 +1088,18 @@
 #' @references Hart E, Schweitzer ME. (2022) \emph{When we should care more about relationships than favorable deal terms in negotiation: The economic relevance of relational outcomes (ERRO)'. Organizational Behavior and Human Decision Processes}. 168:104108.
 #' \doi{10.1016/j.obhdp.2021.104108}
 "HS22_S2"
+
+
+#' @title Huang, Brucks, Song and Campbell (2024), Study 4
+#' @description The authors studied the effect of mindsets on long-term goals for a weight loss study. Participants were randomly assigned to one mindset,
+#' and were asked to write a motivational statement for a website; the response variable is the number of words written, and the \code{authenticity} score measures the
+#' participants attitude based on a four-question item using Likert scales . The study considered two contrasts and a mediation analysis for these.
+#' @format A data frame with 262 rows and 3 variables:
+#' \describe{
+#'   \item{\code{authenticity}}{[double] mean score for authenticity questions}
+#'   \item{\code{words}}{[integer] advocacy word count}
+#'   \item{\code{cond}}{[factor] experimental condition, either \code{old} for distancing, \code{new} for acquiring, or \code{change} for transformation}
+#'}
+#' @source Research Box 2945, \url{researchbox.org/2945}, licensed under CC BY 4.0
+#' @references Huang, S.-C., Brucks, M. S., Song, J., & Campbell, M. C. (2024). \emph{Beyond achievement: Transformation mindset enhances authenticity after goal success.} Motivation Science, 10(\bold{3}), 171–181. \doi{https://doi.org/10.1037/mot0000340}
+"HBSC24_S4"

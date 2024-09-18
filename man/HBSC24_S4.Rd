@@ -13,7 +13,7 @@ A data frame with 262 rows and 3 variables:
 }
 }
 \source{
-Research Box 2945, \url{researchbox.org/2945}, licensed under CC BY 4.0
+Research Box 2945, \url{https://researchbox.org/2945}, licensed under CC BY 4.0
 }
 \usage{
 HBSC24_S4

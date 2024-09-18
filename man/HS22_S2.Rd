@@ -16,7 +16,7 @@ A data frame with 295 rows and 6 variables:
 }
 }
 \source{
-Research Box 366, \url{researchbox.org/366}, licensed under CC BY 4.0
+Research Box 366, \url{https://researchbox.org/366}, licensed under CC BY 4.0
 }
 \usage{
 HS22_S2

@@ -955,7 +955,7 @@
 
 #' @title Liu (2022), Experiment 4
 #' @description The 3 (social interaction) by 2 (cutting frequenty or intensity) mixed design experiment considered consumer indulging in decisions based on social interactions, through a fictional context where they buy a gourmet coffee for 4$ at a nearby shop. Participants were randomly assigned to one of three experimental conditions for social interactions: solitary, whereby they would consume the drink alone, with friends. The third, with social interaction, implied the gathering with friends would still take place if you cut the frequency. The data are in wide format, with cut (frequency, intensity) on separate columns.
-#' @source Research Box 84, \url{researchbox.org/84}, licensed under CC BY 4.0
+#' @source Research Box 84, \url{https://researchbox.org/84}, licensed under CC BY 4.0
 #' @references Liu PJ. (2022). \emph{Frequency Versus Intensity: How Thinking of a Frequent Consumption Indulgence as Social Versus Solitary Affects Preferences for How to Cut Back.} Journal of Marketing Research. 59(\bold{3}):497-516, \doi{10.1177/00222437211055741}.
 #' @format A data frame with 452 rows and 7 variables:
 #' \describe{
@@ -1055,7 +1055,7 @@
 #'   \item{\code{gender}}{[factor] gender of participant, either \code{female} or \code{male}}
 #'   \item{\code{age}}{[integer] age of the participant}
 #'}
-#' @source Research Box 366, \url{researchbox.org/366}, licensed under CC BY 4.0
+#' @source Research Box 366, \url{https://researchbox.org/366}, licensed under CC BY 4.0
 #' @references Hart E, Schweitzer ME. (2022) \emph{When we should care more about relationships than favorable deal terms in negotiation: The economic relevance of relational outcomes (ERRO)'. Organizational Behavior and Human Decision Processes}. 168:104108.
 #' \doi{10.1016/j.obhdp.2021.104108}
 #' @examples
@@ -1084,7 +1084,22 @@
 #'   \item{\code{dealpts1}}{[double] number of points out of four allocated to deal terms for choice 1. The balance is allocated to relation.}
 #'   \item{\code{dealpts2}}{[double] number of points out of seven allocated to deal terms for choice 2. The balance is allocated to relation.}
 #'}
-#' @source Research Box 366, \url{researchbox.org/366}, licensed under CC BY 4.0
+#' @source Research Box 366, \url{https://researchbox.org/366}, licensed under CC BY 4.0
 #' @references Hart E, Schweitzer ME. (2022) \emph{When we should care more about relationships than favorable deal terms in negotiation: The economic relevance of relational outcomes (ERRO)'. Organizational Behavior and Human Decision Processes}. 168:104108.
 #' \doi{10.1016/j.obhdp.2021.104108}
 "HS22_S2"
+
+
+#' @title Huang, Brucks, Song and Campbell (2024), Study 4
+#' @description The authors studied the effect of mindsets on long-term goals for a weight loss study. Participants were randomly assigned to one mindset,
+#' and were asked to write a motivational statement for a website; the response variable is the number of words written, and the \code{authenticity} score measures the
+#' participants attitude based on a four-question item using Likert scales . The study considered two contrasts and a mediation analysis for these.
+#' @format A data frame with 262 rows and 3 variables:
+#' \describe{
+#'   \item{\code{authenticity}}{[double] mean score for authenticity questions}
+#'   \item{\code{words}}{[integer] advocacy word count}
+#'   \item{\code{cond}}{[factor] experimental condition, either \code{old} for distancing, \code{new} for acquiring, or \code{change} for transformation}
+#'}
+#' @source Research Box 2945, \url{https://researchbox.org/2945}, licensed under CC BY 4.0
+#' @references Huang, S.-C., Brucks, M. S., Song, J., & Campbell, M. C. (2024). \emph{Beyond achievement: Transformation mindset enhances authenticity after goal success.} Motivation Science, 10(\bold{3}), 171–181. \doi{https://doi.org/10.1037/mot0000340}
+"HBSC24_S4"

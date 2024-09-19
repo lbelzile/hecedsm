@@ -22,7 +22,7 @@ remotes::install_github("lbelzile/hecedsm")
 ```{r}
 #| eval: true
 #| echo: false
-datasets <- read.csv("data-raw/datasets.csv", header = TRUE)[1:50,]
+datasets <- read.csv("data-raw/datasets.csv", header = TRUE)[1:51,]
 datasets$Title2 <- with(datasets, ifelse(DOI != "", paste0("[",Title,"]","(https://doi.org/", DOI, ")"), Title))
 datasets$dataset <- with(datasets, paste0("[",Dataset,"]","(https://lbelzile.github.io/hecedsm/reference/", Dataset,".html)"))
 datasets |> dplyr::select(dataset, Title2, Type) |>

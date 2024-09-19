@@ -17,7 +17,7 @@ A data frame with 452 rows and 7 variables:
 }
 }
 \source{
-Research Box 84, \url{researchbox.org/84}, licensed under CC BY 4.0
+Research Box 84, \url{https://researchbox.org/84}, licensed under CC BY 4.0
 }
 \usage{
 L22_E4

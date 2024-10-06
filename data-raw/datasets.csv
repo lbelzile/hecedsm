@@ -4,7 +4,7 @@ AVC02,"Anandarajan, Viger and Curatola (2002)",10.1506/5947-NQTC-C3Y5-H46N,MANOV
 BJF14_S1,"Bastian, Jetten and Ferris (2014)",10.1177/0956797614545886,"one-way ANOVA, mediation",1
 BL22_E,"Brucks and Levav (2022), eyetracker data",10.1038/s41586-022-04643-y,Kruskall-Wallis test,1
 BL22_L,"Brucks and Levav (2022), Lab experiment",10.1038/s41586-022-04643-y,"negative binomial regression, linear mixed model",1
-BMH19_S2,"Bobak, Mileva and Hancock (2019), Study 2",10.1186/s41235-019-0174-3,"one-way ANOVA, repeated measures",1
+BMH19_E2,"Bobak, Mileva and Hancock (2019), Experiment 2",10.1186/s41235-019-0174-3,"one-way ANOVA, repeated measures",1
 BRLS21_EDA,Brodeur et al. (2021) exploratory data analysis,10.1016/j.aap.2020.105846,"linear mixed model, repeated measure ANOVA",2
 BRLS21_T3,"Brodeur et al. (2021), Table 3",10.1016/j.aap.2020.105846,Wilcoxon signed-rank test,2
 BSJ92,"Baumann, Seifert-Kessell and Jones (1992)",10.1080/10862969209547770,"one-way ANOVA, ANCOVA",3

@@ -226,20 +226,30 @@ MP14_S1 <- read_csv("https://edsm.rbind.io/data/MaglioPolman2014S1.csv",
 usethis::use_data(MP14_S1, overwrite = TRUE)
 
 # Dataset 12: Bobak, Mileva and Hancock (2019)
-BMH19_S2 <- read.csv("data-raw/source/Bobak2019S2.csv",
-                       header = TRUE,
-                       fileEncoding = "UTF-8-BOM") |>
+BMH19_E2raw <- haven::read_sav(
+    file = "data-raw/source/Bobak2019E2.sav")
+
+BMH19_E2acc <- BMH19_E2raw |>
   select(pnum:diffmon) |>
-  pivot_longer(cols = starts_with("diff"),
+  pivot_longer(cols = starts_with(c("diff")),
                names_to = "color",
-               names_prefix = "diff",
-               values_to = "pcorr") |>
+               names_prefix = c("diff"),
+               values_to = c("accuracy"))
+BMH19_E2pcor <- BMH19_E2raw |> select(pnum,
+                                      samecol:samemon) |>
+      pivot_longer(cols = starts_with(c("same")),
+                   names_to = "color",
+                   names_prefix = c("same"),
+                   values_to = c("pcorr"))
+BMH19_E2 <- left_join(x = BMH19_E2acc,
+                      y = BMH19_E2pcor,
+            by = c("pnum", "color")) |>
   mutate(color = factor(color),
          sex = factor(sex),
          pnum = as.integer(factor(pnum))) |>
   rename(gender = sex,
          id = pnum)
-usethis::use_data(BMH19_S2, overwrite = TRUE)
+usethis::use_data(BMH19_E2, overwrite = TRUE)
 
 # Dataset 13: Curley et al. (2022)
 

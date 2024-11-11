@@ -1106,62 +1106,70 @@
 "HBSC24_S4"
 
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
-#' @format A data frame with 367 rows and 12 variables:
+#' @title Dorison and Minson (2022), Study 1
+#' @description Participants (American citizens) in the study were paired with people from the opposing party (Republican or Democrat) and asked to
+#' perform a 10 minutes presentation to discuss beliefs about the best candidate, with pointers to subjects
+#' such as Covid19, environmental policy and immigration. Only people who interacted via the chat are kept.
+#' @format A data frame with 367 rows and 15 variables:
+#' @describeIn DM22_S1 Wide-format with paired observations
 #' \describe{
-#'   \item{\code{partner_pos_emotion}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{partner_neg_emotion}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{partner_wordcount}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{partner_Hedges}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{pos_emotion}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{neg_emotion}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{wordcount}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{Hedges}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{group}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{anxiety_self}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{anxiety_other}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{vote}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{partner_pos_emotion}}{[integer] partner positive emotion index}
+#'   \item{\code{partner_neg_emotion}}{[integer] partner negative emotion index}
+#'   \item{\code{partner_wordcount}}{[integer] partner total words in debate}
+#'   \item{\code{partner_Hedges}}{[integer] number of hedges for partners}
+#'   \item{\code{pos_emotion}}{[integer] positive emotion index}
+#'   \item{\code{neg_emotion}}{[integer] negative emotion index}
+#'   \item{\code{wordcount}}{[integer] total words in debate}
+#'   \item{\code{hedges}}{[integer] number of hedges}
+#'   \item{\code{group}}{[factor] group label}
+#'   \item{\code{anxiety_self}}{[numeric] anxiety score for self, average of four nine point Likert scales}
+#'   \item{\code{anxiety_other}}{[numeric] anxiety score for other, average of four nine point Likert scales}
+#'   \item{\code{vote}}{Who are you most likely to vote for in the upcoming U.S. presidential election (2020)? either Republican candidate (1) or Democratic candidate (2)}
+#'   \item{\code{ideology}}{self-reported political orientation, with choices very/somewhat/slightly liberal (1/2/3), neither (4), to slightly/somewhat/very conservative (5/6/7).}
+#'   \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
+#'   \item{\code{age}}{[integer] age of participant}
 #'}
-#' @details DETAILS
+#' @references Dorison CA, Minson JA. (2022). You can’t handle the truth! Conflict counterparts over-estimate each other’s feelings of self-threat. \emph{Organizational Behavior and Human Decision Processes}, 170, 104147. \doi{10.1016/j.obhdp.2022.104147}
+#' @source  ResearchBox 577, \url{https://researchbox.org/577}, licensed under CC BY 4.0
 "DM22_S1"
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Dorison and Minson (2022), Study 1 (long format)
+#' @describeIn DM22_S1 Long-format database
 #' @format A data frame with 734 rows and 4 variables:
 #' \describe{
-#'   \item{\code{anxiety}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{target}}{character COLUMN_DESCRIPTION}
-#'   \item{\code{vote}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{group}}{character COLUMN_DESCRIPTION}
+#'   \item{\code{anxiety}}{[numeric] anxiety score for average of four nine point Likert scales}
+#'   \item{\code{target}}{[factor] categorical variable, \code{self} or \code{other}}
+#'   \item{\code{vote}}{Who are you most likely to vote for in the upcoming U.S. presidential election (2020)? either Republican candidate (1) or Democratic candidate (2)}
+#'   \item{\code{group}}{[factor] group label}
 #'}
-#' @details DETAILS
 "DM22_S1_long"
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Dorison and Minson (2022), Study 2
+#' @description In Study 2, participants were asked to watch a video of Bernie Sanders talking about immigration, and Ted Cruz talking about tax reform (each for two minutes), and forecast the emotions of a conservative watching the video.
 #' @format A data frame with 319 rows and 5 variables:
 #' \describe{
-#'   \item{\code{age}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{gender}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{ideology}}{integer COLUMN_DESCRIPTION}
-#'   \item{\code{anxiety}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{anger}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{age}}{[integer] age of participant}
+#'   \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female} or \code{non-binary/other}}
+#'   \item{\code{ideology}}{[factor] self-reported political orientation, with choices very/somewhat/slightly liberal (1/2/3), neither (4), to slightly/somewhat/very conservative (5/6/7).}
+#'   \item{\code{anxiety}}{[numeric] average of the four items from the anxiety scale. 0-8 scale, where higher numbers indicate more anxiety}
+#'   \item{\code{anger}}{[numeric] average of the four items from the anger scale. 0-8 scale, where higher numbers indicate more anger}
 #'}
-#' @details DETAILS
+#' @references Dorison CA, Minson JA. (2022). You can’t handle the truth! Conflict counterparts over-estimate each other’s feelings of self-threat. \emph{Organizational Behavior and Human Decision Processes}, 170, 104147. \doi{10.1016/j.obhdp.2022.104147}
+#' @source  ResearchBox 577, \url{https://researchbox.org/577}, licensed under CC BY 4.0
 "DM22_S2"
 
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Dorison and Minson (2022), Study 3
+#' @description MTurk participants were asked to write a topic for which they held a strong opinion (gay rights, abortion, gun control, immigration, etc.) and imagine a discussion with a person having opposite views from theirs.
 #' @format A data frame with 399 rows and 5 variables:
 #' \describe{
-#'   \item{\code{appraisal}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{threat}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{general}}{double COLUMN_DESCRIPTION}
-#'   \item{\code{condition}}{character COLUMN_DESCRIPTION}
-#'   \item{\code{naiverealism}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{appraisal}}{[numeric] average of four appraisal items  (9 points scale from 0 to 8, with lower value indicating Not even the slightest bit to more strongly than ever before)}
+#'   \item{\code{threat}}{[numeric] average of two threat items without descriptors  (9 points scale)}
+#'   \item{\code{general}}{[numeric] average of four general items (9 points scale)}
+#'   \item{\code{condition}}{[factor] condition randomly assigned to}
+#'   \item{\code{naiverealism}}{[integer] answer to single-item naive realism question, "to what extent would the arguments your opponent makes lead you to question whether your beliefs on this issue are fundamentally correct and objective?", with not at all (1), to very much (5)}
 #'}
-#' @details DETAILS
+#' @references Dorison CA, Minson JA. (2022). You can’t handle the truth! Conflict counterparts over-estimate each other’s feelings of self-threat. \emph{Organizational Behavior and Human Decision Processes}, 170, 104147. \doi{10.1016/j.obhdp.2022.104147}
+#' @source  ResearchBox 577, \url{https://researchbox.org/577}, licensed under CC BY 4.0
 "DM22_S3"
 
 #' @title Dorison and Minson (2022), Study 4
@@ -1174,3 +1182,57 @@
 #' @references Dorison CA, Minson JA. (2022). You can’t handle the truth! Conflict counterparts over-estimate each other’s feelings of self-threat. \emph{Organizational Behavior and Human Decision Processes}, 170, 104147. \doi{10.1016/j.obhdp.2022.104147}
 #' @source  ResearchBox 577, \url{https://researchbox.org/577}, licensed under CC BY 4.0
 "DM22_S4"
+
+
+#' @title de la Rosa and Tully (2022), Study 2
+#' @description Participants played a life simulator game with different amounts transferred to their "bank account", either on a daily or weekly base.
+#' They had to make 15 binary spending decisions. Excess expenses resulted in overdraft fees of 35 dollars. The authors recorded the total amount spent, the sequential decisions and the number of overdraft charges.
+#' @format A data frame with 401 rows and 8 variables:
+#' \describe{
+#'   \item{\code{gender}}{[factor] gender of participant}
+#'   \item{\code{age}}{[numeric] age}
+#'   \item{\code{decision}}{[integer] To what extent did the praticipant try to make decisions as they would in real life}
+#'   \item{\code{nexpdec}}{[integer] number of expensive decisions}
+#'   \item{\code{totspend}}{[numeric] total spending}
+#'   \item{\code{nover}}{[integer] number of overdraft charges (35 each, in addition to total spending)}
+#'   \item{\code{condition}}{[factor] experimental condition, either \code{week} for weekly pay or \code{day} for daily transfer}
+#'   \item{\code{subwealth}}{[numeric] subjective wealth index, ranging from low (1) to high (7)}
+#'}
+#' @references Wendy De La Rosa, Stephanie M Tully (2022). The Impact of Payment Frequency on Consumer Spending and Subjective Wealth Perceptions, \emph{Journal of Consumer Research}, 48(\bold{6}), 991-1009, \doi{10.1093/jcr/ucab052}
+#' @source  ResearchBox 231, \url{https://researchbox.org/231}, licensed under CC BY 4.0
+"RT22_S2"
+
+#' @title de la Rosa and Tully (2022), Study 4
+#' @description Study on the frequency of expenses vs payments for the perception of subjective wealth and predicted uncertainty. Only people who did not participate in a similar study or passed attention checks are included.
+#' @format A data frame with 528 rows and 6 variables:
+#' \describe{
+#'   \item{\code{gender}}{[factor] gender of participant}
+#'   \item{\code{age}}{[integer] age}
+#'   \item{\code{payfreq}}{[factor] experimental factor for payment frequency, either daily or weekly}
+#'   \item{\code{expensfreq}}{[factor] experimental factor for payment frequency, either daily or weekly}
+#'   \item{\code{subjectivewealth}}{[numeric] average of six Likert scales on subjective wealth, on a scale of 0 (low) to 100 (high)}
+#'   \item{\code{preduncertain}}{[numeric] average of four Likert scales on prediction uncertainty, on a scale of 0 to 100}
+#'}
+#' @references Wendy De La Rosa, Stephanie M Tully (2022). The Impact of Payment Frequency on Consumer Spending and Subjective Wealth Perceptions, \emph{Journal of Consumer Research}, 48(\bold{6}), 991-1009, \doi{10.1093/jcr/ucab052}
+#' @source  ResearchBox 231, \url{https://researchbox.org/231}, licensed under CC BY 4.0
+"RT22_S4"
+
+
+#' @title de la Rosa and Tully (2022), Study 5
+#' @description Study 5 is a replication of Study 2, with additionalmeasures of intertemporal discount rate, financial literacy,
+#' Participants played a four-week life simulator and received either 1400 biweekly (starting on the first Friday), or 140 daily on weekdays. This ensured different balances even with the same spending decisions. Participants had to choose 28 daily decisions. There was no overdraft fee in this study.
+#' \describe{
+#'   \item{\code{gender}}{[factor] gender of participant}
+#'   \item{\code{age}}{[integer] age}
+#'   \item{\code{subjectivewealth}}{[numeric] average of six Likert scales on subjective wealth, on a scale of 0 (low) to 100 (high)}
+#'   \item{\code{preduncertain}}{[numeric] average of four Likert scales on prediction uncertainty, on a scale of 0 to 100}
+#'   \item{\code{valence}}{[integer] reported valence from the 3-item self-assessment Manikin scale}
+#'   \item{\code{arousal}}{[integer] reported arousal from the 3-item self-assessment Manikin scale}
+#'   \item{\code{power}}{[integer] reported power from the 3-item self-assessment Manikin scale}
+#'   \item{\code{condition}}{[factor] experimental condition, either \code{bi-weekly} for biweekly pay or \code{dayly} for daily transfer}
+#'   \item{\code{nexpdec}}{[integer] number of expensive decisions}
+#'   \item{\code{totspend}}{[numeric] total spending}
+#'}
+#' @references Wendy De La Rosa, Stephanie M Tully (2022). The Impact of Payment Frequency on Consumer Spending and Subjective Wealth Perceptions, \emph{Journal of Consumer Research}, 48(\bold{6}), 991-1009, \doi{10.1093/jcr/ucab052}
+#' @source  ResearchBox 231, \url{https://researchbox.org/231}, licensed under CC BY 4.0
+"RT22_S5"

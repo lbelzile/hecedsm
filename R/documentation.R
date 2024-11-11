@@ -1104,3 +1104,73 @@
 #' @source Research Box 2945, \url{https://researchbox.org/2945}, licensed under CC BY 4.0
 #' @references Huang, S.-C., Brucks, M. S., Song, J., & Campbell, M. C. (2024). \emph{Beyond achievement: Transformation mindset enhances authenticity after goal success.} Motivation Science, 10(\bold{3}), 171–181. \doi{https://doi.org/10.1037/mot0000340}
 "HBSC24_S4"
+
+
+#' @title DATASET_TITLE
+#' @description DATASET_DESCRIPTION
+#' @format A data frame with 367 rows and 12 variables:
+#' \describe{
+#'   \item{\code{partner_pos_emotion}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{partner_neg_emotion}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{partner_wordcount}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{partner_Hedges}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{pos_emotion}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{neg_emotion}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{wordcount}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{Hedges}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{group}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{anxiety_self}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{anxiety_other}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{vote}}{integer COLUMN_DESCRIPTION}
+#'}
+#' @details DETAILS
+"DM22_S1"
+
+#' @title DATASET_TITLE
+#' @description DATASET_DESCRIPTION
+#' @format A data frame with 734 rows and 4 variables:
+#' \describe{
+#'   \item{\code{anxiety}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{target}}{character COLUMN_DESCRIPTION}
+#'   \item{\code{vote}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{group}}{character COLUMN_DESCRIPTION}
+#'}
+#' @details DETAILS
+"DM22_S1_long"
+
+#' @title DATASET_TITLE
+#' @description DATASET_DESCRIPTION
+#' @format A data frame with 319 rows and 5 variables:
+#' \describe{
+#'   \item{\code{age}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{gender}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{ideology}}{integer COLUMN_DESCRIPTION}
+#'   \item{\code{anxiety}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{anger}}{double COLUMN_DESCRIPTION}
+#'}
+#' @details DETAILS
+"DM22_S2"
+
+#' @title DATASET_TITLE
+#' @description DATASET_DESCRIPTION
+#' @format A data frame with 399 rows and 5 variables:
+#' \describe{
+#'   \item{\code{appraisal}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{threat}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{general}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{condition}}{character COLUMN_DESCRIPTION}
+#'   \item{\code{naiverealism}}{integer COLUMN_DESCRIPTION}
+#'}
+#' @details DETAILS
+"DM22_S3"
+
+#' @title Dorison and Minson (2022), Study 4
+#' @description Exploration of the behavioral consequences of overestimating self-threat.
+#' @format A data frame with 322 rows and 2 variables:
+#' \describe{
+#'   \item{\code{wager}}{amount wagered on ability to persuade counterpart (0-50 continuous variable)}
+#'   \item{\code{condition}}{between-subject experimental condition, either \code{afraid} or \code{not}}
+#'}
+#' @references Dorison CA, Minson JA. (2022). You can’t handle the truth! Conflict counterparts over-estimate each other’s feelings of self-threat. \emph{Organizational Behavior and Human Decision Processes}, 170, 104147. \doi{10.1016/j.obhdp.2022.104147}
+#' @source  ResearchBox 577, \url{https://researchbox.org/577}, licensed under CC BY 4.0
+"DM22_S4"

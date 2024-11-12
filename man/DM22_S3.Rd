@@ -10,7 +10,7 @@ A data frame with 399 rows and 5 variables:
   \item{\code{appraisal}}{[numeric] average of four appraisal items  (9 points scale from 0 to 8, with lower value indicating Not even the slightest bit to more strongly than ever before)}
   \item{\code{threat}}{[numeric] average of two threat items without descriptors  (9 points scale)}
   \item{\code{general}}{[numeric] average of four general items (9 points scale)}
-  \item{\code{condition}}{[factor] condition randomly assigned to}
+  \item{\code{condition}}{[factor] condition randomly assigned to, either \code{other} or \code{self}}
   \item{\code{naiverealism}}{[integer] answer to single-item naive realism question, "to what extent would the arguments your opponent makes lead you to question whether your beliefs on this issue are fundamentally correct and objective?", with not at all (1), to very much (5)}
 }
 }

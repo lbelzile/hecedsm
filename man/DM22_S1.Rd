@@ -6,7 +6,7 @@
 \alias{DM22_S1_long}
 \title{Dorison and Minson (2022), Study 1}
 \format{
-A data frame with 367 rows and 15 variables:
+A data frame with 367 rows and 17 variables:
 
 A data frame with 734 rows and 4 variables:
 \describe{
@@ -33,10 +33,12 @@ such as Covid19, environmental policy and immigration. Only people who interacte
 \itemize{
 \item \code{DM22_S1}: Wide-format with paired observations
 \describe{
-  \item{\code{partner_pos_emotion}}{[integer] partner positive emotion index}
-  \item{\code{partner_neg_emotion}}{[integer] partner negative emotion index}
-  \item{\code{partner_wordcount}}{[integer] partner total words in debate}
-  \item{\code{partner_Hedges}}{[integer] number of hedges for partners}
+  \item{\code{age}}{[integer] age of participant}
+  \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
+  \item{\code{pos_emotion_part}}{[integer] partner positive emotion index}
+  \item{\code{neg_emotion_part}}{[integer] partner negative emotion index}
+  \item{\code{wordcount_part}}{[integer] partner total words in debate}
+  \item{\code{hedges_part}}{[integer] number of hedges for partners}
   \item{\code{pos_emotion}}{[integer] positive emotion index}
   \item{\code{neg_emotion}}{[integer] negative emotion index}
   \item{\code{wordcount}}{[integer] total words in debate}
@@ -45,9 +47,7 @@ such as Covid19, environmental policy and immigration. Only people who interacte
   \item{\code{anxiety_self}}{[numeric] anxiety score for self, average of four nine point Likert scales}
   \item{\code{anxiety_other}}{[numeric] anxiety score for other, average of four nine point Likert scales}
   \item{\code{vote}}{Who are you most likely to vote for in the upcoming U.S. presidential election (2020)? either Republican candidate (1) or Democratic candidate (2)}
-  \item{\code{ideology}}{self-reported political orientation, with choices very/somewhat/slightly liberal (1/2/3), neither (4), to slightly/somewhat/very conservative (5/6/7).}
-  \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
-  \item{\code{age}}{[integer] age of participant}
+  \item{\code{polideo}}{self-reported political orientation, with choices very/somewhat/slightly liberal (1/2/3), neither (4), to slightly/somewhat/very conservative (5/6/7).}
 }
 
 \item \code{DM22_S1_long}: Long-format database

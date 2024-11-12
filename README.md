@@ -32,9 +32,12 @@ remotes::install_github("lbelzile/hecedsm")
 | [C22](https://lbelzile.github.io/hecedsm/reference/C22.html) | [Curley et al. (2022)](https://doi.org/10.1080/13218719.2021.1904450) | linear mixed model, incomplete design |
 | [DA23_E1](https://lbelzile.github.io/hecedsm/reference/DA23_E1.html) | [Duke and Amir (2023), Experiment 1](https://doi.org/10.1287/mksc.2022.1364) | t-test |
 | [DA23_E2](https://lbelzile.github.io/hecedsm/reference/DA23_E2.html) | [Duke and Amir (2023), Experiment 2](https://doi.org/10.1287/mksc.2022.1364) | one-way ANOVA, logistic regression |
+| [DM22_S1](https://lbelzile.github.io/hecedsm/reference/DM22_S1.html) | [Dorison and Minson (2022), Study 1](https://doi.org/10.1016/j.obhdp.2022.104147) | paired t-test |
+| [DM22_S2](https://lbelzile.github.io/hecedsm/reference/DM22_S2.html) | [Dorison and Minson (2022), Study 2](https://doi.org/10.1016/j.obhdp.2022.104147) | two-way mixed ANOVA |
+| [DM22_S3](https://lbelzile.github.io/hecedsm/reference/DM22_S3.html) | [Dorison and Minson (2022), Study 3](https://doi.org/10.1016/j.obhdp.2022.104147) | two-way mixed ANOVA, mediation |
+| [DM22_S4](https://lbelzile.github.io/hecedsm/reference/DM22_S4.html) | [Dorison and Minson (2022), Study 4](https://doi.org/10.1016/j.obhdp.2022.104147) | t-test |
 | [FBC66_T1](https://lbelzile.github.io/hecedsm/reference/FBC66_T1.html) | [Flavell, Beach and Chinsky (1966), Table 1](https://doi.org/10.2307/1126804) | chi-square test |
 | [GK14_S3](https://lbelzile.github.io/hecedsm/reference/GK14_S3.html) | [Grossman and Kross (2014), Study 3](https://doi.org/10.1177/0956797614535400) | one-way ANOVA, multiple testing, contrasts |
-| [GSBE10](https://lbelzile.github.io/hecedsm/reference/GSBE10.html) | [Garcia et al. (2010)](https://doi.org/10.1002/ejsp.644) | mediation |
 | [GSC20_E2](https://lbelzile.github.io/hecedsm/reference/GSC20_E2.html) | [Gaesser, Shimura and Cikara (2020), Experiment 2](https://doi.org/10.1037/pspi0000194) | linear mixed model, hierarchical model |
 | [HB22_S5](https://lbelzile.github.io/hecedsm/reference/HB22_S5.html) | [Halevy and Berson (2022), Study 5](https://doi.org/10.1177/00220027221079402) | three-way mixed design |
 | [HBSC24_S4](https://lbelzile.github.io/hecedsm/reference/HBSC24_S4.html) | [Huang, Brucks, Song and Campbell (2024), Study 4](https://doi.org/10.1037/mot0000340) | contrasts, mediation |
@@ -65,6 +68,11 @@ remotes::install_github("lbelzile/hecedsm")
 | [MV23_SH](https://lbelzile.github.io/hecedsm/reference/MV23_SH.html) | [Moon and vanEpps (2023), Supplementary study H](https://doi.org/10.1093/jcr/ucac047) | Wilcoxon test, chi-square test |
 | [RH19_S1](https://lbelzile.github.io/hecedsm/reference/RH19_S1.html) | [Roczniewska and Higgins (2019), Study 1](https://doi.org/10.1016/j.jesp.2019.103882) | mediation |
 | [RJ74](https://lbelzile.github.io/hecedsm/reference/RJ74.html) | [Rosen and Jerdee (1974)](https://doi.org/10.1037/h0035834) | chi-square test |
+| [RT22_S2](https://lbelzile.github.io/hecedsm/reference/RT22_S2.html) | [de la Rosa and Tully (2022), Study 2](https://doi.org/10.1093/jcr/ucab052) | t-test, mediation |
+| [RT22_S4](https://lbelzile.github.io/hecedsm/reference/RT22_S4.html) | [de la Rosa and Tully (2022), Study 4](https://doi.org/10.1093/jcr/ucab052) | two-way ANOVA, moderated mediation |
+| [RT22_S5](https://lbelzile.github.io/hecedsm/reference/RT22_S5.html) | [de la Rosa and Tully (2022), Study 5](https://doi.org/10.1093/jcr/ucab052) | serial mediation |
+| [SE24_S2B](https://lbelzile.github.io/hecedsm/reference/SE24_S2B.html) | [Sharma and Estes (2024), Study 2B](https://doi.org/10.1016/j.ijresmar.2024.02.001) | two-way ANOVA, two-way ANOVA, mediation |
+| [SE24_S3](https://lbelzile.github.io/hecedsm/reference/SE24_S3.html) | [Sharma and Estes (2024), Study 3](https://doi.org/10.1016/j.ijresmar.2024.02.001) | paired t-test, moderation, mediation, mixed ANOVA |
 | [SKD23_S2A](https://lbelzile.github.io/hecedsm/reference/SKD23_S2A.html) | [Sokolova el al. (2023), Study 2A](https://doi.org/10.1093/jcr/ucad008) | one-way ANOVA, contrasts |
 | [SSVB21_S2](https://lbelzile.github.io/hecedsm/reference/SSVB21_S2.html) | [van Stekelenburg et al. (2021), Study 2](https://doi.org/10.1177/09567976211007788) | ANCOVA |
 | [SSVB21_S3](https://lbelzile.github.io/hecedsm/reference/SSVB21_S3.html) | [van Stekelenburg et al. (2021), Study 3](https://doi.org/10.1177/09567976211007788) | ANCOVA |

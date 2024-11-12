@@ -1238,3 +1238,39 @@
 #' @references Wendy De La Rosa, Stephanie M Tully (2022). The Impact of Payment Frequency on Consumer Spending and Subjective Wealth Perceptions, \emph{Journal of Consumer Research}, 48(\bold{6}), 991-1009, \doi{10.1093/jcr/ucab052}
 #' @source  ResearchBox 231, \url{https://researchbox.org/231}, licensed under CC BY 4.0
 "RT22_S5"
+
+
+#' @title DATASET_TITLE
+#' @description DATASET_DESCRIPTION
+#' @format A data frame with 401 rows and 8 variables:
+#' \describe{
+#'   \item{\code{age}}{[integer] age of person}
+#'   \item{\code{gender}}{[factor] either \code{male}, \code{female} or \code{other}}
+#'   \item{\code{cues}}{[factor] number of cues, either \code{one} or \code{two}}
+#'   \item{\code{picture}}{[factor] whether a picture is present in the stimulus, either \code{absent} or \code{present}}
+#'   \item{\code{like}}{[numeric] Likert scale for liking of scent 'I like the fragrance of clementines', ranging from strongly disagree (1) to strongly agree (5)}
+#'   \item{\code{involve}}{[numeric] involvement with the product item}
+#'   \item{\code{evaluation}}{[numeric] average of Likert scales for evaluation, with values ranging from strongly disagree (1) to strongly agree (5)}
+#'   \item{\code{olfactory}}{[numeric] average of Likert scales for olfactory imagery item, with values ranging from strongly disagree (1) to strongly agree (5)}
+#'}
+#' @references Sharma, Varun; Estes, Zachary (2024). Seeing is Smelling: Pictures Improve Product Evaluations by Evoking Olfactory Imagery, \emph{International Journal of Research in Marketing}, 41(\bold{2}), 282–307. \doi{10.1016/j.ijresmar.2024.02.001}
+#' @source ResearchBox 2061, \url{https://researchbox.org/2061}, licensed under CC BY 4.0
+"SE24_S2B"
+
+#' @title Sharma and Estes (2024), Study 3
+#' @description Long format repeated measures on the mediation effect of olfactory imagery on product evaluation. 399 participants were recruited on prolifics and were asked to rate cleaning products with images of whole and cut lemons.
+#' @format A data frame with 798 rows and 9 variables:
+#' \describe{
+#'   \item{\code{id}}{[factor] participant identifier}
+#'   \item{\code{age}}{[integer] age of person}
+#'   \item{\code{gender}}{[factor] either \code{male}, \code{female} or \code{other}}
+#'   \item{\code{like}}{[numeric] Likert scale for liking of scent 'I like the fragrance of lemons', ranging from strongly disagree (1) to strongly agree (5)}
+#'   \item{\code{involve}}{[numeric] involvement with the product item}
+#'   \item{\code{enfas}}{[numeric] Evaluation of the Need for Active Smell scale}
+#'   \item{\code{lemon}}{[factor] within-subject factor, one of \code{whole} or \code{cut}}
+#'   \item{\code{evaluation}}{[numeric] average of Likert scales for evaluation, with values ranging from strongly disagree (1) to strongly agree (5)}
+#'   \item{\code{olfactory}}{[numeric] average of Likert scales for olfactory imagery item, with values ranging from strongly disagree (1) to strongly agree (5)}
+#'}
+#' @references Sharma, Varun; Estes, Zachary (2024). Seeing is Smelling: Pictures Improve Product Evaluations by Evoking Olfactory Imagery, \emph{International Journal of Research in Marketing}, 41(\bold{2}), 282–307. \doi{10.1016/j.ijresmar.2024.02.001}
+#' @source ResearchBox 2061, \url{https://researchbox.org/2061}, licensed under CC BY 4.0
+"SE24_S3"

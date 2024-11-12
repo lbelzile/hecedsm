@@ -8,7 +8,7 @@
 A data frame with 322 rows and 2 variables:
 \describe{
   \item{\code{wager}}{amount wagered on ability to persuade counterpart (0-50 continuous variable)}
-  \item{\code{condition}}{between-subject experimental condition, either \code{afraid} or \code{not}}
+  \item{\code{condition}}{between-subject experimental condition, either \code{afraid} or \code{not afraid}}
 }
 }
 \source{

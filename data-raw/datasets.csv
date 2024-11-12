@@ -49,7 +49,16 @@ STC21_SS5,"Sharma, Tully, and Cryder (2021), supplementary study 5",10.1177/0022
 LKUK24_S3,"Lin et al. (2024), Study 3",10.1093/jcr/ucad076,"three-way ANOVA, two-way ANOVA",1
 LKUK24_S4,"Lin et al. (2024), Study 4",10.1093/jcr/ucad076,"three-way ANOVA, moderated mediation",1
 LWSH23_S3,"Leckfor et al (2023), Study 3",10.1177/02654075221149955,"moderation, ANCOVA",1
-HBSC24_S4,"Huang, Brucks, Song and Campbell (2024), Study 4",10.1037/mot0000340, "contrasts, mediation",1
+HBSC24_S4,"Huang, Brucks, Song and Campbell (2024), Study 4",10.1037/mot0000340,"contrasts, mediation",1
+DM22_S1,"Dorison and Minson (2022), Study 1",10.1016/j.obhdp.2022.104147,paired t-test,1
+DM22_S2,"Dorison and Minson (2022), Study 2",10.1016/j.obhdp.2022.104147,two-way mixed ANOVA,1
+DM22_S3,"Dorison and Minson (2022), Study 3",10.1016/j.obhdp.2022.104147,"two-way mixed ANOVA, mediation",1
+DM22_S4,"Dorison and Minson (2022), Study 4",10.1016/j.obhdp.2022.104147,t-test,1
+SE24_S2B,"Sharma and Estes (2024), Study 2B",10.1016/j.ijresmar.2024.02.001,"two-way ANOVA, two-way ANOVA, mediation",1
+SE24_S3,"Sharma and Estes (2024), Study 3",10.1016/j.ijresmar.2024.02.001,"paired t-test, moderation, mediation, mixed ANOVA",1
+RT22_S2,"de la Rosa and Tully (2022), Study 2",10.1093/jcr/ucab052,"t-test, mediation",1
+RT22_S4,"de la Rosa and Tully (2022), Study 4",10.1093/jcr/ucab052,"two-way ANOVA, moderated mediation",1
+RT22_S5,"de la Rosa and Tully (2022), Study 5",10.1093/jcr/ucab052,serial mediation,1
 arithmetic,Teaching Arithmetic Data,,one-way ANOVA,5
 popcorn,Popcorn experiment,,"three-way ANOVA, repeated measures",6
 teller,Teller data,,two-way ANOVA,6

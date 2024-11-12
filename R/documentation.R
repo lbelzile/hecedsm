@@ -1110,13 +1110,15 @@
 #' @description Participants (American citizens) in the study were paired with people from the opposing party (Republican or Democrat) and asked to
 #' perform a 10 minutes presentation to discuss beliefs about the best candidate, with pointers to subjects
 #' such as Covid19, environmental policy and immigration. Only people who interacted via the chat are kept.
-#' @format A data frame with 367 rows and 15 variables:
+#' @format A data frame with 367 rows and 17 variables:
 #' @describeIn DM22_S1 Wide-format with paired observations
 #' \describe{
-#'   \item{\code{partner_pos_emotion}}{[integer] partner positive emotion index}
-#'   \item{\code{partner_neg_emotion}}{[integer] partner negative emotion index}
-#'   \item{\code{partner_wordcount}}{[integer] partner total words in debate}
-#'   \item{\code{partner_Hedges}}{[integer] number of hedges for partners}
+#'   \item{\code{age}}{[integer] age of participant}
+#'   \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
+#'   \item{\code{pos_emotion_part}}{[integer] partner positive emotion index}
+#'   \item{\code{neg_emotion_part}}{[integer] partner negative emotion index}
+#'   \item{\code{wordcount_part}}{[integer] partner total words in debate}
+#'   \item{\code{hedges_part}}{[integer] number of hedges for partners}
 #'   \item{\code{pos_emotion}}{[integer] positive emotion index}
 #'   \item{\code{neg_emotion}}{[integer] negative emotion index}
 #'   \item{\code{wordcount}}{[integer] total words in debate}
@@ -1125,9 +1127,9 @@
 #'   \item{\code{anxiety_self}}{[numeric] anxiety score for self, average of four nine point Likert scales}
 #'   \item{\code{anxiety_other}}{[numeric] anxiety score for other, average of four nine point Likert scales}
 #'   \item{\code{vote}}{Who are you most likely to vote for in the upcoming U.S. presidential election (2020)? either Republican candidate (1) or Democratic candidate (2)}
-#'   \item{\code{ideology}}{self-reported political orientation, with choices very/somewhat/slightly liberal (1/2/3), neither (4), to slightly/somewhat/very conservative (5/6/7).}
-#'   \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
-#'   \item{\code{age}}{[integer] age of participant}
+#'   \item{\code{polideo}}{self-reported political orientation, with choices very/somewhat/slightly liberal (1/2/3), neither (4), to slightly/somewhat/very conservative (5/6/7).}
+
+
 #'}
 #' @references Dorison CA, Minson JA. (2022). You can’t handle the truth! Conflict counterparts over-estimate each other’s feelings of self-threat. \emph{Organizational Behavior and Human Decision Processes}, 170, 104147. \doi{10.1016/j.obhdp.2022.104147}
 #' @source  ResearchBox 577, \url{https://researchbox.org/577}, licensed under CC BY 4.0
@@ -1165,7 +1167,7 @@
 #'   \item{\code{appraisal}}{[numeric] average of four appraisal items  (9 points scale from 0 to 8, with lower value indicating Not even the slightest bit to more strongly than ever before)}
 #'   \item{\code{threat}}{[numeric] average of two threat items without descriptors  (9 points scale)}
 #'   \item{\code{general}}{[numeric] average of four general items (9 points scale)}
-#'   \item{\code{condition}}{[factor] condition randomly assigned to}
+#'   \item{\code{condition}}{[factor] condition randomly assigned to, either \code{other} or \code{self}}
 #'   \item{\code{naiverealism}}{[integer] answer to single-item naive realism question, "to what extent would the arguments your opponent makes lead you to question whether your beliefs on this issue are fundamentally correct and objective?", with not at all (1), to very much (5)}
 #'}
 #' @references Dorison CA, Minson JA. (2022). You can’t handle the truth! Conflict counterparts over-estimate each other’s feelings of self-threat. \emph{Organizational Behavior and Human Decision Processes}, 170, 104147. \doi{10.1016/j.obhdp.2022.104147}
@@ -1177,7 +1179,7 @@
 #' @format A data frame with 322 rows and 2 variables:
 #' \describe{
 #'   \item{\code{wager}}{amount wagered on ability to persuade counterpart (0-50 continuous variable)}
-#'   \item{\code{condition}}{between-subject experimental condition, either \code{afraid} or \code{not}}
+#'   \item{\code{condition}}{between-subject experimental condition, either \code{afraid} or \code{not afraid}}
 #'}
 #' @references Dorison CA, Minson JA. (2022). You can’t handle the truth! Conflict counterparts over-estimate each other’s feelings of self-threat. \emph{Organizational Behavior and Human Decision Processes}, 170, 104147. \doi{10.1016/j.obhdp.2022.104147}
 #' @source  ResearchBox 577, \url{https://researchbox.org/577}, licensed under CC BY 4.0

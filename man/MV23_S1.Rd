@@ -8,7 +8,7 @@
 A data frame with 869 rows and 4 variables:
 \describe{
   \item{\code{before}}{[integer] did people donate before to this charity? 0 for no, 1 for yes.}
-  \item{\code{donate}}{[integer] did people choose to donate (donate before to this charity? 0 for no, 1 for yes.}
+  \item{\code{donate}}{[integer] did people choose to donate to the charity? 0 for no, 1 for yes.}
   \item{\code{condition}}{[factor] experimental condition, either an \code{open-ended} amount or a suggested \code{quantity}}
   \item{\code{amount}}{[double] amount of proposed donation, \code{NA} if the person declined to donate}
 }

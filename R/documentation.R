@@ -758,7 +758,7 @@
 #' @format A data frame with 869 rows and 4 variables:
 #' \describe{
 #'   \item{\code{before}}{[integer] did people donate before to this charity? 0 for no, 1 for yes.}
-#'   \item{\code{donate}}{[integer] did people choose to donate (donate before to this charity? 0 for no, 1 for yes.}
+#'   \item{\code{donate}}{[integer] did people choose to donate to the charity? 0 for no, 1 for yes.}
 #'   \item{\code{condition}}{[factor] experimental condition, either an \code{open-ended} amount or a suggested \code{quantity}}
 #'   \item{\code{amount}}{[double] amount of proposed donation, \code{NA} if the person declined to donate}
 #'}
@@ -1274,3 +1274,57 @@
 #' @references Sharma, Varun; Estes, Zachary (2024). Seeing is Smelling: Pictures Improve Product Evaluations by Evoking Olfactory Imagery, \emph{International Journal of Research in Marketing}, 41(\bold{2}), 282–307. \doi{10.1016/j.ijresmar.2024.02.001}
 #' @source ResearchBox 2061, \url{https://researchbox.org/2061}, licensed under CC BY 4.0
 "SE24_S3"
+
+
+#' @title Poirier et al. (2024), Study 1
+#' @description Data for an incomplete one-way ANOVA repeated measure design. The observations are unbalanced per participant and by experimental condition. Participants with missing data for one of the condition were removed from the analysis.
+#' @format A data frame with 2136 rows and 9 variables:
+#' \describe{
+#'   \item{\code{id}}{[factor] identifier of participant}
+#'   \item{\code{gender}}{[factor] gender of participant, either \code{male}, \code{female} or \code{other}}
+#'   \item{\code{age}}{[integer] age of participant}
+#'   \item{\code{picture}}{[factor] identifier of photo}
+#'   \item{\code{socialpres}}{[factor] experimental factor for social presence, one of \code{no}, \code{medium} or \code{high}}
+#'   \item{\code{valence}}{[integer] positive emotional reaction score}
+#'   \item{\code{purchaseintent}}{[integer] intention to purchase}
+#'   \item{\code{arousal}}{[integer] arousal score}
+#'   \item{\code{diagnosticity}}{[integer] perceived photo diagnosticity}
+#'}
+#'#' @references Poirier, S.-M., Cosby, S., Sénécal, S., Coursaris, C. K., Fredette, M. et Léger, P.-M. (2024). \emph{The impact of social presence cues in social media product photos on consumers’ purchase intentions}. Journal of Business Research, 185, 114932. \doi{10.1016/j.jbusres.2024.114932}.
+#' @source Sara-Maude Poirier, personal communication, distributed under CC BY-NC-SA 4.0
+"PCSCFL24_S1"
+
+#' @title Poirier et al. (2024), Study 2
+#' @description Data for a between-subject two-way ANCOVA (3x2, social presence vs staging) with gender as covariate for the control, as the high social presence condition showed the back of a woman running on a treadmill.
+#' @format A data frame with 587 rows and 9 variables:
+#' \describe{
+#'   \item{\code{staging}}{[factor] experimental factor for staging, termed consumption background (either \code{absent} or \code{present})}
+#'   \item{\code{socialpres}}{[factor] experimental factor for social presence, one of \code{no}, \code{medium} or \code{high}}
+#'   \item{\code{arousal}}{[integer] arousal score}
+#'   \item{\code{valence}}{[integer] positive emotional reaction score}
+#'   \item{\code{gender}}{[factor] gender of participant, either \code{male}, \code{female} or \code{other}}
+#'   \item{\code{age}}{[integer] age of participant}
+#'   \item{\code{diagnosticity}}{[integer] perceived photo diagnosticity}
+#'   \item{\code{purchaseintent}}{double COLUMN_DESCRIPTION}
+#'   \item{\code{warmth}}{integer COLUMN_DESCRIPTION}
+#'}
+#' @references Poirier, S.-M., Cosby, S., Sénécal, S., Coursaris, C. K., Fredette, M. et Léger, P.-M. (2024). \emph{The impact of social presence cues in social media product photos on consumers’ purchase intentions}. Journal of Business Research, 185, 114932. \doi{10.1016/j.jbusres.2024.114932}.
+#' @source Sara-Maude Poirier, personal communication, distributed under CC BY-NC-SA 4.0
+"PCSCFL24_S2"
+
+#' @title Poirier et al. (2024), Study 3
+#' @description Data for Study 3, which assigned every participant to a pairwise comparison, indexed by \code{condition}. They had to select one treadmill from two models (counterbalanced), with images showing one of the
+#' @format A data frame with 302 rows and 3 variables:
+#' \describe{
+#'   \item{\code{subset}}{[factor] experimental comparison}
+#'   \item{\code{condition}}{[factor] social presence dummy index}
+#'   \item{\code{choice}}{[integer] choice between two products}
+#'}
+#' @note The authors seemingly compared the interaction in a two-way contingency table using Pearson chi-square statistic.
+#' @references Poirier, S.-M., Cosby, S., Sénécal, S., Coursaris, C. K., Fredette, M. et Léger, P.-M. (2024). \emph{The impact of social presence cues in social media product photos on consumers’ purchase intentions}. Journal of Business Research, 185, 114932. \doi{10.1016/j.jbusres.2024.114932}.
+#' @source Sara-Maude Poirier, personal communication, distributed under CC BY-NC-SA 4.0
+#' @examples
+#' data_novshigh <- subset(PCSCFL24_S3, subset == "no vs high", select = c(choice, condition))
+#' (tab_novshigh <- table(data_novshigh))
+#' chisq.test(tab_novshigh, correct = FALSE)
+"PCSCFL24_S3"

@@ -1313,12 +1313,17 @@
 "PCSCFL24_S2"
 
 #' @title Poirier et al. (2024), Study 3
-#' @description Data for Study 3, which assigned every participant to a pairwise comparison, indexed by \code{condition}. They had to select one treadmill from two models (counterbalanced), with images showing one of the
+#' @description Data for Study 3, which assigned every participant to a pairwise comparison.
+#' The variable \code{condition} indicates which brand was in the no/medium/high, depending on the pairwise comparison.
+#' Participants had to select one treadmill from two models (counterbalanced), with images showing either condition with brand.
+#' The choice is recorded in \code{choice}. In a contingency table of say \code{no} vs \code{high} for social presence, the \code{high} are the sum of the diagonal entries.
+#' The authors performed Pearson chi-square test for testing the presence of an interaction in two by two tables.
+#'
 #' @format A data frame with 302 rows and 3 variables:
 #' \describe{
 #'   \item{\code{subset}}{[factor] experimental comparison}
-#'   \item{\code{condition}}{[factor] social presence dummy index}
-#'   \item{\code{choice}}{[integer] choice between two products}
+#'   \item{\code{condition}}{[factor] social presence dummy index: e.g., in the \code{no vs high} subset,  brand A is high and B is no if \code{condition=1}, and brand A is no, B is high when \code{condition=0}}
+#'   \item{\code{choice}}{[integer] choice between two products, either brand \code{A} or \code{B}}
 #'}
 #' @note The authors seemingly compared the interaction in a two-way contingency table using Pearson chi-square statistic.
 #' @references Poirier, S.-M., Cosby, S., Sénécal, S., Coursaris, C. K., Fredette, M. et Léger, P.-M. (2024). \emph{The impact of social presence cues in social media product photos on consumers’ purchase intentions}. Journal of Business Research, 185, 114932. \doi{10.1016/j.jbusres.2024.114932}.
@@ -1326,5 +1331,8 @@
 #' @examples
 #' data_novshigh <- subset(PCSCFL24_S3, subset == "no vs high", select = c(choice, condition))
 #' (tab_novshigh <- table(data_novshigh))
+#' # Order is counterbalanced, so roughly the same number with each condition
+#' colSums(tab_novshigh)
+#' # Pearson chi-square test
 #' chisq.test(tab_novshigh, correct = FALSE)
 "PCSCFL24_S3"

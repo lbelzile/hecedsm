@@ -66,6 +66,9 @@ remotes::install_github("lbelzile/hecedsm")
 | [MV23_S1](https://lbelzile.github.io/hecedsm/reference/MV23_S1.html) | [Moon and vanEpps (2023), Study 1](https://doi.org/10.1093/jcr/ucac047) | chi-square test, t-test |
 | [MV23_S4](https://lbelzile.github.io/hecedsm/reference/MV23_S4.html) | [Moon and vanEpps (2023), Study 4](https://doi.org/10.1093/jcr/ucac047) | logistic regression |
 | [MV23_SH](https://lbelzile.github.io/hecedsm/reference/MV23_SH.html) | [Moon and vanEpps (2023), Supplementary study H](https://doi.org/10.1093/jcr/ucac047) | Wilcoxon test, chi-square test |
+| [PCSCFL24_S1](https://lbelzile.github.io/hecedsm/reference/PCSCFL24_S1.html) | [Poirier et al. (2024), Study 1](https://doi.org/10.1016/j.jbusres.2024.114932) | repeated measures, one-way ANOVA, linear mixed model |
+| [PCSCFL24_S2](https://lbelzile.github.io/hecedsm/reference/PCSCFL24_S2.html) | [Poirier et al. (2024), Study 2](https://doi.org/10.1016/j.jbusres.2024.114932) | two-way ANOVA, ANCOVA |
+| [PCSCFL24_S2](https://lbelzile.github.io/hecedsm/reference/PCSCFL24_S2.html) | [Poirier et al. (2024), Study 2](https://doi.org/10.1016/j.jbusres.2024.114932) | chi-square test |
 | [RH19_S1](https://lbelzile.github.io/hecedsm/reference/RH19_S1.html) | [Roczniewska and Higgins (2019), Study 1](https://doi.org/10.1016/j.jesp.2019.103882) | mediation |
 | [RJ74](https://lbelzile.github.io/hecedsm/reference/RJ74.html) | [Rosen and Jerdee (1974)](https://doi.org/10.1037/h0035834) | chi-square test |
 | [RT22_S2](https://lbelzile.github.io/hecedsm/reference/RT22_S2.html) | [de la Rosa and Tully (2022), Study 2](https://doi.org/10.1093/jcr/ucab052) | t-test, mediation |

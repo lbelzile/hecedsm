@@ -196,7 +196,11 @@ MULTI21_D2 <- read.csv("data-raw/source/Multilab2021_spanData_allLabs.csv",
   ) |>
   dplyr::arrange(lab, id) |>
   tibble::as_tibble() |>
-  dplyr::mutate(age = factor(age, levels = levels(age)[order(c(10,5,6,7))]))
+  dplyr::mutate(age = factor(age, levels = levels(age)[order(c(10,5,6,7))])) |>
+  dplyr::mutate(taskorder = dplyr::case_when(taskorder == "first" ~ 1L,
+                                             taskorder == "second" ~ 2L,
+                                             taskorder == "point-and-name" ~ 3L),
+                timing = factor(timing, labels = c("delayed", "immediate","point and name")))
 usethis::use_data(MULTI21_D2, overwrite = TRUE)
 
 # Dataset 10: Rosen and Jerdee (1974)

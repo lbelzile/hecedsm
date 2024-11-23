@@ -148,13 +148,13 @@
 
 
 #'  Elliot et al. (2021), dataset 2
-#' @description Data for a linear mixed model and a two-way analysis of variance with \code{taskorder} and \code{timing}.
+#' @description Data for a linear mixed model and a two-way analysis of variance with \code{age} and \code{timing}.
 #'
 #' @format A data frame with 2931 rows and 7 variables:
 #' \describe{
 #'   \item{\code{id}}{[factor] unique participant ID}
 #'   \item{\code{lab}}{[factor] location of laboratory}
-#'   \item{\code{taskorder}}{[integer] order of task}
+#'   \item{\code{taskorder}}{[factor] order of tasks for individual, either \code{immediate first} or \code{delayed first}}
 #'   \item{\code{timing}}{[factor] timing of the task for recall, either \code{delayed} or \code{immediate} or \code{point-and-name}}
 #'   \item{\code{age}}{[factor] age group, one of \code{5yo}, \code{6yo}, \code{7yo} or \code{10yo}}
 #'   \item{\code{mcorrect}}{[integer] number of words correctly recalled, from 1 to 5}

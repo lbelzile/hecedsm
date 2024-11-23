@@ -13,14 +13,14 @@ A data frame with 545 rows and 7 variables:
   \item{\code{age}}{[integer] age of respondant}
   \item{\code{gender}}{[factor] gender of respondent, either \code{woman}, \code{man} or \code{other}}
   \item{\code{reltype}}{[factor] type of romantic relationship, either \code{casually dating}, \code{friendship}, \code{romantic relationship}}
-  \item{\code{rel}}{[double] answer to the questions "how you felt toward the other person before the situation you just described ...", with high values demanding more involvment and commitment to the relationship}
+  \item{\code{rel}}{[double] answer to the questions "how you felt toward the other person before the situation you just described ...", with high values demanding more involvement and commitment to the relationship}
 }
 }
 \usage{
 LWSH23_S3
 }
 \description{
-Moderation analysis for need for satisfaction. The author postulated that the type of rejection (control, being ghosted or rejected) would moderate the effect of the need for closure. The authors were postulated "lower needs satisfaction after being ghosted"
+Moderation analysis for need for satisfaction. The author postulated that the type of rejection (control, being ghosted or rejected) would moderate the effect of the need for closure. The authors postulated that there would be "lower needs satisfaction after being ghosted".
 }
 \examples{
 mod <- lm(data = LWSH23_S3, needsatis ~ needclosure * cond)

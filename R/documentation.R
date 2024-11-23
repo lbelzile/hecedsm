@@ -972,7 +972,7 @@
 
 
 #' @title Leckfor et al (2023), Study 3
-#' @description Moderation analysis for need for satisfaction. The author postulated that the type of rejection (control, being ghosted or rejected) would moderate the effect of the need for closure. The authors were postulated "lower needs satisfaction after being ghosted"
+#' @description Moderation analysis for need for satisfaction. The author postulated that the type of rejection (control, being ghosted or rejected) would moderate the effect of the need for closure. The authors postulated that there would be "lower needs satisfaction after being ghosted".
 #' @format A data frame with 545 rows and 7 variables:
 #' \describe{
 #'   \item{\code{cond}}{[factor] condition, one of \code{included} (control), \code{ghosted} and \code{directly rejected} and postulated mediator}
@@ -981,7 +981,7 @@
 #'   \item{\code{age}}{[integer] age of respondant}
 #'   \item{\code{gender}}{[factor] gender of respondent, either \code{woman}, \code{man} or \code{other}}
 #'   \item{\code{reltype}}{[factor] type of romantic relationship, either \code{casually dating}, \code{friendship}, \code{romantic relationship}}
-#'   \item{\code{rel}}{[double] answer to the questions "how you felt toward the other person before the situation you just described ...", with high values demanding more involvment and commitment to the relationship}
+#'   \item{\code{rel}}{[double] answer to the questions "how you felt toward the other person before the situation you just described ...", with high values demanding more involvement and commitment to the relationship}
 #'}
 #' @references Leckfor CM, Wood NR, Slatcher RB, Hales AH (2023) From close to ghost: Examining the relationship between the need for closure, intentions to ghost, and reactions to being ghosted. \emph{Journal of Social and Personal Relationships}, 40(\bold{8}), 2422-2444. \doi{10.1177/02654075221149955}
 #' @examples

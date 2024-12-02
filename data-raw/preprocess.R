@@ -449,7 +449,11 @@ LRMM23_S5b <- haven::read_sav("data-raw/source/LRMM22_S5b.sav") |>
                             labels = c("other","self")),
          age = as.integer(age),
          gender = as_factor(gender),
-         )
+         ) |>
+  dplyr::mutate(initiator = factor(ifelse(condition == "self", "initiator", "responder"))) |>
+  # dplyr::filter(gender != "other") |>
+  dplyr::select(!condition)
+
 levels(LRMM23_S5b$gender) <- tolower(levels(LRMM23_S5b$gender))
 usethis::use_data(LRMM23_S5b, overwrite = TRUE)
 

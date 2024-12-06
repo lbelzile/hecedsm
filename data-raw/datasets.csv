@@ -62,6 +62,10 @@ RT22_S5,"de la Rosa and Tully (2022), Study 5",10.1093/jcr/ucab052,serial mediat
 PCSCFL24_S1,"Poirier et al. (2024), Study 1",10.1016/j.jbusres.2024.114932,"repeated measures, one-way ANOVA, linear mixed model",2
 PCSCFL24_S2,"Poirier et al. (2024), Study 2",10.1016/j.jbusres.2024.114932,"two-way ANOVA, ANCOVA",2
 PCSCFL24_S2,"Poirier et al. (2024), Study 2",10.1016/j.jbusres.2024.114932,"chi-square test",2
+KSBN24_S3,"Koetke et al. (2024), Study 3",10.1038/s41562-024-02060-x,"two-way ANOVA, multiple testing",1
+KSBN24_S4,"Koetke et al. (2024), Study 4",10.1038/s41562-024-02060-x,"two-way ANOVA, mediation",1
+KSBN24_S5,"Koetke et al. (2024), Study 5",10.1038/s41562-024-02060-x,"one-way ANOVA, mediation",1
+KSBN24_S5L,"Koetke et al. (2024), Study 5 (long)",10.1038/s41562-024-02060-x,"repeated measures, MANOVA",1
 arithmetic,Teaching Arithmetic Data,,"one-way ANOVA",5
 popcorn,Popcorn experiment,,"three-way ANOVA, repeated measures",6
 teller,Teller data,,"two-way ANOVA",6

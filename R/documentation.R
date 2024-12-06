@@ -1336,3 +1336,79 @@
 #' # Pearson chi-square test
 #' chisq.test(tab_novshigh, correct = FALSE)
 "PCSCFL24_S3"
+
+#' @title Koetke et al. (2024), Study 3
+#' @description Data for a two-way between-subject ANOVA as a function of \code{condition} and \code{gender}.
+#' @format A data frame with 369 rows and 10 variables:
+#' \describe{
+#'   \item{\code{ih}}{[double] CIHS score for intellectual humility}
+#'   \item{\code{condition}}{[factor] experimental manipulation, either \code{low}, \code{high} or \code{neutral}}
+#'   \item{\code{gender}}{[factor] gender of participant, either \code{male}, \code{female} or \code{other}}
+#'   \item{\code{gender}}{[factor] experimental manipulation for gender of scientist, either \code{male} (Robert) or \code{female} (Sandra).}
+#'   \item{\code{METI}}{[double] METI scale for the trust in science}
+#'   \item{\code{expertise}}{[double] METI subscale for expertise}
+#'   \item{\code{integrity}}{[double] METI subscale for integrity}
+#'   \item{\code{benevolence}}{[double] METI subscale for benevolence}
+#'   \item{\code{research}}{[double] score for support for the research}
+#'   \item{\code{intention}}{[double] score for intention to follow research models}
+#'}
+#' @references Koetke, J., Schumann, K., Bowes, S.M. et al. The effect of seeing scientists as intellectually humble on trust in scientists and their research. \emph{Nature Human Behaviour} (2024). \doi{10.1038/s41562-024-02060-x}. Preprint at \url{https://osf.io/preprints/psyarxiv/ah3fp/}
+#' @source Open Science Foundation, \url{https://osf.io/d3xua/?view_only=0ebe5366331f497da7c78a7c874c2961}, unspecified license
+"KSBN24_S3"
+
+#' @title Koetke et al. (2024), Study 4
+#' @description Two (humility) by three race) between subject design to study participant perception of scientists depending on the intellectual humility.
+#' The authors performed linear mediation analysis of \code{METI} by \code{ih}, \code{research} by \code{METI} and by \code{ih}, separately. They also considered two-way ANOVA models with controls for \code{competence} and \code{warmth} as control variates.
+#' @format A data frame with 371 rows and 10 variables:
+#' \describe{
+#'   \item{\code{METI}}{[double] METI scale for the trust in the scientist}
+#'   \item{\code{research}}{[double] support for Dr. Wilson's research}
+#'   \item{\code{ih}}{[double] perceived intellectual humility score}
+#'   \item{\code{competence}}{[double] score for the question "As viewed by society, how competent is Dr."}
+#'   \item{\code{warmth}}{[double] score for the question "As viewed by society, how warm is Dr."}
+#'   \item{\code{condition}}{[factor] experimental factor for intellectual humility, either \code{low}, \code{high} or \code{neutral}}
+#'   \item{\code{race}}{[factor] experimental factor for race, one of \code{latinx}, \code{black} (African American) or \code{white}}
+#'   \item{\code{politideo}}{[factor] political ideology on Prolifics platform, either \code{liberal} or \code{conservative}}
+#'   \item{\code{age}}{[integer] age of participant}
+#'   \item{\code{gender}}{[factor] gender of participant, either \code{male}, \code{female} or \code{other}}
+#'}
+#' @references Koetke, J., Schumann, K., Bowes, S.M. et al. The effect of seeing scientists as intellectually humble on trust in scientists and their research. \emph{Nature Human Behaviour} (2024). \doi{10.1038/s41562-024-02060-x}. Preprint at \url{https://osf.io/preprints/psyarxiv/ah3fp/}
+#' @source Open Science Foundation, \url{https://osf.io/d3xua/?view_only=0ebe5366331f497da7c78a7c874c2961}, unspecified license
+"KSBN24_S4"
+
+#' @title Koetke et al. (2024), Study 5
+#' @description Authors perform one-way ANOVA for CIHS score and the subscales as a function of \code{condition}, and the same for the \code{METI} scale and subscales. Three independent linear mediation are tested for research average and METI, with the experimental \code{condition} mediated by the intellectual humility score \code{ih}, and \code{research} average by \code{condition} also mediated by \code{METI}.
+#' @format A data frame with 679 rows and 13 variables:
+#' \describe{
+#'   \item{\code{ih}}{[double] CIHS score for intellectual humility of scientist}
+#'   \item{\code{condition}}{[factor] experimental condition for intellectual humility, either \code{low} or \code{high}}
+#'   \item{\code{indep}}{[double] CIHS subscale score for independent of science}
+#'   \item{\code{respect}}{[double] CIHS subscale score for respect of science}
+#'   \item{\code{openness}}{[double] CIHS subscale score for openness of science}
+#'   \item{\code{lackover}}{[double] CIHS subscale score for lack over}
+#'   \item{\code{METI}}{[double] METI scale for the trust in science}
+#'   \item{\code{expertise}}{[double] METI subscale for expertise}
+#'   \item{\code{integrity}}{[double] METI subscale for integrity}
+#'   \item{\code{benevolence}}{[double] METI subscale for benevolence}
+#'   \item{\code{research}}{[double] score for support for the research}
+#'   \item{\code{warmth}}{[double] score for warmth}
+#'   \item{\code{competence}}{[double] score for competence}
+#'}
+#' @references Koetke, J., Schumann, K., Bowes, S.M. et al. The effect of seeing scientists as intellectually humble on trust in scientists and their research. \emph{Nature Human Behaviour} (2024). \doi{10.1038/s41562-024-02060-x}. Preprint at \url{https://osf.io/preprints/psyarxiv/ah3fp/}
+#' @source Open Science Foundation, \url{https://osf.io/d3xua/?view_only=0ebe5366331f497da7c78a7c874c2961}, unspecified license
+"KSBN24_S5"
+
+#' @title Koetke et al. (2024), Study 5 (long format)
+#' @description Data from Study 5 in long format for the questions related to trust. The authors performed repeated measure ANOVA for each of the three response in term. Also suitable for multivariate analysis of variance. All responses are measured using a Likert scale ranging from 1 (strongly disagree) to 7 (strongly agree).
+#' @format A data frame with 4074 rows and 5 variables:
+#' \describe{
+#'   \item{\code{id}}{[factor] participant identifier}
+#'   \item{\code{statement}}{[factor] statement of the question}
+#'   \item{\code{pih}}{[double] perceived intellectual humility for the statement}
+#'   \item{\code{trustdr}}{[double] score for trust in doctor Wilson}
+#'   \item{\code{trustresearch}}{[double] score for trust in research results of doctor Wilson}
+#'}
+#'
+#' @references Koetke, J., Schumann, K., Bowes, S.M. et al. The effect of seeing scientists as intellectually humble on trust in scientists and their research. \emph{Nature Human Behaviour} (2024). \doi{10.1038/s41562-024-02060-x}. Preprint at \url{https://osf.io/preprints/psyarxiv/ah3fp/}
+#' @source Open Science Foundation, \url{https://osf.io/d3xua/?view_only=0ebe5366331f497da7c78a7c874c2961}, unspecified license
+"KSBN24_S5L"

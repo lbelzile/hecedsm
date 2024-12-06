@@ -9,7 +9,7 @@ A data frame with 402 rows and 5 variables:
 \describe{
   \item{\code{appreciation}}{[double] average score questions related to appreciation (appreciate, feel thankful, feel grateful, feel pleased)}
   \item{\code{surprise}}{[double] average score for questions related to unexpectedness and surprise of reaching out}
-  \item{\code{condition}}{[factor] experimental condition, either \code{self} or \code{other}}
+  \item{\code{initiator}}{[factor] experimental condition, either \code{initiator} if self or \code{responder} if the other initiated the contact.}
   \item{\code{age}}{[double] age of participant}
   \item{\code{gender}}{[factor] gender of participant, one of \code{male}, \code{female} or \code{other}}
 }

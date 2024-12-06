@@ -47,6 +47,10 @@ remotes::install_github("lbelzile/hecedsm")
 | [HS22_S2](https://lbelzile.github.io/hecedsm/reference/HS22_S2.html) | [Hart and Schweitzer (2022), Study 2](https://doi.org/10.1016/j.obhdp.2021.104108) | mediation |
 | [JCD14_S2](https://lbelzile.github.io/hecedsm/reference/JCD14_S2.html) | [Johnson, Cheung and Donnellan (2014), Study 2](https://doi.org/10.1027/1864-9335/a000186) | t-test |
 | [JZBJG22_E2](https://lbelzile.github.io/hecedsm/reference/JZBJG22_E2.html) | [Jordan et al. (2022), Experiment 2](https://doi.org/10.1098/rsos.211977) | two-way ANOVA |
+| [KSBN24_S3](https://lbelzile.github.io/hecedsm/reference/KSBN24_S3.html) | [Koetke et al. (2024), Study 3](https://doi.org/10.1038/s41562-024-02060-x) | two-way ANOVA, multiple testing |
+| [KSBN24_S4](https://lbelzile.github.io/hecedsm/reference/KSBN24_S4.html) | [Koetke et al. (2024), Study 4](https://doi.org/10.1038/s41562-024-02060-x) | two-way ANOVA, mediation |
+| [KSBN24_S5L](https://lbelzile.github.io/hecedsm/reference/KSBN24_S5L.html) | [Koetke et al. (2024), Study 5 (long)](https://doi.org/10.1038/s41562-024-02060-x) | repeated measures, MANOVA |
+| [KSBN24_S5](https://lbelzile.github.io/hecedsm/reference/KSBN24_S5.html) | [Koetke et al. (2024), Study 5](https://doi.org/10.1038/s41562-024-02060-x) | one-way ANOVA, mediation |
 | [L22_E4](https://lbelzile.github.io/hecedsm/reference/L22_E4.html) | [Liu (2022), Experiment 4](https://doi.org/10.1177/00222437211055741) | two-way mixed ANOVA, mediation |
 | [LBJ17_S1A](https://lbelzile.github.io/hecedsm/reference/LBJ17_S1A.html) | [Lages, Boyle and Jenkins (2017) Study 1A](https://doi.org/10.1177/0956797617705391) | three-way mixed design |
 | [LC19_S1](https://lbelzile.github.io/hecedsm/reference/LC19_S1.html) | [Lee and Choi (2019), Study 1](https://doi.org/10.1016/j.jretconser.2019.03.015) | ANCOVA |

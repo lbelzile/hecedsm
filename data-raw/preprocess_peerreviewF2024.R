@@ -255,3 +255,126 @@ SE24_S3 <- raw |>
 
 SE24_S3 <- tibble::as_tibble(SE24_S3)
 usethis::use_data(SE24_S3, overwrite = TRUE)
+
+
+
+
+
+setwd("source/KSBN24/")
+# Repeated measures models______________________________________________________
+source("IHS Study 5 Code for OSF.R")
+KSBN24_S5 <- IHS5 |>
+  dplyr::select(c(IH_AVG, IHCondition,
+                  # IndependenceScienceAVG,
+                  # RespectScienceAVG,
+                  # OpennessScienceAVG,
+                  # LackOverScienceAVG,
+                  METI_AVG,
+                  Expertise_avg,
+                  Integrity_avg,
+                  Benevolence_avg,
+                  Research_AVG,
+                  Warmth_AVG,
+                  Competence_AVG)) |>
+  rename(ih = IH_AVG,
+         condition = IHCondition,
+         # indep = IndependenceScienceAVG,
+         # respect = RespectScienceAVG,
+         # openness = OpennessScienceAVG,
+         # lackover = LackOverScienceAVG,
+         METI = METI_AVG,
+         expertise = Expertise_avg,
+         integrity = Integrity_avg,
+         benevolence = Benevolence_avg,
+         research = Research_AVG,
+         warmth = Warmth_AVG,
+         competence = Competence_AVG) |>
+  mutate(condition = as.factor(tolower(as.character(condition))))
+usethis::use_data(KSBN24_S5, overwrite = TRUE)
+
+
+# convert data to long format
+longerdata <- IHS5[c("S1_1", "S2_1", "S3_1", "S4_1", "S5_1", "S6_1",
+                     "S1_2", "S2_2", "S3_2", "S4_2", "S5_2", "S6_2",
+                     "S1_3", "S2_3", "S3_3", "S4_3", "S5_3", "S6_3")]
+longerdata <- longerdata %>% mutate(id = row_number())
+KSBN24_S5L <- pivot_longer(longerdata,
+                              cols = -id,
+                              names_to = c("statement", "response"),
+                              names_pattern = "S(.)_(.)") |>
+  mutate(statement = factor(statement,
+                            labels = c("updated beliefs",
+                                       "credit to grad students",
+                                       "cannot prove",
+                                       "method limitations",
+                                       "findings inconsistent",
+                                       "can't generalize")),
+         response = factor(response, labels =  c("pih","trustdr", "trustresearch"))) |>
+  pivot_wider(names_from = "response", values_from = "value") |>
+  mutate(id = factor(id))
+usethis::use_data(KSBN24_S5L, overwrite = TRUE)
+
+source("IHS Study 3 Code for OSF.R")
+KSBN24_S3 <- IHS3 |>
+  dplyr::select(c(IH_AVG,
+                  IHCondition,
+                  GenderCondition,
+                  Gender,
+                  METI_AVG,
+                  Expertise_avg,
+                  Integrity_avg,
+                  Benevolence_avg,
+                  Research_AVG,
+                  Intent_AVG)) |>
+  rename(ih = IH_AVG,
+         condition = IHCondition,
+         gendercond = GenderCondition,
+         gender = Gender,
+         METI = METI_AVG,
+         expertise = Expertise_avg,
+         integrity = Integrity_avg,
+         benevolence = Benevolence_avg,
+         research = Research_AVG,
+         intention = Intent_AVG) |>
+  dplyr::mutate(gender = factor(tolower(gender)),
+                gendercond = factor(tolower(gendercond)),
+                condition = factor(tolower(condition)))
+levels(KSBN24_S3$condition) <- c("high","low","neutral")
+KSBN24_S3$condition <- relevel(KSBN24_S3$condition, ref= "low")
+levels(KSBN24_S3$gender)[3] <- "other"
+usethis::use_data(KSBN24_S3, overwrite = TRUE)
+
+
+
+source("IHS Study 4 Code for OSF.R")
+KSBN24_S4 <- IHS4 |>
+  dplyr::select(
+    METI_AVG,
+    Research_AVG,
+    IH_AVG,
+    Competence_AVG,
+    Warmth_AVG,
+    IHCondition,
+    RaceCondition,
+    ProlificPO,
+    Age,
+    Gender
+  ) |>
+  dplyr::rename(
+    METI = METI_AVG,
+    research = Research_AVG,
+    ih = IH_AVG,
+    competence = Competence_AVG,
+    warmth = Warmth_AVG,
+    condition = IHCondition,
+    race = RaceCondition,
+    politideo = ProlificPO,
+    age = Age,
+    gender = Gender) |>
+  dplyr::mutate(gender = factor(tolower(gender)),
+                race = factor(tolower(race)),
+                condition = factor(tolower(condition)),
+                politideo = factor(tolower(politideo)),
+                age = as.integer(age)) |>
+  mutate(gender = forcats::fct_collapse(gender, female = "female", male = "male", other = levels(KSBN24_S4$gender)[3:4]))
+usethis::use_data(KSBN24_S4, overwrite = TRUE)

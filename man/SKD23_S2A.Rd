@@ -33,7 +33,7 @@ linmod <- lm(pef ~ proportion, data = SKD23_S2A)
 anova(linmod)
 anovamod <- lm(pef ~ factor(proportion), data = SKD23_S2A)
 margmean <- anovamod |>  emmeans::emmeans(specs = "proportion")
-margmean |> emmeans::contrast(
+emmeans::contrast(margmean,
  method = list(refvshalf = c(1, -1, 0, 0),
                refvsone =  c(1, 0, -1, 0),
                refvstwo =  c(1, 0, 0, -1)))

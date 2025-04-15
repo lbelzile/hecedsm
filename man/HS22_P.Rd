@@ -34,9 +34,9 @@ rmod <- afex::aov_ez(
     id = "id",
     dv = "score",
     within = "item",
-    data = ERRO_pilot_long)
- emmeans::emmeans(object = rmod, specs = "item") |>
-   emmeans::contrast(list(service_vs_product = c(1, -1, 1, -1, 1, -1)/3))
+    data = HS22_P)
+emm <- emmeans::emmeans(object = rmod, specs = "item")
+emmeans::contrast(emm, list(service_vs_product = c(1, -1, 1, -1, 1, -1)/3))
 }
 \references{
 Hart E, Schweitzer ME. (2022) \emph{When we should care more about relationships than favorable deal terms in negotiation: The economic relevance of relational outcomes (ERRO)'. Organizational Behavior and Human Decision Processes}. 168:104108.

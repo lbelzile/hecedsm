@@ -1,4 +1,3 @@
-
 #' @title Bastian, Jetten and Ferris (2014)
 #' @description Data for Study 1 of Bastian, Jetten and Ferris (2014) social effects of pain. Study 1 contains a one-way analysis of variance, a series of t-test, a mediation analysis and some linear regression.
 #'
@@ -163,7 +162,6 @@
 #' @references   Elliott, E. M., C. C. Morey, A.M. AuBuchon et al. (2021). \emph{Multilab Direct Replication of Flavell, Beach, and Chinsky (1966): Spontaneous Verbal Rehearsal in a Memory Task as a Function of Age}. Advances in Methods and Practices in Psychological Science. \doi{10.1177/25152459211018187}
 #' @source Open Science Foundation, \url{https://osf.io/vgxkf}, licensed under CC-BY Attribution 4.0 International
 "MULTI21_D2"
-
 
 
 #' Flavell, Beach and Chinsky (1966), Table 1
@@ -790,7 +788,6 @@
 "MV23_S4"
 
 
-
 #' @title  Moon and vanEpps (2023), Supplementary study H
 #' @description After completing an unrelated study, the authors proposed to participants on MTurk to donate of their time for a social cause (net neutrality) by completing an optional survey for a prosocial cause. Participants were assigned to the open-ended choice or offered to complete up to 3 additional sections with demographics (1), plus internet use (2) and political attitudes (3). The study aims to study generosity, but without involving windfall.
 #' @format A data frame with 1206 rows and 3 variables:
@@ -839,7 +836,6 @@
 "JZBJG22_E2"
 
 
-
 #' @title Sokolova el al. (2023), Study 2A
 #'
 #' @description The study considers the environmental perception of packaging when
@@ -864,7 +860,7 @@
 #' anova(linmod)
 #' anovamod <- lm(pef ~ factor(proportion), data = SKD23_S2A)
 #' margmean <- anovamod |>  emmeans::emmeans(specs = "proportion")
-#' margmean |> emmeans::contrast(
+#' emmeans::contrast(margmean,
 #'  method = list(refvshalf = c(1, -1, 0, 0),
 #'                refvsone =  c(1, 0, -1, 0),
 #'                refvstwo =  c(1, 0, 0, -1)))
@@ -992,7 +988,6 @@
 "LWSH23_S3"
 
 
-
 #' Road traffic accidents and speed limits experiment on motorway in Sweden
 #'
 #' In this experiment, data were collected on the same days in two consecutive years, and
@@ -1065,9 +1060,9 @@
 #'     id = "id",
 #'     dv = "score",
 #'     within = "item",
-#'     data = ERRO_pilot_long)
-#'  emmeans::emmeans(object = rmod, specs = "item") |>
-#'    emmeans::contrast(list(service_vs_product = c(1, -1, 1, -1, 1, -1)/3))
+#'     data = HS22_P)
+#' emm <- emmeans::emmeans(object = rmod, specs = "item")
+#' emmeans::contrast(emm, list(service_vs_product = c(1, -1, 1, -1, 1, -1)/3))
 "HS22_P"
 
 
@@ -1128,7 +1123,6 @@
 #'   \item{\code{anxiety_other}}{[numeric] anxiety score for other, average of four nine point Likert scales}
 #'   \item{\code{vote}}{Who are you most likely to vote for in the upcoming U.S. presidential election (2020)? either Republican candidate (1) or Democratic candidate (2)}
 #'   \item{\code{polideo}}{self-reported political orientation, with choices very/somewhat/slightly liberal (1/2/3), neither (4), to slightly/somewhat/very conservative (5/6/7).}
-
 
 #'}
 #' @references Dorison CA, Minson JA. (2022). You can’t handle the truth! Conflict counterparts over-estimate each other’s feelings of self-threat. \emph{Organizational Behavior and Human Decision Processes}, 170, 104147. \doi{10.1016/j.obhdp.2022.104147}

@@ -719,6 +719,7 @@
 #'   \item{\code{imscore}}{[double] response, intrinsic motivation score}
 #'}
 #' @references Hatano, A., Ogulmus, C., Shigemasu, H., & Murayama, K. (2022). \emph{Thinking About Thinking: People Underestimate How Enjoyable and Engaging Just Waiting Is}. Journal of Experimental Psychology: General, 151(\bold{12}), 3213–3229 \url{http://dx.doi.org/10.1037/xge0001255}
+#' @source Open Science Foundation, \url{https://osf.io/a8bwm/}, unspecified license
 "HOSM22_E3"
 
 
@@ -732,6 +733,7 @@
 #'   \item{\code{irtime}}{[integer] interim rating time minus 10 minutes}
 #'}
 #' @references Hatano, A., Ogulmus, C., Shigemasu, H., & Murayama, K. (2022). \emph{Thinking About Thinking: People Underestimate How Enjoyable and Engaging Just Waiting Is}. Journal of Experimental Psychology: General, 151(\bold{12}), 3213–3229 \url{http://dx.doi.org/10.1037/xge0001255}
+#' @source Open Science Foundation, \url{https://osf.io/a8bwm/}, unspecified license
 "HOSM22_E4"
 
 #' @title Garcia et al. (2010)
@@ -905,8 +907,7 @@
 #'  The study results in a 2 by 2 by 2 three-way between-subject ANOVA.
 #'
 #' @source  Research Box 1401, \url{https://researchbox.org/1401}, licensed under CC BY 4.0
-#' @references J.D. Lin, N.Y.J. Kim, E. Uduehi and A. Keinan (2024+). \emph{Culture for Sale: Unpacking Consumer Perceptions of Cultural Appropriation}, Journal of Consumer Research,
-#'  \doi{10.1093/jcr/ucad076}
+#' @references J.D. Lin, N.Y.J. Kim, E. Uduehi and A. Keinan (2024). \emph{Culture for Sale: Unpacking Consumer Perceptions of Cultural Appropriation}, Journal of Consumer Research, 51(3), 571–594. \doi{10.1093/jcr/ucad076}
 #' @format A data frame with 804 rows and 8 variables:
 #' \describe{
 #'   \item{\code{appropriation}}{[double] appropriation scale built from five items: higher values indicate increased perception of cultural appropriation}
@@ -930,8 +931,7 @@
 #' The study results in a 3 by 2 by 2 three-way between-subject ANOVA, followed by moderated mediation.
 #'
 #' @source  Research Box 1401, \url{https://researchbox.org/1401}, licensed under CC BY 4.0
-#' @references J.D. Lin, N.Y.J. Kim, E. Uduehi and A. Keinan (2024+). \emph{Culture for Sale: Unpacking Consumer Perceptions of Cultural Appropriation}, Journal of Consumer Research,
-#'  \doi{10.1093/jcr/ucad076}
+#' @references J.D. Lin, N.Y.J. Kim, E. Uduehi and A. Keinan (2024). \emph{Culture for Sale: Unpacking Consumer Perceptions of Cultural Appropriation}, Journal of Consumer Research, 51(3), 571–594. \doi{10.1093/jcr/ucad076}
 #' @format A data frame with 711 rows and 11 variables:
 #' \describe{
 #'   \item{\code{appropriation}}{[double] perception of cultural appropriation}
@@ -1056,11 +1056,11 @@
 #' \doi{10.1016/j.obhdp.2021.104108}
 #' @examples
 #' # Repeated measure ANOVA
-#' rmod <- afex::aov_ez(
+#' (rmod <- afex::aov_ez(
 #'     id = "id",
 #'     dv = "score",
 #'     within = "item",
-#'     data = HS22_P)
+#'     data = HS22_P))
 #' emm <- emmeans::emmeans(object = rmod, specs = "item")
 #' emmeans::contrast(emm, list(service_vs_product = c(1, -1, 1, -1, 1, -1)/3))
 "HS22_P"
@@ -1102,11 +1102,10 @@
 
 
 #' @title Dorison and Minson (2022), Study 1
-#' @description Participants (American citizens) in the study were paired with people from the opposing party (Republican or Democrat) and asked to
+#' @description  Wide-format with paired observations. Participants (American citizens) in the study were paired with people from the opposing party (Republican or Democrat) and asked to
 #' perform a 10 minutes presentation to discuss beliefs about the best candidate, with pointers to subjects
 #' such as Covid19, environmental policy and immigration. Only people who interacted via the chat are kept.
 #' @format A data frame with 367 rows and 17 variables:
-#' @describeIn DM22_S1 Wide-format with paired observations
 #' \describe{
 #'   \item{\code{age}}{[integer] age of participant}
 #'   \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
@@ -1123,14 +1122,16 @@
 #'   \item{\code{anxiety_other}}{[numeric] anxiety score for other, average of four nine point Likert scales}
 #'   \item{\code{vote}}{Who are you most likely to vote for in the upcoming U.S. presidential election (2020)? either Republican candidate (1) or Democratic candidate (2)}
 #'   \item{\code{polideo}}{self-reported political orientation, with choices very/somewhat/slightly liberal (1/2/3), neither (4), to slightly/somewhat/very conservative (5/6/7).}
-
 #'}
 #' @references Dorison CA, Minson JA. (2022). You can’t handle the truth! Conflict counterparts over-estimate each other’s feelings of self-threat. \emph{Organizational Behavior and Human Decision Processes}, 170, 104147. \doi{10.1016/j.obhdp.2022.104147}
 #' @source  ResearchBox 577, \url{https://researchbox.org/577}, licensed under CC BY 4.0
 "DM22_S1"
 
 #' @title Dorison and Minson (2022), Study 1 (long format)
-#' @describeIn DM22_S1 Long-format database
+#'
+#' @description  Long-format database. Participants (American citizens) in the study were paired with people from the opposing party (Republican or Democrat) and asked to
+#' perform a 10 minutes presentation to discuss beliefs about the best candidate, with pointers to subjects
+#' such as Covid19, environmental policy and immigration. Only people who interacted via the chat are kept.
 #' @format A data frame with 734 rows and 4 variables:
 #' \describe{
 #'   \item{\code{anxiety}}{[numeric] anxiety score for average of four nine point Likert scales}
@@ -1138,6 +1139,8 @@
 #'   \item{\code{vote}}{Who are you most likely to vote for in the upcoming U.S. presidential election (2020)? either Republican candidate (1) or Democratic candidate (2)}
 #'   \item{\code{group}}{[factor] group label}
 #'}
+#' @references Dorison CA, Minson JA. (2022). You can’t handle the truth! Conflict counterparts over-estimate each other’s feelings of self-threat. \emph{Organizational Behavior and Human Decision Processes}, 170, 104147. \doi{10.1016/j.obhdp.2022.104147}
+#' @source  ResearchBox 577, \url{https://researchbox.org/577}, licensed under CC BY 4.0
 "DM22_S1_long"
 
 #' @title Dorison and Minson (2022), Study 2
@@ -1284,7 +1287,7 @@
 #'   \item{\code{arousal}}{[integer] arousal score}
 #'   \item{\code{diagnosticity}}{[integer] perceived photo diagnosticity}
 #'}
-#'#' @references Poirier, S.-M., Cosby, S., Sénécal, S., Coursaris, C. K., Fredette, M. et Léger, P.-M. (2024). \emph{The impact of social presence cues in social media product photos on consumers’ purchase intentions}. Journal of Business Research, 185, 114932. \doi{10.1016/j.jbusres.2024.114932}.
+#' @references Poirier, S.-M., Cosby, S., Sénécal, S., Coursaris, C. K., Fredette, M. et Léger, P.-M. (2024). \emph{The impact of social presence cues in social media product photos on consumers’ purchase intentions}. Journal of Business Research, 185, 114932. \doi{10.1016/j.jbusres.2024.114932}.
 #' @source Sara-Maude Poirier, personal communication, distributed under CC BY-NC-SA 4.0
 "PCSCFL24_S1"
 

@@ -35,7 +35,6 @@ were mentioned more frequently (71%) than was food and cuisine (15%). The purpos
 The response variables are based on a factor analysis of different items on the questionnaire based on Likert scales ranging from 1 to 7.
 }
 \references{
-J.D. Lin, N.Y.J. Kim, E. Uduehi and A. Keinan (2024+). \emph{Culture for Sale: Unpacking Consumer Perceptions of Cultural Appropriation}, Journal of Consumer Research,
- \doi{10.1093/jcr/ucad076}
+J.D. Lin, N.Y.J. Kim, E. Uduehi and A. Keinan (2024). \emph{Culture for Sale: Unpacking Consumer Perceptions of Cultural Appropriation}, Journal of Consumer Research, 51(3), 571–594. \doi{10.1093/jcr/ucad076}
 }
 \keyword{datasets}

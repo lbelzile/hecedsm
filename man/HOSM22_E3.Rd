@@ -13,6 +13,9 @@ A data frame with 126 rows and 4 variables:
   \item{\code{imscore}}{[double] response, intrinsic motivation score}
 }
 }
+\source{
+Open Science Foundation, \url{https://osf.io/a8bwm/}, unspecified license
+}
 \usage{
 HOSM22_E3
 }

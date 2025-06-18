@@ -30,11 +30,11 @@ of the three items/services split by category.
 }
 \examples{
 # Repeated measure ANOVA
-rmod <- afex::aov_ez(
+(rmod <- afex::aov_ez(
     id = "id",
     dv = "score",
     within = "item",
-    data = HS22_P)
+    data = HS22_P))
 emm <- emmeans::emmeans(object = rmod, specs = "item")
 emmeans::contrast(emm, list(service_vs_product = c(1, -1, 1, -1, 1, -1)/3))
 }

@@ -36,7 +36,6 @@ The study results in a 3 by 2 by 2 three-way between-subject ANOVA, followed by 
 The Qualtric file contains the questions. Some variables seem to be aggregates of various Likert scales, but there are no associated questions.
 }
 \references{
-J.D. Lin, N.Y.J. Kim, E. Uduehi and A. Keinan (2024+). \emph{Culture for Sale: Unpacking Consumer Perceptions of Cultural Appropriation}, Journal of Consumer Research,
- \doi{10.1093/jcr/ucad076}
+J.D. Lin, N.Y.J. Kim, E. Uduehi and A. Keinan (2024). \emph{Culture for Sale: Unpacking Consumer Perceptions of Cultural Appropriation}, Journal of Consumer Research, 51(3), 571–594. \doi{10.1093/jcr/ucad076}
 }
 \keyword{datasets}

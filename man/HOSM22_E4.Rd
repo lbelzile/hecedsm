@@ -13,6 +13,9 @@ A data frame with 80 rows and 4 variables:
   \item{\code{irtime}}{[integer] interim rating time minus 10 minutes}
 }
 }
+\source{
+Open Science Foundation, \url{https://osf.io/a8bwm/}, unspecified license
+}
 \usage{
 HOSM22_E4
 }

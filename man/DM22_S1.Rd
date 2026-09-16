@@ -3,35 +3,9 @@
 \docType{data}
 \name{DM22_S1}
 \alias{DM22_S1}
-\alias{DM22_S1_long}
 \title{Dorison and Minson (2022), Study 1}
 \format{
 A data frame with 367 rows and 17 variables:
-
-A data frame with 734 rows and 4 variables:
-\describe{
-  \item{\code{anxiety}}{[numeric] anxiety score for average of four nine point Likert scales}
-  \item{\code{target}}{[factor] categorical variable, \code{self} or \code{other}}
-  \item{\code{vote}}{Who are you most likely to vote for in the upcoming U.S. presidential election (2020)? either Republican candidate (1) or Democratic candidate (2)}
-  \item{\code{group}}{[factor] group label}
-}
-}
-\source{
-ResearchBox 577, \url{https://researchbox.org/577}, licensed under CC BY 4.0
-}
-\usage{
-DM22_S1
-
-DM22_S1_long
-}
-\description{
-Participants (American citizens) in the study were paired with people from the opposing party (Republican or Democrat) and asked to
-perform a 10 minutes presentation to discuss beliefs about the best candidate, with pointers to subjects
-such as Covid19, environmental policy and immigration. Only people who interacted via the chat are kept.
-}
-\section{Functions}{
-\itemize{
-\item \code{DM22_S1}: Wide-format with paired observations
 \describe{
   \item{\code{age}}{[integer] age of participant}
   \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
@@ -49,10 +23,18 @@ such as Covid19, environmental policy and immigration. Only people who interacte
   \item{\code{vote}}{Who are you most likely to vote for in the upcoming U.S. presidential election (2020)? either Republican candidate (1) or Democratic candidate (2)}
   \item{\code{polideo}}{self-reported political orientation, with choices very/somewhat/slightly liberal (1/2/3), neither (4), to slightly/somewhat/very conservative (5/6/7).}
 }
-
-\item \code{DM22_S1_long}: Long-format database
-
-}}
+}
+\source{
+ResearchBox 577, \url{https://researchbox.org/577}, licensed under CC BY 4.0
+}
+\usage{
+DM22_S1
+}
+\description{
+Wide-format with paired observations. Participants (American citizens) in the study were paired with people from the opposing party (Republican or Democrat) and asked to
+perform a 10 minutes presentation to discuss beliefs about the best candidate, with pointers to subjects
+such as Covid19, environmental policy and immigration. Only people who interacted via the chat are kept.
+}
 \references{
 Dorison CA, Minson JA. (2022). You can’t handle the truth! Conflict counterparts over-estimate each other’s feelings of self-threat. \emph{Organizational Behavior and Human Decision Processes}, 170, 104147. \doi{10.1016/j.obhdp.2022.104147}
 }

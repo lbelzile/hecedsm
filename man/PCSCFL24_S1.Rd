@@ -17,7 +17,6 @@ A data frame with 2136 rows and 9 variables:
   \item{\code{arousal}}{[integer] arousal score}
   \item{\code{diagnosticity}}{[integer] perceived photo diagnosticity}
 }
-#' @references Poirier, S.-M., Cosby, S., Sénécal, S., Coursaris, C. K., Fredette, M. et Léger, P.-M. (2024). \emph{The impact of social presence cues in social media product photos on consumers’ purchase intentions}. Journal of Business Research, 185, 114932. \doi{10.1016/j.jbusres.2024.114932}.
 }
 \source{
 Sara-Maude Poirier, personal communication, distributed under CC BY-NC-SA 4.0
@@ -27,5 +26,8 @@ PCSCFL24_S1
 }
 \description{
 Data for an incomplete one-way ANOVA repeated measure design. The observations are unbalanced per participant and by experimental condition. Participants with missing data for one of the condition were removed from the analysis.
+}
+\references{
+Poirier, S.-M., Cosby, S., Sénécal, S., Coursaris, C. K., Fredette, M. et Léger, P.-M. (2024). \emph{The impact of social presence cues in social media product photos on consumers’ purchase intentions}. Journal of Business Research, 185, 114932. \doi{10.1016/j.jbusres.2024.114932}.
 }
 \keyword{datasets}

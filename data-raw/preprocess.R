@@ -1415,6 +1415,7 @@ DA23_E3 <- read.csv("source/ResearchBox602/Data/DA2022_E3.csv") |>
   rename(firstbrand = first_brand)
 usethis::use_data(DA23_E3, overwrite = TRUE)
 
+
 # Generate skeleton for documentation
 for (file in list.files("../data", full.names = TRUE)) {
   load(file)

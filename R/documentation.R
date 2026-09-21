@@ -1429,3 +1429,46 @@
 #' mod <- glm(purchased ~ format * firstbrand, data = DA23_E3)
 #' summary(mod)
 "DA23_E3"
+
+#' Liu et al. (2026), Study 3
+#'
+#' @description Participants performed in a online game where they had to find fruits given a set of three boxes, and would get a score for correctly detecting the box containing the fruit. Unknown to them, the game was rigged and they were given, along with their final score, a measure of how other people performed, to inform them whether they performed better or worst than other participants. Half of the participants were supposed to receive a bonus based on strong performance, as judged by algorithmic and human judges: they had t choose which among the two. The mediator is a measure of relative preference for their choice of judge.
+#' @format A data frame with 996 rows and 5 variables:
+#' \describe{
+#'   \item{\code{choice}}{[factor] first choice for the judge, either \code{ai} or \code{human}}
+#'   \item{\code{mediator}}{[double] strength of preference (from 10 to zero) for the given choice}
+#'   \item{\code{strength}}{[factor] strength of the applicant, as given by the score relative to the reported average, either \code{high} or \code{low}}
+#'   \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
+#'   \item{\code{age}}{[integer] age of participant}
+#'}
+#' @references Liu, Q., Häubl, G. and N. Castelo (2026). Consumers with Weaker Applications Are Less Receptive to Algorithmic Evaluation, \emph{Journal of Consumer Research}, <doi:10.1093/jcr/ucag033>
+#' @
+
+#' Liu et al. (2026), Study 1
+#'
+#' @description Authors consider online applications with different strengths (taken to be the average of Z scores for platform-provided metrics, which are: completion rate, number of job completed, work hours, and past earnings). The choice of the participant is whether to rely on an AI or human evaluation for the job application.
+#' @format A data frame with 207 rows and 6 variables:
+#' \describe{
+#'   \item{\code{choice}}{[factor] response of participant, either artificial intelligence (\code{AI}) or \code{human}}
+#'   \item{\code{strength}}{[double] average Z score of scales capturing the job application strength}
+#'   \item{\code{completionrate}}{[double] job completion rate}
+#'   \item{\code{jobcompleted}}{[double] number of job completed}
+#'   \item{\code{hours}}{[double] total work hours}
+#'   \item{\code{earnings}}{[double] total earnings}
+#'}
+#' @references Liu, Q., Häubl, G. and N. Castelo (2026). Consumers with Weaker Applications Are Less Receptive to Algorithmic Evaluation, \emph{Journal of Consumer Research}, <doi:10.1093/jcr/ucag033>
+"LHC26_S1"
+
+#' @title Evangelidis (2024), Study 5
+#' @description This study considered a simple between-subject balanced design where shrinkflation is compared to price increases, depending on market conditions. The response is the perception of customers on the proposed change.
+#' @format A data frame with 1202 rows and 5 variables:
+#' \describe{
+#'   \item{\code{perception}}{[factor] perception of customer, either \code{fair} or \code{unfair}}
+#'   \item{\code{firmdec}}{[factor] firm decision, either \code{price increase} or \code{product downsizing}}
+#'   \item{\code{costs}}{[factor] reason behind change to costs or product size, whether costs \code{increased} or stayed the \code{same}}
+#'   \item{\code{gender}}{[factor] gender of respondant}
+#'   \item{\code{age}}{[integer] age of respondant}
+#'}
+#' @source Research Box 1032, \url{https://researchbox.org/1032}, licensed under CC BY 4.0
+#' @references I. Evangelidis (2024). Frontiers: Shrinkflation Aversion: When and Why Product Size Decreases Are Seen as More Unfair than Equivalent Price Increases. \emph{Marketing Science}, 43(\bold{2}), 280–288. <doi:10.1287/mksc.2023.0269>
+"E24_S5"

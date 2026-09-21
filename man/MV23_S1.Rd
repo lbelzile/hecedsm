@@ -23,6 +23,7 @@ MV23_S1
 Study 1 considers proportion of donators to a charity. Participants in the online panel were provided with an opportunity to win 25$ and donate part of this amount to a charity of their choosing. The data provided include only people who did not exceed this amount and indicated donating a non-zero amount.
 }
 \examples{
+data(MV23_S1, package = "hecedsm")
 ctab <- with(MV23_S1, table(donate, condition))
 # Chi-square test of independence
 chisq_test <- chisq.test(ctab, correct = FALSE)

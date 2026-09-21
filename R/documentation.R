@@ -1410,3 +1410,22 @@
 #' @references Koetke, J., Schumann, K., Bowes, S.M. et al. The effect of seeing scientists as intellectually humble on trust in scientists and their research. \emph{Nature Human Behaviour} (2024). \doi{10.1038/s41562-024-02060-x}. Preprint at \url{https://osf.io/preprints/psyarxiv/ah3fp/}
 #' @source Open Science Foundation, \url{https://osf.io/d3xua/?view_only=0ebe5366331f497da7c78a7c874c2961}, unspecified license
 "KSBN24_S5L"
+
+
+#' @title Duke and Amir (2023), Experiment 3
+#' @description This is a data from Experiment 3 of Duke and Amir (2022), who studied the impact of sequential vs integrated quantity purchase. The authors manipulated the company name (same ratings, same product and price) and offered participants the option to purchase up to two items on sale from either, with brand order counterbalanced. The study investigated the impact of presenting customers with a sequential choice (first decide whether or not to buy, then pick quantity) as opposed to an integrated decision (choose not to buy, or one of different quantities) on sales and the number of items bought.
+#' @format A data frame with 399 rows and 6 variables:
+#' \describe{
+#'   \item{\code{format}}{[factor] experimental condition, either \code{quantity-integrated} or \code{quantity-sequential}}
+#'   \item{\code{purchased}}{[integer] binary variable indicating whether the respondant purchased the item (\code{1}) or not (\code{0})}
+#'   \item{\code{amount}}{[integer] amount of items purchased}
+#'   \item{\code{firstbrand}}{[factor] company name offering the product, counterbalanced}
+#'   \item{\code{gender}}{[factor] gender of respondant, one of \code{female}, \code{male} or \code{other}}
+#'   \item{\code{age}}{[integer] age of respondant}
+#'}
+#' @source Research Box 602, \url{https://researchbox.org/602}, licensed under CC BY 4.0
+#' @references Duke, K.E. and O. Amir (2023). \emph{The Importance of Selling Formats: When Integrating Purchase and Quantity Decisions Increases Sales}, Marketing Science,42(1), 87-109. \doi{10.1287/mksc.2022.1364}
+#' @examples
+#' mod <- glm(purchased ~ format * firstbrand, data = DA23_E3)
+#' summary(mod)
+"DA23_E3"

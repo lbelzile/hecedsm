@@ -1,0 +1,64 @@
+# Moon and vanEpps (2023), Supplementary study H
+
+After completing an unrelated study, the authors proposed to
+participants on MTurk to donate of their time for a social cause (net
+neutrality) by completing an optional survey for a prosocial cause.
+Participants were assigned to the open-ended choice or offered to
+complete up to 3 additional sections with demographics (1), plus
+internet use (2) and political attitudes (3). The study aims to study
+generosity, but without involving windfall.
+
+## Usage
+
+``` r
+MV23_SH
+```
+
+## Format
+
+A data frame with 1206 rows and 3 variables:
+
+- `donate`:
+
+  \[integer\] did people choose to donate time? Either no (`0`) or yes
+  (`1`)
+
+- `condition`:
+
+  \[factor\] experimental condition, either an `open-ended` amount or a
+  `quantity`.
+
+- `amount`:
+
+  \[integer\] number of additional questionnaire (up to 3).
+
+## Source
+
+Research Box 54, <https://researchbox.org/54>, licensed under CC BY 4.0
+
+## References
+
+Moon, A. and EM VanEpps (2023). *Giving Suggestions: Using Quantity
+Requests to Increase Donations*, Journal of Consumer Research, 50(1),
+190–210. [doi:10.1093/jcr/ucac047](https://doi.org/10.1093/jcr/ucac047)
+
+## Examples
+
+``` r
+if (FALSE) { # \dontrun{
+chisq.test(with(MV23_SH,
+                table(donate, condition)),
+           correct = FALSE)
+# Average non-zero contributions
+# by default, missing values are ignored
+wilcox_anz <- coin::wilcox_test(
+  amount ~ condition,
+  data = MV23_SH)
+# Transform no donation to zero
+MV23_SH$amount0 <- with(MV23_SH,
+ifelse(donate == 0L, 0, amount))
+wilcox_az <- coin::wilcox_test(
+  amount0 ~ condition,
+  data = MV23_SH)
+} # }
+```

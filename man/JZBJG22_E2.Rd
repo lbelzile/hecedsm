@@ -26,6 +26,6 @@ JZBJG22_E2
 The authors studied how confidence in people skill to land a plane (with no experience) and it was affected by watching a trivially related video showing a landing.
 }
 \references{
-Jordan, K., R. Zajac, D. Bernstein, C. Joshi and M. Garry (2022). \emph{Trivially informative semantic context inflates people's confidence they can perform a highly complex skill}, Royal Society Open Science,\bold{9}, 211977, \url{http://doi.org/10.1098/rsos.211977}
+Jordan, K., R. Zajac, D. Bernstein, C. Joshi and M. Garry (2022). \emph{Trivially informative semantic context inflates people's confidence they can perform a highly complex skill}, Royal Society Open Science,\bold{9}, 211977, \doi{10.1098/rsos.211977}
 }
 \keyword{datasets}

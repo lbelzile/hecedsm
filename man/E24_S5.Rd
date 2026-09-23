@@ -24,6 +24,6 @@ E24_S5
 This study considered a simple between-subject balanced design where shrinkflation is compared to price increases, depending on market conditions. The response is the perception of customers on the proposed change.
 }
 \references{
-I. Evangelidis (2024). Frontiers: Shrinkflation Aversion: When and Why Product Size Decreases Are Seen as More Unfair than Equivalent Price Increases. \emph{Marketing Science}, 43(\bold{2}), 280–288. <doi:10.1287/mksc.2023.0269>
+I. Evangelidis (2024). Frontiers: Shrinkflation Aversion: When and Why Product Size Decreases Are Seen as More Unfair than Equivalent Price Increases. \emph{Marketing Science}, 43(\bold{2}), 280–288. \doi{10.1287/mksc.2023.0269}
 }
 \keyword{datasets}

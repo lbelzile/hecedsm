@@ -24,6 +24,6 @@ and were asked to write a motivational statement for a website; the response var
 participants attitude based on a four-question item using Likert scales . The study considered two contrasts and a mediation analysis for these.
 }
 \references{
-Huang, S.-C., Brucks, M. S., Song, J., & Campbell, M. C. (2024). \emph{Beyond achievement: Transformation mindset enhances authenticity after goal success.} Motivation Science, 10(\bold{3}), 171–181. \doi{https://doi.org/10.1037/mot0000340}
+Huang, S.-C., Brucks, M. S., Song, J., & Campbell, M. C. (2024). \emph{Beyond achievement: Transformation mindset enhances authenticity after goal success.} Motivation Science, 10(\bold{3}), 171–181. \doi{10.1037/mot0000340}
 }
 \keyword{datasets}

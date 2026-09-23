@@ -718,7 +718,7 @@
 #'   \item{\code{ratingtype}}{[factor] experimental within-subject factor, either \code{prediction} or \code{experience}}
 #'   \item{\code{imscore}}{[double] response, intrinsic motivation score}
 #'}
-#' @references Hatano, A., Ogulmus, C., Shigemasu, H., & Murayama, K. (2022). \emph{Thinking About Thinking: People Underestimate How Enjoyable and Engaging Just Waiting Is}. Journal of Experimental Psychology: General, 151(\bold{12}), 3213–3229 \url{http://dx.doi.org/10.1037/xge0001255}
+#' @references Hatano, A., Ogulmus, C., Shigemasu, H., & Murayama, K. (2022). \emph{Thinking About Thinking: People Underestimate How Enjoyable and Engaging Just Waiting Is}. Journal of Experimental Psychology: General, 151(\bold{12}), 3213–3229 \doi{10.1037/xge0001255}
 #' @source Open Science Foundation, \url{https://osf.io/a8bwm/}, unspecified license
 "HOSM22_E3"
 
@@ -732,7 +732,7 @@
 #'   \item{\code{imscore}}{[double] response, intrinsic motivation score}
 #'   \item{\code{irtime}}{[integer] interim rating time minus 10 minutes}
 #'}
-#' @references Hatano, A., Ogulmus, C., Shigemasu, H., & Murayama, K. (2022). \emph{Thinking About Thinking: People Underestimate How Enjoyable and Engaging Just Waiting Is}. Journal of Experimental Psychology: General, 151(\bold{12}), 3213–3229 \url{http://dx.doi.org/10.1037/xge0001255}
+#' @references Hatano, A., Ogulmus, C., Shigemasu, H., & Murayama, K. (2022). \emph{Thinking About Thinking: People Underestimate How Enjoyable and Engaging Just Waiting Is}. Journal of Experimental Psychology: General, 151(\bold{12}), 3213–3229 \doi{10.1037/xge0001255}
 #' @source Open Science Foundation, \url{https://osf.io/a8bwm/}, unspecified license
 "HOSM22_E4"
 
@@ -834,7 +834,7 @@
 #'   \item{\code{ease_imagining}}{[integer] Likert scale ranging from not at all difficult (\code{1}) to very difficult (\code{5}) for the answer to the question "How difficult was it for you to imagine attempting to land the plane."}
 #'   \item{\code{gender}}{[factor] gender of participant, one of \code{man}, \code{woman} or other (\code{gender diverse})}
 #'}
-#' @references Jordan, K., R. Zajac, D. Bernstein, C. Joshi and M. Garry (2022). \emph{Trivially informative semantic context inflates people's confidence they can perform a highly complex skill}, Royal Society Open Science,\bold{9}, 211977, \url{http://doi.org/10.1098/rsos.211977}
+#' @references Jordan, K., R. Zajac, D. Bernstein, C. Joshi and M. Garry (2022). \emph{Trivially informative semantic context inflates people's confidence they can perform a highly complex skill}, Royal Society Open Science,\bold{9}, 211977, \doi{10.1098/rsos.211977}
 #' @source Research Box 511, \url{https://researchbox.org/511}, licensed under CC BY 4.0
 "JZBJG22_E2"
 
@@ -1098,7 +1098,7 @@
 #'   \item{\code{cond}}{[factor] experimental condition, either \code{old} for distancing, \code{new} for acquiring, or \code{change} for transformation}
 #'}
 #' @source Research Box 2945, \url{https://researchbox.org/2945}, licensed under CC BY 4.0
-#' @references Huang, S.-C., Brucks, M. S., Song, J., & Campbell, M. C. (2024). \emph{Beyond achievement: Transformation mindset enhances authenticity after goal success.} Motivation Science, 10(\bold{3}), 171–181. \doi{https://doi.org/10.1037/mot0000340}
+#' @references Huang, S.-C., Brucks, M. S., Song, J., & Campbell, M. C. (2024). \emph{Beyond achievement: Transformation mindset enhances authenticity after goal success.} Motivation Science, 10(\bold{3}), 171–181. \doi{10.1037/mot0000340}
 "HBSC24_S4"
 
 
@@ -1441,8 +1441,9 @@
 #'   \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
 #'   \item{\code{age}}{[integer] age of participant}
 #'}
-#' @references Liu, Q., Häubl, G. and N. Castelo (2026). Consumers with Weaker Applications Are Less Receptive to Algorithmic Evaluation, \emph{Journal of Consumer Research}, <doi:10.1093/jcr/ucag033>
-#' @
+#' @references Liu, Q., Häubl, G. and N. Castelo (2026). Consumers with Weaker Applications Are Less Receptive to Algorithmic Evaluation, \emph{Journal of Consumer Research}, \doi{10.1093/jcr/ucag033}
+"LHC26_S3"
+
 
 #' Liu et al. (2026), Study 1
 #'
@@ -1456,7 +1457,7 @@
 #'   \item{\code{hours}}{[double] total work hours}
 #'   \item{\code{earnings}}{[double] total earnings}
 #'}
-#' @references Liu, Q., Häubl, G. and N. Castelo (2026). Consumers with Weaker Applications Are Less Receptive to Algorithmic Evaluation, \emph{Journal of Consumer Research}, <doi:10.1093/jcr/ucag033>
+#' @references Liu, Q., Häubl, G. and N. Castelo (2026). Consumers with Weaker Applications Are Less Receptive to Algorithmic Evaluation, \emph{Journal of Consumer Research}, \doi{10.1093/jcr/ucag033}
 "LHC26_S1"
 
 #' @title Evangelidis (2024), Study 5
@@ -1470,5 +1471,5 @@
 #'   \item{\code{age}}{[integer] age of respondant}
 #'}
 #' @source Research Box 1032, \url{https://researchbox.org/1032}, licensed under CC BY 4.0
-#' @references I. Evangelidis (2024). Frontiers: Shrinkflation Aversion: When and Why Product Size Decreases Are Seen as More Unfair than Equivalent Price Increases. \emph{Marketing Science}, 43(\bold{2}), 280–288. <doi:10.1287/mksc.2023.0269>
+#' @references I. Evangelidis (2024). Frontiers: Shrinkflation Aversion: When and Why Product Size Decreases Are Seen as More Unfair than Equivalent Price Increases. \emph{Marketing Science}, 43(\bold{2}), 280–288. \doi{10.1287/mksc.2023.0269}
 "E24_S5"

@@ -32,10 +32,12 @@ remotes::install_github("lbelzile/hecedsm")
 | [C22](https://lbelzile.github.io/hecedsm/reference/C22.html) | [Curley et al. (2022)](https://doi.org/10.1080/13218719.2021.1904450) | linear mixed model, incomplete design |
 | [DA23_E1](https://lbelzile.github.io/hecedsm/reference/DA23_E1.html) | [Duke and Amir (2023), Experiment 1](https://doi.org/10.1287/mksc.2022.1364) | t-test |
 | [DA23_E2](https://lbelzile.github.io/hecedsm/reference/DA23_E2.html) | [Duke and Amir (2023), Experiment 2](https://doi.org/10.1287/mksc.2022.1364) | one-way ANOVA, logistic regression |
+| [DA23_E3](https://lbelzile.github.io/hecedsm/reference/DA23_E3.html) | [Duke and Amir (2023), Experiment 3](https://doi.org/10.1287/mksc.2022.1364) | logistic regression |
 | [DM22_S1](https://lbelzile.github.io/hecedsm/reference/DM22_S1.html) | [Dorison and Minson (2022), Study 1](https://doi.org/10.1016/j.obhdp.2022.104147) | paired t-test |
 | [DM22_S2](https://lbelzile.github.io/hecedsm/reference/DM22_S2.html) | [Dorison and Minson (2022), Study 2](https://doi.org/10.1016/j.obhdp.2022.104147) | two-way mixed ANOVA |
 | [DM22_S3](https://lbelzile.github.io/hecedsm/reference/DM22_S3.html) | [Dorison and Minson (2022), Study 3](https://doi.org/10.1016/j.obhdp.2022.104147) | two-way mixed ANOVA, mediation |
 | [DM22_S4](https://lbelzile.github.io/hecedsm/reference/DM22_S4.html) | [Dorison and Minson (2022), Study 4](https://doi.org/10.1016/j.obhdp.2022.104147) | t-test |
+| [E24_S5](https://lbelzile.github.io/hecedsm/reference/E24_S5.html) | [Evangelidis (2024), Study 5](https://doi.org/10.1287/mksc.2023.0269) | logistic regression |
 | [FBC66_T1](https://lbelzile.github.io/hecedsm/reference/FBC66_T1.html) | [Flavell, Beach and Chinsky (1966), Table 1](https://doi.org/10.2307/1126804) | chi-square test |
 | [GK14_S3](https://lbelzile.github.io/hecedsm/reference/GK14_S3.html) | [Grossman and Kross (2014), Study 3](https://doi.org/10.1177/0956797614535400) | one-way ANOVA, multiple testing, contrasts |
 | [GSC20_E2](https://lbelzile.github.io/hecedsm/reference/GSC20_E2.html) | [Gaesser, Shimura and Cikara (2020), Experiment 2](https://doi.org/10.1037/pspi0000194) | linear mixed model, hierarchical model |
@@ -56,6 +58,8 @@ remotes::install_github("lbelzile/hecedsm")
 | [LC19_S1](https://lbelzile.github.io/hecedsm/reference/LC19_S1.html) | [Lee and Choi (2019), Study 1](https://doi.org/10.1016/j.jretconser.2019.03.015) | ANCOVA |
 | [LC19_S2](https://lbelzile.github.io/hecedsm/reference/LC19_S2.html) | [Lee and Choi (2019), Study 2](https://doi.org/10.1016/j.jretconser.2019.03.015) | ANCOVA, mediation |
 | [LC19_T2](https://lbelzile.github.io/hecedsm/reference/LC19_T2.html) | [Lee and Choi (2019), Table 2](https://doi.org/10.1016/j.jretconser.2019.03.015) | chi-square test |
+| [LHC26_S1](https://lbelzile.github.io/hecedsm/reference/LHC26_S1.html) | [Liu, Häubl and Castelo (2026), Study 1](https://doi.org/10.1093/jcr/ucag033) | logistic regression |
+| [LHC26_S3](https://lbelzile.github.io/hecedsm/reference/LHC26_S3.html) | [Liu, Häubl and Castelo (2026), Study 3](https://doi.org/10.1093/jcr/ucag033) | logistic regression |
 | [LJLSFBM20](https://lbelzile.github.io/hecedsm/reference/LJLSFBM20.html) | [Labonté-LeMoyne et al. (2020)](https://doi.org/10.1177/0018720819879310) | repeated measures, three-way ANOVA, linear mixed model |
 | [LKUK24_S3](https://lbelzile.github.io/hecedsm/reference/LKUK24_S3.html) | [Lin et al. (2024), Study 3](https://doi.org/10.1093/jcr/ucad076) | three-way ANOVA, two-way ANOVA |
 | [LKUK24_S4](https://lbelzile.github.io/hecedsm/reference/LKUK24_S4.html) | [Lin et al. (2024), Study 4](https://doi.org/10.1093/jcr/ucad076) | three-way ANOVA, moderated mediation |

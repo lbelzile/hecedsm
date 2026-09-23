@@ -3,17 +3,8 @@
 \docType{data}
 \name{LHC26_S1}
 \alias{LHC26_S1}
-\title{Liu et al. (2026), Study 3}
+\title{Liu et al. (2026), Study 1}
 \format{
-A data frame with 996 rows and 5 variables:
-\describe{
-  \item{\code{choice}}{[factor] first choice for the judge, either \code{ai} or \code{human}}
-  \item{\code{mediator}}{[double] strength of preference (from 10 to zero) for the given choice}
-  \item{\code{strength}}{[factor] strength of the applicant, as given by the score relative to the reported average, either \code{high} or \code{low}}
-  \item{\code{gender}}{[factor] gender of participant, either \code{male} or \code{female}}
-  \item{\code{age}}{[integer] age of participant}
-}
-
 A data frame with 207 rows and 6 variables:
 \describe{
   \item{\code{choice}}{[factor] response of participant, either artificial intelligence (\code{AI}) or \code{human}}
@@ -28,13 +19,9 @@ A data frame with 207 rows and 6 variables:
 LHC26_S1
 }
 \description{
-Participants performed in a online game where they had to find fruits given a set of three boxes, and would get a score for correctly detecting the box containing the fruit. Unknown to them, the game was rigged and they were given, along with their final score, a measure of how other people performed, to inform them whether they performed better or worst than other participants. Half of the participants were supposed to receive a bonus based on strong performance, as judged by algorithmic and human judges: they had t choose which among the two. The mediator is a measure of relative preference for their choice of judge.
-
 Authors consider online applications with different strengths (taken to be the average of Z scores for platform-provided metrics, which are: completion rate, number of job completed, work hours, and past earnings). The choice of the participant is whether to rely on an AI or human evaluation for the job application.
 }
 \references{
-Liu, Q., Häubl, G. and N. Castelo (2026). Consumers with Weaker Applications Are Less Receptive to Algorithmic Evaluation, \emph{Journal of Consumer Research}, <doi:10.1093/jcr/ucag033>
-
-Liu, Q., Häubl, G. and N. Castelo (2026). Consumers with Weaker Applications Are Less Receptive to Algorithmic Evaluation, \emph{Journal of Consumer Research}, <doi:10.1093/jcr/ucag033>
+Liu, Q., Häubl, G. and N. Castelo (2026). Consumers with Weaker Applications Are Less Receptive to Algorithmic Evaluation, \emph{Journal of Consumer Research}, \doi{10.1093/jcr/ucag033}
 }
 \keyword{datasets}
